@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Sighthound Field Association - Trial Date Request Form</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+    <!-- Top Navbar (Matching schedule.html) -->
+    <header class="bg-green-800 text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <a href="index.html" class="flex items-center gap-3 hover:opacity-90 transition">
+                        <img src="ASFALOGO.jpg" alt="ASFA Logo" class="w-12 h-12 rounded-full bg-white p-0.5 object-contain shadow-sm border border-green-600">
+                        <span class="font-bold text-xl tracking-tight hidden sm:block">ASFA</span>
+                    </a>
+                </div>
+
+                <nav class="hidden md:flex space-x-3 lg:space-x-5 items-center">
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Getting Started
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-56 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="coursing.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Sport of Lure Coursing</a>
+                                <a href="breeds/index.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Eligible Breeds</a>
+                                <a href="rulebook.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Rule Book/Policies</a>
+                                <a href="forms/pubs.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Pamphlets & Videos</a>
+                                <a href="https://www.ncsl.org/public/leglinks.cfm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Animal Advisory</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Events
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-48 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="schedule.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Schedule</a>
+                                <a href="ii26/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">2026 ASFA II</a>
+                                <a href="regionals/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Regionals</a>
+                                <a href="acod/2025/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">ACoD 2025</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Records & Awards
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-64 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2 max-h-[80vh] overflow-y-auto">
+                                <a href="trial/index0111.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Results</a>
+                                <a href="20/index.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Top 20</a>
+                                <a href="titles/index.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">New Titles</a>
+                                <a href="records/index.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Hound Records</a>
+                                <a href="20/lifetime.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Lifetime Top 20</a>
+                                <div class="h-px bg-slate-200 my-1"></div>
+                                <a href="hof/index.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors font-medium">Hall of Fame</a>
+                                <a href="gf/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Gary Forrester Award</a>
+                                <a href="epa/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Excellence in Performance</a>
+                                <a href="incentive award/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Incentive Award</a>
+                                <a href="Lure Operator/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Lure Operator of the Year</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Clubs & Admin
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-56 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="clubs.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Clubs</a>
+                                <a href="officers.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Officers & Directors</a>
+                                <a href="judges/index.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Judges</a>
+                                <a href="rule/ASFA Suspensions as of 07-09-2025.pdf" class="block px-4 py-2 text-sm text-red-600 font-medium hover:bg-red-50 hover:text-red-800 transition-colors">Suspensions</a>
+                                <a href="quest.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Questions & Comments</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Forms
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-60 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="trial.htm#entry" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Entry Forms</a>
+                                <a href="trial.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Forms</a>
+                                <a href="trial_date_request.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Date Request</a>
+                                <div class="h-px bg-slate-200 my-1"></div>
+                                <a href="membership.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Club Membership Forms</a>
+                                <a href="clubs/renewal_form.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Online Renewal</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            News & Media
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute right-0 top-full -mt-2 w-56 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="communique/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">ASFA Communique</a>
+                                <a href="letter.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">President's Message</a>
+                                <a href="mission.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Mission Statement</a>
+                                <a href="album/index.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Photo Album</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="store/index.htm" class="text-amber-400 hover:text-amber-200 transition font-bold text-xs lg:text-sm py-4">Store</a>
+                </nav>
+
+                <div class="flex items-center hidden sm:block">
+                    <div class="relative">
+                        <input type="text" placeholder="Search ASFA..." class="bg-green-900 text-white placeholder-green-300 rounded-full py-1.5 pl-4 pr-10 focus:outline-none focus:ring-2 focus:ring-green-400 text-sm w-40 lg:w-48">
+                        <svg class="w-4 h-4 absolute right-3 top-2 text-green-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full">
+        
+        <!-- Header & Breadcrumb -->
+        <div class="mb-8">
+            <a href="schedule.html" class="text-sm text-slate-500 hover:text-green-700 transition flex items-center gap-1 mb-3">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                Back to Trial Schedule
+            </a>
+            <h1 class="text-3xl font-extrabold text-slate-900">Trial Date Request Form</h1>
+            <p class="mt-2 text-slate-600 text-sm">
+                Use this form to request, change, or cancel a trial date.
+            </p>
+        </div>
+
+        <!-- Notice Alert -->
+        <div class="bg-amber-50 border border-amber-200 border-l-4 border-l-amber-500 p-5 rounded-r-lg shadow-sm mb-8">
+            <div class="flex items-start">
+                <div class="flex-shrink-0 mt-0.5">
+                    <svg class="h-5 w-5 text-amber-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg>
+                </div>
+                <div class="ml-3">
+                    <h3 class="text-sm font-bold text-amber-900 tracking-wide uppercase">ATTENTION:</h3>
+                    <div class="mt-1 text-sm text-amber-800">
+                        When requesting a trial date, please use this on-line date request form. Please use the <a href="mailto:SCHEDULING@ASFA.ORG" class="font-bold underline hover:text-amber-900">SCHEDULING@ASFA.ORG</a> address for all Scheduling issues.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Instructions Panel -->
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200 mb-8">
+            <h2 class="text-lg font-bold text-slate-800 mb-6">Required Information & Rules</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 text-sm text-slate-600">
+                <div class="flex gap-3">
+                    <!-- Map Pin Icon -->
+                    <svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    <div>
+                        <strong class="text-slate-800">Location:</strong> Trial site and nearest major city.
+                    </div>
+                </div>
+                <div class="flex gap-3">
+                    <!-- Clipboard Icon -->
+                    <svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+                    <div>
+                        <strong class="text-slate-800">Trial Type:</strong> All-Breed / Specialty / Invitational / Fun Trial.<br>
+                        <span class="text-slate-500 mt-1 block">(To schedule a Regional Invitational, a club must receive written approval from its Regional Director).</span>
+                    </div>
+                </div>
+                <div class="flex gap-3">
+                    <!-- Star Icon -->
+                    <svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.898 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <div>
+                        <strong class="text-slate-800">Priority:</strong> Check the box if the requested date is intended as a priority date for the following year.
+                    </div>
+                </div>
+                <div class="flex gap-3">
+                    <!-- Info Circle Icon -->
+                    <svg class="w-5 h-5 text-amber-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <div>
+                        <strong class="text-slate-800">Limits:</strong> Max 8 trial dates (up to 4 weekends) at any one time. A club can hold priority on a max of 6 dates (up to 3 weekends). Held until 120 days prior.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Form -->
+        <div class="bg-white rounded-xl shadow-lg border border-slate-200 overflow-hidden">
+            
+            <!-- Green Header -->
+            <div class="bg-green-800 px-8 py-5">
+                <h2 class="text-xl font-bold text-white">Date Request Application</h2>
+                <p class="text-green-100 text-sm mt-1">Fields marked with an asterisk (*) are required.</p>
+            </div>
+            
+            <form action="https://submit.jotform.com/submit/30043654318953" method="post" name="form_30043654318953" id="30043654318953" accept-charset="utf-8" class="p-8 space-y-10">
+                <input type="hidden" name="formID" value="30043654318953" />
+                
+                <!-- Section 1: General Info -->
+                <div>
+                    <h3 class="text-lg font-bold text-slate-800 border-b border-slate-200 pb-3 mb-6">1. General Information</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-5">
+                        
+                        <div class="col-span-1 md:col-span-2">
+                            <label class="block text-sm font-semibold text-slate-700 mb-2">Action Required</label>
+                            <div class="flex flex-wrap gap-6">
+                                <label class="inline-flex items-center cursor-pointer">
+                                    <input type="radio" name="q8_action" value="Request" class="form-radio h-4 w-4 text-green-600 border-slate-300 focus:ring-green-500">
+                                    <span class="ml-2 text-slate-700 text-sm">Request</span>
+                                </label>
+                                <label class="inline-flex items-center cursor-pointer">
+                                    <input type="radio" name="q8_action" value="Change" class="form-radio h-4 w-4 text-green-600 border-slate-300 focus:ring-green-500">
+                                    <span class="ml-2 text-slate-700 text-sm">Change</span>
+                                </label>
+                                <label class="inline-flex items-center cursor-pointer">
+                                    <input type="radio" name="q8_action" value="Cancellation" class="form-radio h-4 w-4 text-green-600 border-slate-300 focus:ring-green-500">
+                                    <span class="ml-2 text-slate-700 text-sm">Cancellation</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="input_1" class="block text-sm font-semibold text-slate-700 mb-1">Club Name</label>
+                            <input type="text" id="input_1" name="q1_club" class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500 transition-colors" />
+                        </div>
+                        
+                        <div>
+                            <label for="input_88" class="block text-sm font-semibold text-slate-700 mb-1">Club Initials</label>
+                            <input type="text" id="input_88" name="q88_clubInitials" class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500 transition-colors" />
+                        </div>
+
+                        <div class="col-span-1 md:col-span-2">
+                            <label for="input_3" class="block text-sm font-semibold text-slate-700 mb-1">Requestor's Name</label>
+                            <input type="text" id="input_3" name="q3_requestorsName" class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500 transition-colors" />
+                        </div>
+
+                        <div>
+                            <label for="input_6" class="block text-sm font-semibold text-slate-700 mb-1">E-mail <span class="text-red-500">*</span></label>
+                            <input type="email" id="input_6" name="q6_email" required class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500 transition-colors" />
+                        </div>
+                        
+                        <div>
+                            <label for="input_7" class="block text-sm font-semibold text-slate-700 mb-1">Phone</label>
+                            <input type="text" id="input_7" name="q7_phone" class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500 transition-colors" />
+                        </div>
+
+                        <div class="col-span-1 md:col-span-2">
+                            <label for="input_4" class="block text-sm font-semibold text-slate-700 mb-1">Street Address</label>
+                            <input type="text" id="input_4" name="q4_streetAddress" class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500 transition-colors" />
+                        </div>
+
+                        <div class="col-span-1 md:col-span-2">
+                            <label for="input_5" class="block text-sm font-semibold text-slate-700 mb-1">City / State / Zip</label>
+                            <input type="text" id="input_5" name="q5_city" class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500 transition-colors" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2: Date 1 Details -->
+                <div>
+                    <h3 class="text-lg font-bold text-slate-800 border-b border-slate-200 pb-3 mb-6">2. First Date Request</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-5">
+                        
+                        <div>
+                            <label for="input_9" class="block text-sm font-semibold text-slate-700 mb-1">Date 1</label>
+                            <input type="text" id="input_9" name="q9_date1" placeholder="MM/DD/YYYY" class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500 transition-colors" />
+                        </div>
+
+                        <div>
+                            <label for="input_17" class="block text-sm font-semibold text-slate-700 mb-1">Trial Location</label>
+                            <input type="text" id="input_17" name="q17_trialLocation17" class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500 transition-colors" />
+                        </div>
+
+                        <div>
+                            <label for="input_89" class="block text-sm font-semibold text-slate-700 mb-1">Region Held</label>
+                            <select id="input_89" name="q89_regionHeld89" class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500 transition-colors">
+                                <option value="">Please Select</option>
+                                <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+                                <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                                <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="input_91" class="block text-sm font-semibold text-slate-700 mb-1">Trial Type</label>
+                            <select id="input_91" name="q91_trialType" class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500 transition-colors">
+                                <option value="">Please Select</option>
+                                <option value="All-Breed">All-Breed</option>
+                                <option value="Specialty">Specialty</option>
+                                <option value="Invitational">Invitational</option>
+                                <option value="Fun Trial">Fun Trial</option>
+                                <option value="National  Breed Specialty">National Breed Specialty</option>
+                            </select>
+                        </div>
+
+                        <!-- Conditional Fields (Hidden by default) -->
+                        <div id="id_20" class="hidden col-span-1 md:col-span-2">
+                            <label for="input_20" class="block text-sm font-semibold text-slate-700 mb-1">Breed <span class="font-normal text-slate-500">(Required for Specialty)</span></label>
+                            <input type="text" id="input_20" name="q20_breed" class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500 transition-colors" />
+                        </div>
+
+                        <div id="id_86" class="hidden col-span-1 md:col-span-2">
+                            <label class="block text-sm font-semibold text-slate-700 mb-2">Will Singles be offered?</label>
+                            <div class="flex gap-4">
+                                <label class="inline-flex items-center cursor-pointer">
+                                    <input type="radio" name="q86_willSingles" value="Yes" class="form-radio h-4 w-4 text-green-600 border-slate-300 focus:ring-green-500">
+                                    <span class="ml-2 text-slate-700 text-sm">Yes</span>
+                                </label>
+                                <label class="inline-flex items-center cursor-pointer">
+                                    <input type="radio" name="q86_willSingles" value="No" class="form-radio h-4 w-4 text-green-600 border-slate-300 focus:ring-green-500">
+                                    <span class="ml-2 text-slate-700 text-sm">No</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- Checkboxes Row -->
+                        <div class="col-span-1 md:col-span-2 pt-2 flex flex-col sm:flex-row gap-6">
+                            <label class="inline-flex items-center cursor-pointer">
+                                <input type="checkbox" name="q94_lciOffered[]" value="Yes" class="form-checkbox h-4 w-4 text-green-600 border-slate-300 rounded focus:ring-green-500">
+                                <span class="ml-2 text-slate-700 text-sm">LCI Offered?</span>
+                            </label>
+                            <label class="inline-flex items-center cursor-pointer">
+                                <input type="checkbox" name="q25_priority25[]" value="Yes" class="form-checkbox h-4 w-4 text-green-600 border-slate-300 rounded focus:ring-green-500">
+                                <span class="ml-2 text-slate-700 text-sm">Make this a Priority Date</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3: Date 2 Details -->
+                <div>
+                    <h3 class="text-lg font-bold text-slate-800 border-b border-slate-200 pb-3 mb-6">3. Second Date Request <span class="font-normal text-slate-500 text-sm">(Optional)</span></h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-5">
+                        
+                        <div>
+                            <label for="input_16" class="block text-sm font-semibold text-slate-700 mb-1">Date 2</label>
+                            <input type="text" id="input_16" name="q16_date2" placeholder="MM/DD/YYYY" class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500 transition-colors" />
+                        </div>
+
+                        <div>
+                            <label for="input_32" class="block text-sm font-semibold text-slate-700 mb-1">Trial Location</label>
+                            <input type="text" id="input_32" name="q32_trialLocation" class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500 transition-colors" />
+                        </div>
+
+                        <div>
+                            <label for="input_90" class="block text-sm font-semibold text-slate-700 mb-1">Region Held</label>
+                            <select id="input_90" name="q90_regionHeld90" class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500 transition-colors">
+                                <option value="">Please Select</option>
+                                <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+                                <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                                <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="input_92" class="block text-sm font-semibold text-slate-700 mb-1">Trial Type</label>
+                            <select id="input_92" name="q92_trialType92" class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500 transition-colors">
+                                <option value="">Please Select</option>
+                                <option value="All-Breed">All-Breed</option>
+                                <option value="Specialty">Specialty</option>
+                                <option value="Invitational">Invitational</option>
+                                <option value="Fun Trial">Fun Trial</option>
+                                <option value="National  Breed Specialty">National Breed Specialty</option>
+                            </select>
+                        </div>
+
+                        <!-- Conditional Fields (Hidden by default) -->
+                        <div id="id_60" class="hidden col-span-1 md:col-span-2">
+                            <label for="input_60" class="block text-sm font-semibold text-slate-700 mb-1">Breed <span class="font-normal text-slate-500">(Required for Specialty)</span></label>
+                            <input type="text" id="input_60" name="q60_breed60" class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500 transition-colors" />
+                        </div>
+
+                        <div id="id_87" class="hidden col-span-1 md:col-span-2">
+                            <label class="block text-sm font-semibold text-slate-700 mb-2">Will Singles be offered?</label>
+                            <div class="flex gap-4">
+                                <label class="inline-flex items-center cursor-pointer">
+                                    <input type="radio" name="q87_willSingles87" value="Yes" class="form-radio h-4 w-4 text-green-600 border-slate-300 focus:ring-green-500">
+                                    <span class="ml-2 text-slate-700 text-sm">Yes</span>
+                                </label>
+                                <label class="inline-flex items-center cursor-pointer">
+                                    <input type="radio" name="q87_willSingles87" value="No" class="form-radio h-4 w-4 text-green-600 border-slate-300 focus:ring-green-500">
+                                    <span class="ml-2 text-slate-700 text-sm">No</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Checkboxes Row -->
+                        <div class="col-span-1 md:col-span-2 pt-2 flex flex-col sm:flex-row gap-6">
+                            <label class="inline-flex items-center cursor-pointer">
+                                <input type="checkbox" name="q95_lciOffered95[]" value="Yes" class="form-checkbox h-4 w-4 text-green-600 border-slate-300 rounded focus:ring-green-500">
+                                <span class="ml-2 text-slate-700 text-sm">LCI Offered?</span>
+                            </label>
+                            <label class="inline-flex items-center cursor-pointer">
+                                <input type="checkbox" name="q93_priority93[]" value="Yes" class="form-checkbox h-4 w-4 text-green-600 border-slate-300 rounded focus:ring-green-500">
+                                <span class="ml-2 text-slate-700 text-sm">Make this a Priority Date</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 4: Final Details -->
+                <div>
+                    <h3 class="text-lg font-bold text-slate-800 border-b border-slate-200 pb-3 mb-6">4. Additional Information & Validation</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-5">
+                        
+                        <div class="col-span-1 md:col-span-2">
+                            <label for="input_83" class="block text-sm font-semibold text-slate-700 mb-1">Changes or Comments</label>
+                            <textarea id="input_83" name="q83_changes" rows="4" class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500 transition-colors"></textarea>
+                        </div>
+
+                        <div>
+                            <label for="input_84" class="block text-sm font-semibold text-slate-700 mb-1">Signature (Type your name)</label>
+                            <input type="text" id="input_84" name="q84_signature" class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500 transition-colors" />
+                        </div>
+                        
+                        <div>
+                            <label for="input_85" class="block text-sm font-semibold text-slate-700 mb-1">Submit Date</label>
+                            <input type="text" id="input_85" name="q85_submitDate" placeholder="MM/DD/YYYY" class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500 transition-colors" />
+                        </div>
+
+                        <!-- Captcha wrapper for Jotform -->
+                        <div class="col-span-1 md:col-span-2 mt-2">
+                            <label class="block text-sm font-semibold text-slate-700 mb-2">Please verify that you are human <span class="text-red-500">*</span></label>
+                            <div id="hcaptcha_input_96" class="h-captcha" data-siteKey="772f4a50-7161-425e-8cd5-4d7e361ab765" data-callback="hcaptchaCallbackinput_96" data-expired-callback="hcaptchaExpiredCallbackinput_96"></div>
+                            <input type="hidden" id="input_96" name="hcaptcha_visible" required />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Submit Action -->
+                <div class="pt-4 text-right">
+                    <button type="submit" id="input_2" class="inline-flex justify-center rounded bg-green-700 py-2.5 px-6 text-sm font-bold text-white shadow hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-all">
+                        Submit Request
+                    </button>
+                </div>
+                
+                <div class="text-center pt-8 border-t border-slate-100">
+                    <p class="text-xs text-slate-400">SCH 01 rev 01/21 &copy;</p>
+                </div>
+                
+                <!-- Anti-spam & Jotform required invisible fields -->
+                <input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="30043654318953" />
+                <input type="text" name="website" value="" style="display:none;" />
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer (Matching schedule.html) -->
+    <footer class="bg-slate-900 text-slate-300 py-12 mt-auto border-t-4 border-green-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 border-b border-slate-800 pb-8 mb-8">
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Competition</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="schedule.html" class="hover:text-green-400 transition">Trial Schedule</a></li>
+                        <li><a href="trial/index0111.html" class="hover:text-green-400 transition">Trial Results</a></li>
+                        <li><a href="trial.htm#entry" class="hover:text-green-400 transition">Entry Forms</a></li>
+                        <li><a href="20/index.htm" class="hover:text-green-400 transition">Top 20</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Organization</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="clubs.html" class="hover:text-green-400 transition">Clubs</a></li>
+                        <li><a href="officers.htm" class="hover:text-green-400 transition">Officers & Directors</a></li>
+                        <li><a href="rulebook.html" class="hover:text-green-400 transition">Rule Book</a></li>
+                        <li><a href="quest.htm" class="hover:text-green-400 transition">Questions & Comments</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Resources</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="breeds/index.htm" class="hover:text-green-400 transition">Eligible Breeds</a></li>
+                        <li><a href="faq/index.htm" class="hover:text-green-400 transition">FAQ's</a></li>
+                        <li><a href="store/index.htm" class="hover:text-green-400 transition">ASFA Store</a></li>
+                        <li><a href="sitemap.html" class="hover:text-green-400 transition">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">About</h4>
+                    <p class="text-sm leading-relaxed text-slate-400">
+                        The American Sighthound Field Association is dedicated to preserving the natural beauty, grace, speed and coursing skill of the sighthound.
+                    </p>
+                </div>
+            </div>
+            <div class="text-center text-xs text-slate-500 space-y-4">
+                <p class="max-w-4xl mx-auto">
+                    Acceptance and use of the information contained on this website constitutes an acknowledgment that the user hereby releases and indemnifies the ASFA, its officers, directors, members and agents from any and all liability and damages sustained by the user as a result of any information obtained from this web site.
+                </p>
+                <p>
+                    &copy; 2002-2026 American Sighthound Field Association. All rights reserved. No part of this site may be reproduced without written permission from the <a href="mailto:webmaster@asfa.org" class="text-green-500 hover:text-green-400 underline">ASFA Webmasters</a>.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modernized UI Logic & Essential Jotform Scripts -->
+    <script type="text/javascript" src="https://hcaptcha.com/1/api.js" async defer></script>
+    <script type="text/javascript">
+        // Captcha callback handlers required by JotForm endpoint
+        var hcaptchaCallbackinput_96 = function(token) {
+            document.getElementById("input_96").value = 1;
+        }
+        var hcaptchaExpiredCallbackinput_96 = function() {
+            document.getElementById("input_96").value = "";
+        }
+        
+        // Anti-spam field filler
+        document.addEventListener("DOMContentLoaded", function() {
+            var all_spc = document.querySelectorAll(".simple_spc");
+            for (var i = 0; i < all_spc.length; i++) {
+                all_spc[i].value = "30043654318953-30043654318953";
+            }
+        });
+
+        // Modern, lightweight vanilla JS for conditional UI fields
+        // This replaces the bulky prototype.js logic for toggling "Breed" and "Singles"
+        function initConditionalFields(selectId, breedWrapperId, singlesWrapperId) {
+            const selectEl = document.getElementById(selectId);
+            const breedWrapper = document.getElementById(breedWrapperId);
+            const singlesWrapper = document.getElementById(singlesWrapperId);
+
+            if (!selectEl || !breedWrapper || !singlesWrapper) return;
+
+            selectEl.addEventListener('change', (e) => {
+                const val = e.target.value;
+                
+                // Show "Breed" only for Specialties
+                if(val === 'Specialty' || val === 'National  Breed Specialty') {
+                    breedWrapper.classList.remove('hidden');
+                } else {
+                    breedWrapper.classList.add('hidden');
+                    // Optional: clear out value if hidden
+                    breedWrapper.querySelector('input').value = '';
+                }
+
+                // Show "Singles" for Specialty and Invitational
+                if(val === 'Specialty' || val === 'Invitational' || val === 'National  Breed Specialty') {
+                    singlesWrapper.classList.remove('hidden');
+                } else {
+                    singlesWrapper.classList.add('hidden');
+                    // Optional: clear radio checked states
+                    const radios = singlesWrapper.querySelectorAll('input[type="radio"]');
+                    radios.forEach(r => r.checked = false);
+                }
+            });
+        }
+
+        // Initialize for Date 1 and Date 2
+        initConditionalFields('input_91', 'id_20', 'id_86');
+        initConditionalFields('input_92', 'id_60', 'id_87');
+    </script>
+</body>
+</html>
