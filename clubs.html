@@ -28,7 +28,7 @@
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen">
 
-    <!-- Top Navbar (Matching other pages perfectly) -->
+    <!-- Top Navbar -->
     <header class="bg-green-800 text-white shadow-lg sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
@@ -100,8 +100,9 @@
                         </button>
                         <div class="absolute left-0 top-full -mt-2 w-56 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
                             <div class="py-2">
-                                <a href="clubs.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Clubs</a>
+                                <a href="clubs.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors font-bold">Clubs</a>
                                 <a href="officers.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Officers & Directors</a>
+                                <a href="comm.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Committees</a>
                                 <a href="judges/index.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Judges</a>
                                 <a href="rule/ASFA Suspensions as of 07-09-2025.pdf" class="block px-4 py-2 text-sm text-red-600 font-medium hover:bg-red-50 hover:text-red-800 transition-colors">Suspensions</a>
                                 <a href="quest.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Questions & Comments</a>
@@ -160,10 +161,9 @@
             </div>
         </div>
 
-        <!-- MOBILE MENU BLOCKS (Hidden by default) -->
+        <!-- MOBILE MENU BLOCKS -->
         <div id="mobile-menu" class="hidden md:hidden bg-green-800 border-t border-green-700 shadow-inner max-h-[85vh] overflow-y-auto">
             <div class="px-4 py-3 space-y-2">
-                <!-- Getting Started -->
                 <details class="group">
                     <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
                         Getting Started
@@ -178,7 +178,6 @@
                     </div>
                 </details>
                 
-                <!-- Events -->
                 <details class="group">
                     <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
                         Events
@@ -192,7 +191,6 @@
                     </div>
                 </details>
 
-                <!-- Records & Awards -->
                 <details class="group">
                     <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
                         Records & Awards
@@ -213,22 +211,21 @@
                     </div>
                 </details>
 
-                <!-- Clubs & Admin -->
                 <details class="group">
                     <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
                         Clubs & Admin
                         <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
                     <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
-                        <a href="clubs.html" class="block text-sm text-green-100 hover:text-white">Clubs</a>
+                        <a href="clubs.html" class="block text-sm text-white font-bold">Clubs</a>
                         <a href="officers.htm" class="block text-sm text-green-100 hover:text-white">Officers & Directors</a>
+                        <a href="comm.htm" class="block text-sm text-green-100 hover:text-white">Committees</a>
                         <a href="judges/index.htm" class="block text-sm text-green-100 hover:text-white">Judges</a>
                         <a href="rule/ASFA Suspensions as of 07-09-2025.pdf" class="block text-sm text-red-300 hover:text-red-100 font-medium">Suspensions</a>
                         <a href="quest.htm" class="block text-sm text-green-100 hover:text-white">Questions & Comments</a>
                     </div>
                 </details>
 
-                <!-- Forms -->
                 <details class="group">
                     <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
                         Forms
@@ -244,7 +241,6 @@
                     </div>
                 </details>
 
-                <!-- News & Media -->
                 <details class="group">
                     <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
                         News & Media
@@ -258,10 +254,8 @@
                     </div>
                 </details>
 
-                <!-- Store -->
                 <a href="store/index.htm" class="block py-2 font-bold text-amber-400 hover:text-amber-200">Store</a>
                 
-                <!-- Mobile Search -->
                 <div class="pt-4 pb-2">
                     <div class="relative">
                         <input type="text" placeholder="Search ASFA..." class="w-full bg-green-900 text-white placeholder-green-300 rounded-full py-2 pl-4 pr-10 focus:outline-none focus:ring-2 focus:ring-green-400 text-sm border border-green-700">
@@ -315,9 +309,15 @@
             <!-- Region 1 -->
             <details class="group border border-slate-200 rounded-xl bg-white shadow-sm overflow-hidden">
                 <summary class="flex justify-between items-center font-medium cursor-pointer p-5 sm:p-6 bg-slate-50 hover:bg-green-50 transition-colors">
-                    <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4">
-                        <span class="text-xl font-bold text-slate-800">Region 1</span>
-                        <span class="text-sm font-normal text-slate-500">Alaska, Idaho, Montana, Oregon, Washington</span>
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mt-1 sm:mt-0">
+                        <span class="text-xl font-bold text-slate-800 whitespace-nowrap">Region 1</span>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">Alaska</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">Idaho</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">Montana</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">Oregon</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">Washington</span>
+                        </div>
                     </div>
                     <span class="transition-transform group-open:rotate-180 text-green-700 ml-4 flex-shrink-0">
                         <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
@@ -387,9 +387,12 @@
             <!-- Region 2 -->
             <details class="group border border-slate-200 rounded-xl bg-white shadow-sm overflow-hidden">
                 <summary class="flex justify-between items-center font-medium cursor-pointer p-5 sm:p-6 bg-slate-50 hover:bg-green-50 transition-colors">
-                    <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4">
-                        <span class="text-xl font-bold text-slate-800">Region 2</span>
-                        <span class="text-sm font-normal text-slate-500">Northern California, Northern Nevada</span>
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mt-1 sm:mt-0">
+                        <span class="text-xl font-bold text-slate-800 whitespace-nowrap">Region 2</span>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">Northern California</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">Northern Nevada</span>
+                        </div>
                     </div>
                     <span class="transition-transform group-open:rotate-180 text-green-700 ml-4 flex-shrink-0">
                         <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
@@ -481,9 +484,14 @@
             <!-- Region 3 -->
             <details class="group border border-slate-200 rounded-xl bg-white shadow-sm overflow-hidden">
                 <summary class="flex justify-between items-center font-medium cursor-pointer p-5 sm:p-6 bg-slate-50 hover:bg-green-50 transition-colors">
-                    <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4">
-                        <span class="text-xl font-bold text-slate-800">Region 3</span>
-                        <span class="text-sm font-normal text-slate-500">Colorado, New Mexico, Utah, Wyoming</span>
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mt-1 sm:mt-0">
+                        <span class="text-xl font-bold text-slate-800 whitespace-nowrap">Region 3</span>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">Colorado</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">New Mexico</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">Utah</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">Wyoming</span>
+                        </div>
                     </div>
                     <span class="transition-transform group-open:rotate-180 text-green-700 ml-4 flex-shrink-0">
                         <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
@@ -568,9 +576,14 @@
             <!-- Region 4 -->
             <details class="group border border-slate-200 rounded-xl bg-white shadow-sm overflow-hidden">
                 <summary class="flex justify-between items-center font-medium cursor-pointer p-5 sm:p-6 bg-slate-50 hover:bg-green-50 transition-colors">
-                    <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4">
-                        <span class="text-xl font-bold text-slate-800">Region 4</span>
-                        <span class="text-sm font-normal text-slate-500">Arkansas, Louisiana, Oklahoma, Texas</span>
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mt-1 sm:mt-0">
+                        <span class="text-xl font-bold text-slate-800 whitespace-nowrap">Region 4</span>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">Arkansas</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">Louisiana</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">Oklahoma</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">Texas</span>
+                        </div>
                     </div>
                     <span class="transition-transform group-open:rotate-180 text-green-700 ml-4 flex-shrink-0">
                         <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
@@ -605,9 +618,17 @@
             <!-- Region 5 -->
             <details class="group border border-slate-200 rounded-xl bg-white shadow-sm overflow-hidden">
                 <summary class="flex justify-between items-center font-medium cursor-pointer p-5 sm:p-6 bg-slate-50 hover:bg-green-50 transition-colors">
-                    <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4">
-                        <span class="text-xl font-bold text-slate-800">Region 5</span>
-                        <span class="text-sm font-normal text-slate-500">Iowa, Kansas, Minnesota, Missouri, Nebraska, ND, SD</span>
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mt-1 sm:mt-0">
+                        <span class="text-xl font-bold text-slate-800 whitespace-nowrap">Region 5</span>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">Iowa</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">Kansas</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">Minnesota</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">Missouri</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">Nebraska</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">ND</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">SD</span>
+                        </div>
                     </div>
                     <span class="transition-transform group-open:rotate-180 text-green-700 ml-4 flex-shrink-0">
                         <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
@@ -712,9 +733,16 @@
             <!-- Region 6 -->
             <details class="group border border-slate-200 rounded-xl bg-white shadow-sm overflow-hidden">
                 <summary class="flex justify-between items-center font-medium cursor-pointer p-5 sm:p-6 bg-slate-50 hover:bg-green-50 transition-colors">
-                    <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4">
-                        <span class="text-xl font-bold text-slate-800">Region 6</span>
-                        <span class="text-sm font-normal text-slate-500">Illinois, Indiana, Kentucky, Michigan, Ohio, Wisconsin</span>
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mt-1 sm:mt-0">
+                        <span class="text-xl font-bold text-slate-800 whitespace-nowrap">Region 6</span>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">Illinois</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">Indiana</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">Kentucky</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">Michigan</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">Ohio</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">Wisconsin</span>
+                        </div>
                     </div>
                     <span class="transition-transform group-open:rotate-180 text-green-700 ml-4 flex-shrink-0">
                         <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
@@ -789,9 +817,17 @@
             <!-- Region 7 -->
             <details class="group border border-slate-200 rounded-xl bg-white shadow-sm overflow-hidden">
                 <summary class="flex justify-between items-center font-medium cursor-pointer p-5 sm:p-6 bg-slate-50 hover:bg-green-50 transition-colors">
-                    <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4">
-                        <span class="text-xl font-bold text-slate-800">Region 7</span>
-                        <span class="text-sm font-normal text-slate-500">Alabama, Florida, Georgia, Mississippi, NC, SC, Tennessee</span>
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mt-1 sm:mt-0">
+                        <span class="text-xl font-bold text-slate-800 whitespace-nowrap">Region 7</span>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">Alabama</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">Florida</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">Georgia</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">Mississippi</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">NC</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">SC</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">Tennessee</span>
+                        </div>
                     </div>
                     <span class="transition-transform group-open:rotate-180 text-green-700 ml-4 flex-shrink-0">
                         <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
@@ -866,9 +902,17 @@
             <!-- Region 8 -->
             <details class="group border border-slate-200 rounded-xl bg-white shadow-sm overflow-hidden">
                 <summary class="flex justify-between items-center font-medium cursor-pointer p-5 sm:p-6 bg-slate-50 hover:bg-green-50 transition-colors">
-                    <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4">
-                        <span class="text-xl font-bold text-slate-800">Region 8</span>
-                        <span class="text-sm font-normal text-slate-500">Delaware, D.C., Maryland, New Jersey, PA, Virginia, West Virginia</span>
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mt-1 sm:mt-0">
+                        <span class="text-xl font-bold text-slate-800 whitespace-nowrap">Region 8</span>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">Delaware</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">D.C.</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">Maryland</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">New Jersey</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">PA</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">Virginia</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">West Virginia</span>
+                        </div>
                     </div>
                     <span class="transition-transform group-open:rotate-180 text-green-700 ml-4 flex-shrink-0">
                         <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
@@ -983,9 +1027,18 @@
             <!-- Region 9 -->
             <details class="group border border-slate-200 rounded-xl bg-white shadow-sm overflow-hidden">
                 <summary class="flex justify-between items-center font-medium cursor-pointer p-5 sm:p-6 bg-slate-50 hover:bg-green-50 transition-colors">
-                    <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4">
-                        <span class="text-xl font-bold text-slate-800">Region 9</span>
-                        <span class="text-sm font-normal text-slate-500">CT, ME, MA, NH, NY, RI, VT, Ontario (Canada)</span>
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mt-1 sm:mt-0">
+                        <span class="text-xl font-bold text-slate-800 whitespace-nowrap">Region 9</span>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">CT</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">ME</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">MA</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">NH</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">NY</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">RI</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">VT</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">Ontario (Canada)</span>
+                        </div>
                     </div>
                     <span class="transition-transform group-open:rotate-180 text-green-700 ml-4 flex-shrink-0">
                         <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
@@ -1070,9 +1123,14 @@
             <!-- Region 10 -->
             <details class="group border border-slate-200 rounded-xl bg-white shadow-sm overflow-hidden">
                 <summary class="flex justify-between items-center font-medium cursor-pointer p-5 sm:p-6 bg-slate-50 hover:bg-green-50 transition-colors">
-                    <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4">
-                        <span class="text-xl font-bold text-slate-800">Region 10</span>
-                        <span class="text-sm font-normal text-slate-500">Arizona, Southern California, Hawaii, Southern Nevada</span>
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mt-1 sm:mt-0">
+                        <span class="text-xl font-bold text-slate-800 whitespace-nowrap">Region 10</span>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">Arizona</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">Southern California</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">Hawaii</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2.5 py-0.5 rounded-full font-medium border border-green-200">Southern Nevada</span>
+                        </div>
                     </div>
                     <span class="transition-transform group-open:rotate-180 text-green-700 ml-4 flex-shrink-0">
                         <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
@@ -1127,7 +1185,7 @@
         </div>
     </main>
 
-    <!-- Enhanced Footer -->
+    <!-- Enhanced Footer (Matching other pages perfectly) -->
     <footer class="bg-slate-900 text-slate-300 py-12 mt-auto border-t-4 border-green-700">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 border-b border-slate-800 pb-8 mb-8">
