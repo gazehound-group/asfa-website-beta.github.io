@@ -3,22 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>American Sighthound Field Association - Official Website</title>
-    <!-- Tailwind CSS -->
+    <title>American Sighthound Field Association (ASFA)</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Шрифты -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
-        
-        /* Паттерн в точку для зеленого фона (Hero Section) */
-        .hero-pattern {
-            background-color: #166534; /* Tailwind green-800 */
-            background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1.5px, transparent 1.5px);
-            background-size: 24px 24px;
-        }
         
         /* Hide default details marker for mobile menu */
         details > summary { list-style: none; }
@@ -27,7 +18,6 @@
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
 
-    <!-- Top Navbar -->
     <header class="bg-green-800 text-white shadow-lg sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
@@ -39,7 +29,6 @@
                 </div>
 
                 <nav class="hidden md:flex space-x-3 lg:space-x-5 items-center">
-                    <!-- Getting Started -->
                     <div class="relative group py-4">
                         <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
                             Getting Started
@@ -56,7 +45,6 @@
                         </div>
                     </div>
                     
-                    <!-- Events -->
                     <div class="relative group py-4">
                         <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
                             Events
@@ -72,7 +60,6 @@
                         </div>
                     </div>
                     
-                    <!-- Records & Awards -->
                     <div class="relative group py-4">
                         <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
                             Records & Awards
@@ -95,7 +82,6 @@
                         </div>
                     </div>
                     
-                    <!-- Clubs & Admin -->
                     <div class="relative group py-4">
                         <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
                             Clubs & Admin
@@ -105,6 +91,7 @@
                             <div class="py-2">
                                 <a href="clubs.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Clubs</a>
                                 <a href="officers.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Officers & Directors</a>
+                                <a href="comm.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Committees</a>
                                 <a href="judges/index.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Judges</a>
                                 <a href="rule/ASFA Suspensions as of 07-09-2025.pdf" class="block px-4 py-2 text-sm text-red-600 font-medium hover:bg-red-50 hover:text-red-800 transition-colors">Suspensions</a>
                                 <a href="quest.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Questions & Comments</a>
@@ -112,7 +99,6 @@
                         </div>
                     </div>
                     
-                    <!-- Forms -->
                     <div class="relative group py-4">
                         <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
                             Forms
@@ -130,13 +116,11 @@
                         </div>
                     </div>
                     
-                    <!-- News & Media -->
                     <div class="relative group py-4">
                         <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
                             News & Media
                             <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </button>
-                        <!-- Используем right-0 чтобы меню не вылезало за правый край экрана -->
                         <div class="absolute right-0 top-full -mt-2 w-56 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
                             <div class="py-2">
                                 <a href="communique/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">ASFA Communique</a>
@@ -147,7 +131,6 @@
                         </div>
                     </div>
 
-                    <!-- Direct Links -->
                     <a href="store/index.htm" class="text-amber-400 hover:text-amber-200 transition font-bold text-xs lg:text-sm py-4">Store</a>
                 </nav>
 
@@ -166,10 +149,8 @@
             </div>
         </div>
 
-        <!-- MOBILE MENU BLOCKS (Hidden by default) -->
         <div id="mobile-menu" class="hidden md:hidden bg-green-800 border-t border-green-700 shadow-inner max-h-[85vh] overflow-y-auto">
             <div class="px-4 py-3 space-y-2">
-                <!-- Getting Started -->
                 <details class="group">
                     <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
                         Getting Started
@@ -184,7 +165,6 @@
                     </div>
                 </details>
                 
-                <!-- Events -->
                 <details class="group">
                     <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
                         Events
@@ -198,7 +178,6 @@
                     </div>
                 </details>
 
-                <!-- Records & Awards -->
                 <details class="group">
                     <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
                         Records & Awards
@@ -219,7 +198,6 @@
                     </div>
                 </details>
 
-                <!-- Clubs & Admin -->
                 <details class="group">
                     <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
                         Clubs & Admin
@@ -228,13 +206,13 @@
                     <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
                         <a href="clubs.html" class="block text-sm text-green-100 hover:text-white">Clubs</a>
                         <a href="officers.htm" class="block text-sm text-green-100 hover:text-white">Officers & Directors</a>
+                        <a href="comm.htm" class="block text-sm text-green-100 hover:text-white">Committees</a>
                         <a href="judges/index.htm" class="block text-sm text-green-100 hover:text-white">Judges</a>
                         <a href="rule/ASFA Suspensions as of 07-09-2025.pdf" class="block text-sm text-red-300 hover:text-red-100 font-medium">Suspensions</a>
                         <a href="quest.htm" class="block text-sm text-green-100 hover:text-white">Questions & Comments</a>
                     </div>
                 </details>
 
-                <!-- Forms -->
                 <details class="group">
                     <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
                         Forms
@@ -250,7 +228,6 @@
                     </div>
                 </details>
 
-                <!-- News & Media -->
                 <details class="group">
                     <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
                         News & Media
@@ -264,10 +241,8 @@
                     </div>
                 </details>
 
-                <!-- Store -->
                 <a href="store/index.htm" class="block py-2 font-bold text-amber-400 hover:text-amber-200">Store</a>
                 
-                <!-- Mobile Search -->
                 <div class="pt-4 pb-2">
                     <div class="relative">
                         <input type="text" placeholder="Search ASFA..." class="w-full bg-green-900 text-white placeholder-green-300 rounded-full py-2 pl-4 pr-10 focus:outline-none focus:ring-2 focus:ring-green-400 text-sm border border-green-700">
@@ -278,112 +253,108 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero-pattern text-white py-20 lg:py-28 px-4 border-b-8 border-white">
-        <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight leading-tight">
-                American Sighthound<br>Field Association
-            </h1>
-            <p class="text-lg md:text-xl font-medium mb-10 max-w-2xl mx-auto text-green-50">
-                Preserving and further developing the natural beauty, grace, speed, and coursing skill of the sighthound since 1972.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                <a href="coursing.htm" class="w-full sm:w-auto bg-white text-green-900 px-8 py-3.5 rounded-full font-bold shadow-lg hover:bg-green-50 hover:shadow-xl transition transform hover:-translate-y-0.5">
-                    Discover Lure Coursing
-                </a>
-                <a href="schedule.html" class="w-full sm:w-auto bg-green-700/80 text-white border border-green-500/50 backdrop-blur-sm px-8 py-3.5 rounded-full font-bold shadow-lg hover:bg-green-600 transition transform hover:-translate-y-0.5">
-                    View Event Schedule
-                </a>
-                <a href="clubs.html" class="w-full sm:w-auto bg-green-700/80 text-white border border-green-500/50 backdrop-blur-sm px-8 py-3.5 rounded-full font-bold shadow-lg hover:bg-green-600 transition transform hover:-translate-y-0.5">
-                    Find Clubs
-                </a>
+    <div class="relative bg-green-900 overflow-hidden border-b border-green-800 shadow-inner">
+        <div class="max-w-7xl mx-auto">
+            <div class="relative z-10 pb-8 bg-green-900 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32 pt-10 sm:pt-16 lg:pt-20">
+                
+                <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-green-900 transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+                    <polygon points="50,0 100,0 50,100 0,100" />
+                </svg>
+
+                <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 relative z-20">
+                    <div class="sm:text-center lg:text-left">
+                        <h1 class="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
+                            <span class="block">American Sighthound</span>
+                            <span class="block text-green-400">Field Association</span>
+                        </h1>
+                        <p class="mt-3 text-base text-green-100 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 leading-relaxed">
+                            The American Sighthound Field Association is dedicated to preserving the natural beauty, grace, speed, and coursing skill of the sighthound.
+                        </p>
+                        <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                            <div class="rounded-md shadow">
+                                <a href="coursing.htm" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-bold rounded-md text-green-900 bg-amber-400 hover:bg-amber-300 md:py-4 md:text-lg md:px-10 transition duration-150 ease-in-out">
+                                    Learn About the Sport
+                                </a>
+                            </div>
+                            <div class="mt-3 sm:mt-0 sm:ml-3">
+                                <a href="schedule.html" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-bold rounded-md text-white bg-green-700 hover:bg-green-600 md:py-4 md:text-lg md:px-10 transition duration-150 ease-in-out shadow-sm">
+                                    Find a Trial Near You
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </main>
             </div>
         </div>
-    </section>
+        <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 bg-green-900">
+            <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full opacity-90 hover:opacity-100 transition duration-300" src="beta main page image.png" alt="Brindle sighthound in a yellow racing blanket at full speed chasing a lure across a field of yellow flowers">
+        </div>
+    </div>
 
-    <!-- Main Content -->
-    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+    <main class="flex-grow bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
             
-            <!-- Left Column: ASFA Explained -->
-            <div class="lg:col-span-2 bg-white rounded-2xl shadow-sm border border-slate-200 p-8 md:p-10">
-                <h2 class="text-2xl font-bold text-slate-800 mb-6 flex items-center gap-3">
-                    <svg class="w-6 h-6 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    ASFA Explained
-                </h2>
-                
-                <div class="space-y-5 text-slate-600 leading-relaxed text-[15px]">
-                    <p>
-                        The American Sighthound Field Association was founded in 1972. Since then, the ASFA has been promoting the sport of lure coursing throughout the US. We are proud to be the first nationally known association for lure coursing.
-                    </p>
-                    <p>
-                        In the sport of lure coursing we do not chase live game; we use a plastic bag on a string powered by motors. The hounds love to "hunt" the plastic bag. You need only to see the speed, enthusiasm, ability, follow, and endurance expressed by these wonderful sleek hounds to become hooked on the sport.
-                    </p>
-                    <p>
-                        ASFA sponsored lure coursing trials are held on most weekends throughout the year, usually in multiple locations around the country. You can find clubs in your area by exploring the regions below. A schedule of events can be found by clicking on the Trial Schedule link. ASFA field trials can offer you, your family, and your sighthound a day of great fun.
-                    </p>
-                </div>
-
-                <div class="mt-8 bg-slate-50 border border-slate-200 rounded-lg p-5">
-                    <p class="text-sm text-slate-500 italic">
-                        <strong>Note:</strong> All references on this website to the CKC mean the <strong>Canadian Kennel Club</strong>, unless expressly stated otherwise.
-                    </p>
-                </div>
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-extrabold text-slate-900 sm:text-4xl">Welcome to ASFA</h2>
+                <p class="mt-4 max-w-2xl text-xl text-slate-500 mx-auto">
+                    Governing the exhilarating sport of Lure Coursing for purebred sighthounds across North America since 1972.
+                </p>
             </div>
 
-            <!-- Right Column: Sidebar Widgets -->
-            <div class="flex flex-col gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 
-                <!-- Latest Updates Widget -->
-                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
-                    <div class="bg-red-700 text-white px-6 py-4 flex items-center gap-3">
-                        <svg class="w-5 h-5 text-white/90 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"></path></svg>
-                        <h3 class="font-bold text-lg">Latest Updates</h3>
-                    </div>
-                    <div class="p-2">
-                        <ul class="divide-y divide-slate-100 text-sm">
-                            <li>
-                                <a href="communique.html" class="flex items-start gap-4 p-4 hover:bg-slate-50 transition rounded-lg group">
-                                    <svg class="w-5 h-5 text-red-500 mt-0.5 group-hover:text-red-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-                                    <span class="text-slate-700 font-medium group-hover:text-red-700 transition">Jan/Feb 2026 Communique</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="letter.htm" class="flex items-start gap-4 p-4 hover:bg-slate-50 transition rounded-lg group">
-                                    <svg class="w-5 h-5 text-red-500 mt-0.5 group-hover:text-red-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
-                                    <span class="text-slate-700 font-medium group-hover:text-red-700 transition">New President's Message, November 2025</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="records.html" class="flex items-start gap-4 p-4 hover:bg-slate-50 transition rounded-lg group">
-                                    <svg class="w-5 h-5 text-red-500 mt-0.5 group-hover:text-red-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"></path></svg>
-                                    <span class="text-slate-700 font-medium group-hover:text-red-700 transition">Electronic Submission of Records</span>
-                                </a>
-                            </li>
-                        </ul>
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition">
+                    <div class="p-6">
+                        <div class="w-12 h-12 bg-green-100 text-green-700 rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Upcoming Events</h3>
+                        <p class="text-slate-600 mb-4 text-sm leading-relaxed">
+                            Check out our interactive trial schedule to find local lure coursing events, regional invitationals, and download premium lists.
+                        </p>
+                        <a href="schedule.html" class="text-green-600 font-semibold hover:text-green-800 text-sm flex items-center gap-1 group">
+                            View Schedule 
+                            <svg class="w-4 h-4 transform group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </a>
                     </div>
                 </div>
 
-                <!-- Shop ASFA Widget -->
-                <div class="bg-slate-50 rounded-2xl shadow-sm border border-slate-200 p-8 text-center flex flex-col items-center">
-                    <div class="bg-white p-3 rounded-full shadow-sm border border-amber-100 mb-4">
-                        <svg class="w-8 h-8 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition">
+                    <div class="p-6">
+                        <div class="w-12 h-12 bg-amber-100 text-amber-700 rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Rulebook & Policies</h3>
+                        <p class="text-slate-600 mb-4 text-sm leading-relaxed">
+                            Everything you need to know about the rules of competition, running procedures, eligible breeds, and judging criteria.
+                        </p>
+                        <a href="rulebook.html" class="text-amber-600 font-semibold hover:text-amber-800 text-sm flex items-center gap-1 group">
+                            Read the Rules 
+                            <svg class="w-4 h-4 transform group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </a>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-800 mb-3">Shop ASFA</h3>
-                    <p class="text-sm text-slate-600 mb-6 leading-relaxed">
-                        Get official gear, forms, and pamphlets from the ASFA Store.
-                    </p>
-                    <a href="store/index.htm" class="bg-amber-500 text-white px-6 py-2.5 rounded-full font-bold text-sm shadow-md hover:bg-amber-600 hover:shadow-lg transition transform hover:-translate-y-0.5 inline-flex items-center gap-2">
-                        Visit Store
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                    </a>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition">
+                    <div class="p-6">
+                        <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Clubs & Regions</h3>
+                        <p class="text-slate-600 mb-4 text-sm leading-relaxed">
+                            Find an ASFA member club in your region to get connected with local fanciers, practices, and volunteer opportunities.
+                        </p>
+                        <a href="clubs.html" class="text-blue-600 font-semibold hover:text-blue-800 text-sm flex items-center gap-1 group">
+                            Find a Club 
+                            <svg class="w-4 h-4 transform group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </a>
+                    </div>
                 </div>
 
             </div>
         </div>
     </main>
 
-    <!-- Footer -->
     <footer class="bg-slate-900 text-slate-300 py-12 mt-auto border-t-4 border-green-700">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 border-b border-slate-800 pb-8 mb-8">
@@ -432,7 +403,6 @@
         </div>
     </footer>
 
-    <!-- Script to toggle Mobile Menu -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const mobileBtn = document.getElementById('mobile-menu-btn');
