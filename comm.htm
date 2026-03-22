@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Sighthound Field Association - Committees</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        
+        /* Hide default details marker for mobile menu */
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+    <!-- Top Navbar (Full Menu) -->
+    <header class="bg-green-800 text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <a href="index.html" class="flex items-center gap-3 hover:opacity-90 transition">
+                        <img src="ASFALOGO.jpg" alt="ASFA Logo" class="w-12 h-12 rounded-full bg-white p-0.5 object-contain shadow-sm border border-green-600">
+                        <span class="font-bold text-xl tracking-tight hidden sm:block">ASFA</span>
+                    </a>
+                </div>
+
+                <nav class="hidden md:flex space-x-3 lg:space-x-5 items-center">
+                    <!-- Getting Started -->
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Getting Started
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-56 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="coursing.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Sport of Lure Coursing</a>
+                                <a href="breeds/index.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Eligible Breeds</a>
+                                <a href="rulebook.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Rule Book/Policies</a>
+                                <a href="forms/pubs.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Pamphlets & Videos</a>
+                                <a href="https://www.ncsl.org/public/leglinks.cfm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Animal Advisory</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Events -->
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Events
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-48 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="schedule.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Schedule</a>
+                                <a href="ii26/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">2026 ASFA II</a>
+                                <a href="regionals/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Regionals</a>
+                                <a href="acod/2025/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">ACoD 2025</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Records & Awards -->
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Records & Awards
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-64 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2 max-h-[80vh] overflow-y-auto">
+                                <a href="trial/index0111.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Results</a>
+                                <a href="20/index.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Top 20</a>
+                                <a href="titles/index.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">New Titles</a>
+                                <a href="records/index.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Hound Records</a>
+                                <a href="20/lifetime.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Lifetime Top 20</a>
+                                <div class="h-px bg-slate-200 my-1"></div>
+                                <a href="hof/index.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors font-medium">Hall of Fame</a>
+                                <a href="gf/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Gary Forrester Award</a>
+                                <a href="epa/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Excellence in Performance</a>
+                                <a href="incentive award/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Incentive Award</a>
+                                <a href="Lure Operator/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Lure Operator of the Year</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Clubs & Admin -->
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Clubs & Admin
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-56 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="clubs.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Clubs</a>
+                                <a href="officers.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Officers & Directors</a>
+                                <a href="comm.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors font-bold">Committees</a>
+                                <a href="judges/index.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Judges</a>
+                                <a href="rule/ASFA Suspensions as of 07-09-2025.pdf" class="block px-4 py-2 text-sm text-red-600 font-medium hover:bg-red-50 hover:text-red-800 transition-colors">Suspensions</a>
+                                <a href="quest.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Questions & Comments</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Forms -->
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Forms
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-60 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="trial.htm#entry" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Entry Forms</a>
+                                <a href="trial.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Forms</a>
+                                <a href="trial_date_request.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Date Request</a>
+                                <div class="h-px bg-slate-200 my-1"></div>
+                                <a href="membership.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Club Membership Forms</a>
+                                <a href="clubs/renewal_form.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Online Renewal</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- News & Media -->
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            News & Media
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute right-0 top-full -mt-2 w-56 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="communique/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">ASFA Communique</a>
+                                <a href="letter.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">President's Message</a>
+                                <a href="mission.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Mission Statement</a>
+                                <a href="album/index.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Photo Album</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="store/index.htm" class="text-amber-400 hover:text-amber-200 transition font-bold text-xs lg:text-sm py-4">Store</a>
+                </nav>
+
+                <div class="flex items-center hidden sm:block">
+                    <div class="relative">
+                        <input type="text" placeholder="Search ASFA..." class="bg-green-900 text-white placeholder-green-300 rounded-full py-1.5 pl-4 pr-10 focus:outline-none focus:ring-2 focus:ring-green-400 text-sm w-40 lg:w-48">
+                        <svg class="w-4 h-4 absolute right-3 top-2 text-green-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </div>
+                </div>
+                
+                <!-- MOBILE MENU BUTTON -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white focus:outline-none hover:text-green-200 transition">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOBILE MENU BLOCKS (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-green-800 border-t border-green-700 shadow-inner max-h-[85vh] overflow-y-auto">
+            <div class="px-4 py-3 space-y-2">
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        Getting Started
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="coursing.htm" class="block text-sm text-green-100 hover:text-white">Sport of Lure Coursing</a>
+                        <a href="breeds/index.htm" class="block text-sm text-green-100 hover:text-white">Eligible Breeds</a>
+                        <a href="rulebook.html" class="block text-sm text-green-100 hover:text-white">Rule Book/Policies</a>
+                        <a href="forms/pubs.htm" class="block text-sm text-green-100 hover:text-white">Pamphlets & Videos</a>
+                        <a href="https://www.ncsl.org/public/leglinks.cfm" class="block text-sm text-green-100 hover:text-white">Animal Advisory</a>
+                    </div>
+                </details>
+                
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        Events
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="schedule.html" class="block text-sm text-green-100 hover:text-white">Trial Schedule</a>
+                        <a href="ii26/index.html" class="block text-sm text-green-100 hover:text-white">2026 ASFA II</a>
+                        <a href="regionals/index.html" class="block text-sm text-green-100 hover:text-white">Regionals</a>
+                        <a href="acod/2025/index.html" class="block text-sm text-green-100 hover:text-white">ACoD 2025</a>
+                    </div>
+                </details>
+
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        Records & Awards
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="trial/index0111.html" class="block text-sm text-green-100 hover:text-white">Trial Results</a>
+                        <a href="20/index.htm" class="block text-sm text-green-100 hover:text-white">Top 20</a>
+                        <a href="titles/index.htm" class="block text-sm text-green-100 hover:text-white">New Titles</a>
+                        <a href="records/index.htm" class="block text-sm text-green-100 hover:text-white">Hound Records</a>
+                        <a href="20/lifetime.htm" class="block text-sm text-green-100 hover:text-white">Lifetime Top 20</a>
+                        <div class="h-px bg-green-700 my-1 w-3/4"></div>
+                        <a href="hof/index.htm" class="block text-sm text-green-100 hover:text-white font-medium">Hall of Fame</a>
+                        <a href="gf/index.html" class="block text-sm text-green-100 hover:text-white">Gary Forrester Award</a>
+                        <a href="epa/index.html" class="block text-sm text-green-100 hover:text-white">Excellence in Performance</a>
+                        <a href="incentive award/index.html" class="block text-sm text-green-100 hover:text-white">Incentive Award</a>
+                        <a href="Lure Operator/index.html" class="block text-sm text-green-100 hover:text-white">Lure Operator of the Year</a>
+                    </div>
+                </details>
+
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        Clubs & Admin
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="clubs.html" class="block text-sm text-green-100 hover:text-white">Clubs</a>
+                        <a href="officers.htm" class="block text-sm text-green-100 hover:text-white">Officers & Directors</a>
+                        <a href="comm.htm" class="block text-sm text-white font-bold">Committees</a>
+                        <a href="judges/index.htm" class="block text-sm text-green-100 hover:text-white">Judges</a>
+                        <a href="rule/ASFA Suspensions as of 07-09-2025.pdf" class="block text-sm text-red-300 hover:text-red-100 font-medium">Suspensions</a>
+                        <a href="quest.htm" class="block text-sm text-green-100 hover:text-white">Questions & Comments</a>
+                    </div>
+                </details>
+
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        Forms
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="trial.htm#entry" class="block text-sm text-green-100 hover:text-white">Entry Forms</a>
+                        <a href="trial.htm" class="block text-sm text-green-100 hover:text-white">Trial Forms</a>
+                        <a href="trial_date_request.html" class="block text-sm text-green-100 hover:text-white">Trial Date Request</a>
+                        <div class="h-px bg-green-700 my-1 w-3/4"></div>
+                        <a href="membership.htm" class="block text-sm text-green-100 hover:text-white">Club Membership Forms</a>
+                        <a href="clubs/renewal_form.htm" class="block text-sm text-green-100 hover:text-white">Online Renewal</a>
+                    </div>
+                </details>
+
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        News & Media
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="communique/index.html" class="block text-sm text-green-100 hover:text-white">ASFA Communique</a>
+                        <a href="letter.htm" class="block text-sm text-green-100 hover:text-white">President's Message</a>
+                        <a href="mission.htm" class="block text-sm text-green-100 hover:text-white">Mission Statement</a>
+                        <a href="album/index.htm" class="block text-sm text-green-100 hover:text-white">Photo Album</a>
+                    </div>
+                </details>
+
+                <a href="store/index.htm" class="block py-2 font-bold text-amber-400 hover:text-amber-200">Store</a>
+                
+                <div class="pt-4 pb-2">
+                    <div class="relative">
+                        <input type="text" placeholder="Search ASFA..." class="w-full bg-green-900 text-white placeholder-green-300 rounded-full py-2 pl-4 pr-10 focus:outline-none focus:ring-2 focus:ring-green-400 text-sm border border-green-700">
+                        <svg class="w-4 h-4 absolute right-3 top-2.5 text-green-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full">
+        
+        <!-- Breadcrumbs -->
+        <nav class="mb-6" aria-label="Breadcrumb">
+            <ol class="flex items-center space-x-2 text-sm text-slate-500">
+                <li><a href="index.html" class="hover:text-green-700 transition">Home</a></li>
+                <li><svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></li>
+                <li><span class="text-slate-400">Clubs & Admin</span></li>
+                <li><svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></li>
+                <li><span class="text-slate-800 font-semibold">ASFA Committees</span></li>
+            </ol>
+        </nav>
+
+        <!-- Header -->
+        <div class="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-6">
+            <div>
+                <h1 class="text-4xl font-extrabold text-slate-900 tracking-tight">ASFA Committees</h1>
+                <p class="mt-2 text-slate-600 max-w-2xl text-sm">
+                    Current roster of the American Sighthound Field Association committees and their respective chairs and members for the 2025-2026 term. 
+                </p>
+            </div>
+            
+            <div class="flex-shrink-0">
+                <a href="officers.htm" class="inline-flex items-center px-4 py-2 bg-green-100 hover:bg-green-200 text-green-800 text-sm font-semibold rounded-lg shadow-sm transition">
+                    View Officers & Directors
+                </a>
+            </div>
+        </div>
+
+        <!-- Notice Alert -->
+        <div class="bg-blue-50 border border-blue-200 border-l-4 border-l-blue-500 p-4 rounded-r-lg shadow-sm mb-10">
+            <p class="text-sm text-blue-800">
+                <strong class="font-bold">* Note:</strong> The ASFA President is an <em>ex officio</em> member of all of these committees except the Nomination Committee.
+            </p>
+        </div>
+
+        <!-- Committees Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Archives and Historical -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition">
+                <h3 class="text-lg font-bold text-green-800 mb-3 border-b border-slate-100 pb-2">Archives and Historical</h3>
+                <div class="mb-4">
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Chair</p>
+                    <p class="text-sm font-medium text-slate-800">Marilyn Standerford</p>
+                    <a href="mailto:melbox@cox.net" class="text-sm text-green-600 hover:underline">melbox@cox.net</a>
+                </div>
+                <div>
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Members</p>
+                    <p class="text-sm text-slate-700 leading-relaxed">Ben Brodeur, Sabrina Wright-Hiller, Kathy Sanders</p>
+                </div>
+            </div>
+
+            <!-- Awards -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition">
+                <h3 class="text-lg font-bold text-green-800 mb-3 border-b border-slate-100 pb-2">Awards</h3>
+                <div class="mb-4">
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Chair</p>
+                    <p class="text-sm font-medium text-slate-800">Kathy Sanders</p>
+                    <a href="mailto:rosettes@asfa.org" class="text-sm text-green-600 hover:underline">rosettes@asfa.org</a>
+                </div>
+                <div>
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Members</p>
+                    <p class="text-sm text-slate-700 leading-relaxed">Jayme Jones, Gina Whritenour</p>
+                </div>
+            </div>
+
+            <!-- Communique -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition">
+                <h3 class="text-lg font-bold text-green-800 mb-3 border-b border-slate-100 pb-2">Communique</h3>
+                <div class="mb-4">
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Editor</p>
+                    <p class="text-sm font-medium text-slate-800">Vickie Fagre-Stroetz</p>
+                    <a href="mailto:vicki.fagre.stroetz@gmail.com" class="text-sm text-green-600 hover:underline">vicki.fagre.stroetz@gmail.com</a>
+                </div>
+                <div>
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Members</p>
+                    <p class="text-sm text-slate-700 leading-relaxed">Victoria Cassano, Sally MacDowell, Lois Obelcz, Dean Wright</p>
+                </div>
+            </div>
+
+            <!-- Contract -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition">
+                <h3 class="text-lg font-bold text-green-800 mb-3 border-b border-slate-100 pb-2">Contract</h3>
+                <div class="mb-4">
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Chair</p>
+                    <p class="text-sm font-medium text-slate-800">Jennifer Gysler</p>
+                    <a href="mailto:jennifergysler@gmail.com" class="text-sm text-green-600 hover:underline">jennifergysler@gmail.com</a>
+                </div>
+                <div>
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Members</p>
+                    <p class="text-sm text-slate-700 leading-relaxed">Sean McMichael, Scott Hurlbert</p>
+                </div>
+            </div>
+
+            <!-- Executive -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition border-l-4 border-l-green-600">
+                <h3 class="text-lg font-bold text-green-800 mb-3 border-b border-slate-100 pb-2">Executive</h3>
+                <div class="mb-4">
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Chair</p>
+                    <p class="text-sm font-medium text-slate-800">Scott Hurlbert</p>
+                    <a href="mailto:President.ASFA@gmail.com" class="text-sm text-green-600 hover:underline">President.ASFA@gmail.com</a>
+                </div>
+                <div>
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Members</p>
+                    <p class="text-sm text-slate-700 leading-relaxed">Marilyn Standerford, Greg Breitbach, Ping Pirrung, Kathy Sanders, Jennifer Gysler</p>
+                    <p class="text-sm text-slate-700 mt-2"><strong>Regional Directors Liaison:</strong> Paul Sanders (<a href="mailto:allagante@yahoo.com" class="text-green-600 hover:underline">allagante@yahoo.com</a>)</p>
+                </div>
+            </div>
+
+            <!-- Field Trial Improvement -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition">
+                <h3 class="text-lg font-bold text-green-800 mb-3 border-b border-slate-100 pb-2">Field Trial Improvement</h3>
+                <div class="mb-4">
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Chair</p>
+                    <p class="text-sm font-medium text-slate-800">Greg Breitbach</p>
+                    <a href="mailto:foolishound@gmail.com" class="text-sm text-green-600 hover:underline">foolishound@gmail.com</a>
+                </div>
+                <div>
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Members</p>
+                    <p class="text-sm text-slate-700 leading-relaxed">Phil Dean, Jennifer Gysler, Darci Kunard, Sally MacDowell, Mike Hussey, Jayme Jones, Dean Wright, Tom Cigolle, Terry Sayre</p>
+                </div>
+            </div>
+
+            <!-- Finance and Budget -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition">
+                <h3 class="text-lg font-bold text-green-800 mb-3 border-b border-slate-100 pb-2">Finance and Budget</h3>
+                <div class="mb-4">
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Chair</p>
+                    <p class="text-sm font-medium text-slate-800">Ping Pirrung</p>
+                    <a href="mailto:asfacfo@gmail.com" class="text-sm text-green-600 hover:underline">asfacfo@gmail.com</a>
+                </div>
+                <div>
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Members</p>
+                    <p class="text-sm text-slate-700 leading-relaxed">Scott Hurlbert, Sean McMichael, Mary Frances Miller</p>
+                    <p class="text-sm text-slate-700 mt-2"><strong>Treasurer:</strong> Sean McMichael (<a href="mailto:Treasurer@asfa.org" class="text-green-600 hover:underline">Treasurer@asfa.org</a>)</p>
+                </div>
+            </div>
+
+            <!-- Forms Creation and Distribution -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition">
+                <h3 class="text-lg font-bold text-green-800 mb-3 border-b border-slate-100 pb-2">Forms Creation & Dist.</h3>
+                <div class="mb-4">
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Chair</p>
+                    <p class="text-sm font-medium text-slate-800">Marilyn Standerford</p>
+                    <a href="mailto:Forms@asfa.org" class="text-sm text-green-600 hover:underline">Forms@asfa.org</a>
+                </div>
+                <div>
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Members</p>
+                    <p class="text-sm text-slate-700 leading-relaxed">Debb Myer, Karen Sanders</p>
+                </div>
+            </div>
+
+            <!-- IT -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition">
+                <h3 class="text-lg font-bold text-green-800 mb-3 border-b border-slate-100 pb-2">IT</h3>
+                <div class="mb-4">
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Chair</p>
+                    <p class="text-sm font-medium text-slate-800">Sean McMichael</p>
+                    <a href="mailto:Treasurer@asfa.org" class="text-sm text-green-600 hover:underline">Treasurer@asfa.org</a>
+                </div>
+                <div>
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Members</p>
+                    <p class="text-sm text-slate-700 leading-relaxed">Cathy Sanderson, Lori Zorbaugh, Phil Fullam, Jennifer Gysler, Eddie Kominek, John Antonik</p>
+                </div>
+            </div>
+
+            <!-- Intra-Organizational Liaison -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition">
+                <h3 class="text-lg font-bold text-green-800 mb-3 border-b border-slate-100 pb-2">Intra-Org Liaison</h3>
+                <div class="mb-4">
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Chairs</p>
+                    <p class="text-sm font-medium text-slate-800">Scott Hurlbert & Jennifer Gysler</p>
+                    <a href="mailto:jennifergysler@gmail.com" class="text-sm text-green-600 hover:underline">jennifergysler@gmail.com</a>
+                </div>
+                <div>
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Members</p>
+                    <p class="text-sm text-slate-700 leading-relaxed">Phil Fullam, Ping Pirrung, Holly Hamilton, Kathy Sanders, Cathy Sanderson, Dean Wright</p>
+                </div>
+            </div>
+
+            <!-- Judges -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition">
+                <h3 class="text-lg font-bold text-green-800 mb-3 border-b border-slate-100 pb-2">Judges</h3>
+                <div class="mb-4">
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Chair</p>
+                    <p class="text-sm font-medium text-slate-800">Greg Breitbach</p>
+                    <a href="mailto:Vp2@asfa.org" class="text-sm text-green-600 hover:underline">Vp2@asfa.org</a>
+                </div>
+                <div>
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Members</p>
+                    <p class="text-sm text-slate-700 leading-relaxed">Josie Haumont, Ben Brodeur, Darci Kunard, Justin Dannenbring, Paul Sanders</p>
+                    <p class="text-sm text-slate-700 mt-2"><strong>Judges Licensing:</strong> Greg Breitbach (<a href="mailto:judgeslic@asfa.org" class="text-green-600 hover:underline">judgeslic@asfa.org</a>)</p>
+                </div>
+            </div>
+
+            <!-- Long Range Planning -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition">
+                <h3 class="text-lg font-bold text-green-800 mb-3 border-b border-slate-100 pb-2">Long Range Planning</h3>
+                <div class="mb-4">
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Chair</p>
+                    <p class="text-sm font-medium text-slate-800">Jennifer Gysler</p>
+                    <a href="mailto:jennifergysler@gmail.com" class="text-sm text-green-600 hover:underline">jennifergysler@gmail.com</a>
+                </div>
+                <div>
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Members</p>
+                    <p class="text-sm text-slate-700 leading-relaxed">Scott Hurlbert, Linda D'Antonio, Kathy Sanders, Greg Breitbach, Gina Whritenour, Michele Bisbee</p>
+                </div>
+            </div>
+
+            <!-- Membership -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition">
+                <h3 class="text-lg font-bold text-green-800 mb-3 border-b border-slate-100 pb-2">Membership</h3>
+                <div class="mb-4">
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Chair</p>
+                    <p class="text-sm font-medium text-slate-800">Ping Pirrung</p>
+                    <a href="mailto:Membership@asfa.org" class="text-sm text-green-600 hover:underline">Membership@asfa.org</a>
+                </div>
+                <div>
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Members</p>
+                    <p class="text-sm text-slate-700 leading-relaxed">Jayme Jones, Russ Jacobs, Cindy Antonik, Pat Spinazolla</p>
+                </div>
+            </div>
+
+            <!-- Nomination Committee -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition">
+                <h3 class="text-lg font-bold text-green-800 mb-3 border-b border-slate-100 pb-2">Nomination</h3>
+                <div class="mb-4">
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Chair</p>
+                    <p class="text-sm font-medium text-slate-800">Holly Hamilton</p>
+                    <a href="mailto:Hollylulu@aol.com" class="text-sm text-green-600 hover:underline">Hollylulu@aol.com</a>
+                </div>
+                <div>
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Members</p>
+                    <p class="text-sm text-slate-700 leading-relaxed">Ben Brodeur, Justin Dannenbring</p>
+                </div>
+            </div>
+
+            <!-- Policy Compilation -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition">
+                <h3 class="text-lg font-bold text-green-800 mb-3 border-b border-slate-100 pb-2">Policy Compilation</h3>
+                <div class="mb-4">
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Chair</p>
+                    <p class="text-sm font-medium text-slate-800">Mary Frances Miller</p>
+                    <a href="mailto:maryfrances.miller@selectactuarial.com" class="text-sm text-green-600 hover:underline">maryfrances.miller@selectactuarial.com</a>
+                </div>
+                <div>
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Members</p>
+                    <p class="text-sm text-slate-700 leading-relaxed">Kent Standerford, Josie Haumont, Sabrina Wright-Hiller, Victoria Cassano, Phil Fullam</p>
+                </div>
+            </div>
+
+            <!-- Public Outreach -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition">
+                <h3 class="text-lg font-bold text-green-800 mb-3 border-b border-slate-100 pb-2">Public Outreach</h3>
+                <div class="mb-4">
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Chair</p>
+                    <p class="text-sm font-medium text-slate-800">Holly Hamilton</p>
+                    <a href="mailto:Hollylulu@aol.com" class="text-sm text-green-600 hover:underline">Hollylulu@aol.com</a>
+                </div>
+                <div>
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Members</p>
+                    <p class="text-sm text-slate-700 leading-relaxed">All Regional Directors</p>
+                </div>
+            </div>
+
+            <!-- Records Coordination -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition border-l-4 border-l-blue-400">
+                <h3 class="text-lg font-bold text-green-800 mb-3 border-b border-slate-100 pb-2">Records Coordination</h3>
+                <div class="mb-4">
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Chair / Coordinator</p>
+                    <p class="text-sm font-medium text-slate-800">Lori Zorbaugh</p>
+                    <a href="mailto:records@asfa.org" class="text-sm text-green-600 hover:underline">records@asfa.org</a>
+                </div>
+                <div>
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Members</p>
+                    <p class="text-sm text-slate-700 leading-relaxed">Eddie Kominek, Sean McMichael</p>
+                </div>
+            </div>
+
+            <!-- Records Search -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition">
+                <h3 class="text-lg font-bold text-green-800 mb-3 border-b border-slate-100 pb-2">Records Search</h3>
+                <div class="mb-4">
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Chair</p>
+                    <p class="text-sm font-medium text-slate-800">Phil Fullam</p>
+                    <a href="mailto:phil.dogs@designimprovement.com" class="text-sm text-green-600 hover:underline">phil.dogs@designimprovement.com</a>
+                </div>
+                <div>
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Members</p>
+                    <p class="text-sm text-slate-700 leading-relaxed">Scott Hurlbert, Cathy Sanderson, Phil Dean</p>
+                </div>
+            </div>
+
+            <!-- Regional Directors & Invitationals -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition md:col-span-2 lg:col-span-3">
+                <h3 class="text-lg font-bold text-green-800 mb-4 border-b border-slate-100 pb-2">Regional Directors & Invitationals</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div>
+                        <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Chair, Regional Directors</p>
+                        <p class="text-sm font-medium text-slate-800">Paul Sanders</p>
+                        <a href="mailto:allagante@yahoo.com" class="text-sm text-green-600 hover:underline block mb-2">allagante@yahoo.com</a>
+                        <p class="text-sm text-slate-700"><strong>Vice Chair:</strong> Jayme Jones</p>
+                        <p class="text-sm text-slate-700"><strong>Members:</strong> All Regional Directors</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Chair, Invitationals</p>
+                        <p class="text-sm font-medium text-slate-800">Paul Sanders</p>
+                        <a href="mailto:allagante@yahoo.com" class="text-sm text-green-600 hover:underline block mb-2">allagante@yahoo.com</a>
+                        <p class="text-sm text-slate-700"><strong>Members:</strong> All Regional Directors</p>
+                        <p class="text-sm text-slate-700 mt-2"><strong>Chair, EPA:</strong> Jayme Jones (<a href="mailto:Reg2Dir@asfa.org" class="text-green-600 hover:underline">Reg2Dir@asfa.org</a>)</p>
+                    </div>
+                    <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
+                        <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Sub-Committee: Links to the Past</p>
+                        <p class="text-sm font-medium text-slate-800">Kathy Nelson, Chair</p>
+                        <a href="mailto:rundogs2017@gmail.com" class="text-sm text-green-600 hover:underline block mb-2">rundogs2017@gmail.com</a>
+                        <p class="text-sm text-slate-700"><strong>Members:</strong> Scott Hurlbert, Kathy Sanders (Awards Chair), Paul Sanders (RD Chair)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rules Evaluation -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition">
+                <h3 class="text-lg font-bold text-green-800 mb-3 border-b border-slate-100 pb-2">Rules Evaluation</h3>
+                <div class="mb-4">
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Chair</p>
+                    <p class="text-sm font-medium text-slate-800">Marilyn Standerford</p>
+                    <a href="mailto:melbox@cox.net" class="text-sm text-green-600 hover:underline">melbox@cox.net</a>
+                </div>
+                <div>
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Members</p>
+                    <p class="text-sm text-slate-700 leading-relaxed">Russ Jacobs, Kathy Sanders</p>
+                    <p class="text-sm text-slate-700 mt-2"><strong>Alternates:</strong> Ping Pirrung, Phil Dean</p>
+                </div>
+            </div>
+
+            <!-- Scheduling -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition">
+                <h3 class="text-lg font-bold text-green-800 mb-3 border-b border-slate-100 pb-2">Scheduling</h3>
+                <div class="mb-4">
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Chair</p>
+                    <p class="text-sm font-medium text-slate-800">Samantha Duryee</p>
+                    <a href="mailto:asfasched@gmail.com" class="text-sm text-green-600 hover:underline">asfasched@gmail.com</a>
+                </div>
+                <div>
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Members</p>
+                    <p class="text-sm text-slate-700 leading-relaxed">Lori Zorbaugh, Marilyn Standerford</p>
+                </div>
+            </div>
+
+            <!-- Website -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition">
+                <h3 class="text-lg font-bold text-green-800 mb-3 border-b border-slate-100 pb-2">Website</h3>
+                <div class="mb-4">
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Internet Liaison</p>
+                    <p class="text-sm font-medium text-slate-800">Marilyn Standerford</p>
+                    <a href="mailto:Webmaster@asfa.org" class="text-sm text-green-600 hover:underline">Webmaster@asfa.org</a>
+                </div>
+                <div>
+                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Web Designer</p>
+                    <p class="text-sm font-medium text-slate-800">Jean Hampton</p>
+                    <a href="mailto:webmaster@asfa.org" class="text-sm text-green-600 hover:underline block">webmaster@asfa.org</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-300 py-12 mt-auto border-t-4 border-green-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 border-b border-slate-800 pb-8 mb-8">
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Competition</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="schedule.html" class="hover:text-green-400 transition">Trial Schedule</a></li>
+                        <li><a href="trial/index0111.html" class="hover:text-green-400 transition">Trial Results</a></li>
+                        <li><a href="trial.htm#entry" class="hover:text-green-400 transition">Entry Forms</a></li>
+                        <li><a href="20/index.htm" class="hover:text-green-400 transition">Top 20</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Organization</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="clubs.html" class="hover:text-green-400 transition">Clubs</a></li>
+                        <li><a href="officers.htm" class="hover:text-green-400 transition">Officers & Directors</a></li>
+                        <li><a href="rulebook.html" class="hover:text-green-400 transition">Rule Book</a></li>
+                        <li><a href="quest.htm" class="hover:text-green-400 transition">Questions & Comments</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Resources</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="breeds/index.htm" class="hover:text-green-400 transition">Eligible Breeds</a></li>
+                        <li><a href="faq/index.htm" class="hover:text-green-400 transition">FAQ's</a></li>
+                        <li><a href="store/index.htm" class="hover:text-green-400 transition">ASFA Store</a></li>
+                        <li><a href="sitemap.html" class="hover:text-green-400 transition">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">About</h4>
+                    <p class="text-sm leading-relaxed text-slate-400">
+                        The American Sighthound Field Association is dedicated to preserving the natural beauty, grace, speed and coursing skill of the sighthound.
+                    </p>
+                </div>
+            </div>
+            <div class="text-center text-xs text-slate-500 space-y-4">
+                <p class="max-w-4xl mx-auto">
+                    Acceptance and use of the information contained on this website constitutes an acknowledgment that the user hereby releases and indemnifies the ASFA, its officers, directors, members and agents from any and all liability and damages sustained by the user as a result of any information obtained from this web site.
+                </p>
+                <p>
+                    &copy; 2002-2026 American Sighthound Field Association. All rights reserved. No part of this site may be reproduced without written permission from the <a href="mailto:webmaster@asfa.org" class="text-green-500 hover:text-green-400 underline">ASFA Webmasters</a>.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script to toggle Mobile Menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if (mobileBtn && mobileMenu) {
+                mobileBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
