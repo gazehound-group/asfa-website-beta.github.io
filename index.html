@@ -19,16 +19,20 @@
             background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1.5px, transparent 1.5px);
             background-size: 24px 24px;
         }
+        
+        /* Hide default details marker for mobile menu */
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
 
-    <!-- Top Navbar (Из clubs.html) -->
+    <!-- Top Navbar -->
     <header class="bg-green-800 text-white shadow-lg sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex-shrink-0 flex items-center gap-3">
-                    <a href="" class="flex items-center gap-3 hover:opacity-90 transition">
+                    <a href="index.html" class="flex items-center gap-3 hover:opacity-90 transition">
                         <img src="ASFALOGO.jpg" alt="ASFA Logo" class="w-12 h-12 rounded-full bg-white p-0.5 object-contain shadow-sm border border-green-600">
                         <span class="font-bold text-xl tracking-tight hidden sm:block">ASFA</span>
                     </a>
@@ -155,10 +159,121 @@
                 </div>
                 
                 <div class="md:hidden flex items-center">
-    <button id="mobile-menu-btn" class="text-white focus:outline-none hover:text-green-200 transition">
-        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-    </button>
-</div>
+                    <button id="mobile-menu-btn" class="text-white focus:outline-none hover:text-green-200 transition">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOBILE MENU BLOCKS (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-green-800 border-t border-green-700 shadow-inner max-h-[85vh] overflow-y-auto">
+            <div class="px-4 py-3 space-y-2">
+                <!-- Getting Started -->
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        Getting Started
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="coursing.htm" class="block text-sm text-green-100 hover:text-white">Sport of Lure Coursing</a>
+                        <a href="breeds/index.htm" class="block text-sm text-green-100 hover:text-white">Eligible Breeds</a>
+                        <a href="rulebook.html" class="block text-sm text-green-100 hover:text-white">Rule Book/Policies</a>
+                        <a href="forms/pubs.htm" class="block text-sm text-green-100 hover:text-white">Pamphlets & Videos</a>
+                        <a href="https://www.ncsl.org/public/leglinks.cfm" class="block text-sm text-green-100 hover:text-white">Animal Advisory</a>
+                    </div>
+                </details>
+                
+                <!-- Events -->
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        Events
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="schedule.html" class="block text-sm text-green-100 hover:text-white">Trial Schedule</a>
+                        <a href="ii26/index.html" class="block text-sm text-green-100 hover:text-white">2026 ASFA II</a>
+                        <a href="regionals/index.html" class="block text-sm text-green-100 hover:text-white">Regionals</a>
+                        <a href="acod/2025/index.html" class="block text-sm text-green-100 hover:text-white">ACoD 2025</a>
+                    </div>
+                </details>
+
+                <!-- Records & Awards -->
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        Records & Awards
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="trial/index0111.html" class="block text-sm text-green-100 hover:text-white">Trial Results</a>
+                        <a href="20/index.htm" class="block text-sm text-green-100 hover:text-white">Top 20</a>
+                        <a href="titles/index.htm" class="block text-sm text-green-100 hover:text-white">New Titles</a>
+                        <a href="records/index.htm" class="block text-sm text-green-100 hover:text-white">Hound Records</a>
+                        <a href="20/lifetime.htm" class="block text-sm text-green-100 hover:text-white">Lifetime Top 20</a>
+                        <div class="h-px bg-green-700 my-1 w-3/4"></div>
+                        <a href="hof/index.htm" class="block text-sm text-green-100 hover:text-white font-medium">Hall of Fame</a>
+                        <a href="gf/index.html" class="block text-sm text-green-100 hover:text-white">Gary Forrester Award</a>
+                        <a href="epa/index.html" class="block text-sm text-green-100 hover:text-white">Excellence in Performance</a>
+                        <a href="incentive award/index.html" class="block text-sm text-green-100 hover:text-white">Incentive Award</a>
+                        <a href="Lure Operator/index.html" class="block text-sm text-green-100 hover:text-white">Lure Operator of the Year</a>
+                    </div>
+                </details>
+
+                <!-- Clubs & Admin -->
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        Clubs & Admin
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="clubs.html" class="block text-sm text-green-100 hover:text-white">Clubs</a>
+                        <a href="officers.htm" class="block text-sm text-green-100 hover:text-white">Officers & Directors</a>
+                        <a href="judges/index.htm" class="block text-sm text-green-100 hover:text-white">Judges</a>
+                        <a href="rule/ASFA Suspensions as of 07-09-2025.pdf" class="block text-sm text-red-300 hover:text-red-100 font-medium">Suspensions</a>
+                        <a href="quest.htm" class="block text-sm text-green-100 hover:text-white">Questions & Comments</a>
+                    </div>
+                </details>
+
+                <!-- Forms -->
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        Forms
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="trial.htm#entry" class="block text-sm text-green-100 hover:text-white">Entry Forms</a>
+                        <a href="trial.htm" class="block text-sm text-green-100 hover:text-white">Trial Forms</a>
+                        <a href="trial_date_request.html" class="block text-sm text-green-100 hover:text-white">Trial Date Request</a>
+                        <div class="h-px bg-green-700 my-1 w-3/4"></div>
+                        <a href="membership.htm" class="block text-sm text-green-100 hover:text-white">Club Membership Forms</a>
+                        <a href="clubs/renewal_form.htm" class="block text-sm text-green-100 hover:text-white">Online Renewal</a>
+                    </div>
+                </details>
+
+                <!-- News & Media -->
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        News & Media
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="communique/index.html" class="block text-sm text-green-100 hover:text-white">ASFA Communique</a>
+                        <a href="letter.htm" class="block text-sm text-green-100 hover:text-white">President's Message</a>
+                        <a href="mission.htm" class="block text-sm text-green-100 hover:text-white">Mission Statement</a>
+                        <a href="album/index.htm" class="block text-sm text-green-100 hover:text-white">Photo Album</a>
+                    </div>
+                </details>
+
+                <!-- Store -->
+                <a href="store/index.htm" class="block py-2 font-bold text-amber-400 hover:text-amber-200">Store</a>
+                
+                <!-- Mobile Search -->
+                <div class="pt-4 pb-2">
+                    <div class="relative">
+                        <input type="text" placeholder="Search ASFA..." class="w-full bg-green-900 text-white placeholder-green-300 rounded-full py-2 pl-4 pr-10 focus:outline-none focus:ring-2 focus:ring-green-400 text-sm border border-green-700">
+                        <svg class="w-4 h-4 absolute right-3 top-2.5 text-green-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -268,14 +383,14 @@
         </div>
     </main>
 
-    <!-- Footer (Из clubs.html) -->
+    <!-- Footer -->
     <footer class="bg-slate-900 text-slate-300 py-12 mt-auto border-t-4 border-green-700">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 border-b border-slate-800 pb-8 mb-8">
                 <div>
                     <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Competition</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="event/index.htm" class="hover:text-green-400 transition">Trial Schedule</a></li>
+                        <li><a href="schedule.html" class="hover:text-green-400 transition">Trial Schedule</a></li>
                         <li><a href="trial/index0111.html" class="hover:text-green-400 transition">Trial Results</a></li>
                         <li><a href="trial.htm#entry" class="hover:text-green-400 transition">Entry Forms</a></li>
                         <li><a href="20/index.htm" class="hover:text-green-400 transition">Top 20</a></li>
@@ -284,9 +399,9 @@
                 <div>
                     <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Organization</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="clubs/index.htm" class="hover:text-green-400 transition">Clubs</a></li>
+                        <li><a href="clubs.html" class="hover:text-green-400 transition">Clubs</a></li>
                         <li><a href="officers.htm" class="hover:text-green-400 transition">Officers & Directors</a></li>
-                        <li><a href="rule/index.htm" class="hover:text-green-400 transition">Rule Book</a></li>
+                        <li><a href="rulebook.html" class="hover:text-green-400 transition">Rule Book</a></li>
                         <li><a href="quest.htm" class="hover:text-green-400 transition">Questions & Comments</a></li>
                     </ul>
                 </div>
@@ -317,5 +432,18 @@
         </div>
     </footer>
 
+    <!-- Script to toggle Mobile Menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if (mobileBtn && mobileMenu) {
+                mobileBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
 </body>
 </html>
