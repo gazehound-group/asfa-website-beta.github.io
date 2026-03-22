@@ -19,7 +19,7 @@
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
 
-    <!-- Top Navbar (Full Menu) -->
+    <!-- Top Navbar (Matching other pages perfectly) -->
     <header class="bg-green-800 text-white shadow-lg sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
@@ -31,7 +31,6 @@
                 </div>
 
                 <nav class="hidden md:flex space-x-3 lg:space-x-5 items-center">
-                    <!-- Getting Started -->
                     <div class="relative group py-4">
                         <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
                             Getting Started
@@ -48,7 +47,6 @@
                         </div>
                     </div>
                     
-                    <!-- Events -->
                     <div class="relative group py-4">
                         <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
                             Events
@@ -64,7 +62,6 @@
                         </div>
                     </div>
                     
-                    <!-- Records & Awards -->
                     <div class="relative group py-4">
                         <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
                             Records & Awards
@@ -87,7 +84,6 @@
                         </div>
                     </div>
                     
-                    <!-- Clubs & Admin -->
                     <div class="relative group py-4">
                         <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
                             Clubs & Admin
@@ -105,7 +101,6 @@
                         </div>
                     </div>
                     
-                    <!-- Forms -->
                     <div class="relative group py-4">
                         <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
                             Forms
@@ -123,7 +118,6 @@
                         </div>
                     </div>
                     
-                    <!-- News & Media -->
                     <div class="relative group py-4">
                         <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
                             News & Media
@@ -158,7 +152,7 @@
             </div>
         </div>
 
-        <!-- MOBILE MENU BLOCKS (Hidden by default) -->
+        <!-- MOBILE MENU BLOCKS -->
         <div id="mobile-menu" class="hidden md:hidden bg-green-800 border-t border-green-700 shadow-inner max-h-[85vh] overflow-y-auto">
             <div class="px-4 py-3 space-y-2">
                 <details class="group">
@@ -266,23 +260,12 @@
     <!-- Main Content -->
     <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full">
         
-        <!-- Breadcrumbs -->
-        <nav class="mb-6" aria-label="Breadcrumb">
-            <ol class="flex items-center space-x-2 text-sm text-slate-500">
-                <li><a href="index.html" class="hover:text-green-700 transition">Home</a></li>
-                <li><svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></li>
-                <li><span class="text-slate-400">Clubs & Admin</span></li>
-                <li><svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></li>
-                <li><span class="text-slate-800 font-semibold">ASFA Committees</span></li>
-            </ol>
-        </nav>
-
         <!-- Header -->
         <div class="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div>
                 <h1 class="text-4xl font-extrabold text-slate-900 tracking-tight">ASFA Committees</h1>
                 <p class="mt-2 text-slate-600 max-w-2xl text-sm">
-                    Current roster of the American Sighthound Field Association committees and their respective chairs and members for the 2025-2026 term. 
+                    Current roster of the American Sighthound Field Association committees and their respective chairs and members. 
                 </p>
             </div>
             
@@ -302,6 +285,39 @@
 
         <!-- Committees Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- NEW: Executive Board / Officers -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition border-l-4 border-l-green-600 md:col-span-2 lg:col-span-3">
+                <h3 class="text-xl font-bold text-green-800 mb-4 border-b border-slate-100 pb-2">Executive Board / Officers</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div>
+                        <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">President</p>
+                        <p class="text-sm font-bold text-slate-800">Phil Fullam</p>
+                        <a href="mailto:President.ASFA@gmail.com" class="text-sm text-green-600 hover:underline block">President.ASFA@gmail.com</a>
+                    </div>
+                    <div>
+                        <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">1st Vice President</p>
+                        <p class="text-sm font-bold text-slate-800">Marilyn Standerford</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">2nd Vice President</p>
+                        <p class="text-sm font-bold text-slate-800">Kristal Couch</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Chief Financial Officer</p>
+                        <p class="text-sm font-bold text-slate-800">Ping Pirrung</p>
+                        <a href="mailto:asfacfo@gmail.com" class="text-sm text-green-600 hover:underline block">asfacfo@gmail.com</a>
+                    </div>
+                    <div>
+                        <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Recording Secretary</p>
+                        <p class="text-sm font-bold text-slate-800">Victoria Cassano</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Corresponding Secretary</p>
+                        <p class="text-sm font-bold text-slate-800">Tom Golcher</p>
+                    </div>
+                </div>
+            </div>
             
             <!-- Archives and Historical -->
             <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition">
@@ -359,21 +375,6 @@
                 </div>
             </div>
 
-            <!-- Executive -->
-            <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition border-l-4 border-l-green-600">
-                <h3 class="text-lg font-bold text-green-800 mb-3 border-b border-slate-100 pb-2">Executive</h3>
-                <div class="mb-4">
-                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Chair</p>
-                    <p class="text-sm font-medium text-slate-800">Scott Hurlbert</p>
-                    <a href="mailto:President.ASFA@gmail.com" class="text-sm text-green-600 hover:underline">President.ASFA@gmail.com</a>
-                </div>
-                <div>
-                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Members</p>
-                    <p class="text-sm text-slate-700 leading-relaxed">Marilyn Standerford, Greg Breitbach, Ping Pirrung, Kathy Sanders, Jennifer Gysler</p>
-                    <p class="text-sm text-slate-700 mt-2"><strong>Regional Directors Liaison:</strong> Paul Sanders (<a href="mailto:allagante@yahoo.com" class="text-green-600 hover:underline">allagante@yahoo.com</a>)</p>
-                </div>
-            </div>
-
             <!-- Field Trial Improvement -->
             <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition">
                 <h3 class="text-lg font-bold text-green-800 mb-3 border-b border-slate-100 pb-2">Field Trial Improvement</h3>
@@ -385,21 +386,6 @@
                 <div>
                     <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Members</p>
                     <p class="text-sm text-slate-700 leading-relaxed">Phil Dean, Jennifer Gysler, Darci Kunard, Sally MacDowell, Mike Hussey, Jayme Jones, Dean Wright, Tom Cigolle, Terry Sayre</p>
-                </div>
-            </div>
-
-            <!-- Finance and Budget -->
-            <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition">
-                <h3 class="text-lg font-bold text-green-800 mb-3 border-b border-slate-100 pb-2">Finance and Budget</h3>
-                <div class="mb-4">
-                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Chair</p>
-                    <p class="text-sm font-medium text-slate-800">Ping Pirrung</p>
-                    <a href="mailto:asfacfo@gmail.com" class="text-sm text-green-600 hover:underline">asfacfo@gmail.com</a>
-                </div>
-                <div>
-                    <p class="text-sm text-slate-500 font-semibold uppercase tracking-wider mb-1">Members</p>
-                    <p class="text-sm text-slate-700 leading-relaxed">Scott Hurlbert, Sean McMichael, Mary Frances Miller</p>
-                    <p class="text-sm text-slate-700 mt-2"><strong>Treasurer:</strong> Sean McMichael (<a href="mailto:Treasurer@asfa.org" class="text-green-600 hover:underline">Treasurer@asfa.org</a>)</p>
                 </div>
             </div>
 
