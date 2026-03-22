@@ -1,5 +1,1193 @@
-<div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
-    <a href="#officers-and-directors" class="block text-gray-700">Officers & Directors</a>
-    <a href="#committees" class="block text-gray-700">Committees</a>
-    <a href="#judges" class="block text-gray-700">Judges</a>
-</div>
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Sighthound Field Association - Clubs & Regions</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        
+        /* Hide default details marker */
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
+        
+        /* Smooth accordion transition */
+        details[open] summary ~ * {
+            animation: sweep .3s ease-in-out;
+        }
+        @keyframes sweep {
+            0%    {opacity: 0; margin-top: -10px}
+            100%  {opacity: 1; margin-top: 0px}
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Top Navbar (Matching other pages perfectly) -->
+    <header class="bg-green-800 text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <a href="index.html" class="flex items-center gap-3 hover:opacity-90 transition">
+                        <img src="ASFALOGO.jpg" alt="ASFA Logo" class="w-12 h-12 rounded-full bg-white p-0.5 object-contain shadow-sm border border-green-600">
+                        <span class="font-bold text-xl tracking-tight hidden sm:block">ASFA</span>
+                    </a>
+                </div>
+
+                <nav class="hidden md:flex space-x-3 lg:space-x-5 items-center">
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Getting Started
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-56 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="coursing.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Sport of Lure Coursing</a>
+                                <a href="breeds/index.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Eligible Breeds</a>
+                                <a href="rulebook.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Rule Book/Policies</a>
+                                <a href="forms/pubs.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Pamphlets & Videos</a>
+                                <a href="https://www.ncsl.org/public/leglinks.cfm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Animal Advisory</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Events
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-48 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="schedule.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Schedule</a>
+                                <a href="ii26/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">2026 ASFA II</a>
+                                <a href="regionals/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Regionals</a>
+                                <a href="acod/2025/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">ACoD 2025</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Records & Awards
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-64 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2 max-h-[80vh] overflow-y-auto">
+                                <a href="trial/index0111.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Results</a>
+                                <a href="20/index.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Top 20</a>
+                                <a href="titles/index.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">New Titles</a>
+                                <a href="records/index.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Hound Records</a>
+                                <a href="20/lifetime.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Lifetime Top 20</a>
+                                <div class="h-px bg-slate-200 my-1"></div>
+                                <a href="hof/index.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors font-medium">Hall of Fame</a>
+                                <a href="gf/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Gary Forrester Award</a>
+                                <a href="epa/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Excellence in Performance</a>
+                                <a href="incentive award/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Incentive Award</a>
+                                <a href="Lure Operator/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Lure Operator of the Year</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Clubs & Admin
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-56 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="clubs.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Clubs</a>
+                                <a href="officers.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Officers & Directors</a>
+                                <a href="judges/index.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Judges</a>
+                                <a href="rule/ASFA Suspensions as of 07-09-2025.pdf" class="block px-4 py-2 text-sm text-red-600 font-medium hover:bg-red-50 hover:text-red-800 transition-colors">Suspensions</a>
+                                <a href="quest.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Questions & Comments</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Forms
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-60 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="trial.htm#entry" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Entry Forms</a>
+                                <a href="trial.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Forms</a>
+                                <a href="trial_date_request.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Date Request</a>
+                                <div class="h-px bg-slate-200 my-1"></div>
+                                <a href="membership.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Club Membership Forms</a>
+                                <a href="clubs/renewal_form.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Online Renewal</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            News & Media
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute right-0 top-full -mt-2 w-56 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="communique/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">ASFA Communique</a>
+                                <a href="letter.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">President's Message</a>
+                                <a href="mission.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Mission Statement</a>
+                                <a href="album/index.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Photo Album</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="store/index.htm" class="text-amber-400 hover:text-amber-200 transition font-bold text-xs lg:text-sm py-4">Store</a>
+                </nav>
+
+                <div class="flex items-center hidden sm:block">
+                    <div class="relative">
+                        <input type="text" placeholder="Search ASFA..." class="bg-green-900 text-white placeholder-green-300 rounded-full py-1.5 pl-4 pr-10 focus:outline-none focus:ring-2 focus:ring-green-400 text-sm w-40 lg:w-48">
+                        <svg class="w-4 h-4 absolute right-3 top-2 text-green-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </div>
+                </div>
+                
+                <!-- MOBILE MENU BUTTON -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white focus:outline-none hover:text-green-200 transition">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOBILE MENU BLOCKS (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-green-800 border-t border-green-700 shadow-inner max-h-[85vh] overflow-y-auto">
+            <div class="px-4 py-3 space-y-2">
+                <!-- Getting Started -->
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        Getting Started
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="coursing.htm" class="block text-sm text-green-100 hover:text-white">Sport of Lure Coursing</a>
+                        <a href="breeds/index.htm" class="block text-sm text-green-100 hover:text-white">Eligible Breeds</a>
+                        <a href="rulebook.html" class="block text-sm text-green-100 hover:text-white">Rule Book/Policies</a>
+                        <a href="forms/pubs.htm" class="block text-sm text-green-100 hover:text-white">Pamphlets & Videos</a>
+                        <a href="https://www.ncsl.org/public/leglinks.cfm" class="block text-sm text-green-100 hover:text-white">Animal Advisory</a>
+                    </div>
+                </details>
+                
+                <!-- Events -->
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        Events
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="schedule.html" class="block text-sm text-green-100 hover:text-white">Trial Schedule</a>
+                        <a href="ii26/index.html" class="block text-sm text-green-100 hover:text-white">2026 ASFA II</a>
+                        <a href="regionals/index.html" class="block text-sm text-green-100 hover:text-white">Regionals</a>
+                        <a href="acod/2025/index.html" class="block text-sm text-green-100 hover:text-white">ACoD 2025</a>
+                    </div>
+                </details>
+
+                <!-- Records & Awards -->
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        Records & Awards
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="trial/index0111.html" class="block text-sm text-green-100 hover:text-white">Trial Results</a>
+                        <a href="20/index.htm" class="block text-sm text-green-100 hover:text-white">Top 20</a>
+                        <a href="titles/index.htm" class="block text-sm text-green-100 hover:text-white">New Titles</a>
+                        <a href="records/index.htm" class="block text-sm text-green-100 hover:text-white">Hound Records</a>
+                        <a href="20/lifetime.htm" class="block text-sm text-green-100 hover:text-white">Lifetime Top 20</a>
+                        <div class="h-px bg-green-700 my-1 w-3/4"></div>
+                        <a href="hof/index.htm" class="block text-sm text-green-100 hover:text-white font-medium">Hall of Fame</a>
+                        <a href="gf/index.html" class="block text-sm text-green-100 hover:text-white">Gary Forrester Award</a>
+                        <a href="epa/index.html" class="block text-sm text-green-100 hover:text-white">Excellence in Performance</a>
+                        <a href="incentive award/index.html" class="block text-sm text-green-100 hover:text-white">Incentive Award</a>
+                        <a href="Lure Operator/index.html" class="block text-sm text-green-100 hover:text-white">Lure Operator of the Year</a>
+                    </div>
+                </details>
+
+                <!-- Clubs & Admin -->
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        Clubs & Admin
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="clubs.html" class="block text-sm text-green-100 hover:text-white">Clubs</a>
+                        <a href="officers.htm" class="block text-sm text-green-100 hover:text-white">Officers & Directors</a>
+                        <a href="judges/index.htm" class="block text-sm text-green-100 hover:text-white">Judges</a>
+                        <a href="rule/ASFA Suspensions as of 07-09-2025.pdf" class="block text-sm text-red-300 hover:text-red-100 font-medium">Suspensions</a>
+                        <a href="quest.htm" class="block text-sm text-green-100 hover:text-white">Questions & Comments</a>
+                    </div>
+                </details>
+
+                <!-- Forms -->
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        Forms
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="trial.htm#entry" class="block text-sm text-green-100 hover:text-white">Entry Forms</a>
+                        <a href="trial.htm" class="block text-sm text-green-100 hover:text-white">Trial Forms</a>
+                        <a href="trial_date_request.html" class="block text-sm text-green-100 hover:text-white">Trial Date Request</a>
+                        <div class="h-px bg-green-700 my-1 w-3/4"></div>
+                        <a href="membership.htm" class="block text-sm text-green-100 hover:text-white">Club Membership Forms</a>
+                        <a href="clubs/renewal_form.htm" class="block text-sm text-green-100 hover:text-white">Online Renewal</a>
+                    </div>
+                </details>
+
+                <!-- News & Media -->
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        News & Media
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="communique/index.html" class="block text-sm text-green-100 hover:text-white">ASFA Communique</a>
+                        <a href="letter.htm" class="block text-sm text-green-100 hover:text-white">President's Message</a>
+                        <a href="mission.htm" class="block text-sm text-green-100 hover:text-white">Mission Statement</a>
+                        <a href="album/index.htm" class="block text-sm text-green-100 hover:text-white">Photo Album</a>
+                    </div>
+                </details>
+
+                <!-- Store -->
+                <a href="store/index.htm" class="block py-2 font-bold text-amber-400 hover:text-amber-200">Store</a>
+                
+                <!-- Mobile Search -->
+                <div class="pt-4 pb-2">
+                    <div class="relative">
+                        <input type="text" placeholder="Search ASFA..." class="w-full bg-green-900 text-white placeholder-green-300 rounded-full py-2 pl-4 pr-10 focus:outline-none focus:ring-2 focus:ring-green-400 text-sm border border-green-700">
+                        <svg class="w-4 h-4 absolute right-3 top-2.5 text-green-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full">
+        
+        <!-- Header & Top Actions -->
+        <div class="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-6">
+            <div>
+                <h1 class="text-3xl font-extrabold text-slate-900">ASFA Clubs & Regions</h1>
+                <p class="mt-2 text-slate-600 max-w-2xl text-sm">
+                    Select a region below to view member clubs, liaisons, and contact information in your area. All membership changes should be sent to the <a href="officers.htm#Chair" class="text-green-600 font-bold hover:underline">ASFA Chairperson</a>.
+                </p>
+            </div>
+            
+            <div class="flex flex-wrap gap-3">
+                <a href="renewal_form.htm" target="_blank" class="inline-flex items-center px-4 py-2 bg-green-700 hover:bg-green-800 text-white text-sm font-semibold rounded-lg shadow transition">
+                    Online Club Renewal
+                </a>
+                <a href="2025.12.31 Membership Update.pdf" target="_blank" class="inline-flex items-center px-4 py-2 bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 text-sm font-semibold rounded-lg shadow-sm transition">
+                    <svg class="w-4 h-4 mr-2 text-red-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 16.5l4-4h-3v-9h-2v9H8l4 4zm9-3v8H3v-8H1v10h22v-10h-2z"/></svg>
+                    PDF List
+                </a>
+                <a href="2025.12.31 Membership Update.xlsx" target="_blank" class="inline-flex items-center px-4 py-2 bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 text-sm font-semibold rounded-lg shadow-sm transition">
+                    <svg class="w-4 h-4 mr-2 text-green-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 16.5l4-4h-3v-9h-2v9H8l4 4zm9-3v8H3v-8H1v10h22v-10h-2z"/></svg>
+                    Excel List
+                </a>
+            </div>
+        </div>
+
+        <!-- Affiliation Legend -->
+        <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-200 mb-8 flex flex-wrap gap-x-6 gap-y-3 text-sm text-slate-600 items-center">
+            <strong class="text-slate-800">Affiliation Status Legend:</strong>
+            <span class="flex items-center gap-1"><span class="bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span> Member</span>
+            <span class="flex items-center gap-1"><span class="bg-blue-100 text-blue-800 text-xs px-2 py-0.5 rounded font-bold">A</span> Affiliate</span>
+            <span class="flex items-center gap-1"><span class="bg-amber-100 text-amber-800 text-xs px-2 py-0.5 rounded font-bold">AP</span> Applied</span>
+            <span class="flex items-center gap-1"><span class="bg-purple-100 text-purple-800 text-xs px-2 py-0.5 rounded font-bold">FTA</span> Fast Track Affiliate</span>
+            <span class="flex items-center gap-1"><span class="bg-rose-100 text-rose-800 text-xs px-2 py-0.5 rounded font-bold">FTAP</span> Fast Track Applied</span>
+        </div>
+
+        <!-- Regions Accordion -->
+        <div class="space-y-4">
+
+            <!-- Region 1 -->
+            <details class="group border border-slate-200 rounded-xl bg-white shadow-sm overflow-hidden">
+                <summary class="flex justify-between items-center font-medium cursor-pointer p-5 sm:p-6 bg-slate-50 hover:bg-green-50 transition-colors">
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4">
+                        <span class="text-xl font-bold text-slate-800">Region 1</span>
+                        <span class="text-sm font-normal text-slate-500">Alaska, Idaho, Montana, Oregon, Washington</span>
+                    </div>
+                    <span class="transition-transform group-open:rotate-180 text-green-700 ml-4 flex-shrink-0">
+                        <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                    </span>
+                </summary>
+                <div class="p-6 border-t border-slate-200 bg-white">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Club Card -->
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-purple-100 text-purple-800 text-xs px-2 py-0.5 rounded font-bold">FTA</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Cascadia Sighthound Association <span class="text-slate-500 font-normal text-sm block">CSA</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Jonathan Buchanan</p>
+                                <p>16122 State Route 9 Southeast<br>Snohomish, WA 98296</p>
+                                <p class="pt-2"><a href="tel:3609295294" class="hover:text-green-600">(360) 929-5294</a></p>
+                                <p><a href="mailto:genehefty@gmail.com" class="text-green-600 hover:underline truncate block">genehefty@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <!-- Club Card -->
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Evergreen Basenji Club, Inc <span class="text-slate-500 font-normal text-sm block">EBC</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Bryan Gregory</p>
+                                <p>18335-171st Avenue<br>Woodinville, WA 98072</p>
+                                <p class="pt-2"><a href="tel:2069205654" class="hover:text-green-600">(206) 920-5654</a></p>
+                                <p><a href="mailto:bryan@jumoke.com" class="text-green-600 hover:underline truncate block">bryan@jumoke.com</a></p>
+                            </div>
+                        </div>
+                        <!-- Club Card -->
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Southern Idaho Sighthound Field Association <span class="text-slate-500 font-normal text-sm block">SISFA</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Emily Hartle</p>
+                                <p>746 West Little Matterhorn Drive<br>Taylorsville, UT 84123</p>
+                                <p class="pt-2"><a href="tel:3854386324" class="hover:text-green-600">(385) 438-6324</a></p>
+                                <p><a href="mailto:1emilyhartle@gmail.com" class="text-green-600 hover:underline truncate block">1emilyhartle@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <!-- Club Card -->
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Silken Windhounds for Endurance, Perf. & Training <span class="text-slate-500 font-normal text-sm block">SWEPT</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Paul Sanders</p>
+                                <p>13120 SE Wiese Road<br>Damascus, OR 97089</p>
+                                <p class="pt-2"><a href="tel:5033209643" class="hover:text-green-600">(503) 320-9643</a></p>
+                                <p><a href="mailto:allagantesilkens@yahoo.com" class="text-green-600 hover:underline truncate block">allagantesilkens@yahoo.com</a></p>
+                            </div>
+                        </div>
+                        <!-- Club Card -->
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Western Washington Whippet Association <span class="text-slate-500 font-normal text-sm block">WWWA</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Darcy Shurin</p>
+                                <p>6255 NE 182nd Street<br>Kenmore, WA 98028</p>
+                                <p class="pt-2"><a href="tel:4258296565" class="hover:text-green-600">(425) 829-6565</a></p>
+                                <p><a href="mailto:dshurin@comcast.net" class="text-green-600 hover:underline truncate block">dshurin@comcast.net</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+
+            <!-- Region 2 -->
+            <details class="group border border-slate-200 rounded-xl bg-white shadow-sm overflow-hidden">
+                <summary class="flex justify-between items-center font-medium cursor-pointer p-5 sm:p-6 bg-slate-50 hover:bg-green-50 transition-colors">
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4">
+                        <span class="text-xl font-bold text-slate-800">Region 2</span>
+                        <span class="text-sm font-normal text-slate-500">Northern California, Northern Nevada</span>
+                    </div>
+                    <span class="transition-transform group-open:rotate-180 text-green-700 ml-4 flex-shrink-0">
+                        <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                    </span>
+                </summary>
+                <div class="p-6 border-t border-slate-200 bg-white">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Card -->
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Bay Area Rhodesian Ridgeback Club <span class="text-slate-500 font-normal text-sm block">BARRC</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Janice Schindler-Horvat</p>
+                                <p>3414 Otter Court<br>Hayward, CA 94542</p>
+                                <p class="pt-2"><a href="tel:5104271290" class="hover:text-green-600">(510) 427-1290</a></p>
+                                <p><a href="mailto:jhorvat2@juno.com" class="text-green-600 hover:underline truncate block">jhorvat2@juno.com</a></p>
+                            </div>
+                        </div>
+                        <!-- Card -->
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Central Coast Association of Sighthounds <span class="text-slate-500 font-normal text-sm block">CCASH</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Jayme Jones</p>
+                                <p>6563 Frankie Lane<br>Salinas, CA 93907</p>
+                                <p class="pt-2"><a href="tel:8316826933" class="hover:text-green-600">(831) 682-6933</a></p>
+                                <p><a href="mailto:jaymejones@aol.com" class="text-green-600 hover:underline truncate block">jaymejones@aol.com</a></p>
+                            </div>
+                        </div>
+                        <!-- Card -->
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Irish Wolfhound Association of the West Coast <span class="text-slate-500 font-normal text-sm block">IWAWC</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Lori Walker</p>
+                                <p>P.O. Box 1096<br>Shelton, WA 98584</p>
+                                <p class="pt-2"><a href="tel:2536705608" class="hover:text-green-600">(253) 670-5608</a></p>
+                                <p><a href="mailto:franjoiw@gmail.com" class="text-green-600 hover:underline truncate block">franjoiw@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <!-- Card -->
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Northern California Irish Wolfhound Club <span class="text-slate-500 font-normal text-sm block">NCIWC</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Junko Ishihara</p>
+                                <p>2075 Spygass Drive<br>San Bruno, CA 94066</p>
+                                <p class="pt-2"><a href="tel:6503559759" class="hover:text-green-600">(650) 355-9759</a></p>
+                                <p><a href="mailto:junkoishihara1@yahoo.com" class="text-green-600 hover:underline truncate block">junkoishihara1@yahoo.com</a></p>
+                            </div>
+                        </div>
+                        <!-- Card -->
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Northern California Whippet Club <span class="text-slate-500 font-normal text-sm block">NCWC</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Janet Milam</p>
+                                <p>7500 Greyhawk Court<br>Sacramento, CA 95828-3406</p>
+                                <p class="pt-2"><a href="tel:9166177588" class="hover:text-green-600">(916) 617-7588</a></p>
+                                <p><a href="mailto:whippet_mother@yahoo.com" class="text-green-600 hover:underline truncate block">whippet_mother@yahoo.com</a></p>
+                            </div>
+                        </div>
+                        <!-- Card -->
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Sierra Slopes Ibizan Hounds <span class="text-slate-500 font-normal text-sm block">SSIH</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Kathy Kelly</p>
+                                <p>7500 Greyhawk Court<br>Sacramento, CA 95828</p>
+                                <p class="pt-2"><a href="tel:9164291431" class="hover:text-green-600">(916) 429-1431</a></p>
+                                <p><a href="mailto:kathy.k@mac.com" class="text-green-600 hover:underline truncate block">kathy.k@mac.com</a></p>
+                            </div>
+                        </div>
+                        <!-- Card -->
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Silken Windhounds of California <span class="text-slate-500 font-normal text-sm block">SWC</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Joyce Chin</p>
+                                <p>874 Holly Hilll Drive<br>Walnut Creek, CA 94596</p>
+                                <p class="pt-2"><a href="tel:4157107091" class="hover:text-green-600">(415) 710-7091</a></p>
+                                <p><a href="mailto:talismanhounds@gmail.com" class="text-green-600 hover:underline truncate block">talismanhounds@gmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+
+            <!-- Region 3 -->
+            <details class="group border border-slate-200 rounded-xl bg-white shadow-sm overflow-hidden">
+                <summary class="flex justify-between items-center font-medium cursor-pointer p-5 sm:p-6 bg-slate-50 hover:bg-green-50 transition-colors">
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4">
+                        <span class="text-xl font-bold text-slate-800">Region 3</span>
+                        <span class="text-sm font-normal text-slate-500">Colorado, New Mexico, Utah, Wyoming</span>
+                    </div>
+                    <span class="transition-transform group-open:rotate-180 text-green-700 ml-4 flex-shrink-0">
+                        <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                    </span>
+                </summary>
+                <div class="p-6 border-t border-slate-200 bg-white">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">American Whippet Club, Inc. <span class="text-slate-500 font-normal text-sm block">AWC</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Claudia Miller</p>
+                                <p>8205 W 67th Place<br>Arvada, CO 80004</p>
+                                <p class="pt-2"><a href="tel:3035899238" class="hover:text-green-600">(303) 589-9238</a></p>
+                                <p><a href="mailto:edcimiller@gmail.com" class="text-green-600 hover:underline truncate block">edcimiller@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Colorado Lure Coursing Association <span class="text-slate-500 font-normal text-sm block">CLCA</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Tom Golcher</p>
+                                <p>2115 Curtis Road<br>Payton, CO 80831</p>
+                                <p class="pt-2"><a href="tel:7196844972" class="hover:text-green-600">(719) 684-4972</a></p>
+                                <p><a href="mailto:tom@zoiboyz.com" class="text-green-600 hover:underline truncate block">tom@zoiboyz.com</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Lobo Lure Coursing Club <span class="text-slate-500 font-normal text-sm block">LLCC</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Leonore Abordo</p>
+                                <p>PO Box 760<br>Sandia Park, NM 87047</p>
+                                <p class="pt-2"><a href="tel:5053017138" class="hover:text-green-600">(505) 301-7138</a></p>
+                                <p><a href="mailto:borzoi_oxota@yahoo.com" class="text-green-600 hover:underline truncate block">borzoi_oxota@yahoo.com</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Pharaoh Hound Club of America <span class="text-slate-500 font-normal text-sm block">PHCA</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Darci Kunard</p>
+                                <p>17531 E. 104th Place<br>Commerce City, CO 80022</p>
+                                <p class="pt-2"><a href="tel:7209383303" class="hover:text-green-600">(720) 938-3303</a></p>
+                                <p><a href="mailto:kdarci@yahoo.com" class="text-green-600 hover:underline truncate block">kdarci@yahoo.com</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Rocky Mountain Coursing Club <span class="text-slate-500 font-normal text-sm block">RMCC</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Heather Minnich</p>
+                                <p>PO Box 294<br>Hudson, WY 82515</p>
+                                <p class="pt-2"><a href="tel:3073490183" class="hover:text-green-600">(307) 349-0183</a></p>
+                                <p><a href="mailto:hlm@wyoming.com" class="text-green-600 hover:underline truncate block">hlm@wyoming.com</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Rocky Mountain Irish Wolfhound Association <span class="text-slate-500 font-normal text-sm block">RMIWA</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Mike Hussey</p>
+                                <p>3440 Youngfield Street, #256<br>Wheat Ridge, CO 80033</p>
+                                <p class="pt-2"><a href="tel:3038091403" class="hover:text-green-600">(303) 809-1403</a></p>
+                                <p><a href="mailto:dinnree@skybeam.com" class="text-green-600 hover:underline truncate block">dinnree@skybeam.com</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Utah Sighthounds Racing and Coursing Club <span class="text-slate-500 font-normal text-sm block">USRCC</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Faith Burnham</p>
+                                <p>3940 South 4000 West<br>West Valley City, UT 84120</p>
+                                <p class="pt-2"><a href="tel:8017836424" class="hover:text-green-600">(801) 783-6424</a></p>
+                                <p><a href="mailto:utahsighthounds@gmail.com" class="text-green-600 hover:underline truncate block">utahsighthounds@gmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+
+            <!-- Region 4 -->
+            <details class="group border border-slate-200 rounded-xl bg-white shadow-sm overflow-hidden">
+                <summary class="flex justify-between items-center font-medium cursor-pointer p-5 sm:p-6 bg-slate-50 hover:bg-green-50 transition-colors">
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4">
+                        <span class="text-xl font-bold text-slate-800">Region 4</span>
+                        <span class="text-sm font-normal text-slate-500">Arkansas, Louisiana, Oklahoma, Texas</span>
+                    </div>
+                    <span class="transition-transform group-open:rotate-180 text-green-700 ml-4 flex-shrink-0">
+                        <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                    </span>
+                </summary>
+                <div class="p-6 border-t border-slate-200 bg-white">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Borzoi Club of America <span class="text-slate-500 font-normal text-sm block">BCOA</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Susan Van DeWater</p>
+                                <p>P.O. Box 62227<br>Midland, TX 79711</p>
+                                <p class="pt-2"><a href="tel:4325700373" class="hover:text-green-600">(432) 570-0373</a></p>
+                                <p><a href="mailto:borzoidelsol@yahoo.com" class="text-green-600 hover:underline truncate block">borzoidelsol@yahoo.com</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-purple-100 text-purple-800 text-xs px-2 py-0.5 rounded font-bold">FTA</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Oklahoma Racing and Coursing Association <span class="text-slate-500 font-normal text-sm block">ORCA</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Kristal Couch</p>
+                                <p>24512 South 4350 Road<br>Vinita, OK 74301</p>
+                                <p class="pt-2"><a href="tel:9183732519" class="hover:text-green-600">(918) 373-2519</a></p>
+                                <p><a href="mailto:kcouch76@gmail.com" class="text-green-600 hover:underline truncate block">kcouch76@gmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+
+            <!-- Region 5 -->
+            <details class="group border border-slate-200 rounded-xl bg-white shadow-sm overflow-hidden">
+                <summary class="flex justify-between items-center font-medium cursor-pointer p-5 sm:p-6 bg-slate-50 hover:bg-green-50 transition-colors">
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4">
+                        <span class="text-xl font-bold text-slate-800">Region 5</span>
+                        <span class="text-sm font-normal text-slate-500">Iowa, Kansas, Minnesota, Missouri, Nebraska, ND, SD</span>
+                    </div>
+                    <span class="transition-transform group-open:rotate-180 text-green-700 ml-4 flex-shrink-0">
+                        <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                    </span>
+                </summary>
+                <div class="p-6 border-t border-slate-200 bg-white">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">American Saluki Association <span class="text-slate-500 font-normal text-sm block">ASA</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Cynthia Hahn</p>
+                                <p>2227 Encino Drive<br>Florissant, MO 63031-7629</p>
+                                <p class="pt-2"><a href="tel:3143033223" class="hover:text-green-600">(314) 303-3223</a></p>
+                                <p><a href="mailto:saluki90@charter.net" class="text-green-600 hover:underline truncate block">saluki90@charter.net</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Basenji Club of America, Inc. <span class="text-slate-500 font-normal text-sm block">BaCOA</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Russell Jacobs</p>
+                                <p>7045 SE 61st Street<br>Tecumseh, KS 66542</p>
+                                <p class="pt-2"><a href="tel:7853795430" class="hover:text-green-600">(785) 379-5430</a></p>
+                                <p><a href="mailto:russjacobs4@gmail.com" class="text-green-600 hover:underline truncate block">russjacobs4@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Greater Twin Cities Whippet Club <span class="text-slate-500 font-normal text-sm block">GTCWC</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Christine Canard</p>
+                                <p>8132 Colfax Avenue South<br>Bloomington, MN 55420</p>
+                                <p class="pt-2"><a href="tel:6123961110" class="hover:text-green-600">(612) 396-1110</a></p>
+                                <p><a href="mailto:ccanard@gmail.com" class="text-green-600 hover:underline truncate block">ccanard@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Heartland Coursing Association <span class="text-slate-500 font-normal text-sm block">HCA</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Vickie Smith</p>
+                                <p>1600 East 223rd Street<br>Cleveland, MO 64734</p>
+                                <p class="pt-2"><a href="tel:8166183113" class="hover:text-green-600">(816) 618-3113</a></p>
+                                <p><a href="mailto:VJSwhippet@aol.com" class="text-green-600 hover:underline truncate block">VJSwhippet@aol.com</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Iowa Coursing Association <span class="text-slate-500 font-normal text-sm block">ICA</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Kelley Frary</p>
+                                <p>2109 30th Street<br>Des Moines, IA 50310</p>
+                                <p class="pt-2"><a href="tel:5157298905" class="hover:text-green-600">(515) 729-8905</a></p>
+                                <p><a href="mailto:kelleyfrary@gmail.com" class="text-green-600 hover:underline truncate block">kelleyfrary@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Ibizan Hound Club of the United States <span class="text-slate-500 font-normal text-sm block">IHCUS</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Sabrina Hiller</p>
+                                <p>1434 Linwood Avenue<br>Jefferson, IA 50129</p>
+                                <p class="pt-2"><a href="tel:5152984090" class="hover:text-green-600">(515) 298-4090</a></p>
+                                <p><a href="mailto:swright88@hotmail.com" class="text-green-600 hover:underline truncate block">swright88@hotmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Minnesota Coursing Association <span class="text-slate-500 font-normal text-sm block">MCA</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Melanie Gorham</p>
+                                <p>12872 Echo Lane<br>Apple Valley, MN 55124</p>
+                                <p class="pt-2"><a href="tel:6125017965" class="hover:text-green-600">(612) 501-7965</a></p>
+                                <p><a href="mailto:melanie.gorham@gmail.com" class="text-green-600 hover:underline truncate block">melanie.gorham@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Nebraska Coursing Association <span class="text-slate-500 font-normal text-sm block">NCA</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Trisha Borland</p>
+                                <p>9809 Capehart Road<br>Papillion, NE 68046</p>
+                                <p class="pt-2"><a href="tel:4026720061" class="hover:text-green-600">(402) 672-0061</a></p>
+                                <p><a href="mailto:Trisha.borland@gmail.com" class="text-green-600 hover:underline truncate block">Trisha.borland@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Scottish Deerhound Club of America <span class="text-slate-500 font-normal text-sm block">SDCA</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Debbie Narwold</p>
+                                <p>P.O. Box 35<br>McCallsburg, IA 50154</p>
+                                <p class="pt-2"><a href="tel:5154342112" class="hover:text-green-600">(515) 434-2112</a></p>
+                                <p><a href="mailto:drnnahr2@hotmail.com" class="text-green-600 hover:underline truncate block">drnnahr2@hotmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+
+            <!-- Region 6 -->
+            <details class="group border border-slate-200 rounded-xl bg-white shadow-sm overflow-hidden">
+                <summary class="flex justify-between items-center font-medium cursor-pointer p-5 sm:p-6 bg-slate-50 hover:bg-green-50 transition-colors">
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4">
+                        <span class="text-xl font-bold text-slate-800">Region 6</span>
+                        <span class="text-sm font-normal text-slate-500">Illinois, Indiana, Kentucky, Michigan, Ohio, Wisconsin</span>
+                    </div>
+                    <span class="transition-transform group-open:rotate-180 text-green-700 ml-4 flex-shrink-0">
+                        <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                    </span>
+                </summary>
+                <div class="p-6 border-t border-slate-200 bg-white">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Irish Wolfhound Club of America <span class="text-slate-500 font-normal text-sm block">IWCA</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> David Berzins</p>
+                                <p>2131 South Aldrich Street<br>Milwaukee, WI 53207</p>
+                                <p class="pt-2"><a href="tel:4146998020" class="hover:text-green-600">(414) 699-8020</a></p>
+                                <p><a href="mailto:dberzi@yahoo.com" class="text-green-600 hover:underline truncate block">dberzi@yahoo.com</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-blue-100 text-blue-800 text-xs px-2 py-0.5 rounded font-bold">A</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Midwest Borzoi Club <span class="text-slate-500 font-normal text-sm block">MBC</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Liz Duncan-Burge</p>
+                                <p>23132 North Lopez Lane<br>Dix, IL 62830-2026</p>
+                                <p class="pt-2"><a href="tel:6182140269" class="hover:text-green-600">(618) 214-0269</a></p>
+                                <p><a href="mailto:zanozaborzoi@gmail.com" class="text-green-600 hover:underline truncate block">zanozaborzoi@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Michigan Gazehound Association <span class="text-slate-500 font-normal text-sm block">MGA</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Suzanne LaCroix</p>
+                                <p>28205 Tindale Trail<br>New Hudson, MI 48165</p>
+                                <p class="pt-2"><a href="tel:2484374106" class="hover:text-green-600">(248) 437-4106</a></p>
+                                <p><a href="mailto:szlacroix@gmail.com" class="text-green-600 hover:underline truncate block">szlacroix@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Midwest Coursing Club <span class="text-slate-500 font-normal text-sm block">MWCC</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Gregory Breitbach</p>
+                                <p>1930 W Galena Street<br>Milwaukee, WI 53205</p>
+                                <p class="pt-2"><a href="tel:4147022276" class="hover:text-green-600">(414) 702-2276</a></p>
+                                <p><a href="mailto:foolishound@gmail.com" class="text-green-600 hover:underline truncate block">foolishound@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Ohio, Kentucky, Indiana Gazehound Org. <span class="text-slate-500 font-normal text-sm block">OKIGO</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Frances Abrams</p>
+                                <p>1899 Hilt Road<br>Yellow Springs, OH 45387-7717</p>
+                                <p class="pt-2"><a href="tel:9373713609" class="hover:text-green-600">(937) 371-3609</a></p>
+                                <p><a href="mailto:frances.abrams@att.net" class="text-green-600 hover:underline truncate block">frances.abrams@att.net</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">St. Louis Area Sighthounds <span class="text-slate-500 font-normal text-sm block">SLASH</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Karla Dean</p>
+                                <p>1690 Griffiths Road<br>Sorento, IL 62056</p>
+                                <p class="pt-2"><a href="tel:3179452912" class="hover:text-green-600">(317) 945-2912</a></p>
+                                <p><a href="mailto:isenwolfhound@gmail.com" class="text-green-600 hover:underline truncate block">isenwolfhound@gmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+
+            <!-- Region 7 -->
+            <details class="group border border-slate-200 rounded-xl bg-white shadow-sm overflow-hidden">
+                <summary class="flex justify-between items-center font-medium cursor-pointer p-5 sm:p-6 bg-slate-50 hover:bg-green-50 transition-colors">
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4">
+                        <span class="text-xl font-bold text-slate-800">Region 7</span>
+                        <span class="text-sm font-normal text-slate-500">Alabama, Florida, Georgia, Mississippi, NC, SC, Tennessee</span>
+                    </div>
+                    <span class="transition-transform group-open:rotate-180 text-green-700 ml-4 flex-shrink-0">
+                        <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                    </span>
+                </summary>
+                <div class="p-6 border-t border-slate-200 bg-white">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Carolina Lure Coursing Society <span class="text-slate-500 font-normal text-sm block">CLCS</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Donna Richards</p>
+                                <p>8223 Lantana Drive<br>Denver, NC 28037</p>
+                                <p class="pt-2"><a href="tel:7044009291" class="hover:text-green-600">(704) 400-9291</a></p>
+                                <p><a href="mailto:tntskids@aol.com" class="text-green-600 hover:underline truncate block">tntskids@aol.com</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Gazehound Association of the Smoky Mountains <span class="text-slate-500 font-normal text-sm block">GASM</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Eddie Kominek</p>
+                                <p>123 Glendale Road<br>Limestone, TN 37681</p>
+                                <p class="pt-2"><a href="tel:2057570290" class="hover:text-green-600">(205) 757-0290</a></p>
+                                <p><a href="mailto:info@gasm.club" class="text-green-600 hover:underline truncate block">info@gasm.club</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Greater Ocala Gainesville LC Association <span class="text-slate-500 font-normal text-sm block">GOGLC</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Robin Barry</p>
+                                <p>P.O. Box 246<br>Citra, FL 32113</p>
+                                <p class="pt-2"><a href="tel:3522393265" class="hover:text-green-600">(352) 239-3265</a></p>
+                                <p><a href="mailto:mbarry0318@gmail.com" class="text-green-600 hover:underline truncate block">mbarry0318@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-purple-100 text-purple-800 text-xs px-2 py-0.5 rounded font-bold">FTA</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Lure Enthusiasts of Georgia Sighthounds <span class="text-slate-500 font-normal text-sm block">LEGS</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Patti Peterson</p>
+                                <p>445 Austin Drive<br>Douglasville, GA 30134</p>
+                                <p class="pt-2"><a href="tel:7706170434" class="hover:text-green-600">(770) 617-0434</a></p>
+                                <p><a href="mailto:president@legscoursing.com" class="text-green-600 hover:underline truncate block">president@legscoursing.com</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Saluki Club of America <span class="text-slate-500 font-normal text-sm block">SCOA</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Mary Frances Miller</p>
+                                <p>208 Clearbrook Court<br>Nashville, TN 37205</p>
+                                <p class="pt-2"><a href="tel:6152897437" class="hover:text-green-600">(615) 289-7437</a></p>
+                                <p><a href="mailto:maryfrances.miller@selectactuarial.com" class="text-green-600 hover:underline truncate block">maryfrances.miller@selectactuarial.com</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Southeastern Greyhound Club <span class="text-slate-500 font-normal text-sm block">SEGC</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> John Parker</p>
+                                <p>2232 Gordon Rd<br>Moreland, GA 30259</p>
+                                <p class="pt-2"><a href="tel:4043177989" class="hover:text-green-600">(404) 317-7989</a></p>
+                                <p><a href="mailto:fieldchmn@aol.com" class="text-green-600 hover:underline truncate block">fieldchmn@aol.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+
+            <!-- Region 8 -->
+            <details class="group border border-slate-200 rounded-xl bg-white shadow-sm overflow-hidden">
+                <summary class="flex justify-between items-center font-medium cursor-pointer p-5 sm:p-6 bg-slate-50 hover:bg-green-50 transition-colors">
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4">
+                        <span class="text-xl font-bold text-slate-800">Region 8</span>
+                        <span class="text-sm font-normal text-slate-500">Delaware, D.C., Maryland, New Jersey, PA, Virginia, West Virginia</span>
+                    </div>
+                    <span class="transition-transform group-open:rotate-180 text-green-700 ml-4 flex-shrink-0">
+                        <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                    </span>
+                </summary>
+                <div class="p-6 border-t border-slate-200 bg-white">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Afghan Hound Club of America <span class="text-slate-500 font-normal text-sm block">AHCA</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Ann Nicholson</p>
+                                <p>13915 Kennard Drive<br>Gleneig, MD 21737</p>
+                                <p class="pt-2"><a href="tel:3015027217" class="hover:text-green-600">(301) 502-7217</a></p>
+                                <p><a href="mailto:annaf@comcast.net" class="text-green-600 hover:underline truncate block">annaf@comcast.net</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Coursing Hounds of the Mid-Potomac <span class="text-slate-500 font-normal text-sm block">CHAMP</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Torie Cassano</p>
+                                <p>19967 Telegraph Springs Road<br>Purcellville, VA 20132</p>
+                                <p class="pt-2"><a href="tel:6469633316" class="hover:text-green-600">(646) 963-3316</a></p>
+                                <p><a href="mailto:casacassano@gmail.com" class="text-green-600 hover:underline truncate block">casacassano@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Italian Greyhound Club of America <span class="text-slate-500 font-normal text-sm block">IGCA</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Terri Jones</p>
+                                <p>1037 Grand Street<br>Phillipsburg, NJ 08865</p>
+                                <p class="pt-2"><a href="tel:7322653587" class="hover:text-green-600">(732) 265-3587</a></p>
+                                <p><a href="mailto:SnoopyRockyMom@gmail.com" class="text-green-600 hover:underline truncate block">SnoopyRockyMom@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-blue-100 text-blue-800 text-xs px-2 py-0.5 rounded font-bold">A</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Lehigh Valley Coursing Club <span class="text-slate-500 font-normal text-sm block">LVCC</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> James Halstead</p>
+                                <p>1037 Grand Street<br>Phillipsburg, NJ 08865</p>
+                                <p class="pt-2"><a href="tel:7322613587" class="hover:text-green-600">(732) 261-3587</a></p>
+                                <p><a href="mailto:jameskun@gmail.com" class="text-green-600 hover:underline truncate block">jameskun@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Mason Dixon Ibizan Hound Club <span class="text-slate-500 font-normal text-sm block">MDIHC</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Pat Wieland</p>
+                                <p>918 Big Mount Road<br>Thomasville, PA 17364</p>
+                                <p class="pt-2"><a href="tel:7178918732" class="hover:text-green-600">(717) 891-8732</a></p>
+                                <p><a href="mailto:wielandpaw@gmail.com" class="text-green-600 hover:underline truncate block">wielandpaw@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Potomac Afghan Hound Club <span class="text-slate-500 font-normal text-sm block">PAHC</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Robert Jordan</p>
+                                <p>1494 Baker Road<br>Martinsburg, WV 25405</p>
+                                <p class="pt-2"><a href="tel:3019384558" class="hover:text-green-600">(301) 938-4558</a></p>
+                                <p><a href="mailto:windcrest2@gmail.com" class="text-green-600 hover:underline truncate block">windcrest2@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Sight Hound Organization of Tidewater <span class="text-slate-500 font-normal text-sm block">SHOT</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Peter Schreiber</p>
+                                <p>916 Rocky Ford Road<br>Powhatan, VA 23139</p>
+                                <p class="pt-2"><a href="tel:8043853069" class="hover:text-green-600">(804) 385-3069</a></p>
+                                <p><a href="mailto:phoenixxborzoi@gmail.com" class="text-green-600 hover:underline truncate block">phoenixxborzoi@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Tortoise and Hare Lure Coursers <span class="text-slate-500 font-normal text-sm block">THLC</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Francis Byrne</p>
+                                <p>13514 Faith Road<br>Clear Spring, MD 21722</p>
+                                <p class="pt-2"><a href="tel:2402855572" class="hover:text-green-600">(240) 285-5572</a></p>
+                                <p><a href="mailto:daanltd@gmail.com" class="text-green-600 hover:underline truncate block">daanltd@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Tri-State Sighthound Club <span class="text-slate-500 font-normal text-sm block">TSSC</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Carol Weber</p>
+                                <p>2728 Shamrock Drive<br>Allison Park, PA 15101</p>
+                                <p class="pt-2"><a href="tel:4123025551" class="hover:text-green-600">(412) 302-5551</a></p>
+                                <p><a href="mailto:tssc.coursing@gmail.com" class="text-green-600 hover:underline truncate block">tssc.coursing@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Upper Chesapeake Bay Saluki Club <span class="text-slate-500 font-normal text-sm block">UCBSC</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Cindy Antonik</p>
+                                <p>548 Wharton Avenue<br>Altoona, PA 16602</p>
+                                <p class="pt-2"><a href="tel:8142326011" class="hover:text-green-600">(814) 232-6011</a></p>
+                                <p><a href="mailto:topazito11@gmail.com" class="text-green-600 hover:underline truncate block">topazito11@gmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+
+            <!-- Region 9 -->
+            <details class="group border border-slate-200 rounded-xl bg-white shadow-sm overflow-hidden">
+                <summary class="flex justify-between items-center font-medium cursor-pointer p-5 sm:p-6 bg-slate-50 hover:bg-green-50 transition-colors">
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4">
+                        <span class="text-xl font-bold text-slate-800">Region 9</span>
+                        <span class="text-sm font-normal text-slate-500">CT, ME, MA, NH, NY, RI, VT, Ontario (Canada)</span>
+                    </div>
+                    <span class="transition-transform group-open:rotate-180 text-green-700 ml-4 flex-shrink-0">
+                        <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                    </span>
+                </summary>
+                <div class="p-6 border-t border-slate-200 bg-white">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Elite Coursing Hounds of Ontario <span class="text-slate-500 font-normal text-sm block">ECHO</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Gordon Cheung</p>
+                                <p>26 Taylorwood Drive<br>Etobicoke, ON M9A 4R7</p>
+                                <p class="pt-2"><a href="tel:4168892075" class="hover:text-green-600">(416) 889-2075</a></p>
+                                <p><a href="mailto:flashgordoc@hotmail.com" class="text-green-600 hover:underline truncate block">flashgordoc@hotmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Gazehounds of New England <span class="text-slate-500 font-normal text-sm block">GONE</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Clay Leslie</p>
+                                <p>123 Chris Road<br>Uncasville, CT 06382</p>
+                                <p class="pt-2"><a href="tel:8603674289" class="hover:text-green-600">(860) 367-4289</a></p>
+                                <p><a href="mailto:Clay.les@iCloud.com" class="text-green-600 hover:underline truncate block">Clay.les@iCloud.com</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Lake Country Lure Coursers <span class="text-slate-500 font-normal text-sm block">LCLC</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Lori Siddons</p>
+                                <p>26 Taylorwood Drive<br>Etobicoke, ON M9A 4R7</p>
+                                <p class="pt-2"><a href="tel:4168311397" class="hover:text-green-600">(416) 831-1397</a></p>
+                                <p><a href="mailto:siddons.lori@gmail.com" class="text-green-600 hover:underline truncate block">siddons.lori@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Northern Azawakh Association <span class="text-slate-500 font-normal text-sm block">NAA</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Jean Martin</p>
+                                <p>3553 Townline Road<br>Grassie, ON L0R 1M0</p>
+                                <p class="pt-2"><a href="tel:9056435070" class="hover:text-green-600">(905) 643-5070</a></p>
+                                <p><a href="mailto:northernazawakhassociation@gmail.com" class="text-green-600 hover:underline truncate block">northernazawakhassociation@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-blue-100 text-blue-800 text-xs px-2 py-0.5 rounded font-bold">A</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">New England Rhodesian Ridgeback Club <span class="text-slate-500 font-normal text-sm block">NERRC</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Chris Greeley</p>
+                                <p>7 Phillip Avenue<br>Peabody, MA 01960</p>
+                                <p class="pt-2"><a href="tel:9789799605" class="hover:text-green-600">(978) 979-9605</a></p>
+                                <p><a href="mailto:cgreeley@comcast.net" class="text-green-600 hover:underline truncate block">cgreeley@comcast.net</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Rhodesian Ridgeback Club of the United States <span class="text-slate-500 font-normal text-sm block">RRCUS</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Debra Bell</p>
+                                <p>1839 Mecklenburg Road<br>Ithaca, NY 14850</p>
+                                <p class="pt-2"><a href="tel:6072795893" class="hover:text-green-600">(607) 279-5893</a></p>
+                                <p><a href="mailto:denaliRR@gmail.com" class="text-green-600 hover:underline truncate block">denaliRR@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-purple-100 text-purple-800 text-xs px-2 py-0.5 rounded font-bold">FTA</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Saluki Association of New England <span class="text-slate-500 font-normal text-sm block">SANE</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Emily Wu</p>
+                                <p>1377 Potter Hill Road<br>Petersburgh, NY 12138</p>
+                                <p class="pt-2"><a href="tel:6177848650" class="hover:text-green-600">(617) 784-8650</a></p>
+                                <p><a href="mailto:emilywu75@gmail.com" class="text-green-600 hover:underline truncate block">emilywu75@gmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+
+            <!-- Region 10 -->
+            <details class="group border border-slate-200 rounded-xl bg-white shadow-sm overflow-hidden">
+                <summary class="flex justify-between items-center font-medium cursor-pointer p-5 sm:p-6 bg-slate-50 hover:bg-green-50 transition-colors">
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4">
+                        <span class="text-xl font-bold text-slate-800">Region 10</span>
+                        <span class="text-sm font-normal text-slate-500">Arizona, Southern California, Hawaii, Southern Nevada</span>
+                    </div>
+                    <span class="transition-transform group-open:rotate-180 text-green-700 ml-4 flex-shrink-0">
+                        <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                    </span>
+                </summary>
+                <div class="p-6 border-t border-slate-200 bg-white">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">California Coursing Association <span class="text-slate-500 font-normal text-sm block">CCA</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Linda D'Antonio</p>
+                                <p>1552 Carnes Circle<br>Redlands, CA 92374</p>
+                                <p class="pt-2"><a href="tel:9093636637" class="hover:text-green-600">(909) 363-6637</a></p>
+                                <p><a href="mailto:Linda@africantreasureRR.com" class="text-green-600 hover:underline truncate block">Linda@africantreasureRR.com</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-purple-100 text-purple-800 text-xs px-2 py-0.5 rounded font-bold">FTA</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Desert Fun Bunch <span class="text-slate-500 font-normal text-sm block">DFB</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Rosemary Marnoch</p>
+                                <p>P.O. Box 837<br>Mayer, AZ 86333</p>
+                                <p class="pt-2"><a href="tel:9286324788" class="hover:text-green-600">(928) 632-4788</a></p>
+                                <p><a href="mailto:asset59@msn.com" class="text-green-600 hover:underline truncate block">asset59@msn.com</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded font-bold">M</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">International Silken Windhound Society <span class="text-slate-500 font-normal text-sm block">ISWS</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Lori Silvestri</p>
+                                <p>374 Broad Street<br>San Luis Obispo, CA 93405</p>
+                                <p class="pt-2"><a href="tel:8055437770" class="hover:text-green-600">(805) 543-7770</a></p>
+                                <p><a href="mailto:lori@elessarhounds.com" class="text-green-600 hover:underline truncate block">lori@elessarhounds.com</a></p>
+                            </div>
+                        </div>
+                        <div class="border border-slate-200 rounded-lg p-4 shadow-sm relative pt-5">
+                            <span class="absolute top-2 right-2 bg-purple-100 text-purple-800 text-xs px-2 py-0.5 rounded font-bold">FTA</span>
+                            <h3 class="font-bold text-green-800 text-lg leading-tight mb-1">Orange Coast Rhodesian Ridgeback Club <span class="text-slate-500 font-normal text-sm block">OCRRC</span></h3>
+                            <div class="mt-3 text-sm text-slate-600 space-y-1">
+                                <p><strong class="text-slate-700">Liaison:</strong> Jennifer Gysler</p>
+                                <p>P.O. Bx 720249<br>Pinion Hills, CA 92372</p>
+                                <p class="pt-2"><a href="tel:8184004812" class="hover:text-green-600">(818) 400-4812</a></p>
+                                <p><a href="mailto:jennifergysler@gmail.com" class="text-green-600 hover:underline truncate block">jennifergysler@gmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+
+        </div>
+    </main>
+
+    <!-- Enhanced Footer -->
+    <footer class="bg-slate-900 text-slate-300 py-12 mt-auto border-t-4 border-green-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 border-b border-slate-800 pb-8 mb-8">
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Competition</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="schedule.html" class="hover:text-green-400 transition">Trial Schedule</a></li>
+                        <li><a href="trial/index0111.html" class="hover:text-green-400 transition">Trial Results</a></li>
+                        <li><a href="trial.htm#entry" class="hover:text-green-400 transition">Entry Forms</a></li>
+                        <li><a href="20/index.htm" class="hover:text-green-400 transition">Top 20</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Organization</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="clubs.html" class="hover:text-green-400 transition">Clubs</a></li>
+                        <li><a href="officers.htm" class="hover:text-green-400 transition">Officers & Directors</a></li>
+                        <li><a href="rulebook.html" class="hover:text-green-400 transition">Rule Book</a></li>
+                        <li><a href="quest.htm" class="hover:text-green-400 transition">Questions & Comments</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Resources</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="breeds/index.htm" class="hover:text-green-400 transition">Eligible Breeds</a></li>
+                        <li><a href="faq/index.htm" class="hover:text-green-400 transition">FAQ's</a></li>
+                        <li><a href="store/index.htm" class="hover:text-green-400 transition">ASFA Store</a></li>
+                        <li><a href="sitemap.html" class="hover:text-green-400 transition">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">About</h4>
+                    <p class="text-sm leading-relaxed text-slate-400">
+                        The American Sighthound Field Association is dedicated to preserving the natural beauty, grace, speed and coursing skill of the sighthound.
+                    </p>
+                </div>
+            </div>
+            <div class="text-center text-xs text-slate-500 space-y-4">
+                <p class="max-w-4xl mx-auto">
+                    Acceptance and use of the information contained on this website constitutes an acknowledgment that the user hereby releases and indemnifies the ASFA, its officers, directors, members and agents from any and all liability and damages sustained by the user as a result of any information obtained from this web site.
+                </p>
+                <p>
+                    &copy; 2002-2026 American Sighthound Field Association. All rights reserved. No part of this site may be reproduced without written permission from the <a href="mailto:webmaster@asfa.org" class="text-green-500 hover:text-green-400 underline">ASFA Webmasters</a>.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script to toggle Mobile Menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if (mobileBtn && mobileMenu) {
+                mobileBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
