@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Sighthound Field Association - Lifetime Top 20</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        
+        /* Hide default details marker for mobile menu */
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+    <!-- Top Navbar -->
+    <header class="bg-green-800 text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <a href="index.html" class="flex items-center gap-3 hover:opacity-90 transition">
+                        <img src="ASFALOGO.jpg" alt="ASFA Logo" class="w-12 h-12 rounded-full bg-white p-0.5 object-contain shadow-sm border border-green-600">
+                        <span class="font-bold text-xl tracking-tight hidden sm:block">ASFA</span>
+                    </a>
+                </div>
+
+                <nav class="hidden md:flex space-x-3 lg:space-x-5 items-center">
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Getting Started
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-56 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="coursing.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Sport of Lure Coursing</a>
+                                <a href="breeds/index.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Eligible Breeds</a>
+                                <a href="rulebook.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Rule Book/Policies</a>
+                                <a href="forms/pubs.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Pamphlets & Videos</a>
+                                <a href="https://www.ncsl.org/public/leglinks.cfm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Animal Advisory</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Events
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-48 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="schedule.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Schedule</a>
+                                <a href="ii26/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">2026 ASFA II</a>
+                                <a href="regionals/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Regionals</a>
+                                <a href="acod/2025/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">ACoD 2025</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Records & Awards
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-64 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2 max-h-[80vh] overflow-y-auto">
+                                <a href="trial/index0111.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Results</a>
+                                <a href="20/index.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Top 20</a>
+                                <a href="titles/index.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">New Titles</a>
+                                <a href="records/index.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Hound Records</a>
+                                <a href="top20_lifetime.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors font-bold">Lifetime Top 20</a>
+                                <div class="h-px bg-slate-200 my-1"></div>
+                                <a href="hof/index.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors font-medium">Hall of Fame</a>
+                                <a href="gf/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Gary Forrester Award</a>
+                                <a href="epa/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Excellence in Performance</a>
+                                <a href="incentive award/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Incentive Award</a>
+                                <a href="Lure Operator/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Lure Operator of the Year</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Clubs & Admin
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-56 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="clubs.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Clubs</a>
+                                <a href="officers.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Officers & Directors</a>
+                                <a href="comm.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Committees</a>
+                                <a href="judges/index.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Judges</a>
+                                <a href="rule/ASFA Suspensions as of 07-09-2025.pdf" class="block px-4 py-2 text-sm text-red-600 font-medium hover:bg-red-50 hover:text-red-800 transition-colors">Suspensions</a>
+                                <a href="quest.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Questions & Comments</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Forms
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-60 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="trial.htm#entry" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Entry Forms</a>
+                                <a href="trial.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Forms</a>
+                                <a href="trial_date_request.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Date Request</a>
+                                <div class="h-px bg-slate-200 my-1"></div>
+                                <a href="membership.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Club Membership Forms</a>
+                                <a href="clubs/renewal_form.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Online Renewal</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            News & Media
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute right-0 top-full -mt-2 w-56 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="communique/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">ASFA Communique</a>
+                                <a href="letter.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">President's Message</a>
+                                <a href="mission.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Mission Statement</a>
+                                <a href="album/index.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Photo Album</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="store/index.htm" class="text-amber-400 hover:text-amber-200 transition font-bold text-xs lg:text-sm py-4">Store</a>
+                </nav>
+
+                <div class="flex items-center hidden sm:block">
+                    <div class="relative">
+                        <input type="text" placeholder="Search ASFA..." class="bg-green-900 text-white placeholder-green-300 rounded-full py-1.5 pl-4 pr-10 focus:outline-none focus:ring-2 focus:ring-green-400 text-sm w-40 lg:w-48">
+                        <svg class="w-4 h-4 absolute right-3 top-2 text-green-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </div>
+                </div>
+                
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white focus:outline-none hover:text-green-200 transition">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOBILE MENU BLOCKS -->
+        <div id="mobile-menu" class="hidden md:hidden bg-green-800 border-t border-green-700 shadow-inner max-h-[85vh] overflow-y-auto">
+            <div class="px-4 py-3 space-y-2">
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        Getting Started
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="coursing.htm" class="block text-sm text-green-100 hover:text-white">Sport of Lure Coursing</a>
+                        <a href="breeds/index.htm" class="block text-sm text-green-100 hover:text-white">Eligible Breeds</a>
+                        <a href="rulebook.html" class="block text-sm text-green-100 hover:text-white">Rule Book/Policies</a>
+                        <a href="forms/pubs.htm" class="block text-sm text-green-100 hover:text-white">Pamphlets & Videos</a>
+                        <a href="https://www.ncsl.org/public/leglinks.cfm" class="block text-sm text-green-100 hover:text-white">Animal Advisory</a>
+                    </div>
+                </details>
+                
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        Events
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="schedule.html" class="block text-sm text-green-100 hover:text-white">Trial Schedule</a>
+                        <a href="ii26/index.html" class="block text-sm text-green-100 hover:text-white">2026 ASFA II</a>
+                        <a href="regionals/index.html" class="block text-sm text-green-100 hover:text-white">Regionals</a>
+                        <a href="acod/2025/index.html" class="block text-sm text-green-100 hover:text-white">ACoD 2025</a>
+                    </div>
+                </details>
+
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        Records & Awards
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="trial/index0111.html" class="block text-sm text-green-100 hover:text-white">Trial Results</a>
+                        <a href="20/index.htm" class="block text-sm text-green-100 hover:text-white">Top 20</a>
+                        <a href="titles/index.htm" class="block text-sm text-green-100 hover:text-white">New Titles</a>
+                        <a href="records/index.htm" class="block text-sm text-green-100 hover:text-white">Hound Records</a>
+                        <a href="top20_lifetime.html" class="block text-sm text-white font-bold">Lifetime Top 20</a>
+                        <div class="h-px bg-green-700 my-1 w-3/4"></div>
+                        <a href="hof/index.htm" class="block text-sm text-green-100 hover:text-white font-medium">Hall of Fame</a>
+                        <a href="gf/index.html" class="block text-sm text-green-100 hover:text-white">Gary Forrester Award</a>
+                        <a href="epa/index.html" class="block text-sm text-green-100 hover:text-white">Excellence in Performance</a>
+                        <a href="incentive award/index.html" class="block text-sm text-green-100 hover:text-white">Incentive Award</a>
+                        <a href="Lure Operator/index.html" class="block text-sm text-green-100 hover:text-white">Lure Operator of the Year</a>
+                    </div>
+                </details>
+
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        Clubs & Admin
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="clubs.html" class="block text-sm text-green-100 hover:text-white">Clubs</a>
+                        <a href="officers.htm" class="block text-sm text-green-100 hover:text-white">Officers & Directors</a>
+                        <a href="comm.htm" class="block text-sm text-green-100 hover:text-white">Committees</a>
+                        <a href="judges/index.htm" class="block text-sm text-green-100 hover:text-white">Judges</a>
+                        <a href="rule/ASFA Suspensions as of 07-09-2025.pdf" class="block text-sm text-red-300 hover:text-red-100 font-medium">Suspensions</a>
+                        <a href="quest.htm" class="block text-sm text-green-100 hover:text-white">Questions & Comments</a>
+                    </div>
+                </details>
+
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        Forms
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="trial.htm#entry" class="block text-sm text-green-100 hover:text-white">Entry Forms</a>
+                        <a href="trial.htm" class="block text-sm text-green-100 hover:text-white">Trial Forms</a>
+                        <a href="trial_date_request.html" class="block text-sm text-green-100 hover:text-white">Trial Date Request</a>
+                        <div class="h-px bg-green-700 my-1 w-3/4"></div>
+                        <a href="membership.htm" class="block text-sm text-green-100 hover:text-white">Club Membership Forms</a>
+                        <a href="clubs/renewal_form.htm" class="block text-sm text-green-100 hover:text-white">Online Renewal</a>
+                    </div>
+                </details>
+
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        News & Media
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="communique/index.html" class="block text-sm text-green-100 hover:text-white">ASFA Communique</a>
+                        <a href="letter.htm" class="block text-sm text-green-100 hover:text-white">President's Message</a>
+                        <a href="mission.htm" class="block text-sm text-green-100 hover:text-white">Mission Statement</a>
+                        <a href="album/index.htm" class="block text-sm text-green-100 hover:text-white">Photo Album</a>
+                    </div>
+                </details>
+
+                <a href="store/index.htm" class="block py-2 font-bold text-amber-400 hover:text-amber-200">Store</a>
+                
+                <div class="pt-4 pb-2">
+                    <div class="relative">
+                        <input type="text" placeholder="Search ASFA..." class="w-full bg-green-900 text-white placeholder-green-300 rounded-full py-2 pl-4 pr-10 focus:outline-none focus:ring-2 focus:ring-green-400 text-sm border border-green-700">
+                        <svg class="w-4 h-4 absolute right-3 top-2.5 text-green-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full" id="content-area">
+        
+        <!-- Breadcrumbs -->
+        <nav class="mb-6" aria-label="Breadcrumb">
+            <ol class="flex items-center space-x-2 text-sm text-slate-500">
+                <li><a href="index.html" class="hover:text-green-700 transition">Home</a></li>
+                <li><svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></li>
+                <li><span class="text-slate-400">Records & Awards</span></li>
+                <li><svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></li>
+                <li><span class="text-slate-800 font-semibold">Lifetime Top 20</span></li>
+            </ol>
+        </nav>
+
+        <div class="flex flex-col lg:flex-row gap-8 items-start">
+            
+            <!-- Sidebar Navigation (Sticky Breed List) -->
+            <aside class="w-full lg:w-1/4 shrink-0 lg:sticky lg:top-24 max-h-[calc(100vh-8rem)] overflow-y-auto hidden lg:block pr-2">
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5">
+                    <h3 class="font-bold text-slate-800 text-lg mb-4 flex items-center gap-2 border-b border-slate-100 pb-3">
+                        <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+                        Select Breed
+                    </h3>
+                    
+                    <ul class="space-y-1 text-sm font-medium text-slate-600">
+                        <li><a href="#" data-target="afghan" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition text-green-700 font-bold bg-green-50 border-l-4 border-green-600">Afghan Hound</a></li>
+                        <li><a href="#" data-target="azawakh" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Azawakh</a></li>
+                        <li><a href="#" data-target="basenji" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Basenji</a></li>
+                        <li><a href="#" data-target="borzoi" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Borzoi</a></li>
+                        <li><a href="#" data-target="chartpolski" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Chart Polski</a></li>
+                        <li><a href="#" data-target="cirneco" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Cirneco dell'Etna</a></li>
+                        <li><a href="#" data-target="galgo" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Galgo Español</a></li>
+                        <li><a href="#" data-target="greyhound" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Greyhound</a></li>
+                        <li><a href="#" data-target="ibizan" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Ibizan Hound</a></li>
+                        <li><a href="#" data-target="irishwolfhound" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Irish Wolfhound</a></li>
+                        <li><a href="#" data-target="italiangreyhound" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Italian Greyhound</a></li>
+                        <li><a href="#" data-target="lcilarge" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">LCI Large</a></li>
+                        <li><a href="#" data-target="lcisighthoundmix" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">LCI Sighthound Mix</a></li>
+                        <li><a href="#" data-target="lcismall" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">LCI Small</a></li>
+                        <li><a href="#" data-target="magyaragar" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Magyar Agar</a></li>
+                        <li><a href="#" data-target="pio" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Peruvian Inca Orchid</a></li>
+                        <li><a href="#" data-target="pharaoh" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Pharaoh Hound</a></li>
+                        <li><a href="#" data-target="podengopequeno" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Podengo Pequeno</a></li>
+                        <li><a href="#" data-target="portuguesepodengo" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Portuguese Podengo</a></li>
+                        <li><a href="#" data-target="ridgeback" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Rhodesian Ridgeback</a></li>
+                        <li><a href="#" data-target="saluki" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Saluki</a></li>
+                        <li><a href="#" data-target="deerhound" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Scottish Deerhound</a></li>
+                        <li><a href="#" data-target="silken" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Silken Windhounds</a></li>
+                        <li><a href="#" data-target="singles" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Singles</a></li>
+                        <li><a href="#" data-target="sloughi" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Sloughi</a></li>
+                        <li><a href="#" data-target="whippet" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Whippet</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Mobile Dropdown for Breeds -->
+            <div class="w-full lg:hidden mb-6">
+                <details class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden group">
+                    <summary class="font-bold text-slate-800 text-lg p-4 flex justify-between items-center cursor-pointer list-none">
+                        <div class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+                            Jump to Breed
+                        </div>
+                        <svg class="w-5 h-5 transition-transform group-open:rotate-180 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="p-4 pt-0 border-t border-slate-100 max-h-80 overflow-y-auto">
+                        <ul class="space-y-2 text-sm font-medium text-slate-600">
+                            <li><a href="#" data-target="afghan" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition text-green-700 font-bold bg-green-50 border-l-4 border-green-600">Afghan Hound</a></li>
+                            <li><a href="#" data-target="azawakh" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Azawakh</a></li>
+                            <li><a href="#" data-target="basenji" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Basenji</a></li>
+                            <li><a href="#" data-target="borzoi" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Borzoi</a></li>
+                            <li><a href="#" data-target="chartpolski" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Chart Polski</a></li>
+                            <li><a href="#" data-target="cirneco" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Cirneco dell'Etna</a></li>
+                            <li><a href="#" data-target="galgo" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Galgo Español</a></li>
+                            <li><a href="#" data-target="greyhound" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Greyhound</a></li>
+                            <li><a href="#" data-target="ibizan" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Ibizan Hound</a></li>
+                            <li><a href="#" data-target="irishwolfhound" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Irish Wolfhound</a></li>
+                            <li><a href="#" data-target="italiangreyhound" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Italian Greyhound</a></li>
+                            <li><a href="#" data-target="lcilarge" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">LCI Large</a></li>
+                            <li><a href="#" data-target="lcisighthoundmix" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">LCI Sighthound Mix</a></li>
+                            <li><a href="#" data-target="lcismall" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">LCI Small</a></li>
+                            <li><a href="#" data-target="magyaragar" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Magyar Agar</a></li>
+                            <li><a href="#" data-target="pio" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Peruvian Inca Orchid</a></li>
+                            <li><a href="#" data-target="pharaoh" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Pharaoh Hound</a></li>
+                            <li><a href="#" data-target="podengopequeno" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Podengo Pequeno</a></li>
+                            <li><a href="#" data-target="portuguesepodengo" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Portuguese Podengo</a></li>
+                            <li><a href="#" data-target="ridgeback" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Rhodesian Ridgeback</a></li>
+                            <li><a href="#" data-target="saluki" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Saluki</a></li>
+                            <li><a href="#" data-target="deerhound" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Scottish Deerhound</a></li>
+                            <li><a href="#" data-target="silken" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Silken Windhounds</a></li>
+                            <li><a href="#" data-target="singles" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Singles</a></li>
+                            <li><a href="#" data-target="sloughi" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Sloughi</a></li>
+                            <li><a href="#" data-target="whippet" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Whippet</a></li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Content Area -->
+            <div class="w-full lg:w-3/4 min-h-[600px]">
+                
+                <div class="mb-10">
+                    <h1 class="text-3xl md:text-4xl font-extrabold text-green-900 mb-2">ASFA Lifetime Top Twenty Hounds</h1>
+                    <p class="text-lg font-medium text-slate-600">Celebrating the Lifetime Achievements of the Top Twenty Sighthounds</p>
+                </div>
+
+                <!-- Tables Container -->
+                <div class="space-y-12">
+                    
+                    <!-- Afghan Hound -->
+                    <div id="afghan" class="breed-section">
+                        <div class="flex justify-between items-end mb-4">
+                            <h2 class="text-2xl font-bold text-slate-800">Afghan Hound</h2>
+                            <span class="text-sm font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-full">Total Competing: 1373</span>
+                        </div>
+                        <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden overflow-x-auto">
+                            <table class="w-full text-left text-sm whitespace-nowrap">
+                                <thead class="bg-slate-50 text-slate-500 text-xs uppercase font-bold border-b border-slate-200">
+                                    <tr>
+                                        <th class="px-4 py-3 w-10 text-center">#</th>
+                                        <th class="px-4 py-3">Hound Name & Titles</th>
+                                        <th class="px-4 py-3">Owner(s)</th>
+                                        <th class="px-4 py-3 text-center">Defeated</th>
+                                        <th class="px-4 py-3 text-center">BOB</th>
+                                        <th class="px-4 py-3 text-center">BIF</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-100">
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">1</td><td class="px-4 py-3 font-bold text-slate-800">Hamelin's Pied Piper LCM 12, Can FChX, TT</td><td class="px-4 py-3 text-slate-600">G.& M.Forrester</td><td class="px-4 py-3 text-center font-bold text-green-700">1340</td><td class="px-4 py-3 text-center">145</td><td class="px-4 py-3 text-center text-amber-600 font-bold">6</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">2</td><td class="px-4 py-3 font-bold text-slate-800">Tamora's Image of Ali LCM7, CD, CAnFChX, TT</td><td class="px-4 py-3 text-slate-600">G. & M.Forrester</td><td class="px-4 py-3 text-center font-bold text-green-700">1167</td><td class="px-4 py-3 text-center">32</td><td class="px-4 py-3 text-center text-amber-600 font-bold">4</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">3</td><td class="px-4 py-3 font-bold text-slate-800">Komar's Tiger Lily LCM5</td><td class="px-4 py-3 text-slate-600">T.& D.Walters</td><td class="px-4 py-3 text-center font-bold text-green-700">677</td><td class="px-4 py-3 text-center">29</td><td class="px-4 py-3 text-center text-amber-600 font-bold">1</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">3</td><td class="px-4 py-3 font-bold text-slate-800">FC Narcissa Chance For Reign LCM 5</td><td class="px-4 py-3 text-slate-600">Brown/Maines</td><td class="px-4 py-3 text-center font-bold text-green-700">677</td><td class="px-4 py-3 text-center">14</td><td class="px-4 py-3 text-center text-amber-600 font-bold">1</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">5</td><td class="px-4 py-3 font-bold text-slate-800">FC Tamrick Shadow Bleu Sin'ghen LCM 5</td><td class="px-4 py-3 text-slate-600">R.& T.Brown</td><td class="px-4 py-3 text-center font-bold text-green-700">675</td><td class="px-4 py-3 text-center">23</td><td class="px-4 py-3 text-center text-amber-600 font-bold">1</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">6</td><td class="px-4 py-3 font-bold text-slate-800">Roboshaun Abraham's Pharaoh LCM 4</td><td class="px-4 py-3 text-slate-600">K.& C.Hunter</td><td class="px-4 py-3 text-center font-bold text-green-700">653</td><td class="px-4 py-3 text-center">39</td><td class="px-4 py-3 text-center text-amber-600 font-bold">2</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">7</td><td class="px-4 py-3 font-bold text-slate-800">Comet's Cosmic Motion LCM 5</td><td class="px-4 py-3 text-slate-600">D.LaRusso</td><td class="px-4 py-3 text-center font-bold text-green-700">619</td><td class="px-4 py-3 text-center">38</td><td class="px-4 py-3 text-center text-amber-600 font-bold">9</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">8</td><td class="px-4 py-3 font-bold text-slate-800">Lilit Bat Layla LCM 5</td><td class="px-4 py-3 text-slate-600">C.Satlof</td><td class="px-4 py-3 text-center font-bold text-green-700">570</td><td class="px-4 py-3 text-center">11</td><td class="px-4 py-3 text-center text-amber-600 font-bold">2</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">9</td><td class="px-4 py-3 font-bold text-slate-800">Ahmir's Silence LCM 2,Am/Can CD</td><td class="px-4 py-3 text-slate-600">P.Roe/S.Wollerstorff</td><td class="px-4 py-3 text-center font-bold text-green-700">540</td><td class="px-4 py-3 text-center">11</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">10</td><td class="px-4 py-3 font-bold text-slate-800">Cameo Rah-Wynd Indian Summer LCM4, VLCM,JOR, GRC</td><td class="px-4 py-3 text-slate-600">C.Sullivan/D.Britton</td><td class="px-4 py-3 text-center font-bold text-green-700">508</td><td class="px-4 py-3 text-center">74</td><td class="px-4 py-3 text-center text-amber-600 font-bold">2</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">11</td><td class="px-4 py-3 font-bold text-slate-800">Captain Sinbad of Jam-Jar LCM 2</td><td class="px-4 py-3 text-slate-600">J.& J.Roisland</td><td class="px-4 py-3 text-center font-bold text-green-700">506</td><td class="px-4 py-3 text-center">10</td><td class="px-4 py-3 text-center text-amber-600 font-bold">1</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">12</td><td class="px-4 py-3 font-bold text-slate-800">Ch Yantra Mojou Jabbar LCM, CanFCh</td><td class="px-4 py-3 text-slate-600">M.Giasone/C.Phelps</td><td class="px-4 py-3 text-center font-bold text-green-700">495</td><td class="px-4 py-3 text-center">20</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">13</td><td class="px-4 py-3 font-bold text-slate-800">Ben Ghazi's Blitzen of Isameh LCM, CanFCh</td><td class="px-4 py-3 text-slate-600">L. & E.Winsor</td><td class="px-4 py-3 text-center font-bold text-green-700">477</td><td class="px-4 py-3 text-center">15</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">14</td><td class="px-4 py-3 font-bold text-slate-800">Atavi Winter Wings CD, LCM</td><td class="px-4 py-3 text-slate-600">R.Babilles</td><td class="px-4 py-3 text-center font-bold text-green-700">465</td><td class="px-4 py-3 text-center">20</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">15</td><td class="px-4 py-3 font-bold text-slate-800">Cameo's Friendly Ghost LCM4, VLCM, GRC, SOR,DT</td><td class="px-4 py-3 text-slate-600">C.Sullivan</td><td class="px-4 py-3 text-center font-bold text-green-700">460</td><td class="px-4 py-3 text-center">33</td><td class="px-4 py-3 text-center text-amber-600 font-bold">2</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">16</td><td class="px-4 py-3 font-bold text-slate-800">DC Tamrick Xanadu High Treason LCM 4,SC, GRC, ORC, LCX</td><td class="px-4 py-3 text-slate-600">Brown/Alderson</td><td class="px-4 py-3 text-center font-bold text-green-700">435</td><td class="px-4 py-3 text-center">42</td><td class="px-4 py-3 text-center text-amber-600 font-bold">1</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">17</td><td class="px-4 py-3 font-bold text-slate-800">Cameo Rahwynd Chasing A Ghost LCM3, VFCH,JOR, GRC</td><td class="px-4 py-3 text-slate-600">D.Britton/C.Sullivan</td><td class="px-4 py-3 text-center font-bold text-green-700">433</td><td class="px-4 py-3 text-center">27</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">18</td><td class="px-4 py-3 font-bold text-slate-800">FC WindCrest Country Blue LCM 4,ORC</td><td class="px-4 py-3 text-slate-600">R.D.& L. Jordan</td><td class="px-4 py-3 text-center font-bold text-green-700">423</td><td class="px-4 py-3 text-center">30</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">19</td><td class="px-4 py-3 font-bold text-slate-800">FC WindCrest Belle Of The Ball LCM 2</td><td class="px-4 py-3 text-slate-600">R.D.& L.Jordan</td><td class="px-4 py-3 text-center font-bold text-green-700">411</td><td class="px-4 py-3 text-center">24</td><td class="px-4 py-3 text-center text-amber-600 font-bold">1</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">20</td><td class="px-4 py-3 font-bold text-slate-800">FC WindCrest Riverboat Gambler LCM 3,ORC</td><td class="px-4 py-3 text-slate-600">R.D.& L.Jordan</td><td class="px-4 py-3 text-center font-bold text-green-700">407</td><td class="px-4 py-3 text-center">31</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Azawakh -->
+                    <div id="azawakh" class="breed-section hidden">
+                        <div class="flex justify-between items-end mb-4">
+                            <h2 class="text-2xl font-bold text-slate-800">Azawakh</h2>
+                            <span class="text-sm font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-full">Total Competing: 61</span>
+                        </div>
+                        <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden overflow-x-auto">
+                            <table class="w-full text-left text-sm whitespace-nowrap">
+                                <thead class="bg-slate-50 text-slate-500 text-xs uppercase font-bold border-b border-slate-200">
+                                    <tr>
+                                        <th class="px-4 py-3 w-10 text-center">#</th>
+                                        <th class="px-4 py-3">Hound Name & Titles</th>
+                                        <th class="px-4 py-3">Owner(s)</th>
+                                        <th class="px-4 py-3 text-center">Defeated</th>
+                                        <th class="px-4 py-3 text-center">BOB</th>
+                                        <th class="px-4 py-3 text-center">BIF</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-100">
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">1</td><td class="px-4 py-3 font-bold text-slate-800">Al Haras Wingo FCh</td><td class="px-4 py-3 text-slate-600">E.MacMillan</td><td class="px-4 py-3 text-center font-bold text-green-700">166</td><td class="px-4 py-3 text-center">91</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">2</td><td class="px-4 py-3 font-bold text-slate-800">Ch Ettebel Ajouren CA</td><td class="px-4 py-3 text-slate-600">J.Martin</td><td class="px-4 py-3 text-center font-bold text-green-700">104</td><td class="px-4 py-3 text-center">106</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">3</td><td class="px-4 py-3 font-bold text-slate-800">FC Kel Simoon Ramisi 'N Sambala FCH, RN,MC, CGC, CA, FCAT</td><td class="px-4 py-3 text-slate-600">M.Bisbee</td><td class="px-4 py-3 text-center font-bold text-green-700">93</td><td class="px-4 py-3 text-center">91</td><td class="px-4 py-3 text-center text-amber-600 font-bold">5</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">4</td><td class="px-4 py-3 font-bold text-slate-800">Kel Simoon Essari FCh</td><td class="px-4 py-3 text-slate-600">R.Mann</td><td class="px-4 py-3 text-center font-bold text-green-700">87</td><td class="px-4 py-3 text-center">10</td><td class="px-4 py-3 text-center text-amber-600 font-bold">1</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">5</td><td class="px-4 py-3 font-bold text-slate-800">Ayur-Ikmer Idiiyat-Es-Sahel FCh</td><td class="px-4 py-3 text-slate-600">J.Butterworth</td><td class="px-4 py-3 text-center font-bold text-green-700">72</td><td class="px-4 py-3 text-center">47</td><td class="px-4 py-3 text-center text-amber-600 font-bold">12</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">6</td><td class="px-4 py-3 font-bold text-slate-800">Tagalas FCh</td><td class="px-4 py-3 text-slate-600">K.Dammen</td><td class="px-4 py-3 text-center font-bold text-green-700">66</td><td class="px-4 py-3 text-center">6</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">7</td><td class="px-4 py-3 font-bold text-slate-800">Ch Knightwind's Tiziri FCh</td><td class="px-4 py-3 text-slate-600">D.Vout</td><td class="px-4 py-3 text-center font-bold text-green-700">56</td><td class="px-4 py-3 text-center">40</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">8</td><td class="px-4 py-3 font-bold text-slate-800">Sambala Konan 'N Simoon FCh</td><td class="px-4 py-3 text-slate-600">K.Sicotte</td><td class="px-4 py-3 text-center font-bold text-green-700">55</td><td class="px-4 py-3 text-center">14</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">9</td><td class="px-4 py-3 font-bold text-slate-800">Kel Simoon Cinnamon FCC</td><td class="px-4 py-3 text-slate-600">Kidwell/Mann</td><td class="px-4 py-3 text-center font-bold text-green-700">54</td><td class="px-4 py-3 text-center">0</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">10</td><td class="px-4 py-3 font-bold text-slate-800">Ch Knightwind's Anir FCh</td><td class="px-4 py-3 text-slate-600">E.Knight</td><td class="px-4 py-3 text-center font-bold text-green-700">52</td><td class="px-4 py-3 text-center">28</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">10</td><td class="px-4 py-3 font-bold text-slate-800">Allalwansahel Axiocrses Borealis FCh</td><td class="px-4 py-3 text-slate-600">J.Martin</td><td class="px-4 py-3 text-center font-bold text-green-700">52</td><td class="px-4 py-3 text-center">26</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">12</td><td class="px-4 py-3 font-bold text-slate-800">Alvin Ylilar Dab Arcca FCh</td><td class="px-4 py-3 text-slate-600">R.Campbell</td><td class="px-4 py-3 text-center font-bold text-green-700">45</td><td class="px-4 py-3 text-center">38</td><td class="px-4 py-3 text-center text-amber-600 font-bold">6</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">12</td><td class="px-4 py-3 font-bold text-slate-800">Kel Simoon Hissa FCh</td><td class="px-4 py-3 text-slate-600">D.& K.Robbins</td><td class="px-4 py-3 text-center font-bold text-green-700">45</td><td class="px-4 py-3 text-center">5</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">14</td><td class="px-4 py-3 font-bold text-slate-800">Kel Simoon Celie FCh</td><td class="px-4 py-3 text-slate-600">Kidwell/Mann</td><td class="px-4 py-3 text-center font-bold text-green-700">35</td><td class="px-4 py-3 text-center">0</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">15</td><td class="px-4 py-3 font-bold text-slate-800">Jeloun 'n-shat-ehad FCh</td><td class="px-4 py-3 text-slate-600">D.Kidwell</td><td class="px-4 py-3 text-center font-bold text-green-700">34</td><td class="px-4 py-3 text-center">6</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">16</td><td class="px-4 py-3 font-bold text-slate-800">Ettebel Arawan</td><td class="px-4 py-3 text-slate-600">E.MacMillan</td><td class="px-4 py-3 text-center font-bold text-green-700">32</td><td class="px-4 py-3 text-center">6</td><td class="px-4 py-3 text-center text-amber-600 font-bold">1</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">17</td><td class="px-4 py-3 font-bold text-slate-800">BISS, DC Xolani ak llaman TCP, CM2, SC</td><td class="px-4 py-3 text-slate-600">S.Vadas/C.Kelly</td><td class="px-4 py-3 text-center font-bold text-green-700">30</td><td class="px-4 py-3 text-center">50</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">18</td><td class="px-4 py-3 font-bold text-slate-800">Kel Simoon Palin N Sambala</td><td class="px-4 py-3 text-slate-600">E.MacMillan</td><td class="px-4 py-3 text-center font-bold text-green-700">29</td><td class="px-4 py-3 text-center">4</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">19</td><td class="px-4 py-3 font-bold text-slate-800">GCh DC Naram-Sin du Haras de Crouz FCh, SC.RA, FDC, DCAT, ACT2</td><td class="px-4 py-3 text-slate-600">K.Paylor/T.Daykin</td><td class="px-4 py-3 text-center font-bold text-green-700">26</td><td class="px-4 py-3 text-center">9</td><td class="px-4 py-3 text-center text-amber-600 font-bold">1</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">20</td><td class="px-4 py-3 font-bold text-slate-800">Ch Kel Simoon Shani N'Sambala FCh, SC, RN, ACT1,SCN, CGCA</td><td class="px-4 py-3 text-slate-600">K.Paylor/T.Daykin</td><td class="px-4 py-3 text-center font-bold text-green-700">25</td><td class="px-4 py-3 text-center">6</td><td class="px-4 py-3 text-center text-amber-600 font-bold">1</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Basenji -->
+                    <div id="basenji" class="breed-section hidden">
+                        <div class="flex justify-between items-end mb-4">
+                            <h2 class="text-2xl font-bold text-slate-800">Basenji</h2>
+                            <span class="text-sm font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-full">Total Competing: 1749</span>
+                        </div>
+                        <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden overflow-x-auto">
+                            <table class="w-full text-left text-sm whitespace-nowrap">
+                                <thead class="bg-slate-50 text-slate-500 text-xs uppercase font-bold border-b border-slate-200">
+                                    <tr>
+                                        <th class="px-4 py-3 w-10 text-center">#</th>
+                                        <th class="px-4 py-3">Hound Name & Titles</th>
+                                        <th class="px-4 py-3">Owner(s)</th>
+                                        <th class="px-4 py-3 text-center">Defeated</th>
+                                        <th class="px-4 py-3 text-center">BOB</th>
+                                        <th class="px-4 py-3 text-center">BIF</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-100">
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">1</td><td class="px-4 py-3 font-bold text-slate-800">GSWGCh,,DC, Can Ch Borassus Hot.Cool. Yours. LCM12, VLCM2, CAA, RA, BCAT</td><td class="px-4 py-3 text-slate-600">K.Sanders</td><td class="px-4 py-3 text-center font-bold text-green-700">1455</td><td class="px-4 py-3 text-center">188</td><td class="px-4 py-3 text-center text-amber-600 font-bold">5</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">2</td><td class="px-4 py-3 font-bold text-slate-800">DC Klassic Gebeep Hakuna Matata LCM12</td><td class="px-4 py-3 text-slate-600">S.J.Clark</td><td class="px-4 py-3 text-center font-bold text-green-700">1217</td><td class="px-4 py-3 text-center">153</td><td class="px-4 py-3 text-center text-amber-600 font-bold">8</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">3</td><td class="px-4 py-3 font-bold text-slate-800">GChB,DC N'Focus Santa Baby LCM6, VLCM2, GRC,JOR,LCX</td><td class="px-4 py-3 text-slate-600">K.Sanders</td><td class="px-4 py-3 text-center font-bold text-green-700">1057</td><td class="px-4 py-3 text-center">158</td><td class="px-4 py-3 text-center text-amber-600 font-bold">12</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">4</td><td class="px-4 py-3 font-bold text-slate-800">GCh,DC Jerlin's Our Zuri Pupin LCM, VLCM8, MC, SGRC3,LCX</td><td class="px-4 py-3 text-slate-600">T.Colbert</td><td class="px-4 py-3 text-center font-bold text-green-700">1032</td><td class="px-4 py-3 text-center">162</td><td class="px-4 py-3 text-center text-amber-600 font-bold">5</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">5</td><td class="px-4 py-3 font-bold text-slate-800">DC Zuri's Ti-Tanza Wazi Ajabu LCM 6</td><td class="px-4 py-3 text-slate-600">Fragassi/Leighton</td><td class="px-4 py-3 text-center font-bold text-green-700">742</td><td class="px-4 py-3 text-center">25</td><td class="px-4 py-3 text-center text-amber-600 font-bold">3</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">6</td><td class="px-4 py-3 font-bold text-slate-800">GCh, Can Ch Borassus Who's Your Hot Shot LCM4, CAA, MC, RATI, BCAT</td><td class="px-4 py-3 text-slate-600">K.Sanders</td><td class="px-4 py-3 text-center font-bold text-green-700">726</td><td class="px-4 py-3 text-center">42</td><td class="px-4 py-3 text-center text-amber-600 font-bold">6</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">7</td><td class="px-4 py-3 font-bold text-slate-800">FC Thor's East Of Midnight LCM6, MC, LCX5</td><td class="px-4 py-3 text-slate-600">J.Brader</td><td class="px-4 py-3 text-center font-bold text-green-700">684</td><td class="px-4 py-3 text-center">53</td><td class="px-4 py-3 text-center text-amber-600 font-bold">2</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">8</td><td class="px-4 py-3 font-bold text-slate-800">FC Gana's Blushin' Coquette LCM 5</td><td class="px-4 py-3 text-slate-600">N.Roisum</td><td class="px-4 py-3 text-center font-bold text-green-700">633</td><td class="px-4 py-3 text-center">53</td><td class="px-4 py-3 text-center text-amber-600 font-bold">3</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">9</td><td class="px-4 py-3 font-bold text-slate-800">FC Thor's Kikozi LCM6, SC</td><td class="px-4 py-3 text-slate-600">J.Brader</td><td class="px-4 py-3 text-center font-bold text-green-700">615</td><td class="px-4 py-3 text-center">37</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">10</td><td class="px-4 py-3 font-bold text-slate-800">Royal Red Jubilee LCM 5</td><td class="px-4 py-3 text-slate-600">Hickey/McCartney/Tusten</td><td class="px-4 py-3 text-center font-bold text-green-700">606</td><td class="px-4 py-3 text-center">45</td><td class="px-4 py-3 text-center text-amber-600 font-bold">1</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">11</td><td class="px-4 py-3 font-bold text-slate-800">FC Cynosure Go Getter LCM 5</td><td class="px-4 py-3 text-slate-600">Denslow/Jacobs</td><td class="px-4 py-3 text-center font-bold text-green-700">584</td><td class="px-4 py-3 text-center">35</td><td class="px-4 py-3 text-center text-amber-600 font-bold">2</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">12</td><td class="px-4 py-3 font-bold text-slate-800">Skeezix LCM4,CD</td><td class="px-4 py-3 text-slate-600">Rubin/Trump</td><td class="px-4 py-3 text-center font-bold text-green-700">521</td><td class="px-4 py-3 text-center">160</td><td class="px-4 py-3 text-center text-amber-600 font-bold">2</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">13</td><td class="px-4 py-3 font-bold text-slate-800">DC Select-Gana Incantation LCM 4</td><td class="px-4 py-3 text-slate-600">Denslow/Leonard</td><td class="px-4 py-3 text-center font-bold text-green-700">518</td><td class="px-4 py-3 text-center">30</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">14</td><td class="px-4 py-3 font-bold text-slate-800">FC Jasu's Princess Joee LCM 3.</td><td class="px-4 py-3 text-slate-600">C.A.Denslow</td><td class="px-4 py-3 text-center font-bold text-green-700">476</td><td class="px-4 py-3 text-center">14</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">15</td><td class="px-4 py-3 font-bold text-slate-800">DC Borassus Cuckoo For Coco Puffs LCM5, SC, CAX3</td><td class="px-4 py-3 text-slate-600">K.Sanders</td><td class="px-4 py-3 text-center font-bold text-green-700">469</td><td class="px-4 py-3 text-center">72</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">16</td><td class="px-4 py-3 font-bold text-slate-800">Ch Zuri's Mbwa-Heri Mashindano LCM 3,JOR</td><td class="px-4 py-3 text-slate-600">Tallmadge/Leighton/LeMay</td><td class="px-4 py-3 text-center font-bold text-green-700">462</td><td class="px-4 py-3 text-center">10</td><td class="px-4 py-3 text-center text-amber-600 font-bold">2</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">17</td><td class="px-4 py-3 font-bold text-slate-800">FC Ali'is Rainbow Galatea LCM 4</td><td class="px-4 py-3 text-slate-600">H.& B. Broenkow</td><td class="px-4 py-3 text-center font-bold text-green-700">441</td><td class="px-4 py-3 text-center">48</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">18</td><td class="px-4 py-3 font-bold text-slate-800">GChB,DC Joy-Us Hung The Moon LCM4, VFCH, MC, SORC2, SGRC2</td><td class="px-4 py-3 text-slate-600">T.Colbert</td><td class="px-4 py-3 text-center font-bold text-green-700">438</td><td class="px-4 py-3 text-center">48</td><td class="px-4 py-3 text-center text-amber-600 font-bold">2</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">19</td><td class="px-4 py-3 font-bold text-slate-800">FC Thor's Goodtime Charlie Got The Blues LCM3,SC</td><td class="px-4 py-3 text-slate-600">J.Brader</td><td class="px-4 py-3 text-center font-bold text-green-700">415</td><td class="px-4 py-3 text-center">22</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">20</td><td class="px-4 py-3 font-bold text-slate-800">DC Borassus Doin'er Job LCM4, SC, RATN,CAX2</td><td class="px-4 py-3 text-slate-600">K.Sanders</td><td class="px-4 py-3 text-center font-bold text-green-700">411</td><td class="px-4 py-3 text-center">30</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Borzoi -->
+                    <div id="borzoi" class="breed-section hidden">
+                        <div class="flex justify-between items-end mb-4">
+                            <h2 class="text-2xl font-bold text-slate-800">Borzoi</h2>
+                            <span class="text-sm font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-full">Total Competing: 2808</span>
+                        </div>
+                        <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden overflow-x-auto">
+                            <table class="w-full text-left text-sm whitespace-nowrap">
+                                <thead class="bg-slate-50 text-slate-500 text-xs uppercase font-bold border-b border-slate-200">
+                                    <tr>
+                                        <th class="px-4 py-3 w-10 text-center">#</th>
+                                        <th class="px-4 py-3">Hound Name & Titles</th>
+                                        <th class="px-4 py-3">Owner(s)</th>
+                                        <th class="px-4 py-3 text-center">Defeated</th>
+                                        <th class="px-4 py-3 text-center">BOB</th>
+                                        <th class="px-4 py-3 text-center">BIF</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-100">
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">1</td><td class="px-4 py-3 font-bold text-slate-800">Zaraya of the Wild Hunt LCM 17</td><td class="px-4 py-3 text-slate-600">L.Littleton/A.Duncan</td><td class="px-4 py-3 text-center font-bold text-green-700">2144</td><td class="px-4 py-3 text-center">131</td><td class="px-4 py-3 text-center text-amber-600 font-bold">11</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">2</td><td class="px-4 py-3 font-bold text-slate-800">FC Mayberry's Gone With The Wind LCM11, VFCh, SGRC</td><td class="px-4 py-3 text-slate-600">P.Mayberry</td><td class="px-4 py-3 text-center font-bold text-green-700">1581</td><td class="px-4 py-3 text-center">93</td><td class="px-4 py-3 text-center text-amber-600 font-bold">1</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">3</td><td class="px-4 py-3 font-bold text-slate-800">DC Silkenswift Blaze's Darkfire LCM 7,VFCh</td><td class="px-4 py-3 text-slate-600">B.Dalzell</td><td class="px-4 py-3 text-center font-bold text-green-700">1558</td><td class="px-4 py-3 text-center">72</td><td class="px-4 py-3 text-center text-amber-600 font-bold">7</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">4</td><td class="px-4 py-3 font-bold text-slate-800">Del Sol Spitzer LCM8, VLCM, GRC</td><td class="px-4 py-3 text-slate-600">A.Simpson/S.Van de Water</td><td class="px-4 py-3 text-center font-bold text-green-700">1203</td><td class="px-4 py-3 text-center">51</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">5</td><td class="px-4 py-3 font-bold text-slate-800">FC Chromium's Lead Of Ryhka LCM 9,ORC,CD</td><td class="px-4 py-3 text-slate-600">L.E.Hughes</td><td class="px-4 py-3 text-center font-bold text-green-700">1193</td><td class="px-4 py-3 text-center">59</td><td class="px-4 py-3 text-center text-amber-600 font-bold">6</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">6</td><td class="px-4 py-3 font-bold text-slate-800">Windhound's Zip LCM 8, Can FCh</td><td class="px-4 py-3 text-slate-600">P.Pirrung/K. & K.Kaltenborn</td><td class="px-4 py-3 text-center font-bold text-green-700">1188</td><td class="px-4 py-3 text-center">47</td><td class="px-4 py-3 text-center text-amber-600 font-bold">3</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">7</td><td class="px-4 py-3 font-bold text-slate-800">FC Kolinar's Chromium of Ryhka LCM 8, Can FChX, SC, JOR, TT</td><td class="px-4 py-3 text-slate-600">D.Darling/P.Anuta</td><td class="px-4 py-3 text-center font-bold text-green-700">964</td><td class="px-4 py-3 text-center">51</td><td class="px-4 py-3 text-center text-amber-600 font-bold">2</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">8</td><td class="px-4 py-3 font-bold text-slate-800">Ch Birchwood Caspian P Zorya LCM 6, Can FChX</td><td class="px-4 py-3 text-slate-600">A.Duncan</td><td class="px-4 py-3 text-center font-bold text-green-700">912</td><td class="px-4 py-3 text-center">27</td><td class="px-4 py-3 text-center text-amber-600 font-bold">2</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">9</td><td class="px-4 py-3 font-bold text-slate-800">FC Niteshades Phenanthrene Of Ryhka LCM4, VLCM5, GRC, LCX, ORC</td><td class="px-4 py-3 text-slate-600">Darling/Anuta</td><td class="px-4 py-3 text-center font-bold text-green-700">846</td><td class="px-4 py-3 text-center">20</td><td class="px-4 py-3 text-center text-amber-600 font-bold">1</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">10</td><td class="px-4 py-3 font-bold text-slate-800">Silkenswift Pye's Dark Design LCM 6, Can FCh</td><td class="px-4 py-3 text-slate-600">B.Dalzell/J.Saklad</td><td class="px-4 py-3 text-center font-bold text-green-700">828</td><td class="px-4 py-3 text-center">49</td><td class="px-4 py-3 text-center text-amber-600 font-bold">5</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">11</td><td class="px-4 py-3 font-bold text-slate-800">FC C'Lestial Wild & Wonderful Of Ryhka LCM4, VLCM3, LCX2, SORC2, MC</td><td class="px-4 py-3 text-slate-600">D.Darling</td><td class="px-4 py-3 text-center font-bold text-green-700">818</td><td class="px-4 py-3 text-center">28</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">12</td><td class="px-4 py-3 font-bold text-slate-800">Ch Lothlorien Bette Zephyr's Reach LCM 6</td><td class="px-4 py-3 text-slate-600">Coney</td><td class="px-4 py-3 text-center font-bold text-green-700">781</td><td class="px-4 py-3 text-center">40</td><td class="px-4 py-3 text-center text-amber-600 font-bold">1</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">13</td><td class="px-4 py-3 font-bold text-slate-800">Morozova's Rafale LCM 5,CD</td><td class="px-4 py-3 text-slate-600">S.& D.Breaz</td><td class="px-4 py-3 text-center font-bold text-green-700">753</td><td class="px-4 py-3 text-center">43</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">14</td><td class="px-4 py-3 font-bold text-slate-800">DC Teine Mayberry Light Speed LCM 4, VFCh,SC</td><td class="px-4 py-3 text-slate-600">P.Mayberry, DVM</td><td class="px-4 py-3 text-center font-bold text-green-700">711</td><td class="px-4 py-3 text-center">29</td><td class="px-4 py-3 text-center text-amber-600 font-bold">3</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">15</td><td class="px-4 py-3 font-bold text-slate-800">Cheops Of The Wild Hunt LCM6</td><td class="px-4 py-3 text-slate-600">Littleton/Godsey/Duncan</td><td class="px-4 py-3 text-center font-bold text-green-700">688</td><td class="px-4 py-3 text-center">41</td><td class="px-4 py-3 text-center text-amber-600 font-bold">2</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">16</td><td class="px-4 py-3 font-bold text-slate-800">Avalon Perlova Go Darkly LCM4, VLCM</td><td class="px-4 py-3 text-slate-600">S.Van de Water</td><td class="px-4 py-3 text-center font-bold text-green-700">670</td><td class="px-4 py-3 text-center">45</td><td class="px-4 py-3 text-center text-amber-600 font-bold">2</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">17</td><td class="px-4 py-3 font-bold text-slate-800">FC Phenanthren's Arwen Tsarytsin Ryhka LCM4,SC</td><td class="px-4 py-3 text-slate-600">R.Blackstock</td><td class="px-4 py-3 text-center font-bold text-green-700">665</td><td class="px-4 py-3 text-center">35</td><td class="px-4 py-3 text-center text-amber-600 font-bold">2</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">18</td><td class="px-4 py-3 font-bold text-slate-800">Ch Birchwood's Seryosha v Songmaker LCM, Can FCH</td><td class="px-4 py-3 text-slate-600"></td><td class="px-4 py-3 text-center font-bold text-green-700">660</td><td class="px-4 py-3 text-center">36</td><td class="px-4 py-3 text-center text-amber-600 font-bold">1</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">18</td><td class="px-4 py-3 font-bold text-slate-800">Seaspell's Silkenswift Hawk LCM 4</td><td class="px-4 py-3 text-slate-600">J.Britton/B.Dalzell</td><td class="px-4 py-3 text-center font-bold text-green-700">660</td><td class="px-4 py-3 text-center">36</td><td class="px-4 py-3 text-center text-amber-600 font-bold">1</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">20</td><td class="px-4 py-3 font-bold text-slate-800">Kalakirya Howff Noel Caerlin LCM 4, VLCM</td><td class="px-4 py-3 text-slate-600">Littleton/Harbertson</td><td class="px-4 py-3 text-center font-bold text-green-700">645</td><td class="px-4 py-3 text-center">35</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Chart Polski -->
+                    <div id="chartpolski" class="breed-section hidden">
+                        <div class="flex justify-between items-end mb-4">
+                            <h2 class="text-2xl font-bold text-slate-800">Chart Polski</h2>
+                            <span class="text-sm font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-full">Total Competing: 9</span>
+                        </div>
+                        <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden overflow-x-auto">
+                            <table class="w-full text-left text-sm whitespace-nowrap">
+                                <thead class="bg-slate-50 text-slate-500 text-xs uppercase font-bold border-b border-slate-200">
+                                    <tr>
+                                        <th class="px-4 py-3 w-10 text-center">#</th>
+                                        <th class="px-4 py-3">Hound Name & Titles</th>
+                                        <th class="px-4 py-3">Owner(s)</th>
+                                        <th class="px-4 py-3 text-center">Defeated</th>
+                                        <th class="px-4 py-3 text-center">BOB</th>
+                                        <th class="px-4 py-3 text-center">BIF</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-100">
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">1</td><td class="px-4 py-3 font-bold text-slate-800">Fernmark Chart Blunderbuss</td><td class="px-4 py-3 text-slate-600">L.Duncan</td><td class="px-4 py-3 text-center font-bold text-green-700">5</td><td class="px-4 py-3 text-center">0</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">2</td><td class="px-4 py-3 font-bold text-slate-800">Zanoza Chart Altair</td><td class="px-4 py-3 text-slate-600">L.Duncan</td><td class="px-4 py-3 text-center font-bold text-green-700">2</td><td class="px-4 py-3 text-center">0</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">2</td><td class="px-4 py-3 font-bold text-slate-800">Kosmos When Worlds Collide</td><td class="px-4 py-3 text-slate-600">K.Bentonzi</td><td class="px-4 py-3 text-center font-bold text-green-700">2</td><td class="px-4 py-3 text-center">0</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">2</td><td class="px-4 py-3 font-bold text-slate-800">Zanoza Chart Anouk</td><td class="px-4 py-3 text-slate-600">L.Duncan</td><td class="px-4 py-3 text-center font-bold text-green-700">2</td><td class="px-4 py-3 text-center">0</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">5</td><td class="px-4 py-3 font-bold text-slate-800">Mars Celerrimus</td><td class="px-4 py-3 text-slate-600">K.Bentzoni</td><td class="px-4 py-3 text-center font-bold text-green-700">1</td><td class="px-4 py-3 text-center">0</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">5</td><td class="px-4 py-3 font-bold text-slate-800">Chesty</td><td class="px-4 py-3 text-slate-600">Osborn/Operskalski</td><td class="px-4 py-3 text-center font-bold text-green-700">1</td><td class="px-4 py-3 text-center">0</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Cirneco dell'Etna -->
+                    <div id="cirneco" class="breed-section hidden">
+                        <div class="flex justify-between items-end mb-4">
+                            <h2 class="text-2xl font-bold text-slate-800">Cirneco dell'Etna</h2>
+                            <span class="text-sm font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-full">Total Competing: 136</span>
+                        </div>
+                        <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden overflow-x-auto">
+                            <table class="w-full text-left text-sm whitespace-nowrap">
+                                <thead class="bg-slate-50 text-slate-500 text-xs uppercase font-bold border-b border-slate-200">
+                                    <tr>
+                                        <th class="px-4 py-3 w-10 text-center">#</th>
+                                        <th class="px-4 py-3">Hound Name & Titles</th>
+                                        <th class="px-4 py-3">Owner(s)</th>
+                                        <th class="px-4 py-3 text-center">Defeated</th>
+                                        <th class="px-4 py-3 text-center">BOB</th>
+                                        <th class="px-4 py-3 text-center">BIF</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-100">
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">1</td><td class="px-4 py-3 font-bold text-slate-800">Cy'Era Dawn LCM2, VFCh</td><td class="px-4 py-3 text-slate-600">D.Poole/M.L.Prieto</td><td class="px-4 py-3 text-center font-bold text-green-700">393</td><td class="px-4 py-3 text-center">13</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">2</td><td class="px-4 py-3 font-bold text-slate-800">Hadranensis Chloe LCM, VFCh</td><td class="px-4 py-3 text-slate-600">M.L.Prieto</td><td class="px-4 py-3 text-center font-bold text-green-700">290</td><td class="px-4 py-3 text-center">5</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">3</td><td class="px-4 py-3 font-bold text-slate-800">Hadranensis Calista LCM</td><td class="px-4 py-3 text-slate-600">T.White/M.L.Prieto</td><td class="px-4 py-3 text-center font-bold text-green-700">211</td><td class="px-4 py-3 text-center">67</td><td class="px-4 py-3 text-center text-amber-600 font-bold">3</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">4</td><td class="px-4 py-3 font-bold text-slate-800">Cy'Era Maribella di Hadranensis LCM</td><td class="px-4 py-3 text-slate-600">M.L.Prieto</td><td class="px-4 py-3 text-center font-bold text-green-700">190</td><td class="px-4 py-3 text-center">12</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">5</td><td class="px-4 py-3 font-bold text-slate-800">Cy'Era Henna FCh, VFCh</td><td class="px-4 py-3 text-slate-600">M.L.Prieto</td><td class="px-4 py-3 text-center font-bold text-green-700">179</td><td class="px-4 py-3 text-center">5</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">6</td><td class="px-4 py-3 font-bold text-slate-800">Cy'Era Maserati di Hadranensis LCM</td><td class="px-4 py-3 text-slate-600">M.L.Prieto</td><td class="px-4 py-3 text-center font-bold text-green-700">176</td><td class="px-4 py-3 text-center">11</td><td class="px-4 py-3 text-center text-amber-600 font-bold">1</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">7</td><td class="px-4 py-3 font-bold text-slate-800">Cy'era Bianca FCh, VFCh</td><td class="px-4 py-3 text-slate-600">Unger/Prieto</td><td class="px-4 py-3 text-center font-bold text-green-700">168</td><td class="px-4 py-3 text-center">4</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">8</td><td class="px-4 py-3 font-bold text-slate-800">FC Flying Ace D'Lea LCM, SC, SGRC</td><td class="px-4 py-3 text-slate-600">J.Hale/J.Gates</td><td class="px-4 py-3 text-center font-bold text-green-700">150</td><td class="px-4 py-3 text-center">20</td><td class="px-4 py-3 text-center text-amber-600 font-bold">1</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">9</td><td class="px-4 py-3 font-bold text-slate-800">Cy'Era Dublin FCh, VFCh</td><td class="px-4 py-3 text-slate-600">G.& A.Lovelace/L.Prieto</td><td class="px-4 py-3 text-center font-bold text-green-700">139</td><td class="px-4 py-3 text-center">10</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">10</td><td class="px-4 py-3 font-bold text-slate-800">Are But Not's Frequent Flyer FCh</td><td class="px-4 py-3 text-slate-600">N.L.Wight</td><td class="px-4 py-3 text-center font-bold text-green-700">134</td><td class="px-4 py-3 text-center">16</td><td class="px-4 py-3 text-center text-amber-600 font-bold">4</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">11</td><td class="px-4 py-3 font-bold text-slate-800">FC Colisto's Vento FCh, SC, SGRC, NW1</td><td class="px-4 py-3 text-slate-600">J.Hale/N.L.Wight</td><td class="px-4 py-3 text-center font-bold text-green-700">104</td><td class="px-4 py-3 text-center">28</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">12</td><td class="px-4 py-3 font-bold text-slate-800">Cy'Era Rocco FCh</td><td class="px-4 py-3 text-slate-600">G.& R.Frasco/M.L.Prieto</td><td class="px-4 py-3 text-center font-bold text-green-700">102</td><td class="px-4 py-3 text-center">18</td><td class="px-4 py-3 text-center text-amber-600 font-bold">6</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">12</td><td class="px-4 py-3 font-bold text-slate-800">Cy'Era Juno FCh</td><td class="px-4 py-3 text-slate-600">M.L.Prieto</td><td class="px-4 py-3 text-center font-bold text-green-700">102</td><td class="px-4 py-3 text-center">0</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">14</td><td class="px-4 py-3 font-bold text-slate-800">Cy'Era Concordia FCh</td><td class="px-4 py-3 text-slate-600">L.Prieto/J.Bornstein</td><td class="px-4 py-3 text-center font-bold text-green-700">100</td><td class="px-4 py-3 text-center">0</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">15</td><td class="px-4 py-3 font-bold text-slate-800">Cy'Era Qina FCh</td><td class="px-4 py-3 text-slate-600">D.Baker/M.L.Prieto</td><td class="px-4 py-3 text-center font-bold text-green-700">93</td><td class="px-4 py-3 text-center">4</td><td class="px-4 py-3 text-center text-amber-600 font-bold">1</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">16</td><td class="px-4 py-3 font-bold text-slate-800">DC Chiaramenti d'Lea FCh,SC</td><td class="px-4 py-3 text-slate-600">J.Gates/P.Qualls</td><td class="px-4 py-3 text-center font-bold text-green-700">88</td><td class="px-4 py-3 text-center">16</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">17</td><td class="px-4 py-3 font-bold text-slate-800">Rockin'Hearts Angel Kisses FCh</td><td class="px-4 py-3 text-slate-600">L.Myers</td><td class="px-4 py-3 text-center font-bold text-green-700">86</td><td class="px-4 py-3 text-center">10</td><td class="px-4 py-3 text-center text-amber-600 font-bold">1</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">18</td><td class="px-4 py-3 font-bold text-slate-800">Icaro FCC</td><td class="px-4 py-3 text-slate-600">S.Fernandez/Cy'Era Cirnechi</td><td class="px-4 py-3 text-center font-bold text-green-700">85</td><td class="px-4 py-3 text-center">0</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">19</td><td class="px-4 py-3 font-bold text-slate-800">Cy'rena Seta Del Oro FCC</td><td class="px-4 py-3 text-slate-600">Mercurio/Cy'Era Cirnechi, Inc.</td><td class="px-4 py-3 text-center font-bold text-green-700">83</td><td class="px-4 py-3 text-center">0</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">20</td><td class="px-4 py-3 font-bold text-slate-800">Vespinja's Belpasso FCh</td><td class="px-4 py-3 text-slate-600">N.L.Wight</td><td class="px-4 py-3 text-center font-bold text-green-700">76</td><td class="px-4 py-3 text-center">1</td><td class="px-4 py-3 text-center text-amber-600 font-bold">1</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Galgo Español -->
+                    <div id="galgo" class="breed-section hidden">
+                        <div class="flex justify-between items-end mb-4">
+                            <h2 class="text-2xl font-bold text-slate-800">Galgo Español</h2>
+                            <span class="text-sm font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-full">Total Competing: 13</span>
+                        </div>
+                        <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden overflow-x-auto">
+                            <table class="w-full text-left text-sm whitespace-nowrap">
+                                <thead class="bg-slate-50 text-slate-500 text-xs uppercase font-bold border-b border-slate-200">
+                                    <tr>
+                                        <th class="px-4 py-3 w-10 text-center">#</th>
+                                        <th class="px-4 py-3">Hound Name & Titles</th>
+                                        <th class="px-4 py-3">Owner(s)</th>
+                                        <th class="px-4 py-3 text-center">Defeated</th>
+                                        <th class="px-4 py-3 text-center">BOB</th>
+                                        <th class="px-4 py-3 text-center">BIF</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-100">
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">1</td><td class="px-4 py-3 font-bold text-slate-800">Rosa Slightly Bearded Senorita TCP, Prov FCh</td><td class="px-4 py-3 text-slate-600">T.Koch/K.Shreet</td><td class="px-4 py-3 text-center font-bold text-green-700">46</td><td class="px-4 py-3 text-center">0</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">2</td><td class="px-4 py-3 font-bold text-slate-800">UCh Sahejeevs Lindisfarne Sonofagun Prov FCh</td><td class="px-4 py-3 text-slate-600">D.Murray</td><td class="px-4 py-3 text-center font-bold text-green-700">40</td><td class="px-4 py-3 text-center">0</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">3</td><td class="px-4 py-3 font-bold text-slate-800">Rescue Story</td><td class="px-4 py-3 text-slate-600">L.Warden</td><td class="px-4 py-3 text-center font-bold text-green-700">14</td><td class="px-4 py-3 text-center">0</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">4</td><td class="px-4 py-3 font-bold text-slate-800">Teo The Barely Bearded Senor</td><td class="px-4 py-3 text-slate-600">T.Koch/K.Shreet</td><td class="px-4 py-3 text-center font-bold text-green-700">7</td><td class="px-4 py-3 text-center">0</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">5</td><td class="px-4 py-3 font-bold text-slate-800">Sabrina Roberts</td><td class="px-4 py-3 text-slate-600">J.& B.Roberts</td><td class="px-4 py-3 text-center font-bold text-green-700">4</td><td class="px-4 py-3 text-center">0</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">5</td><td class="px-4 py-3 font-bold text-slate-800">Awanta's Bena</td><td class="px-4 py-3 text-slate-600">S.Garth</td><td class="px-4 py-3 text-center font-bold text-green-700">4</td><td class="px-4 py-3 text-center">0</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">7</td><td class="px-4 py-3 font-bold text-slate-800">Awanta's Bruja</td><td class="px-4 py-3 text-slate-600">S.Garth</td><td class="px-4 py-3 text-center font-bold text-green-700">2</td><td class="px-4 py-3 text-center">0</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">7</td><td class="px-4 py-3 font-bold text-slate-800">UCh Sahejeev's Planet Queen WNS</td><td class="px-4 py-3 text-slate-600">M.Childs</td><td class="px-4 py-3 text-center font-bold text-green-700">2</td><td class="px-4 py-3 text-center">0</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">7</td><td class="px-4 py-3 font-bold text-slate-800">Hugo Toledo</td><td class="px-4 py-3 text-slate-600">S.McRae</td><td class="px-4 py-3 text-center font-bold text-green-700">2</td><td class="px-4 py-3 text-center">0</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">10</td><td class="px-4 py-3 font-bold text-slate-800">Bizet's Habanera Of Ceasar</td><td class="px-4 py-3 text-slate-600">D.Fitzgerald</td><td class="px-4 py-3 text-center font-bold text-green-700">1</td><td class="px-4 py-3 text-center">2</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">10</td><td class="px-4 py-3 font-bold text-slate-800">Garabato de Calathea</td><td class="px-4 py-3 text-slate-600">A.Sonntag</td><td class="px-4 py-3 text-center font-bold text-green-700">1</td><td class="px-4 py-3 text-center">0</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Greyhound -->
+                    <div id="greyhound" class="breed-section hidden">
+                        <div class="flex justify-between items-end mb-4">
+                            <h2 class="text-2xl font-bold text-slate-800">Greyhound</h2>
+                            <span class="text-sm font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-full">Total Competing: 2369</span>
+                        </div>
+                        <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden overflow-x-auto">
+                            <table class="w-full text-left text-sm whitespace-nowrap">
+                                <thead class="bg-slate-50 text-slate-500 text-xs uppercase font-bold border-b border-slate-200">
+                                    <tr>
+                                        <th class="px-4 py-3 w-10 text-center">#</th>
+                                        <th class="px-4 py-3">Hound Name & Titles</th>
+                                        <th class="px-4 py-3">Owner(s)</th>
+                                        <th class="px-4 py-3 text-center">Defeated</th>
+                                        <th class="px-4 py-3 text-center">BOB</th>
+                                        <th class="px-4 py-3 text-center">BIF</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-100">
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">1</td><td class="px-4 py-3 font-bold text-slate-800">FC Can Ch Lakilanni Forever In Blu Jeans LCM7, VLCM, JOR, FCHX</td><td class="px-4 py-3 text-slate-600">L.Soutar</td><td class="px-4 py-3 text-center font-bold text-green-700">1066</td><td class="px-4 py-3 text-center">63</td><td class="px-4 py-3 text-center text-amber-600 font-bold">25</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">2</td><td class="px-4 py-3 font-bold text-slate-800">DC GRCh Can Ch Lakilanni Love Her Madly LCM7, VLCM,FChX3,CD,RE</td><td class="px-4 py-3 text-slate-600">L.Soutar</td><td class="px-4 py-3 text-center font-bold text-green-700">972</td><td class="px-4 py-3 text-center">46</td><td class="px-4 py-3 text-center text-amber-600 font-bold">7</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">3</td><td class="px-4 py-3 font-bold text-slate-800">DC Winds Ariel Red Hunter LCM 7,SOR</td><td class="px-4 py-3 text-slate-600">M.Lorenzo</td><td class="px-4 py-3 text-center font-bold text-green-700">896</td><td class="px-4 py-3 text-center">31</td><td class="px-4 py-3 text-center text-amber-600 font-bold">2</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">4</td><td class="px-4 py-3 font-bold text-slate-800">Treybeau's Fantasy LCM 7</td><td class="px-4 py-3 text-slate-600">D.& S.Wright</td><td class="px-4 py-3 text-center font-bold text-green-700">847</td><td class="px-4 py-3 text-center">133</td><td class="px-4 py-3 text-center text-amber-600 font-bold">30</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">5</td><td class="px-4 py-3 font-bold text-slate-800">Tigger LCM4, VLCM3, GRC</td><td class="px-4 py-3 text-slate-600">L. Warden/A.Williams</td><td class="px-4 py-3 text-center font-bold text-green-700">580</td><td class="px-4 py-3 text-center">61</td><td class="px-4 py-3 text-center text-amber-600 font-bold">1</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">6</td><td class="px-4 py-3 font-bold text-slate-800">DC/Can Ch Lakilanni Tears In Heaven LCM3, VLCM,FChX</td><td class="px-4 py-3 text-slate-600">Soutar</td><td class="px-4 py-3 text-center font-bold text-green-700">574</td><td class="px-4 py-3 text-center">12</td><td class="px-4 py-3 text-center text-amber-600 font-bold">1</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">7</td><td class="px-4 py-3 font-bold text-slate-800">DC Lakilanni Riders on the Storm LCM4, VFCh</td><td class="px-4 py-3 text-slate-600">K.Kaltenborn</td><td class="px-4 py-3 text-center font-bold text-green-700">559</td><td class="px-4 py-3 text-center">49</td><td class="px-4 py-3 text-center text-amber-600 font-bold">1</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">8</td><td class="px-4 py-3 font-bold text-slate-800">Titan LCM4, VLCM2, GRC</td><td class="px-4 py-3 text-slate-600">L. Warden/A.Williams</td><td class="px-4 py-3 text-center font-bold text-green-700">545</td><td class="px-4 py-3 text-center">51</td><td class="px-4 py-3 text-center text-amber-600 font-bold">2</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">9</td><td class="px-4 py-3 font-bold text-slate-800">DC Zanzibar's Luminous LCM4</td><td class="px-4 py-3 text-slate-600">K.Kaltenborn</td><td class="px-4 py-3 text-center font-bold text-green-700">517</td><td class="px-4 py-3 text-center">45</td><td class="px-4 py-3 text-center text-amber-600 font-bold">4</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">10</td><td class="px-4 py-3 font-bold text-slate-800">FC SecondWind Black Comet LCM 3</td><td class="px-4 py-3 text-slate-600">K. & M.Lorenzo</td><td class="px-4 py-3 text-center font-bold text-green-700">516</td><td class="px-4 py-3 text-center">15</td><td class="px-4 py-3 text-center text-amber-600 font-bold">2</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">11</td><td class="px-4 py-3 font-bold text-slate-800">FC M's K Lofton LCM 3</td><td class="px-4 py-3 text-slate-600">K. & M.Lorenzo</td><td class="px-4 py-3 text-center font-bold text-green-700">506</td><td class="px-4 py-3 text-center">11</td><td class="px-4 py-3 text-center text-amber-600 font-bold">2</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">12</td><td class="px-4 py-3 font-bold text-slate-800">Nanjo's Lucy LCM 3</td><td class="px-4 py-3 text-slate-600">K.Edwards</td><td class="px-4 py-3 text-center font-bold text-green-700">495</td><td class="px-4 py-3 text-center">28</td><td class="px-4 py-3 text-center text-amber-600 font-bold">10</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">13</td><td class="px-4 py-3 font-bold text-slate-800">BII Beeline B Quick LCM 3</td><td class="px-4 py-3 text-slate-600">S.& B.Johnson</td><td class="px-4 py-3 text-center font-bold text-green-700">488</td><td class="px-4 py-3 text-center">46</td><td class="px-4 py-3 text-center text-amber-600 font-bold">6</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">14</td><td class="px-4 py-3 font-bold text-slate-800">FC Sunrunner Gold LCM 3,VFCh,SC</td><td class="px-4 py-3 text-slate-600">S.& S.Kort</td><td class="px-4 py-3 text-center font-bold text-green-700">476</td><td class="px-4 py-3 text-center">36</td><td class="px-4 py-3 text-center text-amber-600 font-bold">5</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">15</td><td class="px-4 py-3 font-bold text-slate-800">DC Winds Ariel Square Four LCM 3, VFCh</td><td class="px-4 py-3 text-slate-600">K.& M.Lorenzo</td><td class="px-4 py-3 text-center font-bold text-green-700">473</td><td class="px-4 py-3 text-center">21</td><td class="px-4 py-3 text-center text-amber-600 font-bold">3</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">16</td><td class="px-4 py-3 font-bold text-slate-800">OnRush Amelia LCM 3</td><td class="px-4 py-3 text-slate-600">G.& P.Davis</td><td class="px-4 py-3 text-center font-bold text-green-700">449</td><td class="px-4 py-3 text-center">21</td><td class="px-4 py-3 text-center text-amber-600 font-bold">1</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">17</td><td class="px-4 py-3 font-bold text-slate-800">Dejavu Diva LCM 3</td><td class="px-4 py-3 text-slate-600">B.Jahn</td><td class="px-4 py-3 text-center font-bold text-green-700">444</td><td class="px-4 py-3 text-center">28</td><td class="px-4 py-3 text-center text-amber-600 font-bold">4</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">18</td><td class="px-4 py-3 font-bold text-slate-800">DC Can Ch Lakilanni Scatpak Barracuda LCM2, VLCM, FChX</td><td class="px-4 py-3 text-slate-600">L.Soutar</td><td class="px-4 py-3 text-center font-bold text-green-700">403</td><td class="px-4 py-3 text-center">10</td><td class="px-4 py-3 text-center text-amber-600 font-bold">1</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">19</td><td class="px-4 py-3 font-bold text-slate-800">DC, Can Ch Lakilanni Mama Let Her Play LCM2, Can FCh</td><td class="px-4 py-3 text-slate-600">L.Soutar</td><td class="px-4 py-3 text-center font-bold text-green-700">397</td><td class="px-4 py-3 text-center">13</td><td class="px-4 py-3 text-center text-amber-600 font-bold">1</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">20</td><td class="px-4 py-3 font-bold text-slate-800">Malmo LCM 3</td><td class="px-4 py-3 text-slate-600">D.& S.Wright</td><td class="px-4 py-3 text-center font-bold text-green-700">395</td><td class="px-4 py-3 text-center">36</td><td class="px-4 py-3 text-center text-amber-600 font-bold">4</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Ibizan Hound -->
+                    <div id="ibizan" class="breed-section hidden">
+                        <div class="flex justify-between items-end mb-4">
+                            <h2 class="text-2xl font-bold text-slate-800">Ibizan Hound</h2>
+                            <span class="text-sm font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-full">Total Competing: 783</span>
+                        </div>
+                        <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden overflow-x-auto">
+                            <table class="w-full text-left text-sm whitespace-nowrap">
+                                <thead class="bg-slate-50 text-slate-500 text-xs uppercase font-bold border-b border-slate-200">
+                                    <tr>
+                                        <th class="px-4 py-3 w-10 text-center">#</th>
+                                        <th class="px-4 py-3">Hound Name & Titles</th>
+                                        <th class="px-4 py-3">Owner(s)</th>
+                                        <th class="px-4 py-3 text-center">Defeated</th>
+                                        <th class="px-4 py-3 text-center">BOB</th>
+                                        <th class="px-4 py-3 text-center">BIF</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-100">
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">1</td><td class="px-4 py-3 font-bold text-slate-800">Devillez Tryin To Get The Feeling Again LCM12</td><td class="px-4 py-3 text-slate-600">R.DeVillez</td><td class="px-4 py-3 text-center font-bold text-green-700">1213</td><td class="px-4 py-3 text-center">71</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">2</td><td class="px-4 py-3 font-bold text-slate-800">DeVillez Every Single Day LCM7, VLCM3</td><td class="px-4 py-3 text-slate-600">R.DeVillez</td><td class="px-4 py-3 text-center font-bold text-green-700">1161</td><td class="px-4 py-3 text-center">57</td><td class="px-4 py-3 text-center text-amber-600 font-bold">1</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">3</td><td class="px-4 py-3 font-bold text-slate-800">Devillez A Lil Travlin Music LCM4, VLCM3</td><td class="px-4 py-3 text-slate-600">C.Gibbons</td><td class="px-4 py-3 text-center font-bold text-green-700">1059</td><td class="px-4 py-3 text-center">23</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">4</td><td class="px-4 py-3 font-bold text-slate-800">Bramblewood's Alas Emplumadas LCM6, VLCM4</td><td class="px-4 py-3 text-slate-600">R.DeVillez</td><td class="px-4 py-3 text-center font-bold text-green-700">990</td><td class="px-4 py-3 text-center">72</td><td class="px-4 py-3 text-center text-amber-600 font-bold">2</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">5</td><td class="px-4 py-3 font-bold text-slate-800">Devillez Let Me Be Your Wings LCM9, VFCh</td><td class="px-4 py-3 text-slate-600">R.DeVillez</td><td class="px-4 py-3 text-center font-bold text-green-700">932</td><td class="px-4 py-3 text-center">73</td><td class="px-4 py-3 text-center text-amber-600 font-bold">3</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">6</td><td class="px-4 py-3 font-bold text-slate-800">Devillez Welcome Home Oenghus LCM2, VFCh</td><td class="px-4 py-3 text-slate-600">C.Gibbons</td><td class="px-4 py-3 text-center font-bold text-green-700">884</td><td class="px-4 py-3 text-center">3</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">7</td><td class="px-4 py-3 font-bold text-slate-800">AKC/CKC DC, UCh IcyCold Firstmate LCM6, VFCh, FChX, SC, SRM</td><td class="px-4 py-3 text-slate-600">Dr.K.Catt</td><td class="px-4 py-3 text-center font-bold text-green-700">865</td><td class="px-4 py-3 text-center">87</td><td class="px-4 py-3 text-center text-amber-600 font-bold">8</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">8</td><td class="px-4 py-3 font-bold text-slate-800">Ch Treybeau's K C LCM 8</td><td class="px-4 py-3 text-slate-600">T.& L.Coulson</td><td class="px-4 py-3 text-center font-bold text-green-700">849</td><td class="px-4 py-3 text-center">50</td><td class="px-4 py-3 text-center text-amber-600 font-bold">6</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">9</td><td class="px-4 py-3 font-bold text-slate-800">Ch O'Bre-on's Eternal Fire Treybeau LCM 5</td><td class="px-4 py-3 text-slate-600">D.& S.Wright</td><td class="px-4 py-3 text-center font-bold text-green-700">735</td><td class="px-4 py-3 text-center">120</td><td class="px-4 py-3 text-center text-amber-600 font-bold">7</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">10</td><td class="px-4 py-3 font-bold text-slate-800">Treybeau's Spitfire LCM 7</td><td class="px-4 py-3 text-slate-600">J.McManus</td><td class="px-4 py-3 text-center font-bold text-green-700">694</td><td class="px-4 py-3 text-center">81</td><td class="px-4 py-3 text-center text-amber-600 font-bold">10</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">11</td><td class="px-4 py-3 font-bold text-slate-800">CKC GCh DC, UCh IcyCold Thirdmate LCM5, FChX</td><td class="px-4 py-3 text-slate-600">Dr.K.Catt</td><td class="px-4 py-3 text-center font-bold text-green-700">649</td><td class="px-4 py-3 text-center">92</td><td class="px-4 py-3 text-center text-amber-600 font-bold">18</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">12</td><td class="px-4 py-3 font-bold text-slate-800">AKC/CKC DC, UCh Icy Cold First Light of Day LCM5,FChX, SC, CGN,SRM,RN</td><td class="px-4 py-3 text-slate-600">Dr.K.Catt</td><td class="px-4 py-3 text-center font-bold text-green-700">621</td><td class="px-4 py-3 text-center">26</td><td class="px-4 py-3 text-center text-amber-600 font-bold">4</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">13</td><td class="px-4 py-3 font-bold text-slate-800">Ch Candlewood Bijobi SOF Dashur LCM 5</td><td class="px-4 py-3 text-slate-600">W.Delong</td><td class="px-4 py-3 text-center font-bold text-green-700">580</td><td class="px-4 py-3 text-center">102</td><td class="px-4 py-3 text-center text-amber-600 font-bold">7</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">14</td><td class="px-4 py-3 font-bold text-slate-800">Devillez I Am Your Child FCh,VFCh</td><td class="px-4 py-3 text-slate-600">R.DeVillez</td><td class="px-4 py-3 text-center font-bold text-green-700">530</td><td class="px-4 py-3 text-center">1</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">15</td><td class="px-4 py-3 font-bold text-slate-800">Earstwo Cherry Blossom LCM3, VLCM2</td><td class="px-4 py-3 text-slate-600">C.Gibbons</td><td class="px-4 py-3 text-center font-bold text-green-700">523</td><td class="px-4 py-3 text-center">27</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">16</td><td class="px-4 py-3 font-bold text-slate-800">FC Kirah's I Like Treybeau Best LCM 5</td><td class="px-4 py-3 text-slate-600">A.Silverstein</td><td class="px-4 py-3 text-center font-bold text-green-700">502</td><td class="px-4 py-3 text-center">166</td><td class="px-4 py-3 text-center text-amber-600 font-bold">3</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">17</td><td class="px-4 py-3 font-bold text-slate-800">Treybeau Eternal Starfire LCM 3</td><td class="px-4 py-3 text-slate-600">D.& S.Wright</td><td class="px-4 py-3 text-center font-bold text-green-700">471</td><td class="px-4 py-3 text-center">19</td><td class="px-4 py-3 text-center text-amber-600 font-bold">2</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">18</td><td class="px-4 py-3 font-bold text-slate-800">DC Elidas Wirtu Spatterdash LCM 4,CC, CM, ORC, GRC</td><td class="px-4 py-3 text-slate-600">Kelly/Juden</td><td class="px-4 py-3 text-center font-bold text-green-700">470</td><td class="px-4 py-3 text-center">40</td><td class="px-4 py-3 text-center text-amber-600 font-bold">7</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">19</td><td class="px-4 py-3 font-bold text-slate-800">Am/Can Ch O'Bre-on's Eternal Fiver Atair LCM, Am/CanCD, CanFCh, UCD</td><td class="px-4 py-3 text-slate-600">C.Allen</td><td class="px-4 py-3 text-center font-bold text-green-700">461</td><td class="px-4 py-3 text-center">82</td><td class="px-4 py-3 text-center text-amber-600 font-bold">5</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">19</td><td class="px-4 py-3 font-bold text-slate-800">Treybeau's Spanish Flyer LCM3</td><td class="px-4 py-3 text-slate-600">D.Wright</td><td class="px-4 py-3 text-center font-bold text-green-700">461</td><td class="px-4 py-3 text-center">24</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Irish Wolfhound -->
+                    <div id="irishwolfhound" class="breed-section hidden">
+                        <div class="flex justify-between items-end mb-4">
+                            <h2 class="text-2xl font-bold text-slate-800">Irish Wolfhound</h2>
+                            <span class="text-sm font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-full">Total Competing: 1112</span>
+                        </div>
+                        <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden overflow-x-auto">
+                            <table class="w-full text-left text-sm whitespace-nowrap">
+                                <thead class="bg-slate-50 text-slate-500 text-xs uppercase font-bold border-b border-slate-200">
+                                    <tr>
+                                        <th class="px-4 py-3 w-10 text-center">#</th>
+                                        <th class="px-4 py-3">Hound Name & Titles</th>
+                                        <th class="px-4 py-3">Owner(s)</th>
+                                        <th class="px-4 py-3 text-center">Defeated</th>
+                                        <th class="px-4 py-3 text-center">BOB</th>
+                                        <th class="px-4 py-3 text-center">BIF</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-100">
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">1</td><td class="px-4 py-3 font-bold text-slate-800">Stoneybrook Brynmair Clare VFCh, LCM 6,CD,ORC, GRC, NA</td><td class="px-4 py-3 text-slate-600">Ferris/Frederick</td><td class="px-4 py-3 text-center font-bold text-green-700">636</td><td class="px-4 py-3 text-center">112</td><td class="px-4 py-3 text-center text-amber-600 font-bold">0</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">2</td><td class="px-4 py-3 font-bold text-slate-800">DC Stoneybrook Reilly's Baillie LCM 4</td><td class="px-4 py-3 text-slate-600">K.& S.Dykstra</td><td class="px-4 py-3 text-center font-bold text-green-700">464</td><td class="px-4 py-3 text-center">82</td><td class="px-4 py-3 text-center text-amber-600 font-bold">1</td></tr>
+                                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0"><td class="px-4 py-3 text-center font-semibold text-slate-400">3</td><td class="px-4 py-3 font-bold text-slate-800">Padraic Brie Eleanor LCM 3</td><td class="px-4 py-3 text-slate-600">M.Dentino</td><td
