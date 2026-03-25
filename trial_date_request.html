@@ -686,6 +686,18 @@
         // Initialize for Date 1 and Date 2
         initConditionalFields('input_91', 'id_20', 'id_86');
         initConditionalFields('input_92', 'id_60', 'id_87');
+//  Script for mobile menu
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if (mobileBtn && mobileMenu) {
+                mobileBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+        
     </script>
 </body>
 </html>
