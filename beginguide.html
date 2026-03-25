@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Sighthound Field Association - Beginner's Guide to Lure Coursing</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        
+        /* Hide default details marker for mobile menu */
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
+        
+        /* Scroll margin for anchor links */
+        .qa-section { scroll-margin-top: 6rem; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+    <!-- Top Navbar (Perfectly Synced) -->
+    <header class="bg-green-800 text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <a href="index.html" class="flex items-center gap-3 hover:opacity-90 transition">
+                        <img src="ASFALOGO.jpg" alt="ASFA Logo" class="w-12 h-12 rounded-full bg-white p-0.5 object-contain shadow-sm border border-green-600">
+                        <span class="font-bold text-xl tracking-tight hidden sm:block">ASFA</span>
+                    </a>
+                </div>
+
+                <nav class="hidden md:flex space-x-3 lg:space-x-5 items-center">
+                    <!-- Getting Started -->
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Getting Started
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-56 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="coursing.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Sport of Lure Coursing</a>
+                                <a href="breeds.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Eligible Breeds</a>
+                                <a href="beginguide.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors font-bold">Beginner's Guide</a>
+                                <a href="rulebook.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Rule Book/Policies</a>
+                                <a href="pubs.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Guides & Media</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Events -->
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Events
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-48 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="schedule.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Schedule</a>
+                                <a href="ii26.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">2026 ASFA II</a>
+                                <a href="regionals.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Regionals</a>
+                                <a href="acod2026.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">ACoD 2026</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Records & Awards -->
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Records & Awards
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-64 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2 max-h-[80vh] overflow-y-auto">
+                                <a href="trial_results.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Results</a>
+                                <a href="top20.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Top 20</a>
+                                <a href="titles.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">New Titles</a>
+                                <a href="records.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Hound Records</a>
+                                <a href="top20_lifetime.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Lifetime Top 20</a>
+                                <div class="h-px bg-slate-200 my-1"></div>
+                                <a href="hof.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors font-medium">Hall of Fame</a>
+                                <a href="gf.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Gary Forrester Award</a>
+                                <a href="epa.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Excellence in Performance</a>
+                                <a href="incentive_award.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Incentive Award</a>
+                                <a href="LureOperator.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Lure Operator of the Year</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Clubs & Admin -->
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Clubs & Admin
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-56 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="clubs.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Clubs</a>
+                                <a href="officers.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Officers & Directors</a>
+                                <a href="comm.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Committees</a>
+                                <a href="judges.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Judges</a>
+                                <a href="suspensions.html" class="block px-4 py-2 text-sm text-red-600 font-medium hover:bg-red-50 hover:text-red-800 transition-colors">Suspensions</a>
+                                <a href="quest.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Questions & Comments</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Forms -->
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Forms
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-60 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="entry_forms.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Entry Forms</a>
+                                <a href="trial_forms.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Forms</a>
+                                <a href="trial_date_request.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Date Request</a>
+                                <div class="h-px bg-slate-200 my-1"></div>
+                                <a href="membership.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Club Membership Forms</a>
+                                <a href="clubs_renewal_form.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Online Renewal</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- News & Media -->
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            News & Media
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute right-0 top-full -mt-2 w-56 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="communique.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">ASFA Communique</a>
+                                <a href="letter.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">President's Message</a>
+                                <a href="mission.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Mission Statement</a>
+                                <a href="album.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Photo Album</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="store.html" class="text-amber-400 hover:text-amber-200 transition font-bold text-xs lg:text-sm py-4">Store</a>
+                </nav>
+
+                <div class="flex items-center hidden sm:block">
+                    <div class="relative">
+                        <input type="text" placeholder="Search ASFA..." class="bg-green-900 text-white placeholder-green-300 rounded-full py-1.5 pl-4 pr-10 focus:outline-none focus:ring-2 focus:ring-green-400 text-sm w-40 lg:w-48">
+                        <svg class="w-4 h-4 absolute right-3 top-2 text-green-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </div>
+                </div>
+                
+                <!-- MOBILE MENU BUTTON -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white focus:outline-none hover:text-green-200 transition">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOBILE MENU BLOCKS -->
+        <div id="mobile-menu" class="hidden md:hidden bg-green-800 border-t border-green-700 shadow-inner max-h-[85vh] overflow-y-auto">
+            <div class="px-4 py-3 space-y-2">
+                <details class="group" open>
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        Getting Started
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="coursing.htm" class="block text-sm text-green-100 hover:text-white">Sport of Lure Coursing</a>
+                        <a href="breeds.html" class="block text-sm text-green-100 hover:text-white">Eligible Breeds</a>
+                        <a href="beginguide.html" class="block text-sm text-white font-bold">Beginner's Guide</a>
+                        <a href="rulebook.html" class="block text-sm text-green-100 hover:text-white">Rule Book/Policies</a>
+                        <a href="pubs.html" class="block text-sm text-green-100 hover:text-white">Guides & Media</a>
+                    </div>
+                </details>
+                
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        Events
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="schedule.html" class="block text-sm text-green-100 hover:text-white">Trial Schedule</a>
+                        <a href="ii26.html" class="block text-sm text-green-100 hover:text-white">2026 ASFA II</a>
+                        <a href="regionals.html" class="block text-sm text-green-100 hover:text-white">Regionals</a>
+                        <a href="acod2026.html" class="block text-sm text-green-100 hover:text-white">ACoD 2026</a>
+                    </div>
+                </details>
+
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        Records & Awards
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="trial_results.html" class="block text-sm text-green-100 hover:text-white">Trial Results</a>
+                        <a href="top20.html" class="block text-sm text-green-100 hover:text-white">Top 20</a>
+                        <a href="titles.html" class="block text-sm text-green-100 hover:text-white">New Titles</a>
+                        <a href="records.html" class="block text-sm text-green-100 hover:text-white">Hound Records</a>
+                        <a href="top20_lifetime.html" class="block text-sm text-green-100 hover:text-white">Lifetime Top 20</a>
+                        <div class="h-px bg-green-700 my-1 w-3/4"></div>
+                        <a href="hof.html" class="block text-sm text-green-100 hover:text-white font-medium">Hall of Fame</a>
+                        <a href="gf.html" class="block text-sm text-green-100 hover:text-white">Gary Forrester Award</a>
+                        <a href="epa.html" class="block text-sm text-green-100 hover:text-white">Excellence in Performance</a>
+                        <a href="incentive_award.html" class="block text-sm text-green-100 hover:text-white">Incentive Award</a>
+                        <a href="LureOperator.html" class="block text-sm text-green-100 hover:text-white">Lure Operator of the Year</a>
+                    </div>
+                </details>
+
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        Clubs & Admin
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="clubs.html" class="block text-sm text-green-100 hover:text-white">Clubs</a>
+                        <a href="officers.htm" class="block text-sm text-green-100 hover:text-white">Officers & Directors</a>
+                        <a href="comm.htm" class="block text-sm text-green-100 hover:text-white">Committees</a>
+                        <a href="judges.html" class="block text-sm text-green-100 hover:text-white">Judges</a>
+                        <a href="suspensions.html" class="block text-sm text-red-300 hover:text-red-100 font-medium">Suspensions</a>
+                        <a href="quest.html" class="block text-sm text-green-100 hover:text-white">Questions & Comments</a>
+                    </div>
+                </details>
+
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        Forms
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="entry_forms.html" class="block text-sm text-green-100 hover:text-white">Entry Forms</a>
+                        <a href="trial_forms.html" class="block text-sm text-green-100 hover:text-white">Trial Forms</a>
+                        <a href="trial_date_request.html" class="block text-sm text-green-100 hover:text-white">Trial Date Request</a>
+                        <div class="h-px bg-green-700 my-1 w-3/4"></div>
+                        <a href="membership.html" class="block text-sm text-green-100 hover:text-white">Club Membership Forms</a>
+                        <a href="clubs_renewal_form.html" class="block text-sm text-green-100 hover:text-white">Online Renewal</a>
+                    </div>
+                </details>
+
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        News & Media
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="communique.html" class="block text-sm text-green-100 hover:text-white">ASFA Communique</a>
+                        <a href="letter.html" class="block text-sm text-green-100 hover:text-white">President's Message</a>
+                        <a href="mission.html" class="block text-sm text-green-100 hover:text-white">Mission Statement</a>
+                        <a href="album.html" class="block text-sm text-green-100 hover:text-white">Photo Album</a>
+                    </div>
+                </details>
+
+                <a href="store.html" class="block py-2 font-bold text-amber-400 hover:text-amber-200">Store</a>
+                
+                <div class="pt-4 pb-2">
+                    <div class="relative">
+                        <input type="text" placeholder="Search ASFA..." class="w-full bg-green-900 text-white placeholder-green-300 rounded-full py-2 pl-4 pr-10 focus:outline-none focus:ring-2 focus:ring-green-400 text-sm border border-green-700">
+                        <svg class="w-4 h-4 absolute right-3 top-2.5 text-green-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full">
+        
+        <!-- Breadcrumbs -->
+        <nav class="mb-6" aria-label="Breadcrumb">
+            <ol class="flex items-center space-x-2 text-sm text-slate-500">
+                <li><a href="index.html" class="hover:text-green-700 transition">Home</a></li>
+                <li><svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></li>
+                <li><span class="text-slate-400">Getting Started</span></li>
+                <li><svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></li>
+                <li><span class="text-slate-800 font-semibold">Beginner's Guide</span></li>
+            </ol>
+        </nav>
+
+        <!-- Page Header -->
+        <div class="mb-8">
+            <h1 class="text-4xl font-extrabold text-green-900 tracking-tight mb-4">A Beginner's Guide to Lure Coursing</h1>
+            <p class="text-lg text-slate-600 max-w-4xl leading-relaxed">
+                This brief introduction to lure coursing and the American Sighthound Field Association is intended for people unfamiliar with the sport. We hope it answers most of your questions, and helps you and your sighthound enjoy lure coursing. The ASFA Web site listed at the end of this pamphlet can send you further information.
+            </p>
+        </div>
+
+        <div class="flex flex-col lg:flex-row gap-10 items-start">
+            
+            <!-- Sidebar Navigation (Table of Contents) -->
+            <aside class="w-full lg:w-1/4 shrink-0 lg:sticky lg:top-24 max-h-[calc(100vh-8rem)] overflow-y-auto hidden lg:block pr-2">
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5">
+                    <h3 class="font-bold text-slate-800 text-lg mb-4 flex items-center gap-2 border-b border-slate-100 pb-3">
+                        <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+                        Contents
+                    </h3>
+                    <ul class="space-y-2 text-sm font-medium text-slate-600">
+                        <li><a href="#q1" class="block py-1 hover:text-green-700 transition">What is lure coursing?</a></li>
+                        <li><a href="#q2" class="block py-1 hover:text-green-700 transition">Will my sighthound like it?</a></li>
+                        <li><a href="#q3" class="block py-1 hover:text-green-700 transition">How do I get started?</a></li>
+                        <li><a href="#q4" class="block py-1 hover:text-green-700 transition">What dogs are eligible?</a></li>
+                        <li><a href="#q5" class="block py-1 hover:text-green-700 transition">Former racing Greyhounds</a></li>
+                        <li><a href="#q6" class="block py-1 hover:text-green-700 transition">Getting my sighthound started</a></li>
+                        <li><a href="#q7" class="block py-1 hover:text-green-700 transition">Learning about lure coursing</a></li>
+                        <li><a href="#q8" class="block py-1 hover:text-green-700 transition">What's a trial like?</a></li>
+                        <li><a href="#q9" class="block py-1 hover:text-green-700 transition">Out on the field</a></li>
+                        <li><a href="#q10" class="block py-1 hover:text-green-700 transition">Earning lure coursing titles</a></li>
+                        <li><a href="#q11" class="block py-1 hover:text-green-700 transition">How do I enter a trial?</a></li>
+                        <li><a href="#q12" class="block py-1 hover:text-green-700 transition">What to do at the trial?</a></li>
+                        <li><a href="#q13" class="block py-1 hover:text-green-700 transition">How judges score hounds</a></li>
+                        <li><a href="#q14" class="block py-1 hover:text-green-700 transition">Running more than one hound</a></li>
+                        <li><a href="#q15" class="block py-1 hover:text-green-700 transition">Running in hot weather</a></li>
+                        <li><a href="#q16" class="block py-1 hover:text-green-700 transition">Training to chase a lure</a></li>
+                        <li><a href="#q17" class="block py-1 hover:text-green-700 transition">History of lure coursing</a></li>
+                        <li><a href="#q18" class="block py-1 hover:text-green-700 transition">How ASFA is organized</a></li>
+                        <li><a href="#q19" class="block py-1 hover:text-green-700 transition">How to get involved</a></li>
+                        <li><a href="#q20" class="block py-1 hover:text-green-700 transition">Learning the Running Rules</a></li>
+                        <li><a href="#q21" class="block py-1 hover:text-green-700 transition">Where to find out more</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Mobile Table of Contents Dropdown -->
+            <div class="w-full lg:hidden mb-6">
+                <details class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden group">
+                    <summary class="font-bold text-slate-800 text-lg p-4 flex justify-between items-center cursor-pointer list-none">
+                        <div class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+                            Table of Contents
+                        </div>
+                        <svg class="w-5 h-5 transition-transform group-open:rotate-180 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="p-4 pt-0 border-t border-slate-100 max-h-80 overflow-y-auto">
+                        <ul class="space-y-2 text-sm font-medium text-slate-600">
+                            <li><a href="#q1" class="block hover:text-green-700">What is lure coursing?</a></li>
+                            <li><a href="#q2" class="block hover:text-green-700">Will my sighthound like it?</a></li>
+                            <li><a href="#q3" class="block hover:text-green-700">How do I get started?</a></li>
+                            <li><a href="#q4" class="block hover:text-green-700">What dogs are eligible?</a></li>
+                            <li><a href="#q5" class="block hover:text-green-700">Former racing Greyhounds</a></li>
+                            <li><a href="#q6" class="block hover:text-green-700">Getting my sighthound started</a></li>
+                            <li><a href="#q7" class="block hover:text-green-700">Learning about lure coursing</a></li>
+                            <li><a href="#q8" class="block hover:text-green-700">What's a trial like?</a></li>
+                            <li><a href="#q9" class="block hover:text-green-700">Out on the field</a></li>
+                            <li><a href="#q10" class="block hover:text-green-700">Earning lure coursing titles</a></li>
+                            <li><a href="#q11" class="block hover:text-green-700">How do I enter a trial?</a></li>
+                            <li><a href="#q12" class="block hover:text-green-700">What to do at the trial?</a></li>
+                            <li><a href="#q13" class="block hover:text-green-700">How judges score hounds</a></li>
+                            <li><a href="#q14" class="block hover:text-green-700">Running more than one hound</a></li>
+                            <li><a href="#q15" class="block hover:text-green-700">Running in hot weather</a></li>
+                            <li><a href="#q16" class="block hover:text-green-700">Training to chase a lure</a></li>
+                            <li><a href="#q17" class="block hover:text-green-700">History of lure coursing</a></li>
+                            <li><a href="#q18" class="block hover:text-green-700">How ASFA is organized</a></li>
+                            <li><a href="#q19" class="block hover:text-green-700">How to get involved</a></li>
+                            <li><a href="#q20" class="block hover:text-green-700">Learning the Running Rules</a></li>
+                            <li><a href="#q21" class="block hover:text-green-700">Where to find out more</a></li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Content Area -->
+            <div class="w-full lg:w-3/4">
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 md:p-10 space-y-10 text-slate-700 leading-relaxed">
+                    
+                    <section id="q1" class="qa-section">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-4 pb-2 border-b border-slate-100">What is lure coursing?</h2>
+                        <p>Sighthound breeds have an overpowering instinct to chase. Lure coursing presents an opportunity for them to chase a lure just for their own pleasure, and is meant to simulate the pursuit of prey in the open field. Lure courses are usually between 500 and 1000 yards in length, but can be longer. The course is designed by placing small pulleys around a field in a pattern meant to resemble the route prey might take when pursued by hounds. Usually, a continuous loop of braided string is pulled around the pulleys by a wheel attached to a motor, and the lure itself is a piece of plastic. An experienced lure operator can control the lure so as to simulate escaping game. Since 1972, in this way, the American Sighthound Field Association has provided the joy of the chase to thousands of sighthounds!</p>
+                    </section>
+
+                    <section id="q2" class="qa-section">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-4 pb-2 border-b border-slate-100">Will my sighthound like lure coursing?</h2>
+                        <p>There are no guarantees. But you can only find out by giving your hound a chance to chase the lure. Sometimes youngsters may not show great interest at the first opportunity, but the next time something can click and they're off! Adult hounds sometimes could care less, but others respond immediately. Some hounds just don't care to chase a piece of plastic, and that's all there is to it. Other hounds enjoy chasing the plastic lure, but would prefer to chase another hound. Competitive lure coursing is not for them until they become more focused, but until then they can chase the lure by themselves in the Singles Stake.</p>
+                    </section>
+
+                    <section id="q3" class="qa-section">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-4 pb-2 border-b border-slate-100">How do I get started?</h2>
+                        <p>Find other people experienced in your breed to lend a hand. Most are very willing. In addition, find a lure coursing club in your area by exploring the ASFA Web site. Many clubs have a practice for novice hounds after their Saturday trials.</p>
+                        
+                        <div class="mt-6 mb-4 rounded-xl overflow-hidden shadow-md border border-slate-200">
+                            <img src="action.jpg" alt="Handlers releasing sighthounds in colored blankets at the start of a lure course" class="w-full h-auto object-cover">
+                        </div>
+                    </section>
+
+                    <section id="q4" class="qa-section">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-4 pb-2 border-b border-slate-100">What dogs are eligible?</h2>
+                        <p>Only purebred Afghans, Azawakhs, Basenjis, Borzoi, Greyhounds, Ibizan Hounds, Irish Wolfhounds, Italian Greyhounds, Pharoah Hounds, Rhodesian Ridgebacks, Salukis, Sloughis, Scottish Deerhounds, and Whippets are eligible. All entries must be individually registered with the AKC, CKC, NGA, or an AKC recognized foreign registry or possess a Critique Case Number from the Saluki Club of America. Your hound's registration number is required on all entry forms. Spayed or neutered sighthounds are eligible, but bitches in season or lame hounds are prohibited from running. Also, any sighthound disqualified from running is not eligible.</p>
+                    </section>
+
+                    <section id="q5" class="qa-section">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-4 pb-2 border-b border-slate-100">If I own a former racing Greyhound, what do I do?</h2>
+                        <p>If you can read your former racer's ear tattoos or you have his registered name, contact the National Greyhound Association at 785-263-4660 or at nga@ngagreyhounds.com with this information, and ask for his "certificate number" and "volume number." These numbers must be listed on all field trial entry forms.</p>
+                        <p class="mt-4">Sometimes it's not possible to get the NGA volume and certificate number for a former racing Greyhound. If so, you can apply to the AKC for an Indefinite Listing Privilege (ILP) number. Contact the AKC at 919-233-9767 and have them send you an application, or print one from the AKC Web site at http://www.akc.org/pdfs/ilpform.pdf. With your application, you will have to include several photos of your Greyhound, and then wait several weeks for your ILP number.</p>
+                        
+                        <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bg-slate-100 p-5 rounded-lg border border-slate-200">
+                                <h3 class="font-bold text-slate-800 mb-2">The racing organization & registry:</h3>
+                                <p class="text-sm">
+                                    National Greyhound Association<br>
+                                    P.O. Box 543<br>
+                                    Abilene, KS 67410<br>
+                                    (913) 263-4660
+                                </p>
+                            </div>
+                            <div class="bg-slate-100 p-5 rounded-lg border border-slate-200">
+                                <h3 class="font-bold text-slate-800 mb-2">AKC Registration & ILP number:</h3>
+                                <p class="text-sm">
+                                    American Kennel Club<br>
+                                    5580 Centerview Drive<br>
+                                    Raleigh, NC 27606<br>
+                                    (919) 233-9767
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="q6" class="qa-section">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-4 pb-2 border-b border-slate-100">How do I get my sighthound started?</h2>
+                        <p>First you must practice your hound to make certain it is interested in chasing the lure. Once you've practiced your hound in this way-and experienced observers have assured you that your hound is very keen, not just mildly interested-your hound is ready for certification, provided it is at least eleven months of age. Novice hounds must be certified by running on the lure with another sighthound of the same breed, or one with a similar running style. A licensed ASFA judge must observe this run. Unless your hound already has another qualifying coursing title from the open field or elsewhere, an ASFA certification form must be signed by the judge and a copy must be submitted when you enter your hound in a trial for the first time. In addition, a copy of your hound's registration should be included with its first entry.</p>
+                    </section>
+
+                    <section id="q7" class="qa-section">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-4 pb-2 border-b border-slate-100">What is the best way to learn about lure coursing?</h2>
+                        <p>Observe a trial. Watch for a while, and then look for someone to chat with about the sport. Seek people who seem generally friendly and sociable. It might be someone in your own breed or another breed. At many trials there's a Paddock person knowledgeable about the sport. This is the person who calls out the hounds' names when it's time for them to be ready for the course. The Field Trial Secretary listed in the premium can also suggest someone for you to meet.</p>
+                        <p class="mt-4">Always understand that, as in any sport, much so-called knowledge may simply be opinion. It takes years of experience to assemble an understanding of the sport, and you won't learn everything there is to know from one person or from attending a handful of trials. Experience is the best teacher.</p>
+                        <p class="mt-4">Often the best way to learn is by observation. Notice the way owners prepare their hounds. Some walk their hounds extensively long before they run, so as to loosen muscles (and hopefully empty the hound's bladder and bowels). Some even trot with their hounds. They should also have everything ready that they'll need-the proper blanket color and a slip lead, and water and a wetdown blanket if it's a hot day.</p>
+                        <p class="mt-4">You may notice that breeds are prepared in different ways. Afghan owners sometimes wrap the coat of their hounds. Whippet and Greyhound owners sometimes tape the feet of their hounds to protect toes. But you must know what you're doing. Therefore, look for experienced mentors who can help you learn. You'll find that lure coursing people are competitive, but very helpful.</p>
+                    </section>
+
+                    <section id="q8" class="qa-section">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-4 pb-2 border-b border-slate-100">What's a trial like?</h2>
+                        <p>For the field committee, the work begins early, setting up the field and getting the paperwork in order. For competitors, the trial begins at roll call, where hounds are checked for lameness or any breed-specific disqualifications. A Whippet, for example, can be disqualified for failure to meet standards of height and eye color. Also at roll call, bitches are checked to make certain they are not in season. Hounds who do not pass roll call receive a refund of their entry fee, but if you are late for roll call, you forfeit entry fees. Never take a bitch in season to a lure coursing trial, either to compete or to walk anywhere near the grounds.</p>
+                    </section>
+
+                    <section id="q9" class="qa-section">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-4 pb-2 border-b border-slate-100">What's happening out on the field?</h2>
+                        <p>Observe that the hounds run only against their own breed, and they run in trios with different color blankets. Yellow always starts on the left, pink in the middle, and blue on the right. The judges on the field score each course. These scores are checked by Field Clerks, and then the Field Trial Secretary posts the scores on record sheets. The hounds run two courses to determine their final scores. The first course is called a preliminary (or prelim), and the second a final-even though there may be ties and run-offs that require further courses for hounds placing in the top five for their breed. Finally, there's usually a Best in Field (BIF) run for any breed winners who choose to run for that honor.</p>
+                    </section>
+
+                    <section id="q10" class="qa-section">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-4 pb-2 border-b border-slate-100">Can my hound earn lure coursing titles?</h2>
+                        <p>Sighthounds love to run just for the fun of the chase. They have no idea how they've been judged or whether they've earned any points or a title. But most people enjoy earning titles on their hounds, especially if they have an exceptional specimen of their breed. ASFA offers several titles-a Field Championship (F.Ch.), the title of Lure Courser of Merit (LCM), and several levels of LCM. To earn titles, your hound must earn points at trials. There are even titles to be earned if your hound is a veteran, running in the Veteran Stake (for more information on this stake and its titles, see the Running Rules).</p>
+                        
+                        <p class="mt-4 mb-2">In the breed runs, ribbons and points are awarded as follows, with a total maximum of 40 points per trial:</p>
+                        <ul class="list-disc pl-6 space-y-1 mb-6">
+                            <li>1st Place - 4 x number of hounds competing (40 max)</li>
+                            <li>2nd - 3 x number of hounds competing (30 max)</li>
+                            <li>3rd - 2 x number of hounds competing (20 max)</li>
+                            <li>4th - 1 x number of hounds competing (10 max)</li>
+                            <li>NBQ - Next Best Qualifier (no points)</li>
+                        </ul>
+                        <p>In other words, a hound finishing second in a field of 8 hounds would earn 24 points, etc. There are no points for winning Best in Field, just a special ribbon.</p>
+
+                        <h3 class="text-xl font-bold text-slate-800 mt-6 mb-3">Field Championship (FCh)</h3>
+                        <p>Until a hound earns 100 points total (including two first placements or one first placement and two seconds, against competition) to get its Field Championship, it must run in the Open Stake. When the Field Championship is earned, the FCh suffix can be added to your hound's name.</p>
+                        <p class="mt-4">At a trial, the winning hound in the Open Stake and winning hound in the Field Champion Stake and the winning hound in the Veteran Stake run against each other to determine Best of Breed. Whichever hound wins could possibly earn the points of the defeated hound, if the point total is larger than what was earned in its own stake. For example, if there were only 6 hounds in the Open Stake, but 8 in the Field Champion Stake, and the Open Stake winner defeated the Field Champion Stake winner to take Best of Breed, the Open hound would be credited with winning the same number of points as the Field Champion-in this case, 32 points (4 points x 8 hounds). The Field Champion wouldn't lose those points, however, because it won its stake.</p>
+
+                        <h3 class="text-xl font-bold text-slate-800 mt-6 mb-3">Lure Courser of Merit (LCM)</h3>
+                        <p>After a hound has earned its Field Championship, it can begin to accumulate points toward the title Lure Courser of Merit. To earn the LCM suffix, a hound must accumulate 300 points after its Field Championship, including 4 first placements against competition. For each consecutive accumulation of 300 points and the appropriate placements, further LCM titles are earned, such as LCM II, LCM III, etc.</p>
+
+                        <h3 class="text-xl font-bold text-slate-800 mt-6 mb-3">Top Twenty Recognition</h3>
+                        <p>Top Twenty results are published in each issue of the ASFA's bi-monthly news magazine, Field Advisory News (FAN), and on its Web site at www.asfa.org. The top hound in each breed receives an award at the close of each year.</p>
+                    </section>
+
+                    <section id="q11" class="qa-section">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-4 pb-2 border-b border-slate-100">How do I enter a trial?</h2>
+                        <p>Obtain a premium list from the host club. The premium list contains all the necessary information on the trial-the date, location, judges, course design and length, deadlines, roll call time, places to stay, and the entry forms for the weekend. On the entry form, you'll need to include a breed-recognized registration number for your hound, and if this is the hound's first entry, a copy of the hound's registration and the certification form signed by an ASFA Judge.</p>
+                    </section>
+
+                    <section id="q12" class="qa-section">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-4 pb-2 border-b border-slate-100">What should I do at the trial?</h2>
+                        <p>Make friends, enjoy yourself, meet other hounds and other sighthound breeds, watch the courses and learn more about the function of your breed. You have three important jobs, however:</p>
+                        <p class="mt-4">The first is to get your hound to roll call on time; if you're late, your entry could be scratched, and fees forfeited.</p>
+                        <p class="mt-4">Second, walk your hound thoroughly. Even jog with it, to loosen muscles and give it a chance to eliminate.</p>
+                        <p class="mt-4">Third, have your hound prepared and ready for its course. To find out when it runs, look first at the running order, which should be posted. This is the order in which the breeds will be run. Then find out what course your hound is in and what blanket color it will wear. This is posted on record sheets or draw order sheets when the trial is about to begin. First find your breed, then your stake (which is probably Open unless your hound is already a Field Champion). Behind your hound's call name will be a number and letter, indicating the course and color. For example, 1Y, 1P, and 1B all refer to the first course and the letters to the blanket colors yellow, pink, or blue.</p>
+                        <p class="mt-4">Find someone to help you secure the coursing blanket. Clubs should supply coursing blankets and may supply slip leads for each breed at a trial. If no blanket or slip lead is available from the club, you will have to borrow both from someone with a similar-sized hound. If you don't know whom to ask, always explain your problem to the Paddock person, Huntmaster, or Field Trial Secretary before the trial begins. They'll help, because they want to keep the trial moving. Delays are cumulative, and you don't want to be the cause of one if you can help it.</p>
+                        <p class="mt-4">You will have to ask others how to use a slip lead. Both the Paddock person and the Huntmaster (the person who checks the hounds at the line and shouts the "tally-ho") are familiar with the proper use of a slip lead. Follow the Huntmaster's instructions during the course, and never release your hound until you hear the "T" in Tally-ho. There's nothing wrong with letting the Huntmaster know that this is your first trial, as s/he will make a special effort to make sure you and your hound are following proper procedures.</p>
+                        
+                        <div class="mt-6 mb-4 rounded-xl overflow-hidden shadow-md border border-slate-200">
+                            <img src="waiting.jpg" alt="Handlers with sighthounds in yellow, pink, and blue blankets waiting at the start line with slip leads" class="w-full h-auto object-cover">
+                            <p class="text-xs text-center text-slate-500 mt-2 pb-2">Handlers waiting at the line with slip leads and proper blanket colors.</p>
+                        </div>
+
+                        <p class="mt-4">After the course, be sure to at least walk your hound until its breathing returns to normal. In general treat your sighthound just as wise human athletes take care of themselves, walking and stretching both before and after strenuous exercise.</p>
+                    </section>
+
+                    <section id="q13" class="qa-section">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-4 pb-2 border-b border-slate-100">How do the judges score the hounds?</h2>
+                        <p class="mb-4">Overall, judges base their scores on the ASFA's criteria:</p>
+                        
+                        <div class="bg-slate-100 p-6 rounded-xl border border-slate-200 max-w-sm mb-6">
+                            <ul class="space-y-2 font-bold text-slate-700">
+                                <li class="flex justify-between"><span>Speed</span> <span>25 points</span></li>
+                                <li class="flex justify-between"><span>Agility</span> <span>25 points</span></li>
+                                <li class="flex justify-between"><span>Endurance</span> <span>20 points</span></li>
+                                <li class="flex justify-between"><span>Enthusiasm</span> <span>15 points</span></li>
+                                <li class="flex justify-between"><span>Follow</span> <span>15 points</span></li>
+                            </ul>
+                        </div>
+
+                        <p>However, every judge has his/her own system, usually based on his/her own concept of an average or superior performance. One judge's average score for Speed might be 18, another's 20. In fact, judges' typical total scores for excellent courses range from the low 60s to the low 80s. So even when two judges agree on a course, their scores are unlikely be exactly the same even if they place the hounds in the same order, because they have different scales of evaluation. Of course, judges occasionally disagree on what they saw. It's also worth noting that since judges usually have a far different vantage point of the course than the spectators, they are likely to see a course differently than the spectators.</p>
+                        <p class="mt-4">The judges also have the obligation to disqualify, dismiss or excuse a sighthound for interfering, displaying aggression, interfering or playing with, or coursing another hound rather than following the lure. For more information, see the Running Rules.</p>
+                    </section>
+
+                    <section id="q14" class="qa-section">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-4 pb-2 border-b border-slate-100">What should I do if I'm running more than one hound?</h2>
+                        <p>If you have more than one hound in more than one course, always get someone to help you rather than making people wait while you put a hound away and get another. If you need assistance, ask a friend or the Paddock person. Don't be responsible for delaying the field trial.</p>
+                    </section>
+
+                    <section id="q15" class="qa-section">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-4 pb-2 border-b border-slate-100">Should I run my hound in hot weather?</h2>
+                        <p>You should know the limits and relative health of your hound, as well as the heat-adapting characteristics of its breed. For example, some breeds and even specific hounds do not dissipate heat quickly when running. Most breeds can run safely in all but the very hottest weather. Even then, there are precautions you should take if your hound will be competing in hot weather. After the course, splash cool water on the surfaces inside the rear legs. Some owners drape their hounds with wet blankets to accelerate cooldown, or even spray a cooling mist of water on their hounds' coats. Provide shade. Offer cool water to drink only after your hound appears to be breathing normally.</p>
+                    </section>
+
+                    <section id="q16" class="qa-section">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-4 pb-2 border-b border-slate-100">Is there anything I can do to train my sighthound to chase a lure?</h2>
+                        <p>There are different schools of thought. Many experienced hands believe it just happens or it doesn't. Others believe that you can imprint chasing a lure on young puppies and they'll grow up enjoying it. In the latter case, at least, you have the pleasure of doing something with your puppy as it grows up. Playing chase games and fetch are also wonderful ways to exercise young hounds and help them reach their physical potential, as well as to create a bond with you.</p>
+                        <p class="mt-4">One way to train and exercise young pups is to attach a piece of plastic to a lunge whip or at the end of a fishing pole rigged with yarn (yarn doesn't cut young mouths, like string). Exercise them in this way a few minutes every week, but stop before they're bored or tired. When a pup is about 6 months old, you might try to practice it on an actual lure for a straight forty yards or so, then back. It's not recommended to have a pup run a full course at this age. Young bodies and minds are not fully developed, so avoid risking serious injury. Adult dogs should be in good condition from regular exercise. They may not chase the lure the first time, but try again.</p>
+                    </section>
+
+                    <section id="q17" class="qa-section">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-4 pb-2 border-b border-slate-100">Has lure coursing been around very long?</h2>
+                        <p>Lure coursing in the United States began back in the early 60s when sighthound organizations in different parts of the country began looking for ways to treat their hounds to the joy of the chase. In California, Lyle Gillette and several friends involved in open field coursing (after live game) wanted to more safely test the function of their hounds without the danger from barbed wire so often encountered in the field. In the late 60s, a hand-cranked take-up reel was developed. In 1972, the American Sighthound Field Association (ASFA) was founded, with Lyle Gillette as the first president and tireless supporter.</p>
+                    </section>
+
+                    <section id="q18" class="qa-section">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-4 pb-2 border-b border-slate-100">How is the ASFA organized?</h2>
+                        <p>The ASFA is a volunteer association of approximately 120 clubs holding ASFA trials throughout the U.S. The ASFA strives to remain democratic and seeks the opinion of its clubs. Since 1972, an annual meeting has been held for club delegates to refine the Running Rules and Constitution and elect officers. Additionally, regional directors elected by clubs in each region represent each of ASFA's ten regions on the Board of Directors. All members of the Board of Directors are volunteers.</p>
+                        <p class="mt-4">Since 1972, records have been accurately maintained and published in the Field Advisory News (FAN), a bi-monthly publication that has recorded meaningful performance titles in the sighthound breeds since its inception.</p>
+                        <p class="mt-4">In 1993, the American Kennel Club began a lure coursing program based almost entirely on the ASFA's program.</p>
+                    </section>
+
+                    <section id="q19" class="qa-section">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-4 pb-2 border-b border-slate-100">If I like lure coursing, how can I get involved?</h2>
+                        <p>Join a club. Subscribe to FAN. Volunteer to work at trials. Once you carefully observe a trial or two, you'll see there are dozens of jobs that need doing at trials. You'll enjoy lure coursing even more by becoming involved in the success of a trial weekend.</p>
+                    </section>
+
+                    <section id="q20" class="qa-section">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-4 pb-2 border-b border-slate-100">How can I learn the ASFA's Running Rules?</h2>
+                        <p>If you decide to begin lure coursing seriously, it's advisable to own the ASFA's rulebook: Running Rules and Field Procedures for Lure Field Trials. This provides much greater detail on the operation of field trials and the various rules, practices and procedures governing the sport, as well as the ASFA's Constitution and By-Laws.</p>
+                    </section>
+
+                    <section id="q21" class="qa-section">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-4 pb-2 border-b border-slate-100">Where can I find out more?</h2>
+                        <p>The ASFA Web site contains up-to-date information on field trials, member clubs around the U.S., contact information for board members and regional directors, scheduled events, and much more. Visit ASFA any time at: www.asfa.org</p>
+                    </section>
+
+                    <!-- Footer Note -->
+                    <div class="mt-12 pt-6 border-t border-slate-200 text-sm text-slate-500 italic space-y-4">
+                        <p>This guide is presented for general information only. For specific details, refer to the <a href="rulebook.html" class="text-green-600 hover:text-green-800 hover:underline font-semibold">ASFA Running Rules and Field Procedures</a>. No gambling is involved in this sport.</p>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-300 py-12 mt-auto border-t-4 border-green-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 border-b border-slate-800 pb-8 mb-8">
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Competition</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="schedule.html" class="hover:text-green-400 transition">Trial Schedule</a></li>
+                        <li><a href="trial_results.html" class="hover:text-green-400 transition">Trial Results</a></li>
+                        <li><a href="entry_forms.html" class="hover:text-green-400 transition">Entry Forms</a></li>
+                        <li><a href="top20.html" class="hover:text-green-400 transition">Top 20</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Organization</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="clubs.html" class="hover:text-green-400 transition">Clubs</a></li>
+                        <li><a href="officers.htm" class="hover:text-green-400 transition">Officers & Directors</a></li>
+                        <li><a href="rulebook.html" class="hover:text-green-400 transition">Rule Book</a></li>
+                        <li><a href="quest.htm" class="hover:text-green-400 transition">Questions & Comments</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Resources</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="breeds.html" class="hover:text-green-400 transition">Eligible Breeds</a></li>
+                        <li><a href="beginguide.html" class="hover:text-green-400 transition">Beginner's Guide</a></li>
+                        <li><a href="store.html" class="hover:text-green-400 transition">ASFA Store</a></li>
+                        <li><a href="sitemap.html" class="hover:text-green-400 transition">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">About</h4>
+                    <p class="text-sm leading-relaxed text-slate-400">
+                        The American Sighthound Field Association is dedicated to preserving the natural beauty, grace, speed and coursing skill of the sighthound.
+                    </p>
+                </div>
+            </div>
+            <div class="text-center text-xs text-slate-500 space-y-4">
+                <p class="max-w-4xl mx-auto">
+                    Acceptance and use of the information contained on this website constitutes an acknowledgment that the user hereby releases and indemnifies the ASFA, its officers, directors, members and agents from any and all liability and damages sustained by the user as a result of any information obtained from this web site.
+                </p>
+                <p>
+                    &copy; 2002-2026 American Sighthound Field Association. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script to toggle Mobile Menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if (mobileBtn && mobileMenu) {
+                mobileBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
