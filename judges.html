@@ -567,7 +567,7 @@
         let judgesData = [];
 
         document.addEventListener('DOMContentLoaded', () => {
-            // 1. Переключение мобильного меню
+            // 1. Mobile Menu Toggle
             const mobileBtn = document.getElementById('mobile-menu-btn');
             const mobileMenu = document.getElementById('mobile-menu');
             if (mobileBtn && mobileMenu) {
@@ -576,22 +576,22 @@
                 });
             }
 
-            // 2. Загрузка и парсинг CSV автоматически
+            // 2. Fetch and Parse CSV Automatically
             const tbody = document.getElementById('judges-tbody');
             const noMsg = document.getElementById('no-judges-msg');
             
-            noMsg.textContent = "Загрузка базы данных судей...";
+            noMsg.textContent = "Loading judges database...";
             noMsg.classList.remove('hidden');
 
             function handleParsedData(results) {
                 const rows = results.data;
                 
-                // Удаляем строку заголовка, если она есть
+                // Remove header row if it exists
                 if(rows.length > 0 && rows[0][0] && rows[0][0].toLowerCase().includes("judge")) {
                     rows.shift(); 
                 }
 
-                // Преобразуем строки CSV в удобные объекты
+                // Map the CSV rows into manageable objects
                 judgesData = rows.map(row => {
                     return {
                         name: row[0] ? row[0].replace(/"/g, '').trim() : "",
@@ -608,46 +608,50 @@
                 renderJudges(""); 
             }
 
-            Papa.parse("judges_list.csv", {
-                download: true,
-                skipEmptyLines: true,
-                complete: handleParsedData,
-                error: function(err) {
-                    console.error("Ошибка загрузки CSV:", err);
-                    
-                    // Если страница открыта локально (CORS блокировка)
-                    if (window.location.protocol === 'file:') {
-                        noMsg.innerHTML = `
-                            <div class="p-5 bg-amber-50 border border-amber-200 rounded-lg text-left max-w-xl mx-auto shadow-sm">
-                                <h3 class="font-bold text-amber-800 mb-2 text-lg">Локальный запуск заблокирован</h3>
-                                <p class="text-sm text-amber-700 mb-4">Браузер блокирует автоматическое чтение файлов (ошибка <strong>Invalid URL / XMLHttpRequest</strong>) при открытии страницы напрямую с компьютера в целях безопасности.</p>
-                                <p class="text-sm text-slate-800 font-bold mb-2">Для тестирования выберите ваш CSV-файл вручную:</p>
-                                <input type="file" id="local-csv-upload" accept=".csv" class="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-bold file:bg-white file:text-green-700 hover:file:bg-green-50 border border-slate-200 p-2 bg-white rounded-lg cursor-pointer">
-                            </div>
-                        `;
-                        noMsg.classList.remove('hidden');
-                        
-                        document.getElementById('local-csv-upload').addEventListener('change', function(e) {
-                            const file = e.target.files[0];
-                            if (file) {
-                                noMsg.innerHTML = "Обработка данных...";
-                                noMsg.classList.remove('text-red-600');
-                                Papa.parse(file, {
-                                    skipEmptyLines: true,
-                                    complete: handleParsedData
-                                });
-                            }
+            // Check if we are running in a local or preview environment (which blocks automatic CSV loading)
+            const protocol = window.location.protocol;
+            const isLocalOrPreview = protocol === 'file:' || protocol === 'blob:' || protocol === 'data:';
+
+            if (isLocalOrPreview) {
+                // If the page is opened locally or in Canvas Preview (CORS block)
+                noMsg.innerHTML = `
+                    <div class="p-5 bg-amber-50 border border-amber-200 rounded-lg text-left max-w-xl mx-auto shadow-sm">
+                        <h3 class="font-bold text-amber-800 mb-2 text-lg">Preview Environment Detected</h3>
+                        <p class="text-sm text-amber-700 mb-4">Automatic file reading is blocked in this preview environment for security reasons. When hosted on your real website, it will load automatically.</p>
+                        <p class="text-sm text-slate-800 font-bold mb-2">For testing right now, please select your <strong>judges_list.csv</strong> file manually:</p>
+                        <input type="file" id="local-csv-upload" accept=".csv" class="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-bold file:bg-white file:text-green-700 hover:file:bg-green-50 border border-slate-200 p-2 bg-white rounded-lg cursor-pointer">
+                    </div>
+                `;
+                noMsg.classList.remove('hidden');
+                
+                document.getElementById('local-csv-upload').addEventListener('change', function(e) {
+                    const file = e.target.files[0];
+                    if (file) {
+                        noMsg.innerHTML = "Processing data...";
+                        noMsg.classList.remove('text-red-600');
+                        Papa.parse(file, {
+                            skipEmptyLines: true,
+                            complete: handleParsedData
                         });
-                    } else {
-                        noMsg.innerHTML = 'Ошибка загрузки данных. Убедитесь, что файл <strong class="font-bold">judges_list.csv</strong> загружен на сервер.';
+                    }
+                });
+            } else {
+                // Normal server fetch
+                Papa.parse("judges_list.csv", {
+                    download: true,
+                    skipEmptyLines: true,
+                    complete: handleParsedData,
+                    error: function(err) {
+                        console.error("Error loading CSV:", err);
+                        noMsg.innerHTML = 'Error loading data. Please ensure <strong class="font-bold">judges_list.csv</strong> is uploaded to the server.';
                         noMsg.classList.remove('hidden');
                         noMsg.classList.add('text-red-600');
                     }
-                }
-            });
+                });
+            }
         });
 
-        // Функция для отрисовки таблицы на основе фильтра
+        // Function to render the table based on filter
         function renderJudges(filterText = "") {
             const tbody = document.getElementById('judges-tbody');
             const noMsg = document.getElementById('no-judges-msg');
@@ -662,12 +666,12 @@
                 if (lowerFilter === "" || searchString.includes(lowerFilter)) {
                     visibleCount++;
                     
-                    // Стилизация значка лицензии
+                    // Style the license badge
                     let licClass = "bg-slate-100 text-slate-700";
                     if(judge.license === "AB") licClass = "bg-blue-100 text-blue-800 font-bold";
                     if(judge.license === "Prov") licClass = "bg-amber-100 text-amber-800 font-bold";
 
-                    // Стилизация галочки Lure Operator
+                    // Style Lure Operator check
                     const operIcon = (judge.lureOper.toLowerCase() === "yes" || judge.lureOper === "1") 
                         ? `<span class="text-green-600 font-bold text-lg leading-none">&check;</span>` 
                         : `<span class="text-slate-300">-</span>`;
@@ -694,7 +698,7 @@
             });
 
             if (visibleCount === 0) {
-                noMsg.textContent = "Судьи, соответствующие вашему запросу, не найдены.";
+                noMsg.textContent = "No judges found matching your search.";
                 noMsg.classList.remove('hidden', 'text-red-600');
                 tbody.parentElement.classList.add('hidden');
             } else {
@@ -703,7 +707,7 @@
             }
         }
 
-        // Добавление слушателя для поиска
+        // Attach Search Listener
         const searchInput = document.getElementById('judge-search');
         if (searchInput) {
             searchInput.addEventListener('input', (e) => {
