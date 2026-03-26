@@ -95,7 +95,7 @@
                                 <a href="officers.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Officers & Directors</a>
                                 <a href="comm.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Committees</a>
                                 <a href="judges.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Judges</a>
-                                <a href="suspensions.html" class="block px-4 py-2 text-sm text-red-300 hover:text-red-100 font-medium">Suspensions</a>
+                                <a href="suspensions.html" class="block px-4 py-2 text-sm text-red-600 font-medium hover:bg-red-50 hover:text-red-800 transition-colors">Suspensions</a>
                                 <a href="quest.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Questions & Comments</a>
                             </div>
                         </div>
@@ -154,7 +154,7 @@
         <!-- MOBILE MENU BLOCKS (Hidden by default) -->
         <div id="mobile-menu" class="hidden md:hidden bg-green-800 border-t border-green-700 shadow-inner max-h-[85vh] overflow-y-auto">
             <div class="px-4 py-3 space-y-2">
-                <details class="group">
+                <details class="group" open>
                     <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
                         Getting Started
                         <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
@@ -372,7 +372,7 @@
             <div class="flex flex-col gap-6">
                 
                 <!-- Judging Panel -->
-                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+                <div id="judging-panel" class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
                     <div class="bg-slate-800 text-white px-6 py-4 flex items-center gap-3">
                         <svg class="w-6 h-6 text-amber-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                         <h3 class="font-bold text-lg">Judging & Scoring</h3>
@@ -384,41 +384,41 @@
                         
                         <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Maximum Points</h4>
                         <div class="space-y-4">
-                            <!-- Progress bars for visual effect -->
+                            <!-- Animated Progress bars -->
                             <div>
                                 <div class="flex justify-between text-sm font-bold text-slate-700 mb-1">
                                     <span>Agility</span>
                                     <span>25</span>
                                 </div>
-                                <div class="w-full bg-slate-100 rounded-full h-2"><div class="bg-green-500 h-2 rounded-full" style="width: 25%"></div></div>
+                                <div class="w-full bg-slate-100 rounded-full h-2"><div class="bg-green-500 h-2 rounded-full transition-all duration-1000 ease-out w-0 score-bar" data-width="25%"></div></div>
                             </div>
                             <div>
                                 <div class="flex justify-between text-sm font-bold text-slate-700 mb-1">
                                     <span>Speed</span>
                                     <span>25</span>
                                 </div>
-                                <div class="w-full bg-slate-100 rounded-full h-2"><div class="bg-blue-500 h-2 rounded-full" style="width: 25%"></div></div>
+                                <div class="w-full bg-slate-100 rounded-full h-2"><div class="bg-blue-500 h-2 rounded-full transition-all duration-1000 ease-out w-0 score-bar" data-width="25%"></div></div>
                             </div>
                             <div>
                                 <div class="flex justify-between text-sm font-bold text-slate-700 mb-1">
                                     <span>Endurance</span>
                                     <span>20</span>
                                 </div>
-                                <div class="w-full bg-slate-100 rounded-full h-2"><div class="bg-indigo-500 h-2 rounded-full" style="width: 20%"></div></div>
+                                <div class="w-full bg-slate-100 rounded-full h-2"><div class="bg-indigo-500 h-2 rounded-full transition-all duration-1000 ease-out w-0 score-bar" data-width="20%"></div></div>
                             </div>
                             <div>
                                 <div class="flex justify-between text-sm font-bold text-slate-700 mb-1">
                                     <span>Follow</span>
                                     <span>15</span>
                                 </div>
-                                <div class="w-full bg-slate-100 rounded-full h-2"><div class="bg-amber-500 h-2 rounded-full" style="width: 15%"></div></div>
+                                <div class="w-full bg-slate-100 rounded-full h-2"><div class="bg-amber-500 h-2 rounded-full transition-all duration-1000 ease-out w-0 score-bar" data-width="15%"></div></div>
                             </div>
                             <div>
                                 <div class="flex justify-between text-sm font-bold text-slate-700 mb-1">
                                     <span>Enthusiasm</span>
                                     <span>15</span>
                                 </div>
-                                <div class="w-full bg-slate-100 rounded-full h-2"><div class="bg-rose-500 h-2 rounded-full" style="width: 15%"></div></div>
+                                <div class="w-full bg-slate-100 rounded-full h-2"><div class="bg-rose-500 h-2 rounded-full transition-all duration-1000 ease-out w-0 score-bar" data-width="15%"></div></div>
                             </div>
                         </div>
                         
@@ -439,96 +439,84 @@
                         <p class="text-sm text-slate-600 mb-5">
                             The equipment needed to course your hound is very simple:
                         </p>
-                        <ul class="space-y-4">
-                            <li class="flex items-start gap-3">
-                                <!-- Three Racing Blankets Custom SVG Icon -->
-                                <svg class="w-7 h-7 flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <!-- Blue Blanket (Bottom) -->
-                                    <path d="M5 8 L11 9 C15 10 17 14 17 14 L12 21 C12 21 11 18 8 18 C5 18 3 21 3 21 L1 12 Z" fill="#3b82f6" stroke="#2563eb" stroke-width="0.5" transform="translate(6, 2) rotate(15 12 12)"/>
-                                    <!-- Pink Blanket (Middle) -->
-                                    <path d="M5 8 L11 9 C15 10 17 14 17 14 L12 21 C12 21 11 18 8 18 C5 18 3 21 3 21 L1 12 Z" fill="#ec4899" stroke="#db2777" stroke-width="0.5" transform="translate(3, 1) rotate(5 12 12)"/>
-                                    <!-- Yellow Blanket (Top) -->
-                                    <path d="M5 8 L11 9 C15 10 17 14 17 14 L12 21 C12 21 11 18 8 18 C5 18 3 21 3 21 L1 12 Z" fill="#fde047" stroke="#ca8a04" stroke-width="0.5" transform="translate(0, 0) rotate(-5 12 12)"/>
-                                </svg>
+                        <ul class="space-y-6">
+                            <li class="flex items-start gap-4">
+                                <!-- Replaced SVG with user-uploaded image -->
+                                <img src="courseblankets.png" alt="Coursing Blankets" class="w-16 h-16 object-contain flex-shrink-0 mt-0.5 rounded-lg shadow-sm border border-slate-200 bg-white p-1">
                                 <div>
-                                    <strong class="text-sm text-slate-800 block">Three Blankets</strong>
+                                    <strong class="text-sm text-slate-800 block mb-1">Three Blankets</strong>
                                     <span class="text-xs text-slate-500">One in each color (Yellow, Pink, and Blue). Many clubs have blankets to loan, or you can have your own made.</span>
                                 </div>
                             </li>
-                            <li class="flex items-start gap-3">
-                                <!-- Red Martingale Slip Lead Custom SVG Icon -->
-                                <svg class="w-7 h-7 flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M4 10 C 2 10, 2 16, 4 16 L 12 16 L 12 10 Z" fill="#b91c1c" stroke="#7f1d1d" stroke-width="1" />
-                                    <path d="M4 11 C 3 11, 3 15, 4 15 L 11 15 L 11 11 Z" fill="#ef4444" />
-                                    <ellipse cx="12" cy="10" rx="1.5" ry="3" stroke="#9ca3af" stroke-width="1.5" fill="none" />
-                                    <ellipse cx="12" cy="16" rx="1.5" ry="3" stroke="#9ca3af" stroke-width="1.5" fill="none" />
-                                    <path d="M13.5 10 L 21 7 C 24 10, 24 16, 21 19 L 13.5 16" stroke="#dc2626" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" fill="none" />
-                                </svg>
+                            <li class="flex items-start gap-4">
+                                <!-- Replaced SVG with user-uploaded image -->
+                                <img src="sliplead.png" alt="Slip Lead" class="w-16 h-16 object-contain flex-shrink-0 mt-0.5 rounded-lg shadow-sm border border-slate-200 bg-white p-1">
                                 <div>
-                                    <strong class="text-sm text-slate-800 block">Slip Lead</strong>
-                            <span class="text-xs text-slate-500">The approved slip lead consists of a collar with two D-rings and a permanently attached lead. It is used to hold and release your hound cleanly at the starting line.</span>
-                        </div>
-                    </li>
-                </ul>
+                                    <strong class="text-sm text-slate-800 block mb-1">Slip Lead</strong>
+                                    <span class="text-xs text-slate-500">The approved slip lead consists of a collar with two D-rings and a permanently attached lead. It is used to hold and release your hound cleanly at the starting line.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+            
         </div>
-    </div>
-    
-</div>
-</main>
+    </main>
 
-<!-- Footer -->
-<footer class="bg-slate-900 text-slate-300 py-12 mt-auto border-t-4 border-green-700">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 border-b border-slate-800 pb-8 mb-8">
-            <div>
-                <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Competition</h4>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="schedule.html" class="hover:text-green-400 transition">Trial Schedule</a></li>
-                    <li><a href="trial_results.html" class="hover:text-green-400 transition">Trial Results</a></li>
-                    <li><a href="entry_forms.html" class="hover:text-green-400 transition">Entry Forms</a></li>
-                    <li><a href="top20.html" class="hover:text-green-400 transition">Top 20</a></li>
-                </ul>
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-300 py-12 mt-auto border-t-4 border-green-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 border-b border-slate-800 pb-8 mb-8">
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Competition</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="schedule.html" class="hover:text-green-400 transition">Trial Schedule</a></li>
+                        <li><a href="trial_results.html" class="hover:text-green-400 transition">Trial Results</a></li>
+                        <li><a href="entry_forms.html" class="hover:text-green-400 transition">Entry Forms</a></li>
+                        <li><a href="top20.html" class="hover:text-green-400 transition">Top 20</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Organization</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="clubs.html" class="hover:text-green-400 transition">Clubs</a></li>
+                        <li><a href="officers.htm" class="hover:text-green-400 transition">Officers & Directors</a></li>
+                        <li><a href="rulebook.html" class="hover:text-green-400 transition">Rule Book</a></li>
+                        <li><a href="quest.htm" class="hover:text-green-400 transition">Questions & Comments</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Resources</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="breeds.html" class="hover:text-green-400 transition">Eligible Breeds</a></li>
+                        <li><a href="beginguide.html" class="hover:text-green-400 transition">Beginner's Guide</a></li>
+                        <li><a href="store.html" class="hover:text-green-400 transition">ASFA Store</a></li>
+                        <li><a href="sitemap.html" class="hover:text-green-400 transition">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">About</h4>
+                    <p class="text-sm leading-relaxed text-slate-400">
+                        The American Sighthound Field Association is dedicated to preserving the natural beauty, grace, speed and coursing skill of the sighthound.
+                    </p>
+                </div>
             </div>
-            <div>
-                <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Organization</h4>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="clubs.html" class="hover:text-green-400 transition">Clubs</a></li>
-                    <li><a href="officers.htm" class="hover:text-green-400 transition">Officers & Directors</a></li>
-                    <li><a href="rulebook.html" class="hover:text-green-400 transition">Rule Book</a></li>
-                    <li><a href="quest.htm" class="hover:text-green-400 transition">Questions & Comments</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Resources</h4>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="breeds.html" class="hover:text-green-400 transition">Eligible Breeds</a></li>
-                    <li><a href="beginguide.html" class="hover:text-green-400 transition">Beginner's Guide</a></li>
-                    <li><a href="store.html" class="hover:text-green-400 transition">ASFA Store</a></li>
-                    <li><a href="sitemap.html" class="hover:text-green-400 transition">Sitemap</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">About</h4>
-                <p class="text-sm leading-relaxed text-slate-400">
-                    The American Sighthound Field Association is dedicated to preserving the natural beauty, grace, speed and coursing skill of the sighthound.
+            <div class="text-center text-xs text-slate-500 space-y-4">
+                <p class="max-w-4xl mx-auto">
+                    Acceptance and use of the information contained on this website constitutes an acknowledgment that the user hereby releases and indemnifies the ASFA, its officers, directors, members and agents from any and all liability and damages sustained by the user as a result of any information obtained from this web site.
+                </p>
+                <p>
+                    &copy; 2002-2026 American Sighthound Field Association. All rights reserved. No part of this site may be reproduced without written permission from the <a href="mailto:webmaster@asfa.org" class="text-green-500 hover:text-green-400 underline">ASFA Webmasters</a>.
                 </p>
             </div>
         </div>
-        <div class="text-center text-xs text-slate-500 space-y-4">
-            <p class="max-w-4xl mx-auto">
-                Acceptance and use of the information contained on this website constitutes an acknowledgment that the user hereby releases and indemnifies the ASFA, its officers, directors, members and agents from any and all liability and damages sustained by the user as a result of any information obtained from this web site.
-            </p>
-            <p>
-                &copy; 2002-2026 American Sighthound Field Association. All rights reserved. No part of this site may be reproduced without written permission from the <a href="mailto:webmaster@asfa.org" class="text-green-500 hover:text-green-400 underline">ASFA Webmasters</a>.
-            </p>
-        </div>
-    </div>
-</footer>
+    </footer>
 
-<!-- Script to toggle Mobile Menu -->
-<script>
+    <!-- Scripts -->
+    <script>
         document.addEventListener('DOMContentLoaded', () => {
+            // Mobile Menu Toggle
             const mobileBtn = document.getElementById('mobile-menu-btn');
             const mobileMenu = document.getElementById('mobile-menu');
             
@@ -536,6 +524,30 @@
                 mobileBtn.addEventListener('click', () => {
                     mobileMenu.classList.toggle('hidden');
                 });
+            }
+
+            // Animate Score Bars on Scroll using Intersection Observer
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const bars = entry.target.querySelectorAll('.score-bar');
+                        bars.forEach(bar => {
+                            const targetWidth = bar.getAttribute('data-width');
+                            bar.style.width = targetWidth;
+                        });
+                        // Unobserve after animating once
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            const judgingPanel = document.getElementById('judging-panel');
+            if (judgingPanel) {
+                observer.observe(judgingPanel);
             }
         });
     </script>
