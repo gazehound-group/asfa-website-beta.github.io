@@ -303,50 +303,71 @@
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Обновленная сетка: 4 карточки (2x2) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                 
+                <!-- Card 1: Beginner's Guide -->
                 <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition">
-                    <div class="p-6">
-                        <div class="w-12 h-12 bg-green-100 text-green-700 rounded-xl flex items-center justify-center mb-6">
+                    <div class="p-6 h-full flex flex-col">
+                        <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">New to Lure Coursing?</h3>
+                        <p class="text-slate-600 mb-6 text-sm leading-relaxed flex-grow">
+                            Discover the exhilarating sport of lure coursing! Learn the basics, check breed eligibility, and find out what to expect at your first ASFA trial.
+                        </p>
+                        <a href="beginguide.html" class="text-emerald-600 font-semibold hover:text-emerald-800 text-sm flex items-center gap-1 group mt-auto">
+                            Read Beginner's Guide 
+                            <svg class="w-4 h-4 transform group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2: Top 20 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition">
+                    <div class="p-6 h-full flex flex-col">
+                        <div class="w-12 h-12 bg-amber-100 text-amber-700 rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Top 20 Rankings</h3>
+                        <p class="text-slate-600 mb-6 text-sm leading-relaxed flex-grow">
+                            See the highest performing sighthounds of the year! Check current Top 20 standings, lifetime achievements, and newly earned ASFA titles.
+                        </p>
+                        <a href="top20.html" class="text-amber-600 font-semibold hover:text-amber-800 text-sm flex items-center gap-1 group mt-auto">
+                            View Rankings 
+                            <svg class="w-4 h-4 transform group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3: Upcoming Events -->
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition">
+                    <div class="p-6 h-full flex flex-col">
+                        <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-xl flex items-center justify-center mb-6">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
                         </div>
                         <h3 class="text-xl font-bold text-slate-900 mb-2">Upcoming Events</h3>
-                        <p class="text-slate-600 mb-4 text-sm leading-relaxed">
-                            Check out our interactive trial schedule to find local lure coursing events, regional invitationals, and download premium lists.
+                        <p class="text-slate-600 mb-6 text-sm leading-relaxed flex-grow">
+                            Check out our interactive trial schedule to find local lure coursing events, regional invitationals, and easily download premium lists.
                         </p>
-                        <a href="schedule.html" class="text-green-600 font-semibold hover:text-green-800 text-sm flex items-center gap-1 group">
+                        <a href="schedule.html" class="text-blue-600 font-semibold hover:text-blue-800 text-sm flex items-center gap-1 group mt-auto">
                             View Schedule 
                             <svg class="w-4 h-4 transform group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                         </a>
                     </div>
                 </div>
 
+                <!-- Card 4: Clubs & Regions -->
                 <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition">
-                    <div class="p-6">
-                        <div class="w-12 h-12 bg-amber-100 text-amber-700 rounded-xl flex items-center justify-center mb-6">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-2">Rulebook & Policies</h3>
-                        <p class="text-slate-600 mb-4 text-sm leading-relaxed">
-                            Everything you need to know about the rules of competition, running procedures, eligible breeds, and judging criteria.
-                        </p>
-                        <a href="rulebook.html" class="text-amber-600 font-semibold hover:text-amber-800 text-sm flex items-center gap-1 group">
-                            Read the Rules 
-                            <svg class="w-4 h-4 transform group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition">
-                    <div class="p-6">
-                        <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-xl flex items-center justify-center mb-6">
+                    <div class="p-6 h-full flex flex-col">
+                        <div class="w-12 h-12 bg-indigo-100 text-indigo-700 rounded-xl flex items-center justify-center mb-6">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
                         </div>
                         <h3 class="text-xl font-bold text-slate-900 mb-2">Clubs & Regions</h3>
-                        <p class="text-slate-600 mb-4 text-sm leading-relaxed">
-                            Find an ASFA member club in your region to get connected with local fanciers, practices, and volunteer opportunities.
+                        <p class="text-slate-600 mb-6 text-sm leading-relaxed flex-grow">
+                            Find an ASFA member club in your region to get connected with local fanciers, practices, and volunteer opportunities near you.
                         </p>
-                        <a href="clubs.html" class="text-blue-600 font-semibold hover:text-blue-800 text-sm flex items-center gap-1 group">
+                        <a href="clubs.html" class="text-indigo-600 font-semibold hover:text-indigo-800 text-sm flex items-center gap-1 group mt-auto">
                             Find a Club 
                             <svg class="w-4 h-4 transform group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                         </a>
