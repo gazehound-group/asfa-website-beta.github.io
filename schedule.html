@@ -250,6 +250,12 @@
 
                 <a href="store.html" class="block py-2 font-bold text-amber-400 hover:text-amber-200">Store</a>
                 
+                <div class="pt-4 pb-2">
+                    <div class="relative">
+                        <input type="text" placeholder="Search ASFA..." class="w-full bg-green-900 text-white placeholder-green-300 rounded-full py-2 pl-4 pr-10 focus:outline-none focus:ring-2 focus:ring-green-400 text-sm border border-green-700">
+                        <svg class="w-4 h-4 absolute right-3 top-2.5 text-green-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -257,62 +263,80 @@
     <!-- Main Content -->
     <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full">
         
-        <!-- Header -->
-        <div class="mb-8">
-            <h1 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">2026 Trial Schedule</h1>
-            <p class="mt-2 text-slate-600 max-w-2xl text-sm md:text-base">
-                Explore upcoming ASFA lure coursing trials, invitationals, and specialties across North America. Use the filters below to find events in your region.
-            </p>
+        <!-- Header & Top Actions -->
+        <div class="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-6">
+            <div>
+                <h1 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">2026 Trial Schedule</h1>
+                <p class="mt-2 text-slate-600 max-w-2xl text-sm md:text-base">
+                    Explore upcoming ASFA lure coursing trials, invitationals, and specialties across North America. Use the filters below to find events in your region.
+                </p>
+            </div>
+            
+            <div class="flex flex-wrap gap-3 shrink-0">
+                <a href="trial_date_request.html" class="inline-flex items-center px-4 py-2 bg-green-700 hover:bg-green-800 text-white text-sm font-semibold rounded-lg shadow-sm transition">
+                    Request a Trial Date
+                </a>
+                <a href="clubs.html" class="inline-flex items-center px-4 py-2 bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 text-sm font-semibold rounded-lg shadow-sm transition">
+                    View Clubs
+                </a>
+            </div>
         </div>
 
         <!-- FILTER BAR (Interactive) -->
         <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-4 mb-10 sticky top-[76px] z-40">
-            <div class="flex flex-col md:flex-row gap-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 
-                <!-- Search Input -->
-                <div class="flex-grow">
-                    <label for="search-input" class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">Live Search</label>
-                    <div class="relative">
-                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                            <svg class="h-4 w-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-                        </div>
-                        <input type="text" id="search-input" placeholder="Search club, state, or judges..." class="block w-full pl-10 pr-3 py-2 border border-slate-300 rounded-md leading-5 bg-slate-50 placeholder-slate-400 focus:outline-none focus:bg-white focus:ring-2 focus:ring-green-500 focus:border-green-500 sm:text-sm transition-colors">
-                    </div>
+                <!-- Month Filter -->
+                <div>
+                    <label for="month-filter" class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">Month</label>
+                    <select id="month-filter" class="block w-full pl-3 pr-8 py-2 text-base border-slate-300 focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm rounded-md bg-slate-50">
+                        <option value="all">All Months</option>
+                        <option value="january">January</option>
+                        <option value="february">February</option>
+                        <option value="march">March</option>
+                        <option value="april">April</option>
+                        <option value="may">May</option>
+                        <option value="june">June</option>
+                        <option value="july">July</option>
+                        <option value="august">August</option>
+                        <option value="september">September</option>
+                        <option value="october">October</option>
+                        <option value="november">November</option>
+                        <option value="december">December</option>
+                    </select>
                 </div>
 
-                <!-- State/Region Filter -->
-                <div class="md:w-48 shrink-0">
-                    <label for="state-filter" class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">State / Region</label>
-                    <select id="state-filter" class="block w-full pl-3 pr-10 py-2 text-base border-slate-300 focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm rounded-md bg-slate-50">
-                        <option value="all">All Locations</option>
-                        <optgroup label="Regions">
-                            <option value="Reg 1">Region 1</option>
-                            <option value="Reg 2">Region 2</option>
-                            <option value="Reg 3">Region 3</option>
-                            <option value="Reg 4">Region 4</option>
-                            <option value="Reg 5">Region 5</option>
-                            <option value="Reg 6">Region 6</option>
-                            <option value="Reg 7">Region 7</option>
-                            <option value="Reg 8">Region 8</option>
-                            <option value="Reg 9">Region 9</option>
-                            <option value="Reg 10">Region 10</option>
-                        </optgroup>
-                        <optgroup label="Popular States">
-                            <option value="CA">California (CA)</option>
-                            <option value="CO">Colorado (CO)</option>
-                            <option value="FL">Florida (FL)</option>
-                            <option value="NY">New York (NY)</option>
-                            <option value="PA">Pennsylvania (PA)</option>
-                            <option value="TX">Texas (TX)</option>
-                            <option value="VA">Virginia (VA)</option>
-                        </optgroup>
+                <!-- Region Filter -->
+                <div>
+                    <label for="region-filter" class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">Region</label>
+                    <select id="region-filter" class="block w-full pl-3 pr-8 py-2 text-base border-slate-300 focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm rounded-md bg-slate-50">
+                        <option value="all">All Regions</option>
+                        <option value="1">Region 1</option>
+                        <option value="2">Region 2</option>
+                        <option value="3">Region 3</option>
+                        <option value="4">Region 4</option>
+                        <option value="5">Region 5</option>
+                        <option value="6">Region 6</option>
+                        <option value="7">Region 7</option>
+                        <option value="8">Region 8</option>
+                        <option value="9">Region 9</option>
+                        <option value="10">Region 10</option>
+                    </select>
+                </div>
+
+                <!-- State Filter -->
+                <div>
+                    <label for="state-filter" class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">State</label>
+                    <select id="state-filter" class="block w-full pl-3 pr-8 py-2 text-base border-slate-300 focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm rounded-md bg-slate-50">
+                        <option value="all">All States</option>
+                        <!-- Options populated dynamically by JS based on actual data -->
                     </select>
                 </div>
 
                 <!-- Event Type Filter -->
-                <div class="md:w-48 shrink-0">
+                <div>
                     <label for="type-filter" class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">Event Type</label>
-                    <select id="type-filter" class="block w-full pl-3 pr-10 py-2 text-base border-slate-300 focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm rounded-md bg-slate-50">
+                    <select id="type-filter" class="block w-full pl-3 pr-8 py-2 text-base border-slate-300 focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm rounded-md bg-slate-50">
                         <option value="all">All Types</option>
                         <option value="all-breed">All-Breed</option>
                         <option value="specialty">Specialty</option>
@@ -320,6 +344,7 @@
                         <option value="special event">Special Event</option>
                     </select>
                 </div>
+
             </div>
         </div>
 
@@ -327,13 +352,22 @@
         <div id="no-results" class="hidden text-center py-12 bg-white rounded-xl border border-slate-200 shadow-sm mb-12">
             <svg class="mx-auto h-12 w-12 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
             <h3 class="mt-2 text-sm font-medium text-slate-900">No events found</h3>
-            <p class="mt-1 text-sm text-slate-500">Try adjusting your search or filters to find what you're looking for.</p>
+            <p class="mt-1 text-sm text-slate-500">Try adjusting your filters to find what you're looking for.</p>
             <button onclick="resetFilters()" class="mt-4 text-green-600 font-medium hover:text-green-800 text-sm">Clear all filters</button>
         </div>
 
         <!-- DYNAMIC SCHEDULE TABLES -->
         <div id="schedule-container" class="space-y-12">
             <!-- Tables will be injected here by Javascript from schedule_data.js -->
+        </div>
+
+        <!-- Download PDF Section -->
+        <div class="mt-16 pt-8 border-t border-slate-200 text-center">
+            <a href="forms/ASFA%20Calendar%2003-25-2026%20Updates.pdf" target="_blank" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-red-600 hover:bg-red-700 text-white text-base font-bold rounded-lg shadow-sm transition-colors">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 16.5l4-4h-3v-9h-2v9H8l4 4zm9-3v8H3v-8H1v10h22v-10h-2z"/></svg>
+                Download Printable Schedule (PDF)
+            </a>
+            <p class="text-sm text-slate-500 mt-3">Download the latest PDF version of the complete ASFA trial schedule.</p>
         </div>
 
     </main>
@@ -413,7 +447,8 @@
             }
 
             // Attach Event Listeners for Filters
-            document.getElementById('search-input').addEventListener('input', applyFilters);
+            document.getElementById('month-filter').addEventListener('change', applyFilters);
+            document.getElementById('region-filter').addEventListener('change', applyFilters);
             document.getElementById('state-filter').addEventListener('change', applyFilters);
             document.getElementById('type-filter').addEventListener('change', applyFilters);
         });
@@ -426,6 +461,19 @@
             if (typeof asfaScheduleData === 'undefined' || !asfaScheduleData.length) {
                 container.innerHTML = '<p class="text-slate-500 text-center py-8">Schedule data is currently unavailable.</p>';
                 return;
+            }
+
+            // Populate the State dropdown dynamically based on available data
+            const states = new Set();
+            asfaScheduleData.forEach(ev => {
+                if(ev.state && ev.state.trim() !== '') states.add(ev.state.trim().toUpperCase());
+            });
+            const stateSelect = document.getElementById('state-filter');
+            if (stateSelect) {
+                stateSelect.innerHTML = '<option value="all">All States</option>';
+                Array.from(states).sort().forEach(state => {
+                    stateSelect.innerHTML += `<option value="${state.toLowerCase()}">${state}</option>`;
+                });
             }
 
             // Group data by month
@@ -490,8 +538,9 @@
                         `;
                     }
 
+                    // Attach clean data attributes to row for highly reliable filtering
                     html += `
-                        <tr class="hover:bg-slate-50 transition event-row">
+                        <tr class="hover:bg-slate-50 transition event-row" data-state="${(ev.state || '').toLowerCase()}" data-region="${(ev.region || '').toLowerCase()}">
                             <td class="px-5 py-4 whitespace-nowrap font-medium col-date ${canceledClass}">${ev.date}</td>
                             <td class="px-5 py-4 whitespace-nowrap text-slate-600 col-state-region">Reg ${ev.region}<br><span class="font-bold text-slate-800">${ev.state}</span></td>
                             <td class="px-5 py-4 text-slate-800 font-semibold col-club leading-snug">
@@ -512,34 +561,48 @@
 
         // FILTERING LOGIC
         function applyFilters() {
-            const searchInput = document.getElementById('search-input');
+            const monthFilter = document.getElementById('month-filter');
             const stateFilter = document.getElementById('state-filter');
+            const regionFilter = document.getElementById('region-filter');
             const typeFilter = document.getElementById('type-filter');
             const noResultsDiv = document.getElementById('no-results');
             
-            if (!searchInput || !stateFilter || !typeFilter) return;
+            if (!monthFilter || !stateFilter || !regionFilter || !typeFilter) return;
 
-            const searchTerm = searchInput.value.toLowerCase().trim();
+            const monthVal = monthFilter.value.toLowerCase();
             const stateVal = stateFilter.value.toLowerCase();
+            const regionVal = regionFilter.value.toLowerCase();
             const typeVal = typeFilter.value.toLowerCase();
 
             const monthSections = document.querySelectorAll('.month-section');
             let totalVisibleRows = 0;
 
             monthSections.forEach(section => {
+                const sectionMonth = section.getAttribute('data-month'); // e.g. "january-2026"
+                
+                // Fast fail if Month doesn't match
+                if (monthVal !== 'all' && !sectionMonth.includes(monthVal)) {
+                    section.style.display = 'none';
+                    return;
+                }
+
                 let sectionVisibleRows = 0;
                 const rows = section.querySelectorAll('tbody .event-row');
 
                 rows.forEach(row => {
-                    const fullText = row.textContent.toLowerCase();
-                    const regionStateText = row.querySelector('.col-state-region').textContent.toLowerCase();
+                    const rowState = row.getAttribute('data-state');
+                    const rowRegion = row.getAttribute('data-region');
                     const typeHtml = row.querySelector('.col-type').innerHTML.toLowerCase(); // Check tags instead of raw text
 
-                    const matchesSearch = searchTerm === '' || fullText.includes(searchTerm);
-                    const matchesState = stateVal === 'all' || regionStateText.includes(stateVal);
+                    const matchesState = stateVal === 'all' || rowState === stateVal;
+                    
+                    // Clean row region (removes asterisks, etc) for exact matching to avoid "1" matching "10"
+                    const cleanRowRegion = rowRegion.replace(/\D/g, '');
+                    const matchesRegion = regionVal === 'all' || cleanRowRegion === regionVal;
+                    
                     const matchesType = typeVal === 'all' || typeHtml.includes(typeVal);
 
-                    if (matchesSearch && matchesState && matchesType) {
+                    if (matchesState && matchesRegion && matchesType) {
                         row.style.display = ''; 
                         sectionVisibleRows++;
                         totalVisibleRows++;
@@ -563,8 +626,9 @@
         }
 
         function resetFilters() {
-            document.getElementById('search-input').value = '';
+            document.getElementById('month-filter').value = 'all';
             document.getElementById('state-filter').value = 'all';
+            document.getElementById('region-filter').value = 'all';
             document.getElementById('type-filter').value = 'all';
             applyFilters();
         }
