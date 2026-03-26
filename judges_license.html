@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Sighthound Field Association - Apprentice Judge License Application</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        
+        /* Hide default details marker for mobile menu */
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+    <!-- Top Navbar -->
+    <header class="bg-green-800 text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <a href="index.html" class="flex items-center gap-3 hover:opacity-90 transition">
+                        <img src="ASFALOGO.jpg" alt="ASFA Logo" class="w-12 h-12 rounded-full bg-white p-0.5 object-contain shadow-sm border border-green-600">
+                        <span class="font-bold text-xl tracking-tight hidden sm:block">ASFA</span>
+                    </a>
+                </div>
+
+                <nav class="hidden md:flex space-x-3 lg:space-x-5 items-center">
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Getting Started
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-56 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="coursing.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Sport of Lure Coursing</a>
+                                <a href="breeds/index.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Eligible Breeds</a>
+                                <a href="rulebook.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Rule Book/Policies</a>
+                                <a href="forms/pubs.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Pamphlets & Videos</a>
+                                <a href="https://www.ncsl.org/public/leglinks.cfm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Animal Advisory</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Events
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-48 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="schedule.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Schedule</a>
+                                <a href="ii26/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">2026 ASFA II</a>
+                                <a href="regionals/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Regionals</a>
+                                <a href="acod/2025/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">ACoD 2025</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Records & Awards
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-64 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2 max-h-[80vh] overflow-y-auto">
+                                <a href="trial/index0111.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Results</a>
+                                <a href="20/index.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Top 20</a>
+                                <a href="titles/index.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">New Titles</a>
+                                <a href="records/index.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Hound Records</a>
+                                <a href="20/lifetime.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Lifetime Top 20</a>
+                                <div class="h-px bg-slate-200 my-1"></div>
+                                <a href="hof/index.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors font-medium">Hall of Fame</a>
+                                <a href="gf/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Gary Forrester Award</a>
+                                <a href="epa/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Excellence in Performance</a>
+                                <a href="incentive award/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Incentive Award</a>
+                                <a href="Lure Operator/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Lure Operator of the Year</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Clubs & Admin
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-56 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="clubs.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Clubs</a>
+                                <a href="officers.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Officers & Directors</a>
+                                <a href="judges/index.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Judges</a>
+                                <a href="rule/ASFA Suspensions as of 07-09-2025.pdf" class="block px-4 py-2 text-sm text-red-600 font-medium hover:bg-red-50 hover:text-red-800 transition-colors">Suspensions</a>
+                                <a href="quest.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Questions & Comments</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Forms
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-60 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="trial.htm#entry" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Entry Forms</a>
+                                <a href="trial.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Forms</a>
+                                <a href="trial_date_request.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Date Request</a>
+                                <div class="h-px bg-slate-200 my-1"></div>
+                                <a href="membership.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Club Membership Forms</a>
+                                <a href="clubs/renewal_form.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Online Renewal</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            News & Media
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute right-0 top-full -mt-2 w-56 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="communique/index.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">ASFA Communique</a>
+                                <a href="letter.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">President's Message</a>
+                                <a href="mission.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Mission Statement</a>
+                                <a href="album/index.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Photo Album</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="store/index.htm" class="text-amber-400 hover:text-amber-200 transition font-bold text-xs lg:text-sm py-4">Store</a>
+                </nav>
+
+                <div class="flex items-center hidden sm:block">
+                    <div class="relative">
+                        <input type="text" placeholder="Search ASFA..." class="bg-green-900 text-white placeholder-green-300 rounded-full py-1.5 pl-4 pr-10 focus:outline-none focus:ring-2 focus:ring-green-400 text-sm w-40 lg:w-48">
+                        <svg class="w-4 h-4 absolute right-3 top-2 text-green-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full">
+        
+        <!-- Header & Breadcrumb -->
+        <div class="mb-8">
+            <a href="judges.html" class="text-sm text-slate-500 hover:text-green-700 transition flex items-center gap-1 mb-3">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                Back to Judges & Licensing
+            </a>
+            <h1 class="text-3xl font-extrabold text-slate-900">Apprentice Judge Application</h1>
+            <p class="mt-2 text-slate-600 text-sm">
+                Submit this application to request a provisional license to judge ASFA sanctioned lure field trials.
+            </p>
+        </div>
+
+        <!-- Notice Alert -->
+        <div class="bg-blue-50 border border-blue-200 border-l-4 border-l-blue-500 p-5 rounded-r-lg shadow-sm mb-8">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 mt-0.5">
+                        <svg class="h-5 w-5 text-blue-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/></svg>
+                    </div>
+                    <div class="ml-3">
+                        <h3 class="text-sm font-bold text-blue-900 tracking-wide uppercase">Requirements Overview:</h3>
+                        <div class="mt-1 text-sm text-blue-800 space-y-1">
+                            <p>&bull; You must be at least 18 years old and in good standing with ASFA.</p>
+                            <p>&bull; You must have participated in lure coursing for a minimum of 3 consecutive years.</p>
+                            <p>&bull; You must have served in an official capacity at a minimum of 10 ASFA trials.</p>
+                            <p>&bull; A $30.00 application fee is required upon submission.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shrink-0">
+                    <a href="forms/JDG 01 Apprentice Application.pdf" target="_blank" class="inline-flex text-sm text-blue-700 bg-white border border-blue-300 px-4 py-2 rounded-lg hover:bg-blue-50 font-bold items-center gap-2 transition shadow-sm">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                        Download PDF Version
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Form -->
+        <div class="bg-white rounded-xl shadow-lg border border-slate-200 overflow-hidden">
+            
+            <!-- Green Header -->
+            <div class="bg-green-800 px-8 py-5">
+                <h2 class="text-xl font-bold text-white">JDG 01 - Apprentice Application Form</h2>
+                <p class="text-green-100 text-sm mt-1">Fields marked with an asterisk (*) are required.</p>
+            </div>
+            
+            <!-- Note: Action URL can be pointed to your backend script or Jotform handler -->
+            <form action="#" method="post" id="apprentice-judge-form" class="p-8 space-y-10">
+                
+                <!-- Section 1: Personal Info -->
+                <div>
+                    <h3 class="text-lg font-bold text-slate-800 border-b border-slate-200 pb-3 mb-6">1. Personal Information</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-5">
+                        
+                        <div class="col-span-1 md:col-span-2">
+                            <label class="block text-sm font-semibold text-slate-700 mb-1">Full Name <span class="text-red-500">*</span></label>
+                            <input type="text" name="fullName" required class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500 transition-colors" />
+                        </div>
+
+                        <div class="col-span-1 md:col-span-2">
+                            <label class="block text-sm font-semibold text-slate-700 mb-1">Street Address <span class="text-red-500">*</span></label>
+                            <input type="text" name="address" required class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500 transition-colors" />
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-1">City <span class="text-red-500">*</span></label>
+                            <input type="text" name="city" required class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500 transition-colors" />
+                        </div>
+                        
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-1">State <span class="text-red-500">*</span></label>
+                                <input type="text" name="state" required class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500 transition-colors" />
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-1">Zip Code <span class="text-red-500">*</span></label>
+                                <input type="text" name="zip" required class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500 transition-colors" />
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-1">E-mail Address <span class="text-red-500">*</span></label>
+                            <input type="email" name="email" required class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500 transition-colors" />
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-1">Phone Number <span class="text-red-500">*</span></label>
+                            <input type="tel" name="phone" required class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500 transition-colors" />
+                        </div>
+
+                        <div class="col-span-1 md:col-span-2 pt-2">
+                            <label class="inline-flex items-center cursor-pointer bg-slate-50 border border-slate-200 p-3 rounded-lg w-full md:w-auto">
+                                <input type="checkbox" name="over18" required value="Yes" class="form-checkbox h-5 w-5 text-green-600 border-slate-300 rounded focus:ring-green-500">
+                                <span class="ml-3 text-slate-800 font-medium text-sm">I verify that I am 18 years of age or older. <span class="text-red-500">*</span></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2: Experience -->
+                <div>
+                    <h3 class="text-lg font-bold text-slate-800 border-b border-slate-200 pb-3 mb-6">2. Lure Coursing Experience</h3>
+                    <div class="grid grid-cols-1 gap-y-5">
+                        
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-1">How many years have you participated in Lure Field Trials? <span class="text-red-500">*</span></label>
+                            <input type="number" name="yearsExp" min="3" placeholder="Must be at least 3" required class="w-full md:w-1/2 rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500 transition-colors" />
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-1">What sighthound breed(s) have you personally owned and coursed?</label>
+                            <input type="text" name="breedsOwned" placeholder="e.g. Whippet, Saluki" class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500 transition-colors" />
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-1">Are you a member of any ASFA affiliated clubs? If yes, please list:</label>
+                            <textarea name="clubs" rows="2" class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500 transition-colors"></textarea>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Section 3: Official Trial Experience -->
+                <div>
+                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-end border-b border-slate-200 pb-3 mb-6">
+                        <h3 class="text-lg font-bold text-slate-800">3. Official Field Capacity Experience</h3>
+                    </div>
+                    <p class="text-sm text-slate-600 mb-4">
+                        Please list a minimum of ten (10) ASFA field trials where you served in an official capacity (Field Trial Chairman, Huntmaster, Field Trial Secretary, Field Clerk, and/or Lure Operator). 
+                        <br><span class="italic font-medium">Please provide accurate dates to facilitate verification.</span>
+                    </p>
+
+                    <!-- Responsive Experience Grid -->
+                    <div class="space-y-4">
+                        
+                        <!-- Header Row for Desktop -->
+                        <div class="hidden md:grid grid-cols-12 gap-4 px-2 text-xs font-bold text-slate-500 uppercase tracking-wider">
+                            <div class="col-span-1">No.</div>
+                            <div class="col-span-3">Trial Date</div>
+                            <div class="col-span-5">Host Club</div>
+                            <div class="col-span-3">Position Held</div>
+                        </div>
+
+                        <!-- 10 Repeating Rows -->
+                        <script>
+                            for(let i=1; i<=10; i++) {
+                                document.write(`
+                                <div class="grid grid-cols-1 md:grid-cols-12 gap-4 bg-slate-50 md:bg-transparent p-4 md:p-0 rounded-lg md:rounded-none border border-slate-200 md:border-0 items-center">
+                                    <div class="col-span-1 font-bold text-slate-400 hidden md:block pl-2">${i}.</div>
+                                    <div class="col-span-3">
+                                        <label class="md:hidden text-xs font-bold text-slate-500 uppercase mb-1 block">Trial Date ${i}</label>
+                                        <input type="text" name="trialDate_${i}" placeholder="MM/DD/YYYY" ${i===1 ? 'required' : ''} class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500 transition-colors" />
+                                    </div>
+                                    <div class="col-span-5">
+                                        <label class="md:hidden text-xs font-bold text-slate-500 uppercase mb-1 block">Host Club</label>
+                                        <input type="text" name="trialClub_${i}" placeholder="Club Initials or Name" ${i===1 ? 'required' : ''} class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500 transition-colors" />
+                                    </div>
+                                    <div class="col-span-3">
+                                        <label class="md:hidden text-xs font-bold text-slate-500 uppercase mb-1 block">Position Held</label>
+                                        <select name="trialPos_${i}" ${i===1 ? 'required' : ''} class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500 transition-colors bg-white">
+                                            <option value="">Select Position</option>
+                                            <option value="Field Trial Chairman">FT Chairman</option>
+                                            <option value="Field Trial Secretary">FT Secretary</option>
+                                            <option value="Huntmaster">Huntmaster</option>
+                                            <option value="Field Clerk">Field Clerk</option>
+                                            <option value="Lure Operator">Lure Operator</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                `);
+                            }
+                        </script>
+                    </div>
+                </div>
+
+                <!-- Section 4: Certification and Signature -->
+                <div>
+                    <h3 class="text-lg font-bold text-slate-800 border-b border-slate-200 pb-3 mb-6">4. Agreement & Certification</h3>
+                    
+                    <div class="bg-slate-50 p-5 rounded-lg border border-slate-200 mb-6 space-y-4">
+                        <label class="flex items-start cursor-pointer group">
+                            <div class="flex-shrink-0 mt-0.5">
+                                <input type="checkbox" name="certifyRules" required class="form-checkbox h-5 w-5 text-green-600 border-slate-300 rounded focus:ring-green-500 cursor-pointer">
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-sm font-medium text-slate-800 group-hover:text-green-800 transition">
+                                    I certify that I have read Chapter XI of the ASFA Running Rules and Field Procedures for Lure Field Trials and am familiar with the requirements for obtaining an ASFA judging license. <span class="text-red-500">*</span>
+                                </p>
+                            </div>
+                        </label>
+
+                        <label class="flex items-start cursor-pointer group">
+                            <div class="flex-shrink-0 mt-0.5">
+                                <input type="checkbox" name="certifyGoodStanding" required class="form-checkbox h-5 w-5 text-green-600 border-slate-300 rounded focus:ring-green-500 cursor-pointer">
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-sm font-medium text-slate-800 group-hover:text-green-800 transition">
+                                    I certify that I am in good standing with the American Sighthound Field Association. <span class="text-red-500">*</span>
+                                </p>
+                            </div>
+                        </label>
+                        
+                        <label class="flex items-start cursor-pointer group">
+                            <div class="flex-shrink-0 mt-0.5">
+                                <input type="checkbox" name="certifyTest" required class="form-checkbox h-5 w-5 text-green-600 border-slate-300 rounded focus:ring-green-500 cursor-pointer">
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-sm font-medium text-slate-800 group-hover:text-green-800 transition">
+                                    I understand that I must complete the ASFA Open Book Test with a score of 85% or better prior to receiving my Apprentice License. <span class="text-red-500">*</span>
+                                </p>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-5">
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-1">Electronic Signature (Type your full name) <span class="text-red-500">*</span></label>
+                            <input type="text" name="signature" required placeholder="John Doe" class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500 transition-colors" />
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-1">Date <span class="text-red-500">*</span></label>
+                            <input type="date" name="signDate" required class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-green-500 focus:outline-none focus:ring-1 focus:ring-green-500 transition-colors" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Submit Action -->
+                <div class="pt-6 border-t border-slate-200 flex flex-col sm:flex-row justify-between items-center gap-4">
+                    <p class="text-sm text-slate-500 font-medium">A <strong class="text-slate-700">$30.00</strong> application fee will be required.</p>
+                    <button type="submit" class="w-full sm:w-auto inline-flex justify-center rounded bg-green-700 py-3 px-8 text-sm font-bold text-white shadow-md hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-all transform hover:scale-105">
+                        Submit Application
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-300 py-12 mt-auto border-t-4 border-green-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 border-b border-slate-800 pb-8 mb-8">
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Competition</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="schedule.html" class="hover:text-green-400 transition">Trial Schedule</a></li>
+                        <li><a href="trial_results.html" class="hover:text-green-400 transition">Trial Results</a></li>
+                        <li><a href="entry_forms.html" class="hover:text-green-400 transition">Entry Forms</a></li>
+                        <li><a href="top20.html" class="hover:text-green-400 transition">Top 20</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Organization</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="clubs.html" class="hover:text-green-400 transition">Clubs</a></li>
+                        <li><a href="officers.htm" class="hover:text-green-400 transition">Officers & Directors</a></li>
+                        <li><a href="rulebook.html" class="hover:text-green-400 transition">Rule Book</a></li>
+                        <li><a href="quest.htm" class="hover:text-green-400 transition">Questions & Comments</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Resources</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="breeds.html" class="hover:text-green-400 transition">Eligible Breeds</a></li>
+                        <li><a href="beginguide.html" class="hover:text-green-400 transition">Beginner's Guide</a></li>
+                        <li><a href="store.html" class="hover:text-green-400 transition">ASFA Store</a></li>
+                        <li><a href="sitemap.html" class="hover:text-green-400 transition">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">About</h4>
+                    <p class="text-sm leading-relaxed text-slate-400">
+                        The American Sighthound Field Association is dedicated to preserving the natural beauty, grace, speed and coursing skill of the sighthound.
+                    </p>
+                </div>
+            </div>
+            <div class="text-center text-xs text-slate-500 space-y-4">
+                <p class="max-w-4xl mx-auto">
+                    Acceptance and use of the information contained on this website constitutes an acknowledgment that the user hereby releases and indemnifies the ASFA, its officers, directors, members and agents from any and all liability and damages sustained by the user as a result of any information obtained from this web site.
+                </p>
+                <p>
+                    &copy; 2002-2026 American Sighthound Field Association. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile Menu Toggle
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if (mobileBtn && mobileMenu) {
+                mobileBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+
+            // Demo submission handler (remove this and update the <form action="..."> for production)
+            const form = document.getElementById('apprentice-judge-form');
+            if(form) {
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    alert('Thank you! Your Apprentice Judge Application has been submitted. (This is a demo notification. Connect to Jotform or your backend to process live data.)');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
