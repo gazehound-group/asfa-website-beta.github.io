@@ -3,7 +3,7 @@ const asfaScheduleData = [
     { month: "January 2026", date: "Jan 17-18", typeRaw: "SW", club: "DFB (Specialty)", city: "Black Canyon City", state: "AZ", region: "10", canceled: false },
 
     // FEBRUARY
-    { month: "February 2026", date: "Feb 14-15", typeRaw: "AB/LCI", club: "LEGS", city: "McIntosh Reserve Park, Whitesburg", state: "GA", region: "7", canceled: true },
+    { month: "February 2026", date: "Feb 14-15", typeRaw: "AB/LCI", club: "LEGS (CANCELLED)", city: "McIntosh Reserve Park, Whitesburg", state: "GA", region: "7", canceled: true },
     { month: "February 2026", date: "Feb 14-15", typeRaw: "SW/LCI", club: "OCRRC (Specialty)", city: "Chino Hills", state: "CA", region: "10", canceled: false },
     { month: "February 2026", date: "Feb 21-22", typeRaw: "AB/LCI", club: "CLCA", city: "Peyton", state: "CO", region: "3", canceled: false },
     { month: "February 2026", date: "Feb 21-22", typeRaw: "SW", club: "DFB (Specialty)", city: "Tonopah", state: "AZ", region: "10", canceled: false },
@@ -26,8 +26,8 @@ const asfaScheduleData = [
     { month: "April 2026", date: "Apr 4-5", typeRaw: "AB/LCI", club: "SHOT", city: "LaQuest Whippet Haven, Dendron", state: "VA", region: "8*", canceled: false },
     { month: "April 2026", date: "Apr 11-12", typeRaw: "W", club: "AWC (National Specialty)", city: "Pasco", state: "WA", region: "1", canceled: false },
     { month: "April 2026", date: "Apr 11-12", typeRaw: "AB/LCI", club: "GONE", city: "Waterford", state: "CT", region: "9*", canceled: false },
-    { month: "April 2026", date: "Apr 11-12", typeRaw: "AB/LCI", club: "USRCC (Specialty)", city: "Auburn", state: "KS", region: "5*", canceled: false },
-    { month: "April 2026", date: "Apr 18-19", typeRaw: "HCA", club: "HCA", city: "Bastian Agricultural Center, South Jordan", state: "UT", region: "3", canceled: false },
+    { month: "April 2026", date: "Apr 11-12", typeRaw: "AB/LCI", club: "HCA", city: "Auburn", state: "KS", region: "5*", canceled: false },
+    { month: "April 2026", date: "Apr 18-19", typeRaw: "AB/LCI", club: "USRCC (Specialty)", city: "Bastian Agricultural Center, South Jordan", state: "UT", region: "3", canceled: false },
     { month: "April 2026", date: "Apr 25-26", typeRaw: "AB/LCI", club: "TSSC", city: "Slippery Rock", state: "PA", region: "8*", canceled: false },
     { month: "April 2026", date: "Apr 25-26", typeRaw: "AB/LCI", club: "MCA", city: "Dakota City Fairgrounds, Farmington", state: "MN", region: "5*", canceled: false },
     { month: "April 2026", date: "Apr 25-26", typeRaw: "AB/LCI", club: "LEGS", city: "McIntosh Reserve Park, Whitesburg", state: "GA", region: "7", canceled: false },
@@ -68,7 +68,7 @@ const asfaScheduleData = [
 
     // SEPTEMBER
     { month: "September 2026", date: "Sep 5-6", typeRaw: "IW/LCI", club: "RMIWA (Specialty)", city: "Bennett", state: "CO", region: "3", canceled: false },
-    { month: "September 2026", date: "Sep 5-6", typeRaw: "REG IX/LCI", club: "GONE", city: "Starkville", state: "NY", region: "9", canceled: false },
+    { month: "September 2026", date: "Sep 5-6", typeRaw: "REG IX/AB/LCI", club: "GONE", city: "Starkville", state: "NY", region: "9", canceled: false },
     { month: "September 2026", date: "Sep 5-6", typeRaw: "AB/LCI", club: "MCA", city: "Dakota Cty Fairgrounds, Farmington", state: "MN", region: "5", canceled: false },
     { month: "September 2026", date: "Sep 5-7", typeRaw: "AB/LCI", club: "MDIHC", city: "Hanover Shoe Farms, Littlestown", state: "PA", region: "8*", canceled: false },
     { month: "September 2026", date: "Sep 12", typeRaw: "REG VI", club: "OKIGO", city: "Yellow Springs", state: "OH", region: "6", canceled: false },
