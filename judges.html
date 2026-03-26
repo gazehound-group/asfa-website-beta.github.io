@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Sighthound Field Association - Judges & Licensing</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- PapaParse for parsing CSV automatically -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        
+        /* Hide default details marker for mobile menu */
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
+
+        /* Custom Scrollbar for the table */
+        .table-container::-webkit-scrollbar { height: 8px; }
+        .table-container::-webkit-scrollbar-track { background: #f1f5f9; border-radius: 4px; }
+        .table-container::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        .table-container::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+    <!-- Top Navbar -->
+    <header class="bg-green-800 text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <a href="index.html" class="flex items-center gap-3 hover:opacity-90 transition">
+                        <img src="ASFALOGO.jpg" alt="ASFA Logo" class="w-12 h-12 rounded-full bg-white p-0.5 object-contain shadow-sm border border-green-600">
+                        <span class="font-bold text-xl tracking-tight hidden sm:block">ASFA</span>
+                    </a>
+                </div>
+
+                <nav class="hidden md:flex space-x-3 lg:space-x-5 items-center">
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Getting Started
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-56 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="coursing.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Sport of Lure Coursing</a>
+                                <a href="breeds.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Eligible Breeds</a>
+                                <a href="beginguide.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Beginner's Guide</a>
+                                <a href="rulebook.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Rule Book/Policies</a>
+                                <a href="pubs.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Guides & Media</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Events
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-48 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="schedule.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Schedule</a>
+                                <a href="ii26.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">2026 ASFA II</a>
+                                <a href="regionals.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Regionals</a>
+                                <a href="acod2026.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">ACoD 2026</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Records & Awards
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-64 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2 max-h-[80vh] overflow-y-auto">
+                                <a href="trial_results.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Results</a>
+                                <a href="top20.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Top 20</a>
+                                <a href="titles.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">New Titles</a>
+                                <a href="records.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Hound Records</a>
+                                <a href="top20_lifetime.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Lifetime Top 20</a>
+                                <div class="h-px bg-slate-200 my-1"></div>
+                                <a href="hof.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors font-medium">Hall of Fame</a>
+                                <a href="gf.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Gary Forrester Award</a>
+                                <a href="epa.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Excellence in Performance</a>
+                                <a href="incentive_award.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Incentive Award</a>
+                                <a href="LureOperator.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Lure Operator of the Year</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Clubs & Admin
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-56 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="clubs.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Clubs</a>
+                                <a href="officers.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Officers & Directors</a>
+                                <a href="comm.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Committees</a>
+                                <a href="judges.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors font-bold">Judges</a>
+                                <a href="suspensions.html" class="block px-4 py-2 text-sm text-red-600 font-medium hover:bg-red-50 hover:text-red-800 transition-colors">Suspensions</a>
+                                <a href="quest.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Questions & Comments</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Forms
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-60 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="entry_forms.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Entry Forms</a>
+                                <a href="trial_forms.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Forms</a>
+                                <a href="trial_date_request.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Date Request</a>
+                                <div class="h-px bg-slate-200 my-1"></div>
+                                <a href="membership.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Club Membership Forms</a>
+                                <a href="clubs_renewal_form.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Online Renewal</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            News & Media
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute right-0 top-full -mt-2 w-56 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="communique.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">ASFA Communique</a>
+                                <a href="letter.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">President's Message</a>
+                                <a href="mission.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Mission Statement</a>
+                                <a href="album.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Photo Album</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="store.html" class="text-amber-400 hover:text-amber-200 transition font-bold text-xs lg:text-sm py-4">Store</a>
+                </nav>
+
+                <div class="flex items-center hidden sm:block">
+                    <div class="relative">
+                        <input type="text" placeholder="Search ASFA..." class="bg-green-900 text-white placeholder-green-300 rounded-full py-1.5 pl-4 pr-10 focus:outline-none focus:ring-2 focus:ring-green-400 text-sm w-40 lg:w-48">
+                        <svg class="w-4 h-4 absolute right-3 top-2 text-green-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </div>
+                </div>
+                
+                <!-- MOBILE MENU BUTTON -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white focus:outline-none hover:text-green-200 transition">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOBILE MENU BLOCKS -->
+        <div id="mobile-menu" class="hidden md:hidden bg-green-800 border-t border-green-700 shadow-inner max-h-[85vh] overflow-y-auto">
+            <div class="px-4 py-3 space-y-2">
+                <!-- Dropdowns replicated from desktop -->
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        Getting Started
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="coursing.htm" class="block text-sm text-green-100 hover:text-white">Sport of Lure Coursing</a>
+                        <a href="breeds.html" class="block text-sm text-green-100 hover:text-white">Eligible Breeds</a>
+                        <a href="beginguide.html" class="block text-sm text-green-100 hover:text-white">Beginner's Guide</a>
+                        <a href="rulebook.html" class="block text-sm text-green-100 hover:text-white">Rule Book/Policies</a>
+                        <a href="pubs.html" class="block text-sm text-green-100 hover:text-white">Guides & Media</a>
+                    </div>
+                </details>
+                
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        Events
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="schedule.html" class="block text-sm text-green-100 hover:text-white">Trial Schedule</a>
+                        <a href="ii26.html" class="block text-sm text-green-100 hover:text-white">2026 ASFA II</a>
+                        <a href="regionals.html" class="block text-sm text-green-100 hover:text-white">Regionals</a>
+                        <a href="acod2026.html" class="block text-sm text-green-100 hover:text-white">ACoD 2026</a>
+                    </div>
+                </details>
+
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        Records & Awards
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="trial_results.html" class="block text-sm text-green-100 hover:text-white">Trial Results</a>
+                        <a href="top20.html" class="block text-sm text-green-100 hover:text-white">Top 20</a>
+                        <a href="titles.html" class="block text-sm text-green-100 hover:text-white">New Titles</a>
+                        <a href="records.html" class="block text-sm text-green-100 hover:text-white">Hound Records</a>
+                        <a href="top20_lifetime.html" class="block text-sm text-green-100 hover:text-white">Lifetime Top 20</a>
+                        <div class="h-px bg-green-700 my-1 w-3/4"></div>
+                        <a href="hof.html" class="block text-sm text-green-100 hover:text-white font-medium">Hall of Fame</a>
+                        <a href="gf.html" class="block text-sm text-green-100 hover:text-white">Gary Forrester Award</a>
+                        <a href="epa.html" class="block text-sm text-green-100 hover:text-white">Excellence in Performance</a>
+                        <a href="incentive_award.html" class="block text-sm text-green-100 hover:text-white">Incentive Award</a>
+                        <a href="LureOperator.html" class="block text-sm text-green-100 hover:text-white">Lure Operator of the Year</a>
+                    </div>
+                </details>
+
+                <details class="group" open>
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        Clubs & Admin
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="clubs.html" class="block text-sm text-green-100 hover:text-white">Clubs</a>
+                        <a href="officers.htm" class="block text-sm text-green-100 hover:text-white">Officers & Directors</a>
+                        <a href="comm.htm" class="block text-sm text-green-100 hover:text-white">Committees</a>
+                        <a href="judges.html" class="block text-sm text-white font-bold">Judges</a>
+                        <a href="suspensions.html" class="block text-sm text-red-300 hover:text-red-100 font-medium">Suspensions</a>
+                        <a href="quest.html" class="block text-sm text-green-100 hover:text-white">Questions & Comments</a>
+                    </div>
+                </details>
+
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        Forms
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="entry_forms.html" class="block text-sm text-green-100 hover:text-white">Entry Forms</a>
+                        <a href="trial_forms.html" class="block text-sm text-green-100 hover:text-white">Trial Forms</a>
+                        <a href="trial_date_request.html" class="block text-sm text-green-100 hover:text-white">Trial Date Request</a>
+                        <div class="h-px bg-green-700 my-1 w-3/4"></div>
+                        <a href="membership.html" class="block text-sm text-green-100 hover:text-white">Club Membership Forms</a>
+                        <a href="clubs_renewal_form.html" class="block text-sm text-green-100 hover:text-white">Online Renewal</a>
+                    </div>
+                </details>
+
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        News & Media
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="communique.html" class="block text-sm text-green-100 hover:text-white">ASFA Communique</a>
+                        <a href="letter.html" class="block text-sm text-green-100 hover:text-white">President's Message</a>
+                        <a href="mission.html" class="block text-sm text-green-100 hover:text-white">Mission Statement</a>
+                        <a href="album.html" class="block text-sm text-green-100 hover:text-white">Photo Album</a>
+                    </div>
+                </details>
+
+                <a href="store.html" class="block py-2 font-bold text-amber-400 hover:text-amber-200">Store</a>
+                
+                <div class="pt-4 pb-2">
+                    <div class="relative">
+                        <input type="text" placeholder="Search ASFA..." class="w-full bg-green-900 text-white placeholder-green-300 rounded-full py-2 pl-4 pr-10 focus:outline-none focus:ring-2 focus:ring-green-400 text-sm border border-green-700">
+                        <svg class="w-4 h-4 absolute right-3 top-2.5 text-green-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full">
+        
+        <!-- Breadcrumbs -->
+        <nav class="mb-6" aria-label="Breadcrumb">
+            <ol class="flex items-center space-x-2 text-sm text-slate-500">
+                <li><a href="index.html" class="hover:text-green-700 transition">Home</a></li>
+                <li><svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></li>
+                <li><span class="text-slate-400">Clubs & Admin</span></li>
+                <li><svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></li>
+                <li><span class="text-slate-800 font-semibold">Judges & Licensing</span></li>
+            </ol>
+        </nav>
+
+        <!-- Header -->
+        <div class="mb-10 text-center max-w-3xl mx-auto">
+            <h1 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">ASFA Judges & Licensing</h1>
+            <p class="text-slate-600">
+                Explore the current directory of licensed judges, learn how to become an ASFA judge, and download all necessary forms and documentation.
+            </p>
+            <div class="mt-6 flex flex-wrap justify-center gap-3">
+                <a href="#directory" class="inline-flex items-center px-4 py-2 bg-green-700 hover:bg-green-800 text-white text-sm font-semibold rounded-lg shadow-sm transition">
+                    Judges Directory
+                </a>
+                <a href="#process" class="inline-flex items-center px-4 py-2 bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 text-sm font-semibold rounded-lg shadow-sm transition">
+                    Licensing Process
+                </a>
+                <a href="#forms" class="inline-flex items-center px-4 py-2 bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 text-sm font-semibold rounded-lg shadow-sm transition">
+                    Forms & Resources
+                </a>
+            </div>
+        </div>
+
+        <!-- Section 1: Interactive Judges Directory -->
+        <section id="directory" class="mb-16 scroll-mt-24">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-6 border-b border-slate-200 pb-4">
+                <h2 class="text-2xl font-bold text-green-900 flex items-center gap-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    Current Judges Directory
+                </h2>
+                
+                <!-- Live Search -->
+                <div class="mt-4 md:mt-0 w-full md:w-72">
+                    <div class="relative">
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <svg class="h-4 w-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                        </div>
+                        <input type="text" id="judge-search" placeholder="Search name, state, or region..." class="block w-full pl-10 pr-3 py-2 border border-slate-300 rounded-lg leading-5 bg-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 sm:text-sm transition-colors">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Notice about CSV List -->
+            <div class="bg-blue-50 border border-blue-200 border-l-4 border-l-blue-500 p-4 rounded-r-lg shadow-sm mb-6 flex justify-between items-center flex-wrap gap-4">
+                <p class="text-sm text-blue-800">
+                    <strong class="font-bold">Database Powered:</strong> This directory automatically pulls the most recent data from the official ASFA Judges List CSV file. 
+                </p>
+                <a href="judges_list.csv" download class="inline-flex text-xs text-white bg-blue-600 px-3 py-1.5 rounded hover:bg-blue-700 font-bold items-center gap-1.5 transition">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    Download CSV Directory
+                </a>
+            </div>
+
+            <!-- Table -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden table-container">
+                <div class="overflow-x-auto">
+                    <table class="min-w-full divide-y divide-slate-200 text-sm" id="judges-table">
+                        <thead class="bg-slate-50">
+                            <tr>
+                                <th scope="col" class="px-5 py-3 text-left font-bold text-slate-700 uppercase tracking-wider">Judge Name</th>
+                                <th scope="col" class="px-5 py-3 text-left font-bold text-slate-700 uppercase tracking-wider">License Type</th>
+                                <th scope="col" class="px-5 py-3 text-left font-bold text-slate-700 uppercase tracking-wider">Location</th>
+                                <th scope="col" class="px-5 py-3 text-left font-bold text-slate-700 uppercase tracking-wider text-center">Region</th>
+                                <th scope="col" class="px-5 py-3 text-left font-bold text-slate-700 uppercase tracking-wider">Contact</th>
+                                <th scope="col" class="px-5 py-3 text-center font-bold text-slate-700 uppercase tracking-wider">Lure Oper.</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-slate-100" id="judges-tbody">
+                            <!-- Injected by JavaScript automatically from CSV -->
+                        </tbody>
+                    </table>
+                    <div id="no-judges-msg" class="hidden text-center py-10 text-slate-500">
+                        <!-- Message populated by JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Licensing Process -->
+        <section id="process" class="mb-16 scroll-mt-24">
+            <div class="mb-8 border-b border-slate-200 pb-4">
+                <h2 class="text-2xl font-bold text-green-900 flex items-center gap-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    How to Become an ASFA Judge
+                </h2>
+                <p class="text-slate-600 mt-2 text-sm max-w-3xl">
+                    Becoming an ASFA judge is a multi-step process designed to ensure all judges possess deep knowledge of the rules, safety procedures, and sighthound running styles. Below is a simplified overview.
+                </p>
+            </div>
+
+            <div class="relative">
+                <!-- Vertical Line for Timeline -->
+                <div class="hidden md:block absolute left-8 top-0 bottom-0 w-0.5 bg-green-200"></div>
+
+                <div class="space-y-8">
+                    <!-- Step 1: Eligibility -->
+                    <div class="relative flex flex-col md:flex-row items-start gap-4 md:gap-8 group">
+                        <div class="md:w-16 md:h-16 w-12 h-12 rounded-full bg-green-100 border-4 border-white text-green-700 flex items-center justify-center font-bold text-xl shadow-sm z-10 shrink-0">1</div>
+                        <div class="bg-white border border-slate-200 rounded-xl p-5 sm:p-6 shadow-sm flex-grow hover:shadow-md transition">
+                            <h3 class="text-lg font-bold text-slate-800 mb-2">Basic Eligibility</h3>
+                            <ul class="list-disc pl-5 space-y-1 text-sm text-slate-600">
+                                <li>Must be at least 18 years old and in good standing with the ASFA.</li>
+                                <li>Must have a general knowledge of the coursing abilities of ASFA-recognized breeds.</li>
+                                <li>Must be familiar with the ASFA's Running Rules and Field Procedures.</li>
+                                <li>Must have participated in lure field trials for a minimum of <strong>three (3) consecutive years</strong>.</li>
+                                <li>Must have served in some official field capacity at a minimum of <strong>ten (10) field trials</strong> (e.g., Field Trial Chairman, Huntmaster, Secretary, Clerk, or Lure Operator).</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Apprentice -->
+                    <div class="relative flex flex-col md:flex-row items-start gap-4 md:gap-8 group">
+                        <div class="md:w-16 md:h-16 w-12 h-12 rounded-full bg-amber-100 border-4 border-white text-amber-700 flex items-center justify-center font-bold text-xl shadow-sm z-10 shrink-0">2</div>
+                        <div class="bg-white border border-slate-200 rounded-xl p-5 sm:p-6 shadow-sm flex-grow hover:shadow-md transition">
+                            <h3 class="text-lg font-bold text-slate-800 mb-2">Apprentice Status</h3>
+                            <ul class="list-disc pl-5 space-y-1 text-sm text-slate-600 mb-4">
+                                <li>File the Apprentice Judge License application (JDG 01) and pay the fee.</li>
+                                <li>Successfully complete the ASFA open-book test (minimum score 85%).</li>
+                                <li>Once granted, the apprentice name is published twice on the ASFA website.</li>
+                                <li>As an apprentice, you must judge <strong>all courses for a breed</strong> (with at least 3 entries) under 3 different licensed judges at 3 separate trials.</li>
+                                <li>This must be repeated for <strong>five individual breeds</strong>.</li>
+                            </ul>
+                            <p class="text-xs text-slate-500 italic bg-slate-50 p-2 rounded border border-slate-100">
+                                Note: You must accumulate all judging sheets and Confirmation Statements (JDG 02) to submit within one year of your last apprentice assignment.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Provisional -->
+                    <div class="relative flex flex-col md:flex-row items-start gap-4 md:gap-8 group">
+                        <div class="md:w-16 md:h-16 w-12 h-12 rounded-full bg-blue-100 border-4 border-white text-blue-700 flex items-center justify-center font-bold text-xl shadow-sm z-10 shrink-0">3</div>
+                        <div class="bg-white border border-slate-200 rounded-xl p-5 sm:p-6 shadow-sm flex-grow hover:shadow-md transition">
+                            <h3 class="text-lg font-bold text-slate-800 mb-2">Provisional Status</h3>
+                            <ul class="list-disc pl-5 space-y-1 text-sm text-slate-600">
+                                <li>After approval, you become a Provisional Judge. You may accept assignments for all breeds, but no more than 4 provisional breeds per trial (without Regional Director permission).</li>
+                                <li>To become fully licensed for a breed, you must provisionally judge the performance of at least <strong>five hounds in one stake</strong> OR <strong>seven hounds in one breed</strong>.</li>
+                                <li>This must happen at three trials, under three different fully licensed judges.</li>
+                                <li>Submit the Request for Change in Status form (JDG 03) along with completed Confirmation Statements.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Fully Licensed -->
+                    <div class="relative flex flex-col md:flex-row items-start gap-4 md:gap-8 group">
+                        <div class="md:w-16 md:h-16 w-12 h-12 rounded-full bg-emerald-100 border-4 border-white text-emerald-700 flex items-center justify-center font-bold text-xl shadow-sm z-10 shrink-0">4</div>
+                        <div class="bg-white border border-slate-200 rounded-xl p-5 sm:p-6 shadow-sm flex-grow hover:shadow-md transition">
+                            <h3 class="text-lg font-bold text-slate-800 mb-2">Regular License & All-Breed</h3>
+                            <ul class="list-disc pl-5 space-y-1 text-sm text-slate-600">
+                                <li>Once published and approved, you are a Fully Licensed Judge for those specific breeds.</li>
+                                <li>After achieving full licensure in <strong>eight (8) breeds</strong>, a judge may apply for an <strong>All-Breed License</strong>.</li>
+                                <li>All judges (Apprentice, Provisional, All-Breed) must retake the ASFA open-book test every four (4) years to maintain their license.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-6 text-center">
+                <a href="rulebook.html#ch11" class="inline-flex items-center text-green-700 font-bold hover:text-green-800 hover:underline">
+                    Read the complete Chapter XI rules in the ASFA Rulebook
+                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- Section 3: Forms & Documents -->
+        <section id="forms" class="mb-8 scroll-mt-24">
+            <div class="mb-6 border-b border-slate-200 pb-4">
+                <h2 class="text-2xl font-bold text-green-900 flex items-center gap-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    Judges Forms & Documents
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Doc 1 -->
+                <a href="forms/JDG 06--Judges-Licensing-Process.pdf" target="_blank" class="flex items-start gap-3 p-4 bg-white border border-slate-200 rounded-lg hover:border-green-400 hover:shadow-md transition group">
+                    <svg class="w-8 h-8 text-red-500 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 16.5l4-4h-3v-9h-2v9H8l4 4zm9-3v8H3v-8H1v10h22v-10h-2z"/></svg>
+                    <div>
+                        <h4 class="font-bold text-slate-800 text-sm group-hover:text-green-700 transition">JDG 06 - Licensing Process</h4>
+                        <p class="text-xs text-slate-500 mt-0.5">Summary chart of requirements</p>
+                    </div>
+                </a>
+                
+                <!-- Doc 2 -->
+                <a href="forms/JudgeLicensingRules--08-01-24.pdf" target="_blank" class="flex items-start gap-3 p-4 bg-white border border-slate-200 rounded-lg hover:border-green-400 hover:shadow-md transition group">
+                    <svg class="w-8 h-8 text-red-500 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 16.5l4-4h-3v-9h-2v9H8l4 4zm9-3v8H3v-8H1v10h22v-10h-2z"/></svg>
+                    <div>
+                        <h4 class="font-bold text-slate-800 text-sm group-hover:text-green-700 transition">Chapter XI Licensing Rules</h4>
+                        <p class="text-xs text-slate-500 mt-0.5">Extracted from the ASFA Rulebook</p>
+                    </div>
+                </a>
+
+                <!-- Doc 3 -->
+                <a href="forms/JDG 01 Apprentice Application.pdf" target="_blank" class="flex items-start gap-3 p-4 bg-white border border-slate-200 rounded-lg hover:border-green-400 hover:shadow-md transition group">
+                    <svg class="w-8 h-8 text-red-500 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 16.5l4-4h-3v-9h-2v9H8l4 4zm9-3v8H3v-8H1v10h22v-10h-2z"/></svg>
+                    <div>
+                        <h4 class="font-bold text-slate-800 text-sm group-hover:text-green-700 transition">JDG 01 - Apprentice Application</h4>
+                        <p class="text-xs text-slate-500 mt-0.5">Initial application form</p>
+                    </div>
+                </a>
+
+                <!-- Doc 4 -->
+                <a href="forms/JDG 02 Judging Confirmation.pdf" target="_blank" class="flex items-start gap-3 p-4 bg-white border border-slate-200 rounded-lg hover:border-green-400 hover:shadow-md transition group">
+                    <svg class="w-8 h-8 text-red-500 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 16.5l4-4h-3v-9h-2v9H8l4 4zm9-3v8H3v-8H1v10h22v-10h-2z"/></svg>
+                    <div>
+                        <h4 class="font-bold text-slate-800 text-sm group-hover:text-green-700 transition">JDG 02 - Confirmation Statement</h4>
+                        <p class="text-xs text-slate-500 mt-0.5">To be signed by licensed judge</p>
+                    </div>
+                </a>
+
+                <!-- Doc 5 -->
+                <a href="forms/JDG 03 Status Change.pdf" target="_blank" class="flex items-start gap-3 p-4 bg-white border border-slate-200 rounded-lg hover:border-green-400 hover:shadow-md transition group">
+                    <svg class="w-8 h-8 text-red-500 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 16.5l4-4h-3v-9h-2v9H8l4 4zm9-3v8H3v-8H1v10h22v-10h-2z"/></svg>
+                    <div>
+                        <h4 class="font-bold text-slate-800 text-sm group-hover:text-green-700 transition">JDG 03 - Request Status Change</h4>
+                        <p class="text-xs text-slate-500 mt-0.5">For Provisional or Fully Licensed upgrades</p>
+                    </div>
+                </a>
+
+                <!-- Doc 6 -->
+                <a href="forms/ASFA Judges Test.pdf" target="_blank" class="flex items-start gap-3 p-4 bg-white border border-slate-200 rounded-lg hover:border-green-400 hover:shadow-md transition group">
+                    <svg class="w-8 h-8 text-slate-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    <div>
+                        <h4 class="font-bold text-slate-800 text-sm group-hover:text-green-700 transition">Open Book Test Request</h4>
+                        <p class="text-xs text-slate-500 mt-0.5">Contact Judges Licensing Chair</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="mt-6 text-sm text-slate-600 bg-slate-100 p-4 rounded-lg border border-slate-200">
+                <strong>Questions about licensing?</strong> Please contact the Chair of Judges Licensing, <strong>Greg Breitbach</strong>, at <a href="mailto:JudgesLic@asfa.org" class="text-green-600 font-bold hover:underline">JudgesLic@asfa.org</a>.
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-300 py-12 mt-auto border-t-4 border-green-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 border-b border-slate-800 pb-8 mb-8">
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Competition</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="schedule.html" class="hover:text-green-400 transition">Trial Schedule</a></li>
+                        <li><a href="trial_results.html" class="hover:text-green-400 transition">Trial Results</a></li>
+                        <li><a href="entry_forms.html" class="hover:text-green-400 transition">Entry Forms</a></li>
+                        <li><a href="top20.html" class="hover:text-green-400 transition">Top 20</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Organization</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="clubs.html" class="hover:text-green-400 transition">Clubs</a></li>
+                        <li><a href="officers.htm" class="hover:text-green-400 transition">Officers & Directors</a></li>
+                        <li><a href="rulebook.html" class="hover:text-green-400 transition">Rule Book</a></li>
+                        <li><a href="quest.htm" class="hover:text-green-400 transition">Questions & Comments</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Resources</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="breeds.html" class="hover:text-green-400 transition">Eligible Breeds</a></li>
+                        <li><a href="beginguide.html" class="hover:text-green-400 transition">Beginner's Guide</a></li>
+                        <li><a href="store.html" class="hover:text-green-400 transition">ASFA Store</a></li>
+                        <li><a href="sitemap.html" class="hover:text-green-400 transition">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">About</h4>
+                    <p class="text-sm leading-relaxed text-slate-400">
+                        The American Sighthound Field Association is dedicated to preserving the natural beauty, grace, speed and coursing skill of the sighthound.
+                    </p>
+                </div>
+            </div>
+            <div class="text-center text-xs text-slate-500 space-y-4">
+                <p class="max-w-4xl mx-auto">
+                    Acceptance and use of the information contained on this website constitutes an acknowledgment that the user hereby releases and indemnifies the ASFA, its officers, directors, members and agents from any and all liability and damages sustained by the user as a result of any information obtained from this web site.
+                </p>
+                <p>
+                    &copy; 2002-2026 American Sighthound Field Association. All rights reserved. No part of this site may be reproduced without written permission from the <a href="mailto:webmaster@asfa.org" class="text-green-500 hover:text-green-400 underline">ASFA Webmasters</a>.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        let judgesData = [];
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Переключение мобильного меню
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileBtn && mobileMenu) {
+                mobileBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+
+            // 2. Загрузка и парсинг CSV автоматически
+            const tbody = document.getElementById('judges-tbody');
+            const noMsg = document.getElementById('no-judges-msg');
+            
+            noMsg.textContent = "Загрузка базы данных судей...";
+            noMsg.classList.remove('hidden');
+
+            function handleParsedData(results) {
+                const rows = results.data;
+                
+                // Удаляем строку заголовка, если она есть
+                if(rows.length > 0 && rows[0][0] && rows[0][0].toLowerCase().includes("judge")) {
+                    rows.shift(); 
+                }
+
+                // Преобразуем строки CSV в удобные объекты
+                judgesData = rows.map(row => {
+                    return {
+                        name: row[0] ? row[0].replace(/"/g, '').trim() : "",
+                        license: row[2] ? row[2].replace(/"/g, '').trim() : "",
+                        city: row[4] ? row[4].replace(/"/g, '').trim() : "",
+                        state: row[5] ? row[5].replace(/"/g, '').trim() : "",
+                        region: row[9] ? row[9].replace(/"/g, '').trim() : "",
+                        phone: row[7] ? row[7].replace(/"/g, '').replace(/\n/g, ' / ').trim() : "",
+                        email: row[8] ? row[8].replace(/"/g, '').trim() : "",
+                        lureOper: row[10] ? row[10].replace(/"/g, '').trim() : ""
+                    };
+                }).filter(j => j.name !== "" && j.name.toLowerCase() !== "judge's name");
+
+                renderJudges(""); 
+            }
+
+            Papa.parse("judges_list.csv", {
+                download: true,
+                skipEmptyLines: true,
+                complete: handleParsedData,
+                error: function(err) {
+                    console.error("Ошибка загрузки CSV:", err);
+                    
+                    // Если страница открыта локально (CORS блокировка)
+                    if (window.location.protocol === 'file:') {
+                        noMsg.innerHTML = `
+                            <div class="p-5 bg-amber-50 border border-amber-200 rounded-lg text-left max-w-xl mx-auto shadow-sm">
+                                <h3 class="font-bold text-amber-800 mb-2 text-lg">Локальный запуск заблокирован</h3>
+                                <p class="text-sm text-amber-700 mb-4">Браузер блокирует автоматическое чтение файлов (ошибка <strong>Invalid URL / XMLHttpRequest</strong>) при открытии страницы напрямую с компьютера в целях безопасности.</p>
+                                <p class="text-sm text-slate-800 font-bold mb-2">Для тестирования выберите ваш CSV-файл вручную:</p>
+                                <input type="file" id="local-csv-upload" accept=".csv" class="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-bold file:bg-white file:text-green-700 hover:file:bg-green-50 border border-slate-200 p-2 bg-white rounded-lg cursor-pointer">
+                            </div>
+                        `;
+                        noMsg.classList.remove('hidden');
+                        
+                        document.getElementById('local-csv-upload').addEventListener('change', function(e) {
+                            const file = e.target.files[0];
+                            if (file) {
+                                noMsg.innerHTML = "Обработка данных...";
+                                noMsg.classList.remove('text-red-600');
+                                Papa.parse(file, {
+                                    skipEmptyLines: true,
+                                    complete: handleParsedData
+                                });
+                            }
+                        });
+                    } else {
+                        noMsg.innerHTML = 'Ошибка загрузки данных. Убедитесь, что файл <strong class="font-bold">judges_list.csv</strong> загружен на сервер.';
+                        noMsg.classList.remove('hidden');
+                        noMsg.classList.add('text-red-600');
+                    }
+                }
+            });
+        });
+
+        // Функция для отрисовки таблицы на основе фильтра
+        function renderJudges(filterText = "") {
+            const tbody = document.getElementById('judges-tbody');
+            const noMsg = document.getElementById('no-judges-msg');
+            tbody.innerHTML = "";
+            let visibleCount = 0;
+
+            const lowerFilter = filterText.toLowerCase().trim();
+
+            judgesData.forEach(judge => {
+                const searchString = `${judge.name} ${judge.state} ${judge.city} ${judge.region} ${judge.license}`.toLowerCase();
+                
+                if (lowerFilter === "" || searchString.includes(lowerFilter)) {
+                    visibleCount++;
+                    
+                    // Стилизация значка лицензии
+                    let licClass = "bg-slate-100 text-slate-700";
+                    if(judge.license === "AB") licClass = "bg-blue-100 text-blue-800 font-bold";
+                    if(judge.license === "Prov") licClass = "bg-amber-100 text-amber-800 font-bold";
+
+                    // Стилизация галочки Lure Operator
+                    const operIcon = (judge.lureOper.toLowerCase() === "yes" || judge.lureOper === "1") 
+                        ? `<span class="text-green-600 font-bold text-lg leading-none">&check;</span>` 
+                        : `<span class="text-slate-300">-</span>`;
+
+                    const row = `
+                        <tr class="hover:bg-slate-50 transition">
+                            <td class="px-5 py-3 whitespace-nowrap font-medium text-slate-900">${judge.name}</td>
+                            <td class="px-5 py-3 whitespace-nowrap">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs ${licClass}">${judge.license}</span>
+                            </td>
+                            <td class="px-5 py-3 text-slate-600 text-sm">
+                                ${judge.city}, <span class="font-bold text-slate-800">${judge.state}</span>
+                            </td>
+                            <td class="px-5 py-3 text-center text-slate-600 font-bold">${judge.region}</td>
+                            <td class="px-5 py-3 text-sm">
+                                <div class="text-slate-700">${judge.phone}</div>
+                                <a href="mailto:${judge.email}" class="text-green-600 hover:underline text-xs block truncate max-w-[150px]">${judge.email}</a>
+                            </td>
+                            <td class="px-5 py-3 text-center align-middle">${operIcon}</td>
+                        </tr>
+                    `;
+                    tbody.insertAdjacentHTML('beforeend', row);
+                }
+            });
+
+            if (visibleCount === 0) {
+                noMsg.textContent = "Судьи, соответствующие вашему запросу, не найдены.";
+                noMsg.classList.remove('hidden', 'text-red-600');
+                tbody.parentElement.classList.add('hidden');
+            } else {
+                noMsg.classList.add('hidden');
+                tbody.parentElement.classList.remove('hidden');
+            }
+        }
+
+        // Добавление слушателя для поиска
+        const searchInput = document.getElementById('judge-search');
+        if (searchInput) {
+            searchInput.addEventListener('input', (e) => {
+                renderJudges(e.target.value);
+            });
+        }
+    </script>
+</body>
+</html>
