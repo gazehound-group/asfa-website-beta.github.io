@@ -15,9 +15,9 @@ The ASFA Website Modernization Project aims to enhance the existing digital pres
 
 ## Project Timeline
 - **Phase 1**: Research and Planning (Q1 2026)
-- **Phase 2**: Design (Q2 2026)
-- **Phase 3**: Development (Q3 2026)
-- **Phase 4**: Testing and Launch (Q4 2026)
+- **Phase 2**: Design and Development (Q2 2026)
+- **Phase 3**: Testing and Launch (Q3 2026)
+-  
 
-## Conclusion
-The ASFA Website Modernization Project is pivotal in advancing ASFA's digital strategies, ensuring a user-friendly and efficient platform for all stakeholders.
+## Current version
+View the latest beta version of the site: https://gazehound-group.github.io/asfa-website-beta/index.html
