@@ -465,13 +465,19 @@
                     
                     let badges = '';
                     const typeStr = (ev.typeRaw || '').toUpperCase();
+                    const parts = typeStr.split(/[\/\s-]/);
                     
-                    if(typeStr.includes('AB')) badges += '<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 mb-1 mr-1">All-Breed</span>';
-                    if(typeStr.includes('LCI')) badges += '<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-purple-100 text-purple-800 mb-1 mr-1">LCI Included</span>';
+                    if(parts.includes('AB') || typeStr.includes('ALL-BREED')) badges += '<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 mb-1 mr-1">All-Breed</span>';
+                    if(parts.includes('LCI') || typeStr.includes('LCI')) badges += '<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-purple-100 text-purple-800 mb-1 mr-1">LCI Included</span>';
                     if(typeStr.includes('REG') || typeStr.includes('ACOD')) badges += '<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800 mb-1 mr-1">Special Event</span>';
-                    if(ev.club.includes('Specialty') || ev.club.includes('National') || typeStr.includes('SW') || typeStr.includes('IW') || typeStr.includes('SD') || typeStr.includes('IB') || typeStr.includes('W') || typeStr.includes('B') || typeStr.includes('S')) {
+                    
+                    const specialtyTypes = ['SW', 'IW', 'SD', 'IB', 'W', 'B', 'S'];
+                    const hasSpecialtyBreed = parts.some(p => specialtyTypes.includes(p));
+                    
+                    if(ev.club.includes('Specialty') || ev.club.includes('National') || hasSpecialtyBreed) {
                         badges += '<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-amber-100 text-amber-800 mb-1 mr-1">Specialty</span>';
                     }
+                    
                     if(badges === '') badges = `<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-slate-100 text-slate-800 mb-1">${ev.typeRaw}</span>`;
 
                     // Premium Link or Pending
