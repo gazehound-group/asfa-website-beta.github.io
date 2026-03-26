@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Sighthound Field Association - Top 20 2026 Rankings</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+    <!-- Top Navbar -->
+    <header class="bg-green-800 text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <a href="index.html" class="flex items-center gap-3 hover:opacity-90 transition">
+                        <img src="ASFALOGO.jpg" alt="ASFA Logo" class="w-12 h-12 rounded-full bg-white p-0.5 object-contain shadow-sm border border-green-600">
+                        <span class="font-bold text-xl tracking-tight hidden sm:block">ASFA</span>
+                    </a>
+                </div>
+
+                <nav class="hidden md:flex space-x-3 lg:space-x-5 items-center">
+                    <!-- Getting Started -->
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Getting Started
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-56 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="coursing.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Sport of Lure Coursing</a>
+                                <a href="breeds.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Eligible Breeds</a>
+                                <a href="beginguide.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Beginner's Guide</a>
+                                <a href="rulebook.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Rule Book/Policies</a>
+                                <a href="pubs.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Guides & Media</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Events -->
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Events
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-48 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="schedule.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Schedule</a>
+                                <a href="ii26.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">2026 ASFA II</a>
+                                <a href="regionals.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Regionals</a>
+                                <a href="acod2026.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">ACoD 2026</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Records & Awards -->
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Records & Awards
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-64 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2 max-h-[80vh] overflow-y-auto">
+                                <a href="trial_results.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Results</a>
+                                <a href="top20.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors font-bold">Top 20</a>
+                                <a href="titles.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">New Titles</a>
+                                <a href="records.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Hound Records</a>
+                                <a href="top20_lifetime.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Lifetime Top 20</a>
+                                <div class="h-px bg-slate-200 my-1"></div>
+                                <a href="hof.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors font-medium">Hall of Fame</a>
+                                <a href="gf.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Gary Forrester Award</a>
+                                <a href="epa.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Excellence in Performance</a>
+                                <a href="incentive_award.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Incentive Award</a>
+                                <a href="LureOperator.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Lure Operator of the Year</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Clubs & Admin -->
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Clubs & Admin
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-56 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="clubs.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Clubs</a>
+                                <a href="officers.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Officers & Directors</a>
+                                <a href="comm.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Committees</a>
+                                <a href="judges.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Judges</a>
+                                <a href="suspensions.html" class="block px-4 py-2 text-sm text-red-600 font-medium hover:bg-red-50 hover:text-red-800 transition-colors">Suspensions</a>
+                                <a href="quest.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Questions & Comments</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Forms -->
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Forms
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-60 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="entry_forms.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Entry Forms</a>
+                                <a href="trial_forms.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Forms</a>
+                                <a href="trial_date_request.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Date Request</a>
+                                <div class="h-px bg-slate-200 my-1"></div>
+                                <a href="membership.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Club Membership Forms</a>
+                                <a href="clubs_renewal_form.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Online Renewal</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- News & Media -->
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            News & Media
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute right-0 top-full -mt-2 w-56 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="communique.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">ASFA Communique</a>
+                                <a href="letter.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">President's Message</a>
+                                <a href="mission.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Mission Statement</a>
+                                <a href="album.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Photo Album</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="store.html" class="text-amber-400 hover:text-amber-200 transition font-bold text-xs lg:text-sm py-4">Store</a>
+                </nav>
+
+                <div class="flex items-center hidden sm:block">
+                    <div class="relative">
+                        <input type="text" placeholder="Search ASFA..." class="bg-green-900 text-white placeholder-green-300 rounded-full py-1.5 pl-4 pr-10 focus:outline-none focus:ring-2 focus:ring-green-400 text-sm w-40 lg:w-48">
+                        <svg class="w-4 h-4 absolute right-3 top-2 text-green-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </div>
+                </div>
+                
+                <!-- MOBILE MENU BUTTON -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white focus:outline-none hover:text-green-200 transition">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOBILE MENU BLOCKS (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-green-800 border-t border-green-700 shadow-inner max-h-[85vh] overflow-y-auto">
+            <div class="px-4 py-3 space-y-2">
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        Getting Started
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="coursing.htm" class="block text-sm text-green-100 hover:text-white">Sport of Lure Coursing</a>
+                        <a href="breeds.html" class="block text-sm text-green-100 hover:text-white">Eligible Breeds</a>
+                        <a href="beginguide.html" class="block text-sm text-green-100 hover:text-white">Beginner's Guide</a>
+                        <a href="rulebook.html" class="block text-sm text-green-100 hover:text-white">Rule Book/Policies</a>
+                        <a href="pubs.html" class="block text-sm text-green-100 hover:text-white">Guides & Media</a>
+                    </div>
+                </details>
+                
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        Events
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="schedule.html" class="block text-sm text-green-100 hover:text-white">Trial Schedule</a>
+                        <a href="ii26.html" class="block text-sm text-green-100 hover:text-white">2026 ASFA II</a>
+                        <a href="regionals.html" class="block text-sm text-green-100 hover:text-white">Regionals</a>
+                        <a href="acod2026.html" class="block text-sm text-green-100 hover:text-white">ACoD 2026</a>
+                    </div>
+                </details>
+
+                <details class="group" open>
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        Records & Awards
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="trial_results.html" class="block text-sm text-green-100 hover:text-white">Trial Results</a>
+                        <a href="top20.html" class="block text-sm text-white font-bold">Top 20</a>
+                        <a href="titles.html" class="block text-sm text-green-100 hover:text-white">New Titles</a>
+                        <a href="records.html" class="block text-sm text-green-100 hover:text-white">Hound Records</a>
+                        <a href="top20_lifetime.html" class="block text-sm text-green-100 hover:text-white">Lifetime Top 20</a>
+                        <div class="h-px bg-green-700 my-1 w-3/4"></div>
+                        <a href="hof.html" class="block text-sm text-green-100 hover:text-white font-medium">Hall of Fame</a>
+                        <a href="gf.html" class="block text-sm text-green-100 hover:text-white">Gary Forrester Award</a>
+                        <a href="epa.html" class="block text-sm text-green-100 hover:text-white">Excellence in Performance</a>
+                        <a href="incentive_award.html" class="block text-sm text-green-100 hover:text-white">Incentive Award</a>
+                        <a href="LureOperator.html" class="block text-sm text-green-100 hover:text-white">Lure Operator of the Year</a>
+                    </div>
+                </details>
+
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        Clubs & Admin
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="clubs.html" class="block text-sm text-green-100 hover:text-white">Clubs</a>
+                        <a href="officers.htm" class="block text-sm text-green-100 hover:text-white">Officers & Directors</a>
+                        <a href="comm.htm" class="block text-sm text-green-100 hover:text-white">Committees</a>
+                        <a href="judges.html" class="block text-sm text-green-100 hover:text-white">Judges</a>
+                        <a href="suspensions.html" class="block text-sm text-red-300 hover:text-red-100 font-medium">Suspensions</a>
+                        <a href="quest.html" class="block text-sm text-green-100 hover:text-white">Questions & Comments</a>
+                    </div>
+                </details>
+
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        Forms
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="entry_forms.html" class="block text-sm text-green-100 hover:text-white">Entry Forms</a>
+                        <a href="trial_forms.html" class="block text-sm text-green-100 hover:text-white">Trial Forms</a>
+                        <a href="trial_date_request.html" class="block text-sm text-green-100 hover:text-white">Trial Date Request</a>
+                        <div class="h-px bg-green-700 my-1 w-3/4"></div>
+                        <a href="membership.html" class="block text-sm text-green-100 hover:text-white">Club Membership Forms</a>
+                        <a href="clubs_renewal_form.html" class="block text-sm text-green-100 hover:text-white">Online Renewal</a>
+                    </div>
+                </details>
+
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        News & Media
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="communique.html" class="block text-sm text-green-100 hover:text-white">ASFA Communique</a>
+                        <a href="letter.html" class="block text-sm text-green-100 hover:text-white">President's Message</a>
+                        <a href="mission.html" class="block text-sm text-green-100 hover:text-white">Mission Statement</a>
+                        <a href="album.html" class="block text-sm text-green-100 hover:text-white">Photo Album</a>
+                    </div>
+                </details>
+
+                <a href="store.html" class="block py-2 font-bold text-amber-400 hover:text-amber-200">Store</a>
+                
+                <div class="pt-4 pb-2">
+                    <div class="relative">
+                        <input type="text" placeholder="Search ASFA..." class="w-full bg-green-900 text-white placeholder-green-300 rounded-full py-2 pl-4 pr-10 focus:outline-none focus:ring-2 focus:ring-green-400 text-sm border border-green-700">
+                        <svg class="w-4 h-4 absolute right-3 top-2.5 text-green-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full" id="content-area">
+        
+        <!-- Breadcrumbs -->
+        <nav class="mb-6" aria-label="Breadcrumb">
+            <ol class="flex items-center space-x-2 text-sm text-slate-500">
+                <li><a href="index.html" class="hover:text-green-700 transition">Home</a></li>
+                <li><svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></li>
+                <li><span class="text-slate-400">Records & Awards</span></li>
+                <li><svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></li>
+                <li><span class="text-slate-800 font-semibold">Top 20 2026 Rankings</span></li>
+            </ol>
+        </nav>
+
+        <div class="flex flex-col lg:flex-row gap-8 items-start">
+            
+            <!-- Sidebar Navigation (Sticky Breed List & Archives) -->
+            <aside class="w-full lg:w-1/4 shrink-0 lg:sticky lg:top-24 max-h-[calc(100vh-8rem)] overflow-y-auto hidden lg:block pr-2">
+                <!-- Breeds Widget -->
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5">
+                    <h3 class="font-bold text-slate-800 text-lg mb-4 flex items-center gap-2 border-b border-slate-100 pb-3">
+                        <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+                        Select Breed
+                    </h3>
+                    
+                    <ul class="space-y-1 text-sm font-medium text-slate-600" id="desktop-breed-list">
+                        <li><a href="#" data-target="afghan" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition text-green-700 font-bold bg-green-50 border-l-4 border-green-600">Afghan Hound</a></li>
+                        <li><a href="#" data-target="azawakh" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Azawakh</a></li>
+                        <li><a href="#" data-target="basenji" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Basenji</a></li>
+                        <li><a href="#" data-target="borzoi" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Borzoi</a></li>
+                        <li><a href="#" data-target="chartpolski" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Chart Polski</a></li>
+                        <li><a href="#" data-target="cirneco" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Cirneco dell'Etna</a></li>
+                        <li><a href="#" data-target="galgo" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Galgo Español</a></li>
+                        <li><a href="#" data-target="greyhound" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Greyhound</a></li>
+                        <li><a href="#" data-target="ibizan" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Ibizan Hound</a></li>
+                        <li><a href="#" data-target="irishwolfhound" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Irish Wolfhound</a></li>
+                        <li><a href="#" data-target="italiangreyhound" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Italian Greyhound</a></li>
+                        <li><a href="#" data-target="lcilarge" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">LCI Large</a></li>
+                        <li><a href="#" data-target="lcisighthoundmix" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">LCI Sighthound Mix</a></li>
+                        <li><a href="#" data-target="lcismall" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">LCI Small</a></li>
+                        <li><a href="#" data-target="magyaragar" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Magyar Agar</a></li>
+                        <li><a href="#" data-target="pio" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Peruvian Inca Orchid</a></li>
+                        <li><a href="#" data-target="pharaoh" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Pharaoh Hound</a></li>
+                        <li><a href="#" data-target="podengopequeno" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Podengo Pequeno</a></li>
+                        <li><a href="#" data-target="portuguesepodengo" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Portuguese Podengo</a></li>
+                        <li><a href="#" data-target="ridgeback" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Rhodesian Ridgeback</a></li>
+                        <li><a href="#" data-target="saluki" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Saluki</a></li>
+                        <li><a href="#" data-target="deerhound" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Scottish Deerhound</a></li>
+                        <li><a href="#" data-target="silken" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Silken Windhound</a></li>
+                        <li><a href="#" data-target="singles" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Singles</a></li>
+                        <li><a href="#" data-target="sloughi" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Sloughi</a></li>
+                        <li><a href="#" data-target="whippet" class="breed-link block py-1.5 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Whippet</a></li>
+                    </ul>
+                </div>
+
+                <!-- Archive Widget -->
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 mt-6">
+                    <h3 class="font-bold text-slate-800 text-lg mb-4 flex items-center gap-2 border-b border-slate-100 pb-3">
+                        <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg>
+                        Archive
+                    </h3>
+                    <ul class="text-sm font-medium text-slate-600 grid grid-cols-2 gap-2">
+                        <li><a href="top20_2025.html" class="block py-1 hover:text-green-700 transition">2025</a></li>
+                        <li><a href="top20_2024.html" class="block py-1 hover:text-green-700 transition">2024</a></li>
+                        <li><a href="top20_2023.html" class="block py-1 hover:text-green-700 transition">2023</a></li>
+                        <li><a href="top20_2022.html" class="block py-1 hover:text-green-700 transition">2022</a></li>
+                        <li><a href="top20_2021.html" class="block py-1 hover:text-green-700 transition">2021</a></li>
+                        <li><a href="top20_2020.html" class="block py-1 hover:text-green-700 transition">2020</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Mobile Dropdown for Breeds -->
+            <div class="w-full lg:hidden mb-6 space-y-4">
+                <details class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden group">
+                    <summary class="font-bold text-slate-800 text-lg p-4 flex justify-between items-center cursor-pointer list-none">
+                        <div class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+                            <span id="mobile-breed-title">Jump to Breed</span>
+                        </div>
+                        <svg class="w-5 h-5 transition-transform group-open:rotate-180 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="p-4 pt-0 border-t border-slate-100 max-h-80 overflow-y-auto">
+                        <ul class="space-y-2 text-sm font-medium text-slate-600" id="mobile-breed-list">
+                            <li><a href="#" data-target="afghan" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition text-green-700 font-bold bg-green-50 border-l-4 border-green-600">Afghan Hound</a></li>
+                            <li><a href="#" data-target="azawakh" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Azawakh</a></li>
+                            <li><a href="#" data-target="basenji" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Basenji</a></li>
+                            <li><a href="#" data-target="borzoi" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Borzoi</a></li>
+                            <li><a href="#" data-target="chartpolski" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Chart Polski</a></li>
+                            <li><a href="#" data-target="cirneco" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Cirneco dell'Etna</a></li>
+                            <li><a href="#" data-target="galgo" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Galgo Español</a></li>
+                            <li><a href="#" data-target="greyhound" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Greyhound</a></li>
+                            <li><a href="#" data-target="ibizan" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Ibizan Hound</a></li>
+                            <li><a href="#" data-target="irishwolfhound" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Irish Wolfhound</a></li>
+                            <li><a href="#" data-target="italiangreyhound" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Italian Greyhound</a></li>
+                            <li><a href="#" data-target="lcilarge" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">LCI Large</a></li>
+                            <li><a href="#" data-target="lcisighthoundmix" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">LCI Sighthound Mix</a></li>
+                            <li><a href="#" data-target="lcismall" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">LCI Small</a></li>
+                            <li><a href="#" data-target="magyaragar" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Magyar Agar</a></li>
+                            <li><a href="#" data-target="pio" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Peruvian Inca Orchid</a></li>
+                            <li><a href="#" data-target="pharaoh" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Pharaoh Hound</a></li>
+                            <li><a href="#" data-target="podengopequeno" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Podengo Pequeno</a></li>
+                            <li><a href="#" data-target="portuguesepodengo" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Portuguese Podengo</a></li>
+                            <li><a href="#" data-target="ridgeback" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Rhodesian Ridgeback</a></li>
+                            <li><a href="#" data-target="saluki" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Saluki</a></li>
+                            <li><a href="#" data-target="deerhound" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Scottish Deerhound</a></li>
+                            <li><a href="#" data-target="silken" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Silken Windhound</a></li>
+                            <li><a href="#" data-target="singles" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Singles</a></li>
+                            <li><a href="#" data-target="sloughi" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Sloughi</a></li>
+                            <li><a href="#" data-target="whippet" class="breed-link block py-2 px-3 rounded hover:bg-slate-50 hover:text-green-700 transition">Whippet</a></li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden group">
+                    <summary class="font-bold text-slate-800 text-lg p-4 flex justify-between items-center cursor-pointer list-none">
+                        <div class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg>
+                            <span>Archive</span>
+                        </div>
+                        <svg class="w-5 h-5 transition-transform group-open:rotate-180 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="p-4 pt-0 border-t border-slate-100">
+                        <ul class="text-sm font-medium text-slate-600 grid grid-cols-2 gap-2">
+                            <li><a href="top20_2025.html" class="block py-1 hover:text-green-700 transition">2025</a></li>
+                            <li><a href="top20_2024.html" class="block py-1 hover:text-green-700 transition">2024</a></li>
+                            <li><a href="top20_2023.html" class="block py-1 hover:text-green-700 transition">2023</a></li>
+                            <li><a href="top20_2022.html" class="block py-1 hover:text-green-700 transition">2022</a></li>
+                            <li><a href="top20_2021.html" class="block py-1 hover:text-green-700 transition">2021</a></li>
+                            <li><a href="top20_2020.html" class="block py-1 hover:text-green-700 transition">2020</a></li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Content Area -->
+            <div class="w-full lg:w-3/4 min-h-[600px]">
+                
+                <div class="mb-10">
+                    <h1 class="text-3xl md:text-4xl font-extrabold text-green-900 mb-2">ASFA Top 20 2026 Rankings</h1>
+                    <p class="text-lg font-medium text-slate-600 mb-2">For period January 1, 2026 through March 6, 2026</p>
+                    
+                    <div class="bg-blue-50 p-5 rounded-xl shadow-sm border border-blue-200 mt-6 flex flex-col md:flex-row md:items-start gap-4">
+                        <div class="bg-blue-100 text-blue-700 p-3 rounded-lg shrink-0">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800 text-base">Records Coordinator</h3>
+                            <p class="text-sm text-slate-600 mt-1 mb-2">Questions regarding these statistics should be directed to the ASFA Records Coordinator:</p>
+                            <p class="text-sm font-bold text-slate-800">Lori Zorbaugh</p>
+                            <p class="text-xs text-slate-600">1900 Normandie Drive<br>York, Pennsylvania 17408-1536</p>
+                            <p class="text-xs text-slate-600 mt-1">Phone: 717-764-6921<br>Fax: 1-413-228-4773</p>
+                            <a href="mailto:records@asfa.org" class="text-sm text-green-600 hover:text-green-800 hover:underline mt-1 inline-block">records@asfa.org</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DYNAMIC TABLE CONTAINER -->
+                <div id="table-container" class="space-y-12 transition-opacity duration-300">
+                    <!-- Table injects here via Javascript -->
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-300 py-12 mt-auto border-t-4 border-green-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 border-b border-slate-800 pb-8 mb-8">
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Competition</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="schedule.html" class="hover:text-green-400 transition">Trial Schedule</a></li>
+                        <li><a href="trial_results.html" class="hover:text-green-400 transition">Trial Results</a></li>
+                        <li><a href="entry_forms.html" class="hover:text-green-400 transition">Entry Forms</a></li>
+                        <li><a href="top20_lifetime.html" class="hover:text-green-400 transition">Top 20</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Organization</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="clubs.html" class="hover:text-green-400 transition">Clubs</a></li>
+                        <li><a href="officers.htm" class="hover:text-green-400 transition">Officers & Directors</a></li>
+                        <li><a href="rulebook.html" class="hover:text-green-400 transition">Rule Book</a></li>
+                        <li><a href="quest.htm" class="hover:text-green-400 transition">Questions & Comments</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Resources</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="breeds.html" class="hover:text-green-400 transition">Eligible Breeds</a></li>
+                        <li><a href="beginguide.html" class="hover:text-green-400 transition">Beginner's Guide</a></li>
+                        <li><a href="store.html" class="hover:text-green-400 transition">ASFA Store</a></li>
+                        <li><a href="sitemap.html" class="hover:text-green-400 transition">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">About</h4>
+                    <p class="text-sm leading-relaxed text-slate-400">
+                        The American Sighthound Field Association is dedicated to preserving the natural beauty, grace, speed and coursing skill of the sighthound.
+                    </p>
+                </div>
+            </div>
+            <div class="text-center text-xs text-slate-500 space-y-4">
+                <p class="max-w-4xl mx-auto">
+                    Acceptance and use of the information contained on this website constitutes an acknowledgment that the user hereby releases and indemnifies the ASFA, its officers, directors, members and agents from any and all liability and damages sustained by the user as a result of any information obtained from this web site.
+                </p>
+                <p>
+                    &copy; 2002-2026 American Sighthound Field Association. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script for Dynamic Tables and Mobile Menu -->
+    <script>
+        // Database of hounds for the 2026 coursing year based on provided data
+        const top20Data2026 = {
+            "afghan": {
+                title: "Afghan Hound", total: "2",
+                dogs: [
+                    ["1", "Khenni", "Kominek's Kennebec At Cameo", "C.Sullivan/E.& S.Kominek", "3", "2", "2", "1"],
+                    ["2", "Mannie", "Imanea El Iraj FCh", "V.& R.Koscinski", "2", "1", "1", "0"]
+                ]
+            },
+            "azawakh": {
+                title: "Azawakh", total: "1",
+                dogs: [
+                    ["1", "Ramisi", "FC Kel Simoon Ramisi 'N Sambala FCh,VFCH,RN,MC,CA,FCAT", "M.Bisbee", "3", "2", "2", "0"]
+                ]
+            },
+            "basenji": {
+                title: "Basenji", total: "2",
+                dogs: [
+                    ["1", "Micky", "Ch Sundiata's Guardian Angel Michael BCAT CGC", "L.Krawczyk", "2", "1", "1", "0"]
+                ]
+            },
+            "borzoi": { title: "Borzoi", total: "0", dogs: [] },
+            "chartpolski": { title: "Chart Polski", total: "0", dogs: [] },
+            "cirneco": { title: "Cirneco dell'Etna", total: "0", dogs: [] },
+            "galgo": { title: "Galgo Español", total: "0", dogs: [] },
+            "greyhound": {
+                title: "Greyhound", total: "5",
+                dogs: [
+                    ["1", "Kristoff", "Lakilanni Halfmoon Kristoff FCh", "H.Minnich/L.Soutar", "3", "8", "2", "0"],
+                    ["2", "Inka", "Panorama Halfmoon Black And White FCh", "H.Minnich", "3", "3", "0", "0"],
+                    ["2", "Starlette", "BII dc Lakilanni Halfmoon Highwaystar LCM,VFCh", "H.Minnich", "3", "3", "0", "0"],
+                    ["4", "Pecan", "Unbridled Majestiks Blackeyed Peacan", "S.Visocchi", "3", "2", "0", "0"]
+                ]
+            },
+            "ibizan": {
+                title: "Ibizan Hound", total: "2",
+                dogs: [
+                    ["1", "Hope", "Dugualla's Extravagant Hope For Wirtu", "K.Kelly/J.Stover", "2", "2", "1", "1"],
+                    ["2", "Tea", "Kamars Sun Tea At Wirtu", "K.Kelly/K.Belz", "2", "1", "0", "0"]
+                ]
+            },
+            "irishwolfhound": { title: "Irish Wolfhound", total: "3", dogs: [] },
+            "italiangreyhound": { title: "Italian Greyhound", total: "0", dogs: [] },
+            "lcilarge": {
+                title: "LCI Large", total: "6",
+                dogs: [
+                    ["1", "Raze", "OMG Rise Of The Lycan LCC LCA", "M.Crist", "3", "6", "0", "0"],
+                    ["2", "Rohan", "OMG We Ride To Gondor LCA,LCE2", "M.Crist/M.Townsend", "3", "4", "0", "0"],
+                    ["3", "Rosie", "Princess Rosie Pooh", "M.Yamashita", "10", "2", "0", "0"],
+                    ["3", "Bubba", "OMG Third Times A Charm LCC,LCA", "M.Crist", "3", "2", "0", "0"],
+                    ["5", "Winslow", "Open Up I'm Climbin' In Von Major Sheds", "M.Yamashita", "10", "1", "0", "0"]
+                ]
+            },
+            "lcisighthoundmix": {
+                title: "LCI Sighthound Mix", total: "4",
+                dogs: [
+                    ["1", "Rikki", "Rikki Of Mariner Lane", "J.Crappell", "3", "3", "0", "0"],
+                    ["2", "Hurri", "TCS Lace And Crimes At Westward", "N.& T.Ballard", "3", "2", "0", "0"],
+                    ["2", "Breadstick", "RTK's NeverEnding LCI", "N.Ballard", "3", "2", "0", "0"],
+                    ["2", "Laszlo", "Laszlo", "K.Valverde/A.Hipp", "10", "2", "0", "0"]
+                ]
+            },
+            "lcismall": {
+                title: "LCI Small", total: "1",
+                dogs: [
+                    ["1", "Stardust", "Timeless Jyn Erso LCI,LCC,LCA", "S.& A.Pack/K.Keller-Ross", "10", "1", "0", "0"]
+                ]
+            },
+            "magyaragar": { title: "Magyar Agar", total: "0", dogs: [] },
+            "pio": { title: "Peruvian Inca Orchid", total: "0", dogs: [] },
+            "pharaoh": {
+                title: "Pharaoh Hound", total: "7",
+                dogs: [
+                    ["1", "Jasper", "GCh DC Bazinga Just A Minuteman LCM2 SC JOR", "R.Phinney/S.T.Hansen/G.Bednar", "3", "6", "1", "0"],
+                    ["2", "Cuest", "DC Nefer-Temu Lotus' All The Right Moves FCh SC LCX", "D.Kunard", "3", "5", "1", "0"],
+                    ["3", "Ladon", "FC Lileo's Fantastic Beast FCh,SC,SGRC,RN", "J.Jones/L.Leones", "2", "3", "1", "0"],
+                    ["3", "Calyber", "GCh,DC Bazinga Journey Of Lights V. Lotus LCM,MC,LCX", "D.Kunard", "3", "3", "0", "0"],
+                    ["5", "Copper", "BISS,RBIS,GChS,DC Bazinga Copernicus The Stargazer LCM,VFCh,SC,BCAT,JOR,CGC", "R.Phinney/G.Bednar", "3", "2", "0", "0"],
+                    ["5", "Jackie", "Lileo's Jacxqueline KO In Pearls", "J.Jones/L.Leone", "2", "2", "0", "0"],
+                    ["7", "Sage", "Ch Ochra Kubu Ancient Mojave At Lileo SC,GRC", "J.Jones", "2", "1", "0", "0"]
+                ]
+            },
+            "podengopequeno": {
+                title: "Podengo Pequeno", total: "1",
+                dogs: [
+                    ["1", "Truman", "Ch Enchanted Annevan First And Foremost SC", "J.& T.Daykin/Faria/Pedisich", "1", "1", "0", "0"]
+                ]
+            },
+            "portuguesepodengo": { title: "Portuguese Podengo", total: "0", dogs: [] },
+            "ridgeback": { title: "Rhodesian Ridgeback", total: "0", dogs: [] },
+            "saluki": {
+                title: "Saluki", total: "51",
+                dogs: [
+                    ["1", "Syan", "FC Syan So Smooth Of Doha LCM,SC,FITB", "M.Bisbee", "3", "2", "2", "0"]
+                ]
+            },
+            "deerhound": { title: "Scottish Deerhound", total: "2", dogs: [] },
+            "silken": {
+                title: "Silken Windhound", total: "135",
+                dogs: [
+                    ["1", "Guinness", "ISWS Ch Starfyre Magical LCM GRC", "Hicks/Grant-Beuttler/Beuttler", "10", "19", "2", "0"],
+                    ["2", "Dusky", "Starfyre Colors In The Sunshine FCh", "J.& K.Hicks", "10", "9", "0", "0"],
+                    ["3", "Trance", "Starfyre Entranced FCh", "D.Parker/J.& K.Hicks", "2", "8", "0", "0"],
+                    ["4", "Flynn", "Starfyre Release The Hounds FCh", "J.& K.Hicks/V.Morrow", "10", "7", "0", "0"],
+                    ["5", "Camper", "Inphenite Sumrsprt HappyCamper FCh", "D.Murphy/J.Vookles", "1", "6", "0", "0"],
+                    ["6", "Lizzie", "Starfyre Eagle When She Flies FCh", "M.Goldman/M.Rotblatt/J.& K.Hicks", "10", "5", "0", "0"],
+                    ["7", "Norman", "Ch Starfyre Mornin Burning Golden FCh", "J.Brindley/J. & K.Hicks", "10", "4", "0", "0"],
+                    ["8", "Stirling", "Heirlooms Kohaku Nushi", "R.Beuttler/M.Grant-Beuttler", "1", "3", "0", "0"],
+                    ["8", "Howard", "Aeracura We're All Mad Here FCh", "J.Brindley", "10", "3", "0", "0"],
+                    ["10", "Ducati", "ISWS/UKC Ch Allagante DucatiEnduroStarfyre FCh GRC", "J.& K.Hicks", "10", "2", "0", "0"],
+                    ["11", "Comet", "Starfyre Stargazer", "V.Morrow/J.& K.Hicks", "10", "1", "0", "0"],
+                    ["11", "Ollie", "Legend Licorice Allsorts", "K.Van Greunen", "2", "1", "1", "0"]
+                ]
+            },
+            "singles": {
+                title: "Singles", total: "18",
+                dogs: [
+                    ["1", "Lyra", "Aeracura From The Ashes", "R.Bland/E.Green", "10", "11", "0", "0"],
+                    ["2", "Ali", "Al Sayad Amun-Ra Firyali D'Ansor", "G.Daun Hayden/F.Bennett/C.Kelly", "3", "8", "0", "0"],
+                    ["2", "Matrix", "Azharaani Saar Mountain Of The Sun", "G. & B.Mitchell", "3", "8", "0", "0"],
+                    ["4", "Marzipan", "Hunter's Run Fool Hearted WNS", "T. & J. Danley", "10", "7", "0", "0"],
+                    ["4", "Favor", "Synergy TCS Devils Roll The Diice At Swiftly", "C.Boyer", "7", "7", "2", "0"],
+                    ["6", "Luna", "Sundara's Blue Nile Autumn Moon", "M.Quarles/M.Haag", "3", "6", "0", "0"],
+                    ["7", "Benji", "Winsome's Pousette", "K.Amari", "10", "5", "0", "0"],
+                    ["7", "Elvie", "Chyscott's On The Button TCP", "R.Dunn", "3", "5", "0", "0"],
+                    ["9", "Mena", "Katushka's Over The Moon", "J.Law/E.Erickson", "3", "4", "0", "0"],
+                    ["9", "Bijou", "SFF N Relic's Bubbles Up", "A.Lardizabal-Brantley", "3", "4", "0", "0"],
+                    ["11", "Reacher", "Azharaani Saar Desert Storm", "G.Hayden/F.Bennett", "3", "3", "0", "0"],
+                    ["12", "Flynn", "Wannago's Flying Flynn", "K.Mix/M.Powell", "2", "1", "0", "0"]
+                ]
+            },
+            "sloughi": { title: "Sloughi", total: "0", dogs: [] },
+            "whippet": {
+                title: "Whippet", total: "16",
+                dogs: [
+                    ["1", "Brook", "Wirtu's Only Time Will Tell", "K.Kelly", "2", "10", "1", "0"],
+                    ["2", "River", "Wirtu's As Time Goes By", "K.Kelly", "2", "8", "0", "0"],
+                    ["3", "Tiger Lily", "Westwind's Compelling Elegance", "L.White", "10", "7", "0", "0"],
+                    ["4", "Jet", "CPT Jet Falcon", "S. & S.Lechner", "2", "6", "0", "0"],
+                    ["5", "Ruby", "Castlecrest Ruby", "E.Drake/J.Tibbitts", "2", "5", "0", "0"],
+                    ["5", "Dante", "Adagio Jilzan Dinosaur BCAT", "J.Tibbitts/E.Drake", "2", "5", "0", "0"],
+                    ["5", "Zero", "Westwind's Zefiro", "L.White", "10", "5", "0", "0"],
+                    ["5", "Favor", "Synergy TCS Devils Roll The Diice At Swiftly", "C.Boyer", "7", "5", "2", "0"],
+                    ["9", "Merida", "Shannon Down Brave", "N.Amendola", "7", "3", "0", "0"],
+                    ["10", "Nami", "Shannon Down Sonic Wave At Westward", "N.Amendola", "-", "2", "0", "0"],
+                    ["11", "Londyn Rose", "Wirtu's Promise Of Roses FCh", "J.Haas", "2", "1", "0", "0"],
+                    ["11", "Beaker", "Horsetooth Agent 99 FCh", "S.Krick", "3", "1", "0", "0"],
+                    ["11", "Andre", "Chyscott's On The Rise FCh", "R.Dunn", "3", "1", "1", "0"],
+                    ["11", "Lola", "TIGR To Beagan Lola", "S.Krick", "3", "1", "0", "0"]
+                ]
+            }
+        };
+
+        // Function to render the table dynamically
+        function renderTable(breedKey) {
+            const container = document.getElementById('table-container');
+            const data = top20Data2026[breedKey];
+            
+            if (!data || !data.dogs || data.dogs.length === 0) {
+                container.innerHTML = `
+                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-3 mb-4">
+                        <h2 class="text-2xl font-bold text-slate-800">${data ? data.title : 'Selected Breed'}</h2>
+                    </div>
+                    <p class="text-slate-500 bg-white p-6 rounded-xl border border-slate-200 shadow-sm text-center">No standings data is currently available for this breed in the 2026 coursing year.</p>`;
+                return;
+            }
+
+            let html = `
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-3 mb-4">
+                    <h2 class="text-2xl font-bold text-slate-800">${data.title}</h2>
+                    <span class="text-sm font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-full border border-slate-200">Total Competing: ${data.total}</span>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden overflow-x-auto">
+                    <table class="w-full text-left text-sm whitespace-nowrap">
+                        <thead class="bg-slate-50 text-slate-500 text-xs uppercase font-bold border-b border-slate-200 tracking-wider">
+                            <tr>
+                                <th class="px-4 py-4 w-10 text-center">Rank</th>
+                                <th class="px-4 py-4">Call Name</th>
+                                <th class="px-4 py-4">Registered Name</th>
+                                <th class="px-4 py-4">Owner</th>
+                                <th class="px-4 py-4 text-center">Region</th>
+                                <th class="px-4 py-4 text-center">Top 20 Pts</th>
+                                <th class="px-4 py-4 text-center">BOB Wins</th>
+                                <th class="px-4 py-4 text-center">BIF Earned</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100">
+            `;
+
+            data.dogs.forEach(dog => {
+                html += `
+                    <tr class="hover:bg-slate-50 transition border-b border-slate-100 last:border-0 group">
+                        <td class="px-4 py-3 text-center font-bold text-slate-400 group-hover:text-slate-600">${dog[0]}</td>
+                        <td class="px-4 py-3 font-bold text-slate-800">${dog[1]}</td>
+                        <td class="px-4 py-3 font-medium text-slate-700">${dog[2]}</td>
+                        <td class="px-4 py-3 text-slate-600">${dog[3]}</td>
+                        <td class="px-4 py-3 text-center font-semibold text-slate-600">${dog[4]}</td>
+                        <td class="px-4 py-3 text-center font-bold text-green-700">${dog[5]}</td>
+                        <td class="px-4 py-3 text-center font-medium">${dog[6]}</td>
+                        <td class="px-4 py-3 text-center text-amber-600 font-bold">${dog[7]}</td>
+                    </tr>
+                `;
+            });
+
+            html += `
+                        </tbody>
+                    </table>
+                </div>
+            `;
+            
+            // Apply slight fade effect for smooth transition
+            container.style.opacity = 0;
+            setTimeout(() => {
+                container.innerHTML = html;
+                container.style.opacity = 1;
+            }, 150);
+        }
+
+        // Add Event Listeners to all breed links
+        document.querySelectorAll('.breed-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                
+                // Remove active classes from ALL links (desktop and mobile)
+                document.querySelectorAll('.breed-link').forEach(l => {
+                    l.classList.remove('text-green-700', 'font-bold', 'bg-green-50', 'border-l-4', 'border-green-600');
+                    l.classList.add('text-slate-600');
+                });
+                
+                // Add active class to the clicked link
+                e.currentTarget.classList.add('text-green-700', 'font-bold', 'bg-green-50', 'border-l-4', 'border-green-600');
+                e.currentTarget.classList.remove('text-slate-600');
+
+                // Get breed key and render
+                const targetBreed = e.currentTarget.getAttribute('data-target');
+                renderTable(targetBreed);
+                
+                // Close mobile dropdown and update title if clicked from mobile menu
+                if(window.innerWidth < 1024) {
+                    const details = e.currentTarget.closest('details');
+                    if(details) details.removeAttribute('open');
+                    document.getElementById('mobile-breed-title').textContent = e.currentTarget.textContent;
+                    // Scroll to content on mobile so they see the table immediately
+                    document.getElementById('content-area').scrollIntoView({behavior: 'smooth'});
+                }
+            });
+        });
+
+        // Initialize first breed (Afghan Hound)
+        renderTable('afghan');
+
+        // Mobile Menu Toggle Logic
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if (mobileBtn && mobileMenu) {
+            mobileBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
+</body>
+</html>
