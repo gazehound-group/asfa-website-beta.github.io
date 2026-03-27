@@ -145,6 +145,13 @@
                     <a href="store.html" class="text-amber-400 hover:text-amber-200 transition font-bold text-xs lg:text-sm py-4">Store</a>
                 </nav>
 
+                <div class="flex items-center hidden sm:block">
+                    <div class="relative">
+                        <input type="text" placeholder="Search ASFA..." class="bg-green-900 text-white placeholder-green-300 rounded-full py-1.5 pl-4 pr-10 focus:outline-none focus:ring-2 focus:ring-green-400 text-sm w-40 lg:w-48">
+                        <svg class="w-4 h-4 absolute right-3 top-2 text-green-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </div>
+                </div>
+                
                 <!-- MOBILE MENU BUTTON -->
                 <div class="md:hidden flex items-center">
                     <button id="mobile-menu-btn" class="text-white focus:outline-none hover:text-green-200 transition">
@@ -249,6 +256,12 @@
 
                 <a href="store.html" class="block py-2 font-bold text-amber-400 hover:text-amber-200">Store</a>
                 
+                <div class="pt-4 pb-2">
+                    <div class="relative">
+                        <input type="text" placeholder="Search ASFA..." class="w-full bg-green-900 text-white placeholder-green-300 rounded-full py-2 pl-4 pr-10 focus:outline-none focus:ring-2 focus:ring-green-400 text-sm border border-green-700">
+                        <svg class="w-4 h-4 absolute right-3 top-2.5 text-green-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -260,7 +273,7 @@
         <nav class="mb-6" aria-label="Breadcrumb">
             <ol class="flex items-center space-x-2 text-sm text-slate-500">
                 <li><a href="index.html" class="hover:text-green-700 transition">Home</a></li>
-                <li><svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7-7"></path></svg></li>
+                <li><svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></li>
                 <li><span class="text-slate-400">Records & Awards</span></li>
                 <li><svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></li>
                 <li><span class="text-slate-800 font-semibold">2026 Trial Results</span></li>
@@ -372,7 +385,7 @@
                 });
             }
 
-            // Data Structure for Trial Results (Example from the provided text)
+            // Data Structure for Trial Results
             const trialResultsData = [
                 {
                     club: "ORANGE COAST RHODESIAN RIDGEBACK CLUB",
@@ -429,8 +442,598 @@
                             ]
                         }
                     ]
+                },
+                {
+                    club: "ORANGE COAST RHODESIAN RIDGEBACK CLUB",
+                    date: "Feb 15, 2026",
+                    location: "Chino, CA",
+                    entries: 14,
+                    type: "Silken Windhound Specialty with LCI",
+                    categories: [
+                        {
+                            name: "LCI SIGHTHOUND MIX",
+                            judges: "Jennifer Gysler",
+                            flights: [
+                                {
+                                    name: "Open Flight A(1)",
+                                    results: [
+                                        { place: "1", dog: "Laszlo, Laszlo", owner: "K.Valverde/A.Hipp", points: "4" }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            name: "LCI SMALL",
+                            judges: "Jennifer Gysler",
+                            flights: [
+                                {
+                                    name: "Field Champion Flight A(1)",
+                                    results: [
+                                        { place: "1", dog: "Stardust, Timeless Jyn Erso, LCI,LCC,LCA", owner: "S.& A.Pack/K.Keller-Ross", points: "4" }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            name: "SILKEN WINDHOUND",
+                            judges: "Jennifer Gysler",
+                            flights: [
+                                {
+                                    name: "Open Flight A(2)",
+                                    results: [
+                                        { place: "1", dog: "Stirling, Heirlooms Kohaku Nushi", owner: "R.Beuttler/M.Grant-Beuttler", points: "F8" },
+                                        { place: "2", dog: "Comet, Starfyre Stargazer", owner: "V.Morrow/J.& K.Hicks", points: "6" }
+                                    ]
+                                },
+                                {
+                                    name: "Field Champion Flight A(10)",
+                                    results: [
+                                        { place: "1", dog: "Guinness, ISWS Ch Starfyre Magical, LCM GRC", owner: "Hicks/Grant-Beuttler/Beuttler", points: "B40" },
+                                        { place: "2", dog: "Dusky, Starfyre Colors In The Sunshine, FCh", owner: "J.& K.Hicks", points: "30" },
+                                        { place: "3", dog: "Trance, Starfyre Entranced, FCh", owner: "D.Parker/J.& K.Hicks", points: "20" },
+                                        { place: "4", dog: "Flynn, Starfyre Release The Hounds, FCh", owner: "J.& K.Hicks/V.Morrow", points: "10" },
+                                        { place: "NC", dog: "Camper, Inphenite Sumrsprt HappyCamper, FCh", owner: "D.Murphy/J.Vookles", points: "-" }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    club: "COLORADO LURE COURSING ASSOCIATION",
+                    date: "Feb 21, 2026",
+                    location: "Peyton, CO",
+                    entries: 24,
+                    type: "All-Breed Trial",
+                    categories: [
+                        {
+                            name: "AFGHAN HOUND",
+                            judges: "Tom Golcher, Darci Kunard",
+                            flights: [
+                                {
+                                    name: "Open Flight A(1)",
+                                    results: [
+                                        { place: "1", dog: "Khenni, Kominek's Kennebec At Cameo", owner: "C.Sullivan/E.& S.Kominek", points: "B4" }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            name: "AZAWAKH",
+                            judges: "Russel Buhrdorf, Darci Kunard",
+                            flights: [
+                                {
+                                    name: "Field Champion Flight A(1)",
+                                    results: [
+                                        { place: "1", dog: "Ramisi, FC Kel Simoon Ramisi 'N Sambala, FCh,VFCH,RN,MC,CA,FCAT", owner: "M.Bisbee", points: "B4" }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            name: "GREYHOUND",
+                            judges: "Russel Buhrdorf, Darci Kunard",
+                            flights: [
+                                {
+                                    name: "Open Flight A(1)",
+                                    results: [
+                                        { place: "1", dog: "Pecan, Unbridled Majestiks Blackeyed Peacan", owner: "S.Visocchi", points: "R4" }
+                                    ]
+                                },
+                                {
+                                    name: "Field Champion Flight A(2)",
+                                    results: [
+                                        { place: "1", dog: "Kristoff, Lakilanni Halfmoon Kristoff, FCh", owner: "H.Minnich/L.Soutar", points: "B8" },
+                                        { place: "2", dog: "Starlette, BII dc Lakilanni Halfmoon Highwaystar, LCM,VFCh", owner: "H.Minnich", points: "6" }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            name: "LCI LARGE",
+                            judges: "Russel Buhrdorf, Tom Golcher",
+                            flights: [
+                                {
+                                    name: "Open Flight A(1, 1 NQ)",
+                                    results: [
+                                        { place: "NQ", dog: "No Best of Breed Awarded", owner: "-", points: "-" }
+                                    ]
+                                },
+                                {
+                                    name: "Field Champion Flight A(3)",
+                                    results: [
+                                        { place: "1", dog: "Raze, OMG Rise Of The Lycan, LCC LCA", owner: "M.Crist", points: "12" },
+                                        { place: "2", dog: "Rohan, OMG We Ride To Gondor, LCA,LCE2", owner: "M.Crist/M.Townsend", points: "9" },
+                                        { place: "3", dog: "Bubba, OMG Third Times A Charm, LCC,LCA", owner: "M.Crist", points: "6" }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            name: "PHARAOH HOUND",
+                            judges: "Russel Buhrdorf, Tom Golcher",
+                            flights: [
+                                {
+                                    name: "Field Champion Flight A(3)",
+                                    results: [
+                                        { place: "1", dog: "Cuest, DC Nefer-Temu Lotus' All The Right Moves, FCh SC LCX", owner: "D.Kunard", points: "B12" },
+                                        { place: "2", dog: "Jasper, GCh DC Bazinga Just A Minuteman, LCM2 SC JOR", owner: "R.Phinney/S.T.Hansen/G.Bednar", points: "9" },
+                                        { place: "3", dog: "Calyber, GCh,DC Bazinga Journey Of Lights V. Lotus, LCM,MC,LCX", owner: "D.Kunard", points: "6" }
+                                    ]
+                                },
+                                {
+                                    name: "Veteran Flight A(1)",
+                                    results: [
+                                        { place: "1", dog: "Copper, BISS,RBIS,GChS,DC Bazinga Copernicus The Stargazer, LCM,VFCh,SC,BCAT,JOR,CGC", owner: "R.Phinney/G.Bednar", points: "F4" }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            name: "SALUKI",
+                            judges: "Tom Golcher, Darci Kunard",
+                            flights: [
+                                {
+                                    name: "Veteran Flight A(1)",
+                                    results: [
+                                        { place: "1", dog: "Syan, FC Syan So Smooth Of Doha, LCM,SC,FITB", owner: "M.Bisbee", points: "B4" }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            name: "SCOTTISH DEERHOUND",
+                            judges: "Tom Golcher, Darci Kunard",
+                            flights: [
+                                {
+                                    name: "Open Flight A(1, 1 NQ)",
+                                    results: [
+                                        { place: "NQ", dog: "No Best of Breed Awarded", owner: "-", points: "-" }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            name: "LCI SIGHTHOUND MIX",
+                            judges: "Russel Buhrdorf, Tom Golcher",
+                            flights: [
+                                {
+                                    name: "Open Flight A(1)",
+                                    results: [
+                                        { place: "1", dog: "Hurri, TCS Lace And Crimes At Westward", owner: "N.& T.Ballard", points: "4" }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            name: "SINGLES",
+                            judges: "Russel Buhrdorf, Darci Kunard",
+                            flights: [
+                                {
+                                    name: "Single Flight A(7)",
+                                    results: [
+                                        { place: "1", dog: "Favor, Synergy TCS Devils Roll The Diice At Swiftly", owner: "C.Boyer", points: "28" },
+                                        { place: "2", dog: "Ali, Al Sayad Amun-Ra Firyali D'Ansor", owner: "G.Daun Hayden/F.Bennett/C.Kelly", points: "21" },
+                                        { place: "3", dog: "Elvie, Chyscott's On The Button, TCP", owner: "R.Dunn", points: "14" },
+                                        { place: "4", dog: "Bijou, SFF N Relic's Bubbles Up", owner: "A.Lardizabal-Brantley", points: "7" },
+                                        { place: "NC", dog: "Matrix, Azharaani Saar Mountain Of The Sun", owner: "G. & B.Mitchell", points: "-" }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            name: "WHIPPET",
+                            judges: "Tom Golcher, Darci Kunard",
+                            flights: [
+                                {
+                                    name: "Field Champion Flight A(1)",
+                                    results: [
+                                        { place: "1", dog: "Andre, Chyscott's On The Rise, FCh", owner: "R.Dunn", points: "B4" }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            name: "BEST IN FIELD",
+                            judges: "Russel Buhrdorf, Tom Golcher",
+                            flights: [
+                                {
+                                    name: "Best In Field",
+                                    results: [
+                                        { place: "BIF", dog: "AH Khenni, Kominek's Kennebec At Cameo", owner: "C.Sullivan/E.& S.Kominek", points: "150" },
+                                        { place: "2", dog: "WH Andre, Chyscott's On The Rise, FCh", owner: "R.Dunn", points: "147" },
+                                        { place: "3", dog: "PH Cuest, DC Nefer-Temu Lotus' All The Right Moves, FCh SC LCX", owner: "D.Kunard", points: "144" },
+                                        { place: "4", dog: "AZ Ramisi, FC Kel Simoon Ramisi 'N Sambala, FCh,VFCH,RN,MC,CA,FCAT", owner: "M.Bisbee", points: "143" }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    club: "DESERT FUN BUNCH",
+                    date: "Feb 21, 2026",
+                    location: "Tonopah, AZ",
+                    entries: 7,
+                    type: "Silken Windhound Specialty",
+                    categories: [
+                        {
+                            name: "SINGLES",
+                            judges: "Matt Coughlin",
+                            flights: [
+                                {
+                                    name: "Single Flight A(7, 4 NQ)",
+                                    results: [
+                                        { place: "1", dog: "Marzipan, Hunter's Run Fool Hearted WNS", owner: "T. & J. Danley", points: "28" },
+                                        { place: "2", dog: "Lyra, Aeracura From The Ashes", owner: "R.Bland/E.Green", points: "21" },
+                                        { place: "3", dog: "Benji, Winsome's Pousette", owner: "K.Amari", points: "14" }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    club: "COLORADO LURE COURSING ASSOCIATION",
+                    date: "Feb 22, 2026",
+                    location: "Peyton, CO",
+                    entries: 31,
+                    type: "All-Breed Trial",
+                    categories: [
+                        {
+                            name: "AFGHAN HOUND",
+                            judges: "Tom Golcher, Heather Minnich",
+                            flights: [
+                                {
+                                    name: "Open Flight A(1)",
+                                    results: [
+                                        { place: "1", dog: "Khenni, Kominek's Kennebec At Cameo", owner: "C.Sullivan/E.& S.Kominek", points: "B4" }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            name: "AZAWAKH",
+                            judges: "Russel Buhrdorf, Darci Kunard",
+                            flights: [
+                                {
+                                    name: "Field Champion Flight A(0)",
+                                    results: [
+                                        { place: "1", dog: "Ramisi, FC Kel Simoon Ramisi 'N Sambala, FCh,VFCH,RN,MC,CA,FCAT", owner: "M.Bisbee", points: "B" }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            name: "BASENJI",
+                            judges: "Tom Golcher, Heather Minnich",
+                            flights: [
+                                {
+                                    name: "Open Flight A(1, 1 NQ)",
+                                    results: [
+                                        { place: "NQ", dog: "No Best of Breed Awarded", owner: "-", points: "-" }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            name: "GREYHOUND",
+                            judges: "Tom Golcher, Darci Kunard",
+                            flights: [
+                                {
+                                    name: "Open Flight A(1)",
+                                    results: [
+                                        { place: "1", dog: "Pecan, Unbridled Majestiks Blackeyed Peacan", owner: "S.Visocchi", points: "R4" }
+                                    ]
+                                },
+                                {
+                                    name: "Field Champion Flight A(4, 1 NQ)",
+                                    results: [
+                                        { place: "1", dog: "Kristoff, Lakilanni Halfmoon Kristoff, FCh", owner: "H.Minnich/L.Soutar", points: "B16" },
+                                        { place: "2", dog: "Inka, Panorama Halfmoon Black And White, FCh", owner: "H.Minnich", points: "12" },
+                                        { place: "3", dog: "Starlette, BII dc Lakilanni Halfmoon Highwaystar, LCM,VFCh", owner: "H.Minnich", points: "8" }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            name: "LCI LARGE",
+                            judges: "Russel Buhrdorf, Tom Golcher",
+                            flights: [
+                                {
+                                    name: "Field Champion Flight A(3)",
+                                    results: [
+                                        { place: "1", dog: "Raze, OMG Rise Of The Lycan, LCC LCA", owner: "M.Crist", points: "12" },
+                                        { place: "2", dog: "Rohan, OMG We Ride To Gondor, LCA,LCE2", owner: "M.Crist/M.Townsend", points: "9" },
+                                        { place: "3", dog: "Bubba, OMG Third Times A Charm, LCC,LCA", owner: "M.Crist", points: "6" }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            name: "PHARAOH HOUND",
+                            judges: "Tom Golcher, Heather Minnich",
+                            flights: [
+                                {
+                                    name: "Field Champion Flight A(3)",
+                                    results: [
+                                        { place: "1", dog: "Jasper, GCh DC Bazinga Just A Minuteman, LCM2 SC JOR", owner: "R.Phinney/S.T.Hansen/G.Bednar", points: "B12" },
+                                        { place: "2", dog: "Calyber, GCh,DC Bazinga Journey Of Lights V. Lotus, LCM,MC,LCX", owner: "D.Kunard", points: "9" },
+                                        { place: "3", dog: "Cuest, DC Nefer-Temu Lotus' All The Right Moves, FCh SC LCX", owner: "D.Kunard", points: "6" }
+                                    ]
+                                },
+                                {
+                                    name: "Veteran Flight A(1)",
+                                    results: [
+                                        { place: "1", dog: "Copper, BISS,RBIS,GChS,DC Bazinga Copernicus The Stargazer, LCM,VFCh,SC,BCAT,JOR,CGC", owner: "R.Phinney/G.Bednar", points: "F4" }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            name: "SALUKI",
+                            judges: "Darci Kunard, Heather Minnich",
+                            flights: [
+                                {
+                                    name: "Veteran Flight A(1)",
+                                    results: [
+                                        { place: "1", dog: "Syan, FC Syan So Smooth Of Doha, LCM,SC,FITB", owner: "M.Bisbee", points: "B4" }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            name: "SCOTTISH DEERHOUND",
+                            judges: "Darci Kunard, Heather Minnich",
+                            flights: [
+                                {
+                                    name: "Open Flight A(1, 1 NQ)",
+                                    results: [
+                                        { place: "NQ", dog: "No Best of Breed Awarded", owner: "-", points: "-" }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            name: "LCI SIGHTHOUND MIX",
+                            judges: "Russel Buhrdorf, Tom Golcher",
+                            flights: [
+                                {
+                                    name: "Open Flight A(3)",
+                                    results: [
+                                        { place: "1", dog: "Rikki, Rikki Of Mariner Lane", owner: "J.Crappell", points: "12" },
+                                        { place: "2", dog: "Breadstick, RTK's NeverEnding, LCI", owner: "N.Ballard", points: "9" },
+                                        { place: "3", dog: "Hurri, TCS Lace And Crimes At Westward", owner: "N.& T.Ballard", points: "6" }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            name: "SINGLES",
+                            judges: "Russel Buhrdorf, Darci Kunard",
+                            flights: [
+                                {
+                                    name: "Single Flight A(6)",
+                                    results: [
+                                        { place: "1", dog: "Luna, Sundara's Blue Nile Autumn Moon", owner: "M.Quarles/M.Haag", points: "24" },
+                                        { place: "2", dog: "Matrix, Azharaani Saar Mountain Of The Sun", owner: "G. & B.Mitchell", points: "18" },
+                                        { place: "3", dog: "Mena, Katushka's Over The Moon", owner: "J.Law/E.Erickson", points: "12" },
+                                        { place: "4", dog: "Reacher, Azharaani Saar Desert Storm", owner: "G.Hayden/F.Bennett", points: "6" },
+                                        { place: "NC", dog: "Ali, Al Sayad Amun-Ra Firyali D'Ansor", owner: "G.Daun Hayden/F.Bennett/C.Kelly", points: "-" }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            name: "WHIPPET",
+                            judges: "Russel Buhrdorf, Heather Minnich",
+                            flights: [
+                                {
+                                    name: "Open Flight A(4)",
+                                    results: [
+                                        { place: "1", dog: "Favor, Synergy TCS Devils Roll The Diice At Swiftly", owner: "C.Boyer", points: "B16" },
+                                        { place: "2", dog: "Merida, Shannon Down Brave", owner: "N.Amendola", points: "12" },
+                                        { place: "3", dog: "Nami, Shannon Down Sonic Wave At Westward", owner: "N.Amendola/S.Lyons", points: "8" },
+                                        { place: "4", dog: "Lola, TIGR To Beagan Lola", owner: "S.Krick", points: "4" }
+                                    ]
+                                },
+                                {
+                                    name: "Field Champion Flight A(1)",
+                                    results: [
+                                        { place: "1", dog: "Beaker, Horsetooth Agent 99, FCh", owner: "S.Krick", points: "F4" }
+                                    ]
+                                },
+                                {
+                                    name: "BEST IN FIELD",
+                                    results: [
+                                        { place: "NQ", dog: "No Best in Field", owner: "-", points: "-" }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    club: "DESERT FUN BUNCH",
+                    date: "Feb 22, 2026",
+                    location: "Tonopah, AZ",
+                    entries: 5,
+                    type: "Silken Windhound Specialty",
+                    categories: [
+                        {
+                            name: "SINGLES",
+                            judges: "Matt Coughlin",
+                            flights: [
+                                {
+                                    name: "Single Flight A(5, 4 NQ)",
+                                    results: [
+                                        { place: "1", dog: "Lyra, Aeracura From The Ashes", owner: "R.Bland/E.Green", points: "20" }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    club: "NORTHERN CALIFORNIA IRISH WOLFHOUND CLUB",
+                    date: "Feb 28, 2026",
+                    location: "Fairfield, CA",
+                    entries: 23,
+                    type: "All-Breed Trial",
+                    categories: [
+                        {
+                            name: "AFGHAN HOUND",
+                            judges: "Kathleen Kelly",
+                            flights: [
+                                {
+                                    name: "Field Champion Flight A(1)",
+                                    results: [
+                                        { place: "1", dog: "Mannie, Imanea El Iraj, FCh", owner: "V.& R.Koscinski", points: "B4" }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            name: "BASENJI",
+                            judges: "Jayme Jones",
+                            flights: [
+                                {
+                                    name: "Open Flight A(1)",
+                                    results: [
+                                        { place: "1", dog: "Micky, Ch Sundiata's Guardian Angel Michael, BCAT CGC", owner: "L.Krawczyk", points: "B4" }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            name: "IBIZAN HOUND",
+                            judges: "Jayme Jones",
+                            flights: [
+                                {
+                                    name: "Open Flight A(2)",
+                                    results: [
+                                        { place: "1", dog: "Hope, Dugualla's Extravagant Hope For Wirtu", owner: "K.Kelly/J.Stover", points: "B8" },
+                                        { place: "2", dog: "Tea, Kamars Sun Tea At Wirtu", owner: "K.Kelly/K.Belz", points: "6" }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            name: "IRISH WOLFHOUND",
+                            judges: "Kathleen Kelly",
+                            flights: [
+                                {
+                                    name: "Open Flight A(3, 3 NQ)",
+                                    results: [
+                                        { place: "NQ", dog: "No Best of Breed Awarded", owner: "-", points: "-" }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            name: "PHARAOH HOUND",
+                            judges: "Kathleen Kelly",
+                            flights: [
+                                {
+                                    name: "Open Flight A(2)",
+                                    results: [
+                                        { place: "1", dog: "Jackie, Lileo's Jacxqueline KO In Pearls", owner: "J.Jones/L.Leone", points: "R8" },
+                                        { place: "2", dog: "Sage, Ch Ochra Kubu Ancient Mojave At Lileo, SC,GRC", owner: "J.Jones", points: "6" }
+                                    ]
+                                },
+                                {
+                                    name: "Field Champion Flight A(1)",
+                                    results: [
+                                        { place: "1", dog: "Ladon, FC Lileo's Fantastic Beast, FCh,SC,SGRC,RN", owner: "J.Jones/L.Leones", points: "B8" }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            name: "SINGLES",
+                            judges: "Jayme Jones",
+                            flights: [
+                                {
+                                    name: "Single Flight A(2, 1 NC)",
+                                    results: [
+                                        { place: "1", dog: "Flynn, Wannago's Flying Flynn", owner: "K.Mix/M.Powell", points: "4" }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            name: "SILKEN WINDHOUND",
+                            judges: "Jayme Jones",
+                            flights: [
+                                {
+                                    name: "Open Flight A(1)",
+                                    results: [
+                                        { place: "1", dog: "Ollie, Legend Licorice Allsorts", owner: "K.Van Greunen", points: "B4" }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            name: "WHIPPET",
+                            judges: "Jayme Jones",
+                            flights: [
+                                {
+                                    name: "Open Flight A(9)",
+                                    results: [
+                                        { place: "1", dog: "Brook, Wirtu's Only Time Will Tell", owner: "K.Kelly", points: "B36" },
+                                        { place: "2", dog: "River, Wirtu's As Time Goes By", owner: "K.Kelly", points: "27" },
+                                        { place: "3", dog: "Tiger Lily, Westwind's Compelling Elegance", owner: "L.White", points: "18" },
+                                        { place: "4", dog: "Jet, CPT Jet Falcon", owner: "S. & S.Lechner", points: "9" },
+                                        { place: "5-7", dog: "Dante, Adagio Jilzan Dinosaur, BCAT", owner: "J.Tibbitts/E.Drake", points: "-" },
+                                        { place: "5-7", dog: "Ruby, Castlecrest Ruby", owner: "E.Drake/J.Tibbitts", points: "-" },
+                                        { place: "5-7", dog: "Zero, Westwind's Zefiro", owner: "L.White", points: "-" }
+                                    ]
+                                },
+                                {
+                                    name: "Field Champion Flight A(1)",
+                                    results: [
+                                        { place: "1", dog: "Londyn Rose, Wirtu's Promise Of Roses, FCh", owner: "J.Haas", points: "F4" }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            name: "BEST IN FIELD",
+                            judges: "Jayme Jones",
+                            flights: [
+                                {
+                                    name: "Best In Field",
+                                    results: [
+                                        { place: "BIF", dog: "IB Hope, Dugualla's Extravagant Hope For Wirtu", owner: "K.Kelly/J.Stover", points: "81" },
+                                        { place: "2", dog: "BA Micky, Ch Sundiata's Guardian Angel Michael, BCAT CGC", owner: "L.Krawczyk", points: "80" },
+                                        { place: "3", dog: "WH Brook, Wirtu's Only Time Will Tell", owner: "K.Kelly", points: "80" },
+                                        { place: "4", dog: "AH Mannie, Imanea El Iraj, FCh", owner: "V.& R.Koscinski", points: "78" }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 }
-                // Future trials can be added here
             ];
 
             const container = document.getElementById('results-container');
@@ -445,8 +1048,10 @@
                 else if (p === "2") { bgClass = "bg-slate-200 text-slate-800 border-slate-300 font-bold"; label = "2nd"; }
                 else if (p === "3") { bgClass = "bg-orange-100 text-orange-800 border-orange-300 font-bold"; label = "3rd"; }
                 else if (p === "4") { bgClass = "bg-white text-slate-800 border-slate-300 font-medium"; label = "4th"; }
+                else if (p === "5-7") { bgClass = "bg-white text-slate-600 border-slate-200 text-xs font-medium"; label = "5-7"; }
                 else if (p === "NBQ") { bgClass = "bg-white text-slate-600 border-slate-200"; label = "NBQ"; }
-                else if (p === "NC" || p === "E" || p === "DQ") { bgClass = "bg-slate-50 text-slate-400 border-slate-100"; label = p; }
+                else if (p === "NC" || p === "E" || p === "DQ" || p === "NQ") { bgClass = "bg-slate-50 text-slate-400 border-slate-100"; label = p; }
+                else if (p === "BIF") { bgClass = "bg-gradient-to-br from-red-500 via-white to-blue-500 text-slate-900 border-slate-300 font-bold"; label = "BIF"; }
 
                 return `<div class="flex-shrink-0 w-12 h-12 rounded-lg border ${bgClass} flex items-center justify-center shadow-sm">
                             <span class="text-sm">${label}</span>
@@ -462,7 +1067,7 @@
                             <div class="flex-1">
                                 <div class="text-xs font-bold text-green-700 uppercase tracking-wider mb-1">${trial.date}</div>
                                 <h2 class="text-lg font-extrabold text-slate-900 leading-tight">${trial.club}</h2>
-                                <div class="text-sm text-slate-500 mt-1">${trial.type}</div>
+                                <div class="text-sm text-slate-500 mt-1">${trial.type || 'All-Breed Trial'}</div>
                             </div>
                             
                             <!-- Middle: Stats -->
@@ -506,7 +1111,7 @@
                             // Ineligible hounds check (usually indicated by parenthesis around name, or NC logic)
                             const isIneligible = result.dog.startsWith("(") && result.dog.endsWith(")");
                             const textStyle = isIneligible ? "italic text-slate-500" : "text-slate-800 font-bold";
-                            const rowOpacity = (result.place === "NC") ? "opacity-70" : "";
+                            const rowOpacity = (result.place === "NC" || result.place === "NQ") ? "opacity-70" : "";
 
                             html += `
                                 <div class="flex items-center gap-4 p-3 bg-white border border-slate-100 rounded-lg shadow-sm ${rowOpacity}">
