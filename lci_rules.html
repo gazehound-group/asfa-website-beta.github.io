@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASFA LCI Program Rules</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f5f5f4; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d6d3d1; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #a8a29e; 
+        }
+        .nav-link.active {
+            background-color: #e7e5e4;
+            color: #1c1917;
+            font-weight: 600;
+            border-left: 4px solid #0284c7;
+        }
+    </style>
+</head>
+<body class="bg-white text-stone-800 font-sans antialiased">
+
+    <!-- Mobile Header & Menu Toggle -->
+    <div class="md:hidden sticky top-0 bg-stone-900 text-white p-4 flex justify-between items-center z-50 shadow-md">
+        <div class="font-bold text-lg">ASFA LCI Rules</div>
+        <button id="mobile-menu-btn" class="text-2xl focus:outline-none">☰</button>
+    </div>
+
+    <div class="flex h-screen overflow-hidden">
+        
+        <!-- Navigation Panel (Sidebar) -->
+        <aside id="sidebar" class="w-72 bg-stone-100 border-r border-stone-200 h-full overflow-y-auto flex-shrink-0 absolute md:relative z-40 transform -translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out">
+            <div class="p-6">
+                <h1 class="text-xl font-extrabold text-stone-900 mb-2">LCI Program</h1>
+                <p class="text-sm text-stone-500 mb-6 pb-4 border-b border-stone-300">Official Rules Document</p>
+                
+                <nav class="flex flex-col space-y-1" id="nav-menu">
+                    <a href="#purpose" class="nav-link block px-3 py-2 rounded text-stone-600 hover:bg-stone-200 hover:text-stone-900 transition-colors text-sm">Statement of Purpose</a>
+                    <a href="#chapter-1" class="nav-link block px-3 py-2 rounded text-stone-600 hover:bg-stone-200 hover:text-stone-900 transition-colors text-sm">Chapter I: General Rules</a>
+                    <a href="#chapter-2" class="nav-link block px-3 py-2 rounded text-stone-600 hover:bg-stone-200 hover:text-stone-900 transition-colors text-sm">Chapter II: Officials</a>
+                    <a href="#chapter-3" class="nav-link block px-3 py-2 rounded text-stone-600 hover:bg-stone-200 hover:text-stone-900 transition-colors text-sm">Chapter III: Judging</a>
+                    <a href="#chapter-4" class="nav-link block px-3 py-2 rounded text-stone-600 hover:bg-stone-200 hover:text-stone-900 transition-colors text-sm">Chapter IV: Running the Meet</a>
+                    <a href="#chapter-5" class="nav-link block px-3 py-2 rounded text-stone-600 hover:bg-stone-200 hover:text-stone-900 transition-colors text-sm">Chapter V: Placements & Titles</a>
+                    <a href="#chapter-6" class="nav-link block px-3 py-2 rounded text-stone-600 hover:bg-stone-200 hover:text-stone-900 transition-colors text-sm">Chapter VI: Records & Fees</a>
+                    <a href="#chapter-7" class="nav-link block px-3 py-2 rounded text-stone-600 hover:bg-stone-200 hover:text-stone-900 transition-colors text-sm">Chapter VII & Glossary</a>
+                </nav>
+
+                <!-- PDF Download Button -->
+                <div class="mt-8 pt-6 border-t border-stone-300">
+                    <a href="forms/2024%20Rules%20Lure%20Chasing%20Program.pdf" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 bg-stone-800 text-white px-4 py-2 rounded hover:bg-stone-700 transition shadow-sm text-sm font-semibold">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                        </svg>
+                        Download PDF
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="flex-1 overflow-y-auto p-6 md:p-12 relative" id="main-content">
+            
+            <!-- Mobile overlay to close sidebar -->
+            <div id="sidebar-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-30 hidden md:hidden"></div>
+
+            <div class="max-w-4xl mx-auto space-y-12 pb-24">
+                
+                <div class="text-center border-b-2 border-stone-200 pb-8 mb-12">
+                    <h1 class="text-3xl md:text-5xl font-black text-stone-900 tracking-tight mb-4">LURE CHASING INSTINCT PROGRAM</h1>
+                    <h2 class="text-lg md:text-xl text-stone-600 max-w-2xl mx-auto leading-relaxed">FOR EVALUATING AND AWARDING TITLES TO ALL NON-Purebred SIGHTHOUND DOGS IN A MANNER SIMILAR TO THE AMERICAN SIGHTHOUND FIELD ASSOCIATION (ASFA) SINGLES STAKE</h2>
+                </div>
+
+                <section id="purpose" class="scroll-mt-8">
+                    <h3 class="text-2xl font-bold text-stone-900 mb-4">Statement of Purpose:</h3>
+                    <p class="mb-4 leading-relaxed">The American Sighthound Field Association (ASFA) Lure Chasing Instinct Stake (trial) is to evaluate each non-purebred sighthound dog's ability and desire to chase away or catch the artificial lure. Each dog will be individually competing against the other dogs in the manner of singles stakes at field trials for sighthounds.</p>
+                    <p class="mb-4 leading-relaxed">This program is optional for ASFA approved clubs using ASFA approved judges only. The club hosting this program runs this as a separate stake during the regular trial and may set entry limits for this stake. Clubs may also run this as a separate trial.</p>
+                    <p class="leading-relaxed">The standard ASFA running rules guide these events with the following modifications.</p>
+                </section>
+
+                <section id="chapter-1" class="scroll-mt-8 pt-8 border-t border-stone-200">
+                    <h3 class="text-3xl font-bold text-sky-800 mb-6">LCI Chapter I: General Rules</h3>
+                    
+                    <p class="mb-2"><strong>Section 1.</strong> All non-purebred sighthound dogs entered must have a registration number via one of the following:</p>
+                    <ul class="list-none pl-4 mb-6 space-y-2">
+                        <li><strong>A.</strong> AKC Registration as one of the recognized breeds.</li>
+                        <li><strong>B.</strong> AKC Canine Partners, which is for mixed-breed dogs and dogs ineligible for AKC registration.</li>
+                        <li><strong>C.</strong> Purebred Alternative Listing (PAL) program, which is for purebred dogs that cannot be fully registered with the AKC to participate in AKC events.</li>
+                        <li><strong>D.</strong> Foundation Stock Service (FSS), which is for recorded breeds on the road to full AKC recognition.</li>
+                        <li><strong>E.</strong> United Kennel Club (UKC) registration as one of the recognized breeds.</li>
+                        <li><strong>F.</strong> If the dog has none of the above registrations, ASFA will provide a unique entry number for a one-time $10 charge.
+                            <ol class="list-decimal pl-6 mt-2 space-y-1 text-stone-700">
+                                <li>The owner must complete an ASFA Lure Chasing Instinct Registration form (LCI Registration) for a unique entry number.</li>
+                                <li>The Trial Secretary will submit a copy of the form with the records.</li>
+                                <li>The owner will retain a copy as proof of request and payment until permanent number is provided by the ASFA Records Coordinator.</li>
+                            </ol>
+                        </li>
+                    </ul>
+
+                    <p class="mb-6 leading-relaxed"><strong>Section 2.</strong> The owner or agent entering a dog in a lure field trial does so at his own risk. The owner or agent and licensed club agree to abide by the rules of the ASFA.</p>
+
+                    <p class="mb-2"><strong>Section 3.</strong> Entry fees shall be fixed by the host club and shall be forfeited in such cases where dogs are scratched from the field except for one of the following causes.</p>
+                    <ul class="list-none pl-4 mb-6 space-y-3">
+                        <li><strong>A.</strong> Dogs determined to be lame at the time of roll call shall be barred from competition and their entry fees shall be refunded.</li>
+                        <li><strong>B.</strong> Bitches in season, or bitches showing a discharge characteristic of being in season, or which come in season after the close of entries, shall be excepted from this rule and their entry fees shall be refunded. Notification to the Field Trial Secretary of bitches in season must be made before or during the roll call. Bitches known to be in season should not be brought onto the trial grounds and shall be removed if discovered to have come into season.</li>
+                        <li><strong>C.</strong> Dogs that have been disqualified for aggression by another organization. Fees will be refunded only if the owner or agent notifies the Field Trial Secretary of such ineligibility prior to or during roll call.</li>
+                    </ul>
+
+                    <p class="mb-2"><strong>Section 4.</strong> To compete, dogs must:</p>
+                    <ul class="list-none pl-4 mb-6 space-y-2">
+                        <li><strong>A.</strong> Be a minimum of 12 months old on the day of the trial.</li>
+                        <li><strong>B.</strong> Be physically fit for competition. Blindness, lameness and amputation are considered as being unfit.</li>
+                        <li><strong>C.</strong> May be spayed, neutered or intact.</li>
+                        <li><strong>D.</strong> Females must not be in heat/season.</li>
+                        <li><strong>E.</strong> Be free of bandaging or any other attachments for medical purposes.</li>
+                        <li><strong>F.</strong> Not be disqualified.</li>
+                    </ul>
+                </section>
+
+                <section id="chapter-2" class="scroll-mt-8 pt-8 border-t border-stone-200">
+                    <h3 class="text-3xl font-bold text-sky-800 mb-6">LCI Chapter II: OFFICIALS</h3>
+                    <p class="leading-relaxed">Officials will be the same as defined in the ASFA Running Rules and Field Procedures for Lure Field Trials.</p>
+                </section>
+
+                <section id="chapter-3" class="scroll-mt-8 pt-8 border-t border-stone-200">
+                    <h3 class="text-3xl font-bold text-sky-800 mb-6">LCI Chapter III: JUDGING</h3>
+                    <p class="mb-6 leading-relaxed">In addition to those rules and procedures set forth in ASFA Chapter II, as they relate to judges, the following shall apply:</p>
+                    
+                    <div class="space-y-4">
+                        <p class="leading-relaxed"><strong>Section 1.</strong> Clubs may, at their discretion, use either one or two judges for the Lure Chasing Instinct program. If only one judge is used, he or she may be in provisional status.</p>
+                        <p class="leading-relaxed"><strong>Section 2.</strong> A person shall not judge an event ALONE on two consecutive days within a 150-mile radius, unless given special dispensation by the trial-giving club's Regional Director to prevent a hardship on the host club. In each case where a person is to judge ALONE on two consecutive days, the respective Regional Director must write a letter of approval to the Scheduling Committee Chair in advance of, or together with, the sample premium list. There will be no exception without such written dispensation.</p>
+                        <p class="leading-relaxed"><strong>Section 3.</strong> No judge shall handle a dog where he is officiating. No dog may be entered in a stake where a judge is officiating if the dog is owned or co-owned by that judge, or if the dog is owned or co-owned by a member of that judge's immediate family or residence.</p>
+                        <p class="leading-relaxed"><strong>Section 4.</strong> No judge shall perform any other field trial duties during his or her judging assignment that are reasonably likely to interfere with his or her judging performance. In particular, no one may judge and operate the lure at the same time, or judge and serve as huntmaster at the same time.</p>
+                        <p class="leading-relaxed"><strong>Section 5.</strong> Each and every judge, before beginning his assignment, shall walk the course and verify with the Field Trial Chairman that the approved course plan is properly staked.</p>
+                        <p class="leading-relaxed"><strong>Section 6.</strong> While on the field during his judging assignment, no judge shall discuss anything relative to his judging assignment with any handler or agent instigated by such handler or agent.</p>
+                        <p class="leading-relaxed"><strong>Section 7.</strong> While observing the course in progress, when two judges are used, the judges shall stand apart. They shall not converse during the running of the course, nor shall they discuss anything pertaining to that course, except to state "no course," until the score sheets have been turned in to the field clerk or his representative.</p>
+                        
+                        <div>
+                            <p class="mb-2"><strong>Section 8.</strong> A judge shall be able to call a no-course at any time:</p>
+                            <ul class="list-none pl-4 space-y-2">
+                                <li><strong>A.</strong> The dog is interfered with, disrupted or the judge(s) cannot fairly score the course.</li>
+                                <li><strong>B.</strong> When a segment of the lure falls off and the dog reacts to said segment, but only if the judge(s) cannot fairly score the course.</li>
+                                <li><strong>C.</strong> If a dog touches or catches the lure and, in the judge's(s') opinion(s), by so doing that action causes interference with the running of the course, it shall be declared a no-course.</li>
+                                <li><strong>D.</strong> Any time a dog becomes entangled in the string, the judge(s) shall order the lure stopped and may declare a no-course.</li>
+                                <li><strong>E.</strong> If the lure operator fails to maintain the reasonable lead, and the dog becomes unsighted, a judge shall have the prerogative to call a no-course and re-run.</li>
+                                <li><strong>F.</strong> The judge has the option of restarting the course from the beginning or at the point of interruption.</li>
+                            </ul>
+                        </div>
+
+                        <p class="leading-relaxed"><strong>Section 9.</strong> Judges are responsible for scoring all categories in all courses: preliminaries, finals, runoffs, etc.</p>
+                        
+                        <div class="bg-stone-50 p-6 rounded border border-stone-200">
+                            <p class="mb-4"><strong>Section 10.</strong> The dogs will be evaluated in the following categories:</p>
+                            <ul class="list-none space-y-1 mb-4 font-mono">
+                                <li>Enthusiasm ..................... 15 pts.</li>
+                                <li>Follow ......................... 15 pts.</li>
+                                <li>Speed .......................... 25 pts.</li>
+                                <li>Agility ........................ 25 pts.</li>
+                                <li>Endurance ...................... 20 pts.</li>
+                                <li class="font-bold border-t border-stone-300 pt-1 mt-1 w-64">Total .......................... 100 pts.</li>
+                            </ul>
+                            <p class="text-sm text-stone-600 italic">Less: Course delay penalty 1 to 10 pts. (from each judge). The course is considered finished when the huntmaster calls "retrieve your dog." Course delay penalties will start approximately two minutes later. After 10 minutes, the judge(s) will excuse the dog. When a course delay occurs, each judge shall levy a 1 to 10-point penalty for that course. This includes a dog being slipped before the tally-ho has been sounded, as well as the dog which cannot be retrieved at the completion and the handler who makes little attempt to quickly retrieve the dog. The course delay penalty shall be carried over in the case where a no-course is called on the course in progress and shall be cumulative in the case of repeated delays.</p>
+                        </div>
+
+                        <div class="mt-6">
+                            <p class="mb-4 text-xl font-bold">Section 11. Judging Criteria</p>
+                            <p class="mb-4 text-stone-600">Judges will use the following to guide their evaluation of each category:</p>
+                            <ul class="space-y-6">
+                                <li><strong>Enthusiasm:</strong> Single-minded interest, showing great eagerness and determination in pursuing the lure after the "tally-ho" and until the lure passes the marked finish for the course. Any dog that never leaves the starting line; does not finish the course; wanders or stops to pee, defecate, or explore; should be penalized. <br><br>Enthusiasm is probably the most subjective. Judges should always be using examples from the course to support their scores. Reward dogs in ability that are showing great focus, drive, and determination to get the lure, and on the other side, reduce the score for those who appear to just be out there running for the joy of just running, and for those who give up/quit running the lure, even if it's only for a short period of time. <br><br>A dog that may be nearly uncontrollable or freezes while waiting for the tally-ho should neither be rewarded nor penalized for enthusiasm.</li>
+                                <li><strong>Follow:</strong> Chasing with the intent of taking the lure while maintaining a path in reasonably close proximity to the lure's course should be rewarded. A dog that continues to follow the path of the string to the pulley, even though it could have seen the lure turn earlier, dogs running with head down and not attempting to locate the lure and are more likely racing the lure to the turn rather than trying to follow, should be penalized. <br><br>Dogs that anticipate which way the lure will go as the lure approaches a sightline, sometimes cutting off much of the course trying to catch the lure, at some point should force a significant scoring penalty. <br><br>A dog that becomes unsighted for some good reason, and yet attempts to find the lure again, should not be severely penalized. It may be appropriate to rerun the course. In this context, the height of the terrain with respect to the dog's eye level will be considered. If a dog becomes unsighted in a situation where it should have no trouble following the lure, the degree of penalty should depend on how hard it works at trying to find the lure again and how soon it does so.</li>
+                                <li><strong>Speed:</strong> Speed is defined as rapidity in moving, the rate of motion or progress; the dog's overall speed and acceleration in chasing the lure. Credit the dog that levels out low, stretches and really drives. Timing is not used to measure speed; the dog's manner of 'putting out' is the means of assessing its ability to cover ground. However, some dog's running styles are deceptive, in that they look either faster or slower than they are. Comparison of speed across courses is difficult and must be done with great care. <br><br>Some dogs will slow down if they get close to the lure. Some will run alongside it and some will attempt a take. Slowing down, but not attempting a take, does not show a lack of speed, but a lack of enthusiasm or possibly endurance. A dog attempting a take frequently penalizes itself by losing its stride and momentum thereby requiring an extraordinary effort to regain its former stride. Usually, attempted or actual takes happen when the lure operator allows the dog to get too close to the lure. <br><br>Do not confuse rapidity of stride with speed. Often a dog with a very long open stride will look slower when it is covering more ground than a dog with a shorter stride, but faster leg movement.</li>
+                                <li><strong>Agility:</strong> Agility is the ability to move quickly and easily: nimbleness in negotiating terrain (i.e. recovery from difficult terrain that may cause a dog to slip or slide); turning without going wide, cutting or breaking stride. <br><br>A dog that falls in rough terrain or on slippery ground but makes a recovery should not be penalized. A dog that falls where footing is good, with no complicating circumstances, may deserve a penalty.</li>
+                                <li><strong>Endurance:</strong> Endurance is the lasting quality, stamina of physical and mental concentration. Credit the dog that does not fade, pull up, or slacken. A dog that lacks endurance will usually show degradation in running style as the course progresses. A dog lacking in enthusiasm will most often just quit or go off to explore the field. Lure-wise dogs frequently will slow down on the very last portion of the course knowing that the lure will stop before it reaches the machine and should not be heavily penalized.</li>
+                            </ul>
+                        </div>
+
+                        <p class="leading-relaxed mt-4"><strong>Section 12.</strong> At his discretion, the judge may score dogs which fail to complete the course for any reason, but the judge is able to fairly score the course. In the case where the dog fails to run in the preliminary course, a judge shall have the option of giving the dog a minimum score or excusing it.</p>
+                        <p class="leading-relaxed"><strong>Section 13.</strong> A zero-total score from both judges, or a single judge when only one is used, in the preliminary course automatically excuses a dog for the day. Dogs excused for any reason in the preliminary course will not be permitted to run in the final course.</p>
+                        
+                        <div>
+                            <p class="mb-2"><strong>Section 14.</strong> Dogs may be excused from the field by a judge for the following reasons:</p>
+                            <ul class="list-none pl-4 space-y-2">
+                                <li><strong>A.</strong> Dogs who fail to run after the tally-ho in either the preliminary or the final course.</li>
+                                <li><strong>B.</strong> Dogs who may be considered unfit to compete.</li>
+                                <li><strong>C.</strong> Dogs whose handlers or owners interfere with the judges or officials.</li>
+                                <li><strong>D.</strong> Dogs who delay the course.</li>
+                                <li><strong>E.</strong> Handlers who willfully interfere with another competitor, his dog, or any official.</li>
+                            </ul>
+                        </div>
+
+                        <p class="leading-relaxed"><strong>Section 15.</strong> In the event that a dog running loose joins a course in progress and interferes with or instigates a fight with the dog properly entered in that course, the judge or judges currently judging the course in progress may excuse or dismiss the offending dog from the field for the day or disqualify the offending dog.</p>
+                        <p class="leading-relaxed"><strong>Section 16.</strong> Dogs shall be disqualified by the judge, or by agreement of both judges where two are used, for the following reason: fighting - the aggressor in fighting in the field. In the event that only one of two judges disqualify a dog, this disqualification constitutes a dismissal.</p>
+                        <p class="leading-relaxed"><strong>Section 17.</strong> Judges shall immediately inform the huntmaster when a course is called a no-course or when a dog is dismissed or disqualified. The huntmaster will then inform the handler.</p>
+                        <p class="leading-relaxed"><strong>Section 18.</strong> Judges must state on the judge's sheet the specific reason for excusal, dismissal, or disqualification.</p>
+                        <p class="leading-relaxed"><strong>Section 19.</strong> A judge may not change his or her score or decision after a trial is concluded.</p>
+                        <p class="leading-relaxed"><strong>Section 20.</strong> After a course has been judged, and the marked score sheets are turned over to the field clerk, only the judge can change his final score.</p>
+                        <p class="leading-relaxed"><strong>Section 21.</strong> The judge's decisions upon all matters relating to the course are final and binding.</p>
+                        <p class="leading-relaxed"><strong>Section 22.</strong> Dogs in each height class will be competing against each other similar to the Singles stake in ASFA field trials for sighthounds.</p>
+                        <p class="leading-relaxed"><strong>Section 23.</strong> Each dog will run individually and chase an artificial lure on a predetermined course.</p>
+                    </div>
+                </section>
+
+                <section id="chapter-4" class="scroll-mt-8 pt-8 border-t border-stone-200">
+                    <h3 class="text-3xl font-bold text-sky-800 mb-6">LCI Chapter IV: RUNNING THE MEET</h3>
+                    
+                    <div class="space-y-4">
+                        <p><strong>Section 1.</strong> Entry limits may be applied.</p>
+                        <p><strong>Section 2.</strong> No dog may be entered more than once at a meet.</p>
+                        <p><strong>Section 3.</strong> The judge or judges must be the same for all runs, unless a judge is unable to complete his assignment.</p>
+                        
+                        <div>
+                            <p class="mb-2"><strong>Section 4.</strong> Lure Chasing Instinct stakes are described as follows:</p>
+                            <ul class="list-disc pl-6 space-y-2 mb-4">
+                                <li><strong>Small Open:</strong> for dogs 17-1/2 inches or less at the withers and / or brachycephalic ("flat-faced") dogs who have not achieved the title of LCC.</li>
+                                <li><strong>Small Excellent:</strong> for dogs 17-1/2 inches or less at the withers and/or brachycephalic dogs who have achieved the title of LCC.</li>
+                                <li><strong>Small Veteran:</strong> for dogs 17-1/2 inches or less at the withers and/or brachycephalic dogs over the age of 7 years.</li>
+                                <li><strong>Large Open:</strong> for dogs over 17-1/2 inches at the withers who have not achieved the title of LCC.</li>
+                                <li><strong>Large Excellent:</strong> for dogs over 17-1/2 inches at the withers who have achieved the title of LCC.</li>
+                                <li><strong>Large Veteran:</strong> for dogs over 17-1/2 inches at the withers who are over the age of 7 years.</li>
+                                <li><strong>Sighthound Mix Open:</strong> for dogs with a sighthound breed in its background who have not achieved the title of LCC.</li>
+                                <li><strong>Sighthound Mix Excellent:</strong> for dogs with sighthound breed in its background who have achieved the title of LCC.</li>
+                                <li><strong>Sighthound Mix Veteran:</strong> for dogs with sighthound breed in its background over the age of 7 years.</li>
+                            </ul>
+                            <p class="text-stone-700 italic bg-stone-50 p-3 rounded border border-stone-200">When running as a stake within a regular ASFA trial, Small will run 50% of the ASFA course as laid out for the sighthounds up to a maximum of 400 yards. All other stakes will run the full ASFA laid out course length.</p>
+                        </div>
+
+                        <p><strong>Section 5.</strong> Each dog shall run individually in the preliminaries and finals.</p>
+                        <p><strong>Section 6.</strong> Only proficiency points and placements toward the titles of Lure Chasing Champion and Lure Chasing Excellent will be awarded. No ASFA points or placements toward the Field Championship or Lure Courser of Merit titles will be earned.</p>
+
+                        <div>
+                            <p class="mb-2"><strong>Section 7.</strong> The following description applies to Lure Chasing Instinct stakes:</p>
+                            <ul class="list-none pl-4 space-y-2">
+                                <li><strong>A.</strong> Dogs shall run alone.</li>
+                                <li><strong>B.</strong> Qualifying score: 50 percent of the total possible combined scores from the preliminary and final courses.</li>
+                                <li><strong>C.</strong> When the entry in any Lure Chasing Instinct stake reaches 20 or more, the stake will be split into flights. The stake will be divided as evenly as possible by random draw. Multiple entries from the same owner will be divided between flights/courses as evenly as possible if the appropriate box on the entry form has been checked.</li>
+                                <li><strong>D.</strong> Every entry in the Lure Chasing Instinct stake, not excused, dismissed or disqualified, shall run twice. The order of running for both courses shall be by random draw.</li>
+                                <li><strong>E.</strong> Dogs absent at roll call or at the running of their stake shall be scratched. No refund will be issued.</li>
+                                <li><strong>F.</strong> After completion and posting of final scores, all dogs are excused for the day.</li>
+                                <li><strong>G.</strong> Placing of dogs in each stake shall be determined by the combined scores of the preliminary and final runs.</li>
+                                <li><strong>H.</strong> ASFA points are awarded to the first through fourth placements in all Lure Chasing Instinct stakes.</li>
+                                <li><strong>I.</strong> Dogs earning a qualifying score after 2 runs will earn placements based on total points.</li>
+                                <li><strong>J.</strong> All placement ties will be run-off.</li>
+                                <li><strong>K.</strong> A tie not broken will count as the lowest placement a hound could have won had the tie been broken. However, in tabulating both championship points (LCC, LCE, etc.) and Top Twenty points, the points shall be divided evenly between all hounds involved in the tie. All points shall be in whole numbers only, with any fractions obtained as a result of an unbroken tie being dropped. This applies to both unbroken ties at the trial itself as well as any tie created from the discovery of an error in the trial records.</li>
+                                <li><strong>L.</strong> In the event of a tie after a runoff, placements and ASFA points will be awarded to the non-forfeiting hound.</li>
+                                <li><strong>M.</strong> Forfeits cannot be decided after trial hours.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="chapter-5" class="scroll-mt-8 pt-8 border-t border-stone-200">
+                    <h3 class="text-3xl font-bold text-sky-800 mb-6">LCI Chapter V: PLACEMENTS, AWARDS, and TITLES</h3>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <p class="text-xl font-bold mb-2">Section 1. Placements</p>
+                            <p class="mb-4">At the conclusion of ribbons being handed out all placements are official. Points are not official until published on the ASFA website.</p>
+                            <p class="mb-2">Proficiency points in all Lure Chasing Instinct stakes shall be awarded by the ASFA as follows:</p>
+                            <ul class="list-disc pl-6 space-y-2 mb-4 bg-stone-50 border border-stone-200 p-4 rounded">
+                                <li><strong>First Place:</strong> Four times the number of Dogs competing in the stake (or flight if the stake is split) with a maximum of 40 points.</li>
+                                <li><strong>Second Place:</strong> Three times the number of Dogs competing in the stake (or flight if the stake is split) with a maximum of 30 points.</li>
+                                <li><strong>Third Place:</strong> Two times the number of Dogs competing in the stake (or flight if the stake is split) with a maximum of 20 points.</li>
+                                <li><strong>Fourth Place:</strong> Points equal to the number of Dogs competing in the stake (or flight if the stake is split) with a maximum of 10 points.</li>
+                                <li><strong>NBQ (Next Best Qualified):</strong> No points awarded.</li>
+                            </ul>
+                            <p class="mb-4 leading-relaxed">When computing points, dogs which have been Disqualified or Dismissed, during a preliminary or final course shall be counted. Dogs which have been excused, or which have received a total score of zero in the preliminary course, shall not be counted.</p>
+                            <p class="leading-relaxed">No dog shall receive a placement or be awarded points if it does not score at least 100 points with one judge or 200 points with two judges after two runs. Dogs which do not receive placements under this provision will nevertheless be considered as in competition for the purpose of awarding points to dogs which do place. When an ineligible dog receives a placement, all other placements will stand.</p>
+                        </div>
+
+                        <div>
+                            <p class="text-xl font-bold mb-4">Section 2. Awards.</p>
+                            <p class="mb-2">All host clubs shall use the following colors for their prize ribbons:</p>
+                            <ul class="list-none space-y-1 mb-4 font-mono pl-4">
+                                <li>First Place ................................... <span class="text-blue-600 font-bold">Blue</span></li>
+                                <li>Second Place .............................. <span class="text-red-600 font-bold">Red</span></li>
+                                <li>Third Place ................................. <span class="text-yellow-600 font-bold">Yellow</span></li>
+                                <li>Fourth Place ............................... <span class="text-stone-500 font-bold border border-stone-300 px-1 bg-white">White</span></li>
+                                <li>NBQ ............................................ <span class="text-green-600 font-bold">Green</span></li>
+                            </ul>
+                            <p class="leading-relaxed">Each ribbon shall bear at least the following information:<br>A. club name or initials,<br>B. ASFA or American Sighthound Field Association spelled out, and placement. <br><br>Ideally, the ribbons or rosettes should be at least two (2) inches wide and approximately eight (8) inches long.</p>
+                        </div>
+
+                        <div>
+                            <p class="text-xl font-bold mb-4">Section 3. Titles for Lure Chasing Instinct and Lure Chasing Excellent:</p>
+                            <ul class="space-y-4">
+                                <li>A permanent title of <strong>Lure Chasing Instinct (LCI)</strong> shall be awarded as a suffix to the registered name of any hound which has attained eight (8) qualifying scores.</li>
+                                <li>A permanent title of <strong>Lure Chasing Advanced (LCA)</strong> shall be awarded as a suffix to the registered name of any hound which has attained twenty (20) qualifying scores.</li>
+                                <li>A permanent title of <strong>Lure Chasing Champion (LCC)</strong> shall be awarded as a suffix to the registered name of any hound which has fulfilled the following championship requirements:
+                                    <ul class="list-none pl-6 mt-2 space-y-2 text-stone-700">
+                                        <li><strong>A.</strong> Attained the required number of championship points in Lure Chasing Instinct stake competition, as fixed by the ASFA. That number of points is 100.</li>
+                                        <li><strong>B.</strong> Contained in these 100 points there must be two first placements or one first placement and two second placements. All such placements shall be with competition which shall mean defeating at least one placing dog. In other words, a dog may have more than the 100 points but not be awarded the Lure Chasing Junior title until the placements have been attained.</li>
+                                        <li><strong>C.</strong> Individuals wishing to know their hound's point standing should fill out the Request for Current Information form under Hound Records on the ASFA web site, and this information will be sent to them.</li>
+                                        <li><strong>D.</strong> Title certificates will be mailed to the owner upon validation that the dog has completed all requirements.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Lure Chasing Excellent (LCE):</strong> The ASFA shall recognize and make appropriate awards to those dogs who have attained the ASFA Lure Chasing Champion, and who, after receiving the championship, continue to compete and receive four first placements with competition and 300 more points, which must be in the ASFA Lure Chasing Excellent stake. Dogs who shall have attained said number of placements and points shall be known as Lure Chaser Excellent (LCE). When a dog completes the LCE title it may continue to compete for additional titles. After receiving an additional four (4) first placements with competition and an additional 300 points, the title of LCE II shall be awarded. This process will be indefinitely repeatable for LCE III, IV, and so on.</li>
+                                <li><strong>Veteran Lure Chasing Champion (VLCC)</strong> and <strong>Veteran Lure Chasing Excellent (VLCE):</strong> For dog over the age of seven (7) who earn either two first placements with competition or one first and two second placements with completion and 100 points will earn the VLCC title. Continued competition with three first placements and an additional 300 points will earn the VLCE title.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="chapter-6" class="scroll-mt-8 pt-8 border-t border-stone-200">
+                    <h3 class="text-3xl font-bold text-sky-800 mb-6">LCI Chapter VI: RECORDS AND FEES FORWARDED TO ASFA</h3>
+                    
+                    <p class="mb-4"><strong>Section 1.</strong> All records must be received by the ASFA Records Coordinator within fourteen (14) days or be postmarked within ten (10) days of the approved lure field trial.</p>
+                    <p class="mb-2">These records must include:</p>
+                    <ul class="list-none pl-4 space-y-2">
+                        <li><strong>A.</strong> Names of all judges and their city and state of residence and the complete mailing address of the Field Trial Secretary.</li>
+                        <li><strong>B.</strong> All record sheets for every course.</li>
+                        <li><strong>C.</strong> Notations of reasons why dogs who were entered did not run, e.g., absent, bitches in season, lame, dismissed, excused by the Field Trial Chairman, etc.</li>
+                        <li><strong>D.</strong> First time entries must include a copy of first-time entry form (EF-LCI) and dog's registration form or Lure Chasing Instinct Registration form EF-LCI REG.</li>
+                        <li><strong>E.</strong> Per Capita Fee as set by the ASFA Board.</li>
+                    </ul>
+                </section>
+
+                <section id="chapter-7" class="scroll-mt-8 pt-8 border-t border-stone-200">
+                    <h3 class="text-3xl font-bold text-sky-800 mb-6">LCI Chapter VII</h3>
+                    <p class="mb-8 leading-relaxed">The standard ASFA Running and Field Procedures for Lure Field Trials will govern any item not specifically covered in this set of rules.</p>
+                    
+                    <div class="bg-stone-100 p-6 rounded-lg border border-stone-200">
+                        <h4 class="text-xl font-bold mb-4">Glossary</h4>
+                        <p class="font-bold mb-2">Ineligible Dog:</p>
+                        <ul class="list-none pl-4 space-y-2 text-stone-700">
+                            <li><strong>A.</strong> Dog entered in wrong height class.</li>
+                            <li><strong>B.</strong> Dog entered in wrong stake.</li>
+                            <li><strong>C.</strong> Dog ineligible to compete in another organization due to biting or fighting.</li>
+                        </ul>
+                    </div>
+                </section>
+                
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // --- Mobile Sidebar Toggle Logic ---
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const sidebar = document.getElementById('sidebar');
+        const overlay = document.getElementById('sidebar-overlay');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        function toggleMenu() {
+            const isClosed = sidebar.classList.contains('-translate-x-full');
+            if (isClosed) {
+                sidebar.classList.remove('-translate-x-full');
+                overlay.classList.remove('hidden');
+                mobileMenuBtn.innerHTML = '✕';
+            } else {
+                sidebar.classList.add('-translate-x-full');
+                overlay.classList.add('hidden');
+                mobileMenuBtn.innerHTML = '☰';
+            }
+        }
+
+        mobileMenuBtn.addEventListener('click', toggleMenu);
+        overlay.addEventListener('click', toggleMenu);
+
+        // Улучшенная логика: плавная прокрутка и закрытие мобильного меню
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault(); 
+                
+                // Получаем ID нужного раздела (убираем символ '#')
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                
+                // Плавно прокручиваем к разделу
+                if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                }
+
+                // Закрываем меню на мобильных устройствах
+                if (window.innerWidth < 768) {
+                    toggleMenu();
+                }
+            });
+        });
+
+        // --- Scroll Spy Logic ---
+        const sections = document.querySelectorAll('section');
+        const mainContent = document.getElementById('main-content');
+
+        const observerOptions = {
+            root: mainContent,
+            rootMargin: '0px 0px -60% 0px', // Trigger when section is in top 40% of viewport
+            threshold: 0
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    
+                    // Remove active class from all
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                    });
+
+                    // Add active class to corresponding nav link
+                    const activeLink = document.querySelector(`.nav-link[href="#${id}"]`);
+                    if (activeLink) {
+                        activeLink.classList.add('active');
+                    }
+                }
+            });
+        }, observerOptions);
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
