@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASFA Lure Chasing Instinct Program Explorer</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        
+        /* Hide default details marker for mobile menu */
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
+
+        /* Chart container */
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container { height: 350px; }
+        }
+        
+        /* Ribbons */
+        .ribbon-blue { background-color: #2563eb; }
+        .ribbon-red { background-color: #dc2626; }
+        .ribbon-yellow { background-color: #facc15; color: #000; }
+        .ribbon-white { background-color: #ffffff; color: #000; border: 1px solid #ccc; }
+        .ribbon-green { background-color: #16a34a; }
+    </style>
+</head>
+<body class="bg-stone-100 text-stone-800 font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Top Navbar (Universal ASFA Header) -->
+    <header class="bg-green-800 text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <a href="index.html" class="flex items-center gap-3 hover:opacity-90 transition">
+                        <img src="ASFALOGO.jpg" alt="ASFA Logo" class="w-12 h-12 rounded-full bg-white p-0.5 object-contain shadow-sm border border-green-600">
+                        <span class="font-bold text-xl tracking-tight hidden sm:block">ASFA</span>
+                    </a>
+                </div>
+
+                <nav class="hidden md:flex space-x-3 lg:space-x-5 items-center">
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Getting Started
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-56 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="coursing.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Sport of Lure Coursing</a>
+                                <a href="breeds.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Eligible Breeds</a>
+                                <a href="beginguide.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Beginner's Guide</a>
+                                <a href="rulebook.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Rule Book/Policies</a>
+                                <a href="pubs.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Guides & Media</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Events
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-48 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="schedule.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Schedule</a>
+                                <a href="ii26.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">2026 ASFA II</a>
+                                <a href="regionals.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Regionals</a>
+                                <a href="acod2026.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">ACoD 2026</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Records & Awards
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-64 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2 max-h-[80vh] overflow-y-auto">
+                                <a href="trial_results.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Results</a>
+                                <a href="top20.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Top 20</a>
+                                <a href="titles.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">New Titles</a>
+                                <a href="records.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Hound Records</a>
+                                <a href="top20_lifetime.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Lifetime Top 20</a>
+                                <div class="h-px bg-slate-200 my-1"></div>
+                                <a href="hof.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors font-medium">Hall of Fame</a>
+                                <a href="gf.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Gary Forrester Award</a>
+                                <a href="epa.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Excellence in Performance</a>
+                                <a href="incentive_award.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Incentive Award</a>
+                                <a href="LureOperator.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Lure Operator of the Year</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Clubs & Admin
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-56 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="clubs.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Clubs</a>
+                                <a href="officers.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Officers & Directors</a>
+                                <a href="comm.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Committees</a>
+                                <a href="judges.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Judges</a>
+                                <a href="suspensions.html" class="block px-4 py-2 text-sm text-red-600 font-medium hover:bg-red-50 hover:text-red-800 transition-colors">Suspensions</a>
+                                <a href="quest.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Questions & Comments</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            Forms
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 top-full -mt-2 w-60 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="entry_forms.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Entry Forms</a>
+                                <a href="trial_forms.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Forms</a>
+                                <a href="trial_date_request.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Date Request</a>
+                                <div class="h-px bg-slate-200 my-1"></div>
+                                <a href="membership.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Club Membership Forms</a>
+                                <a href="clubs_renewal_form.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Online Renewal</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative group py-4">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                            News & Media
+                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute right-0 top-full -mt-2 w-56 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2">
+                                <a href="communique.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">ASFA Communique</a>
+                                <a href="letter.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">President's Message</a>
+                                <a href="mission.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Mission Statement</a>
+                                <a href="album.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Photo Album</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="store.html" class="text-amber-400 hover:text-amber-200 transition font-bold text-xs lg:text-sm py-4">Store</a>
+                </nav>
+
+                <div class="flex items-center hidden sm:block">
+                    <div class="relative">
+                        <input type="text" placeholder="Search ASFA..." class="bg-green-900 text-white placeholder-green-300 rounded-full py-1.5 pl-4 pr-10 focus:outline-none focus:ring-2 focus:ring-green-400 text-sm w-40 lg:w-48">
+                        <svg class="w-4 h-4 absolute right-3 top-2 text-green-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </div>
+                </div>
+                
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white focus:outline-none hover:text-green-200 transition">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOBILE MENU BLOCKS -->
+        <div id="mobile-menu" class="hidden md:hidden bg-green-800 border-t border-green-700 shadow-inner max-h-[85vh] overflow-y-auto">
+            <div class="px-4 py-3 space-y-2">
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        Getting Started
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="coursing.htm" class="block text-sm text-green-100 hover:text-white">Sport of Lure Coursing</a>
+                        <a href="breeds.html" class="block text-sm text-green-100 hover:text-white">Eligible Breeds</a>
+                        <a href="beginguide.html" class="block text-sm text-green-100 hover:text-white">Beginner's Guide</a>
+                        <a href="rulebook.html" class="block text-sm text-green-100 hover:text-white">Rule Book/Policies</a>
+                        <a href="pubs.html" class="block text-sm text-green-100 hover:text-white">Guides & Media</a>
+                    </div>
+                </details>
+                
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        Events
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="schedule.html" class="block text-sm text-green-100 hover:text-white">Trial Schedule</a>
+                        <a href="ii26.html" class="block text-sm text-green-100 hover:text-white">2026 ASFA II</a>
+                        <a href="regionals.html" class="block text-sm text-green-100 hover:text-white">Regionals</a>
+                        <a href="acod2026.html" class="block text-sm text-green-100 hover:text-white">ACoD 2026</a>
+                    </div>
+                </details>
+
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        Records & Awards
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="trial_results.html" class="block text-sm text-green-100 hover:text-white">Trial Results</a>
+                        <a href="top20.html" class="block text-sm text-green-100 hover:text-white">Top 20</a>
+                        <a href="titles.html" class="block text-sm text-green-100 hover:text-white">New Titles</a>
+                        <a href="records.html" class="block text-sm text-green-100 hover:text-white">Hound Records</a>
+                        <a href="top20_lifetime.html" class="block text-sm text-green-100 hover:text-white">Lifetime Top 20</a>
+                        <div class="h-px bg-green-700 my-1 w-3/4"></div>
+                        <a href="hof.html" class="block text-sm text-green-100 hover:text-white font-medium">Hall of Fame</a>
+                        <a href="gf.html" class="block text-sm text-green-100 hover:text-white">Gary Forrester Award</a>
+                        <a href="epa.html" class="block text-sm text-green-100 hover:text-white">Excellence in Performance</a>
+                        <a href="incentive_award.html" class="block text-sm text-green-100 hover:text-white">Incentive Award</a>
+                        <a href="LureOperator.html" class="block text-sm text-green-100 hover:text-white">Lure Operator of the Year</a>
+                    </div>
+                </details>
+
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        Clubs & Admin
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="clubs.html" class="block text-sm text-green-100 hover:text-white">Clubs</a>
+                        <a href="officers.htm" class="block text-sm text-green-100 hover:text-white">Officers & Directors</a>
+                        <a href="comm.htm" class="block text-sm text-green-100 hover:text-white">Committees</a>
+                        <a href="judges.html" class="block text-sm text-green-100 hover:text-white">Judges</a>
+                        <a href="suspensions.html" class="block text-sm text-red-300 hover:text-red-100 font-medium">Suspensions</a>
+                        <a href="quest.html" class="block text-sm text-green-100 hover:text-white">Questions & Comments</a>
+                    </div>
+                </details>
+
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        Forms
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="entry_forms.html" class="block text-sm text-green-100 hover:text-white">Entry Forms</a>
+                        <a href="trial_forms.html" class="block text-sm text-green-100 hover:text-white">Trial Forms</a>
+                        <a href="trial_date_request.html" class="block text-sm text-green-100 hover:text-white">Trial Date Request</a>
+                        <div class="h-px bg-green-700 my-1 w-3/4"></div>
+                        <a href="membership.html" class="block text-sm text-green-100 hover:text-white">Club Membership Forms</a>
+                        <a href="clubs_renewal_form.html" class="block text-sm text-green-100 hover:text-white">Online Renewal</a>
+                    </div>
+                </details>
+
+                <details class="group">
+                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
+                        News & Media
+                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
+                        <a href="communique.html" class="block text-sm text-green-100 hover:text-white">ASFA Communique</a>
+                        <a href="letter.html" class="block text-sm text-green-100 hover:text-white">President's Message</a>
+                        <a href="mission.html" class="block text-sm text-green-100 hover:text-white">Mission Statement</a>
+                        <a href="album.html" class="block text-sm text-green-100 hover:text-white">Photo Album</a>
+                    </div>
+                </details>
+
+                <a href="store.html" class="block py-2 font-bold text-amber-400 hover:text-amber-200">Store</a>
+                
+                <div class="pt-4 pb-2">
+                    <div class="relative">
+                        <input type="text" placeholder="Search ASFA..." class="w-full bg-green-900 text-white placeholder-green-300 rounded-full py-2 pl-4 pr-10 focus:outline-none focus:ring-2 focus:ring-green-400 text-sm border border-green-700">
+                        <svg class="w-4 h-4 absolute right-3 top-2.5 text-green-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header Hero -->
+    <div class="bg-stone-900 text-stone-50 py-10 px-4 shadow-md border-b-4 border-amber-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-3xl md:text-5xl font-bold tracking-tight mb-2">ASFA Lure Chasing Instinct (LCI)</h1>
+            <p class="text-lg md:text-xl text-stone-300 max-w-3xl mb-6">An interactive guide for evaluating and awarding titles to all other dog breeds and mixes except purebred sighthounds.</p>
+            
+            <a href="lci_rules.html" class="inline-flex items-center gap-2 bg-stone-100 text-stone-900 px-5 py-2.5 rounded-lg font-bold hover:bg-white transition-colors shadow-sm text-sm">
+                <svg class="w-5 h-5 text-stone-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                Read Official LCI Rules
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex-grow space-y-12 w-full">
+
+        <!-- Section 1: Eligibility Checker -->
+        <section class="bg-white rounded-xl shadow-sm p-6 md:p-8 border border-stone-200">
+            <h2 class="text-2xl font-bold text-stone-900 mb-4 border-b pb-2">1. Eligibility & Registration Checker</h2>
+            <p class="mb-6 text-stone-600">The first step to competing is ensuring your dog meets the basic requirements of the LCI program. Use this interactive tool to verify if your dog is eligible to run today.</p>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-stone-50 p-6 rounded-lg border border-stone-200">
+                    <h3 class="font-semibold text-lg mb-4">Dog Details</h3>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium mb-1">Age of Dog</label>
+                            <select id="eligibility-age" class="w-full p-2 border border-slate-300 rounded bg-white focus:ring-green-500 focus:border-green-500">
+                                <option value="">Select age...</option>
+                                <option value="under12">Under 12 months</option>
+                                <option value="over12">12 months or older</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium mb-1">Physical Condition</label>
+                            <select id="eligibility-health" class="w-full p-2 border border-slate-300 rounded bg-white focus:ring-green-500 focus:border-green-500">
+                                <option value="">Select condition...</option>
+                                <option value="fit">Physically fit (no bandages/splints)</option>
+                                <option value="unfit">Lame, blind, amputee, or bandaged</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium mb-1">Female Status (If applicable)</label>
+                            <select id="eligibility-female" class="w-full p-2 border border-slate-300 rounded bg-white focus:ring-green-500 focus:border-green-500">
+                                <option value="not_applicable">Male / Spayed / Not in Season</option>
+                                <option value="in_season">Currently in Season (Heat)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium mb-1">Registration Type</label>
+                            <select id="eligibility-reg" class="w-full p-2 border border-slate-300 rounded bg-white focus:ring-green-500 focus:border-green-500">
+                                <option value="">Select registration...</option>
+                                <option value="akc">AKC, Canine Partners, PAL, FSS, or UKC</option>
+                                <option value="none">None of the above</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button id="btn-check-eligibility" class="mt-6 w-full bg-emerald-600 text-white py-2 rounded font-semibold hover:bg-emerald-700 transition shadow-sm">Check Eligibility</button>
+                </div>
+
+                <div class="flex flex-col justify-center items-center p-6 bg-stone-100 rounded-lg text-center border-2 border-dashed border-stone-300" id="eligibility-result-box">
+                    <div class="text-7xl mb-6 animate-bounce drop-shadow-lg">🐶</div>
+                    <h3 class="text-xl font-bold mb-2">Awaiting Details</h3>
+                    <p class="text-stone-600">Fill out the form and click "Check Eligibility" to see if your dog can compete.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Stake Finder -->
+        <section class="bg-white rounded-xl shadow-sm p-6 md:p-8 border border-stone-200">
+            <h2 class="text-2xl font-bold text-stone-900 mb-4 border-b pb-2">2. Stake Finder</h2>
+            <p class="mb-6 text-stone-600">Dogs compete in different stakes based on their height, breed background, and previous achievements. Find out which stake your dog belongs in and the course length they will run.</p>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="md:col-span-1 bg-stone-50 p-6 rounded-lg border border-stone-200">
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium mb-1">Dog Height (at withers) / Breed</label>
+                            <select id="stake-height" class="w-full p-2 border border-slate-300 rounded bg-white focus:ring-green-500 focus:border-green-500">
+                                <option value="small">17.5" or less OR Brachycephalic</option>
+                                <option value="large">Over 17.5"</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-1">Breed Background</label>
+                            <select id="stake-mix" class="w-full p-2 border border-slate-300 rounded bg-white focus:ring-green-500 focus:border-green-500">
+                                <option value="non">Non-Sighthound</option>
+                                <option value="mix">Sighthound Mix</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-1">Age</label>
+                            <select id="stake-age" class="w-full p-2 border border-slate-300 rounded bg-white focus:ring-green-500 focus:border-green-500">
+                                <option value="regular">Under 7 years</option>
+                                <option value="veteran">7 years or older</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-1">Has LCC Title?</label>
+                            <select id="stake-title" class="w-full p-2 border border-slate-300 rounded bg-white focus:ring-green-500 focus:border-green-500">
+                                <option value="no">No / Not Sure</option>
+                                <option value="yes">Yes</option>
+                            </select>
+                            <p class="text-xs text-stone-500 mt-1 leading-tight">
+                                *<strong>LCC</strong> stands for <strong>Lure Chasing Champion</strong>. If this is your dog's first time or you haven't yet earned the required 100 points and specific placements, select <strong>No / Not Sure</strong>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:col-span-2 flex items-center bg-blue-50 border border-blue-200 rounded-lg p-6">
+                    <div class="w-full">
+                        <h3 class="text-lg font-semibold text-blue-900 mb-2">Your Assigned Stake:</h3>
+                        <div id="stake-result" class="text-3xl font-bold text-blue-700 mb-4">Small Open</div>
+                        
+                        <div class="bg-white p-4 rounded shadow-sm border border-slate-100">
+                            <h4 class="font-semibold text-stone-800 mb-1">Course Rules for this Stake:</h4>
+                            <p id="stake-rules" class="text-stone-600">Small stakes run 50% of the ASFA course up to a maximum of 400 yards.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Judging Criteria -->
+        <section class="bg-white rounded-xl shadow-sm p-6 md:p-8 border border-stone-200">
+            <h2 class="text-2xl font-bold text-stone-900 mb-4 border-b pb-2">3. Judging & Scoring Breakdown</h2>
+            <p class="mb-6 text-stone-600">A perfect course score is 100 points, evaluated across five categories. Interact with the chart below to understand the judging criteria for each category.</p>
+
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="w-full flex justify-center">
+                    <div class="chart-container">
+                        <canvas id="scoringChart"></canvas>
+                    </div>
+                </div>
+                <div class="bg-stone-50 p-6 rounded-lg border border-stone-200 h-full">
+                    <h3 id="criteria-title" class="text-2xl font-bold text-stone-800 mb-2">Select a category</h3>
+                    <div id="criteria-points" class="inline-block bg-stone-200 text-stone-800 text-sm px-3 py-1 rounded-full mb-4 font-semibold">Hover or click the chart</div>
+                    <p id="criteria-desc" class="text-stone-600 leading-relaxed">
+                        To pass, a dog must earn a Qualifying score: 50 percent of the total possible combined scores from the preliminary and final courses. A zero-total score in preliminaries automatically excuses the dog.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Title Progression -->
+        <section class="bg-stone-900 text-stone-50 rounded-xl shadow-sm p-6 md:p-8">
+            <h2 class="text-2xl font-bold mb-4 border-b border-stone-700 pb-2">4. Placements, Titles & Progression</h2>
+            <p class="mb-8 text-stone-300">As dogs earn qualifying scores and placements against other dogs, they progress through a series of titles. Points are awarded based on placement and the number of dogs competing.</p>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                
+                <div>
+                    <h3 class="text-xl font-semibold text-amber-500 mb-4">Placements & Ribbons</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-4 bg-stone-800 p-3 rounded">
+                            <div class="w-8 h-12 ribbon-blue rounded shadow-sm"></div>
+                            <div>
+                                <div class="font-bold">1st Place</div>
+                                <div class="text-sm text-stone-400">4x number of competing dogs (Max 40 pts)</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 bg-stone-800 p-3 rounded">
+                            <div class="w-8 h-12 ribbon-red rounded shadow-sm"></div>
+                            <div>
+                                <div class="font-bold">2nd Place</div>
+                                <div class="text-sm text-stone-400">3x number of competing dogs (Max 30 pts)</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 bg-stone-800 p-3 rounded">
+                            <div class="w-8 h-12 ribbon-yellow rounded shadow-sm"></div>
+                            <div>
+                                <div class="font-bold">3rd Place</div>
+                                <div class="text-sm text-stone-400">2x number of competing dogs (Max 20 pts)</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 bg-stone-800 p-3 rounded">
+                            <div class="w-8 h-12 ribbon-white rounded shadow-sm"></div>
+                            <div>
+                                <div class="font-bold">4th Place</div>
+                                <div class="text-sm text-stone-400">1x number of competing dogs (Max 10 pts)</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 bg-stone-800 p-3 rounded">
+                            <div class="w-8 h-12 ribbon-green rounded shadow-sm"></div>
+                            <div>
+                                <div class="font-bold">NBQ (Next Best Qualified)</div>
+                                <div class="text-sm text-stone-400">No points awarded</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold text-emerald-500 mb-4">Title Progression Pathway</h3>
+                    <div class="relative pl-8 border-l-2 border-stone-700 space-y-8">
+                        <div class="relative">
+                            <div class="absolute -left-10 w-4 h-4 rounded-full bg-stone-500 mt-1"></div>
+                            <h4 class="font-bold text-lg text-white">LCI <span class="text-sm font-normal text-stone-400 block">Lure Chasing Instinct</span></h4>
+                            <p class="text-sm text-stone-300 mt-1">Attained after earning 8 qualifying scores.</p>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute -left-10 w-4 h-4 rounded-full bg-emerald-500 mt-1"></div>
+                            <h4 class="font-bold text-lg text-white">LCA <span class="text-sm font-normal text-stone-400 block">Lure Chasing Advanced</span></h4>
+                            <p class="text-sm text-stone-300 mt-1">Attained after earning 20 qualifying scores.</p>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute -left-10 w-4 h-4 rounded-full bg-amber-500 mt-1 shadow-[0_0_10px_rgba(245,158,11,0.5)]"></div>
+                            <h4 class="font-bold text-lg text-white">LCC <span class="text-sm font-normal text-stone-400 block">Lure Chasing Champion</span></h4>
+                            <p class="text-sm text-stone-300 mt-1">Requires 100 points, including two 1st placements OR one 1st and two 2nd placements (with competition).</p>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute -left-10 w-4 h-4 rounded-full bg-blue-500 mt-1 shadow-[0_0_10px_rgba(59,130,246,0.5)]"></div>
+                            <h4 class="font-bold text-lg text-white">LCE <span class="text-sm font-normal text-stone-400 block">Lure Chasing Excellent</span></h4>
+                            <p class="text-sm text-stone-300 mt-1">After LCC, requires four 1st placements (with competition) and 300 additional points in Excellent stake. Repeatable (LCE II, III, etc).</p>
+                        </div>
+
+                        <!-- Veteran Section Addition -->
+                        <div class="relative pt-4 border-t border-stone-700">
+                            <div class="absolute -left-10 w-4 h-4 rounded-full border-2 border-amber-500 bg-stone-900 mt-1"></div>
+                            <h4 class="font-bold text-lg text-white">VLCC & VLCE <span class="text-sm font-normal text-stone-400 block">Veteran Titles</span></h4>
+                            <p class="text-sm text-stone-300 mt-1">For dogs over 7 years. Points and placement requirements will match standard sighthound criteria <strong class="text-white">(Effective in August; retroactive to any dogs already on the veteran track)</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section 5: Call to Action -->
+        <section class="bg-emerald-700 text-white rounded-xl shadow-lg p-8 md:p-12 text-center border-4 border-emerald-800 mb-6">
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-4 text-amber-400">Ready to Run?</h2>
+            <p class="text-emerald-50 text-lg mb-8 max-w-2xl mx-auto leading-relaxed">Now that you know your dog is eligible and understand the rules, it's time to hit the field! Find an upcoming ASFA Lure Chasing Instinct trial near you.</p>
+            <a href="schedule.html" class="inline-flex items-center gap-2 bg-amber-500 text-stone-900 font-bold text-lg px-8 py-4 rounded-full hover:bg-amber-400 hover:scale-105 transition-all shadow-md">
+                Find a Trial Schedule
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
+            </a>
+        </section>
+        
+        <div class="text-center text-stone-500 text-sm mt-6">
+            <p>Based on the ASFA Lure Chasing Instinct Program Rules (Rev 08/01/2024 with subsequent updates)</p>
+        </div>
+
+    </main>
+
+    <!-- Footer (Universal ASFA Footer) -->
+    <footer class="bg-slate-900 text-slate-300 py-12 mt-auto border-t-4 border-green-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 border-b border-slate-800 pb-8 mb-8">
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Competition</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="schedule.html" class="hover:text-green-400 transition">Trial Schedule</a></li>
+                        <li><a href="trial_results.html" class="hover:text-green-400 transition">Trial Results</a></li>
+                        <li><a href="entry_forms.html" class="hover:text-green-400 transition">Entry Forms</a></li>
+                        <li><a href="top20.html" class="hover:text-green-400 transition">Top 20</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Organization</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="clubs.html" class="hover:text-green-400 transition">Clubs</a></li>
+                        <li><a href="officers.htm" class="hover:text-green-400 transition">Officers & Directors</a></li>
+                        <li><a href="rulebook.html" class="hover:text-green-400 transition">Rule Book</a></li>
+                        <li><a href="quest.htm" class="hover:text-green-400 transition">Questions & Comments</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Resources</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="breeds.html" class="hover:text-green-400 transition">Eligible Breeds</a></li>
+                        <li><a href="beginguide.html" class="hover:text-green-400 transition">Beginner's Guide</a></li>
+                        <li><a href="store.html" class="hover:text-green-400 transition">ASFA Store</a></li>
+                        <li><a href="sitemap.html" class="hover:text-green-400 transition">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">About</h4>
+                    <p class="text-sm leading-relaxed text-slate-400">
+                        The American Sighthound Field Association is dedicated to preserving the natural beauty, grace, speed and coursing skill of the sighthound.
+                    </p>
+                </div>
+            </div>
+            <div class="text-center text-xs text-slate-500 space-y-4">
+                <p class="max-w-4xl mx-auto">
+                    Acceptance and use of the information contained on this website constitutes an acknowledgment that the user hereby releases and indemnifies the ASFA, its officers, directors, members and agents from any and all liability and damages sustained by the user as a result of any information obtained from this web site.
+                </p>
+                <p>
+                    &copy; 2002-2026 American Sighthound Field Association. All rights reserved. No part of this site may be reproduced without written permission from the <a href="mailto:webmaster@asfa.org" class="text-green-500 hover:text-green-400 underline">ASFA Webmasters</a>.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile Menu Toggle
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileBtn && mobileMenu) {
+                mobileBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+
+        // LCI Interactive Logic
+        const DOM = {
+            eligAge: document.getElementById('eligibility-age'),
+            eligHealth: document.getElementById('eligibility-health'),
+            eligFemale: document.getElementById('eligibility-female'),
+            eligReg: document.getElementById('eligibility-reg'),
+            btnCheck: document.getElementById('btn-check-eligibility'),
+            eligResultBox: document.getElementById('eligibility-result-box'),
+
+            stkHeight: document.getElementById('stake-height'),
+            stkMix: document.getElementById('stake-mix'),
+            stkAge: document.getElementById('stake-age'),
+            stkTitle: document.getElementById('stake-title'),
+            stkResult: document.getElementById('stake-result'),
+            stkRules: document.getElementById('stake-rules')
+        };
+
+        if(DOM.btnCheck) {
+            DOM.btnCheck.addEventListener('click', () => {
+                const age = DOM.eligAge.value;
+                const health = DOM.eligHealth.value;
+                const female = DOM.eligFemale.value;
+                const reg = DOM.eligReg.value;
+
+                if(!age || !health || !reg) {
+                    renderEligibility(false, "Incomplete Form", "Please fill out all fields to determine eligibility.", "bg-stone-100", "border-stone-300", "📝");
+                    return;
+                }
+
+                if(age === 'under12') {
+                    renderEligibility(false, "Not Eligible", "Dogs must be a minimum of 12 months old on the day of the trial.", "bg-red-50", "border-red-300", "❌");
+                    return;
+                }
+
+                if(health === 'unfit') {
+                    renderEligibility(false, "Not Eligible", "Dogs must be physically fit. Blindness, lameness and amputation are considered unfit.", "bg-red-50", "border-red-300", "❌");
+                    return;
+                }
+
+                if(female === 'in_season') {
+                    renderEligibility(false, "Not Eligible", "Females in heat/season are not permitted to compete.", "bg-red-50", "border-red-300", "❌");
+                    return;
+                }
+
+                let extraText = "";
+                if(reg === 'none') {
+                    // Update: Dynamic link to lci_registration.html
+                    extraText = " ASFA will provide a unique entry number for a one-time $10 charge. <br><a href='lci_registration.html' class='mt-4 inline-flex items-center justify-center gap-2 bg-emerald-700 text-white px-5 py-2.5 rounded-lg font-bold hover:bg-emerald-800 transition shadow-sm'>Get ASFA LCI Registration Number</a>";
+                } else {
+                    extraText = " Your dog's current registry number is acceptable. <strong class='text-emerald-900 block mt-3'>Important: You must bring a copy of your AKC, UKC, or other registration with you to the trial, or upload it during online registration if that option is available.</strong>";
+                }
+
+                renderEligibility(true, "Eligible to Run!", "Your dog meets the basic criteria." + extraText, "bg-emerald-50", "border-emerald-300", "✅");
+            });
+        }
+
+        function renderEligibility(isPass, title, desc, bgClass, borderClass, emoji) {
+            DOM.eligResultBox.className = `flex flex-col justify-center items-center p-6 rounded-lg text-center border-2 transition-all duration-500 ${bgClass} ${borderClass}`;
+            DOM.eligResultBox.innerHTML = `
+                <div class="text-6xl mb-4 drop-shadow-md transform transition-transform hover:scale-110">${emoji}</div>
+                <h3 class="text-xl font-bold mb-2 ${isPass ? 'text-emerald-800' : 'text-red-800'}">${title}</h3>
+                <p class="${isPass ? 'text-emerald-700' : 'text-red-700'}">${desc}</p>
+            `;
+        }
+
+        function calculateStake() {
+            const height = DOM.stkHeight.value;
+            const mix = DOM.stkMix.value;
+            const age = DOM.stkAge.value;
+            const title = DOM.stkTitle.value;
+
+            let base = "Small";
+            let courseLength = "Runs 50% of the ASFA course up to a maximum of 400 yards.";
+
+            if (mix === 'mix') {
+                base = "Sighthound Mix";
+                courseLength = "Runs the full ASFA laid out course length.";
+            } else if (height === 'large') {
+                base = "Large";
+                courseLength = "Runs the full ASFA laid out course length.";
+            }
+
+            let modifier = "Open";
+            if (age === 'veteran') {
+                modifier = "Veteran";
+            } else if (title === 'yes') {
+                modifier = "Excellent";
+            }
+
+            DOM.stkResult.innerText = `${base} ${modifier}`;
+            DOM.stkRules.innerText = courseLength;
+        }
+
+        if(DOM.stkHeight) {
+            DOM.stkHeight.addEventListener('change', calculateStake);
+            DOM.stkMix.addEventListener('change', calculateStake);
+            DOM.stkAge.addEventListener('change', calculateStake);
+            DOM.stkTitle.addEventListener('change', calculateStake);
+            calculateStake();
+        }
+
+        // Chart.js initialization
+        const scoringData = [
+            {
+                label: 'Speed',
+                value: 25,
+                color: '#3b82f6', 
+                desc: 'Rapidity in moving, rate of motion, overall speed and acceleration. Credit the dog that levels out low, stretches and drives. Timing is not used; manner of "putting out" is assessed. Note: slowing down near lure may show lack of enthusiasm/endurance, not speed.'
+            },
+            {
+                label: 'Agility',
+                value: 25,
+                color: '#10b981', 
+                desc: 'Nimbleness in negotiating terrain. Recovery from difficult terrain; turning without going wide, cutting or breaking stride. Falls on slippery/rough ground with recovery are not penalized. Falls on good footing may be penalized.'
+            },
+            {
+                label: 'Endurance',
+                value: 20,
+                color: '#f59e0b', 
+                desc: 'Lasting quality, stamina of physical and mental concentration. Credit dogs that do not fade, pull up, or slacken. Degradation in running style often shows lack of endurance. Lure-wise dogs slowing at the very end near the machine are not heavily penalized.'
+            },
+            {
+                label: 'Enthusiasm',
+                value: 15,
+                color: '#ef4444', 
+                desc: 'Single-minded interest, great eagerness and determination after the "tally-ho". Penalize dogs that wander, stop, or quit. Reward great focus and drive. Dogs uncontrollable before tally-ho are neither rewarded nor penalized.'
+            },
+            {
+                label: 'Follow',
+                value: 15,
+                color: '#8b5cf6', 
+                desc: 'Chasing with intent to take the lure while maintaining a path reasonably close to the lure. Penalize running with head down or anticipating/cutting the course significantly. Becoming unsighted for a good reason but attempting to find the lure is not severely penalized.'
+            }
+        ];
+
+        const ctx = document.getElementById('scoringChart');
+        if(ctx) {
+            const scoringChart = new Chart(ctx.getContext('2d'), {
+                type: 'doughnut',
+                data: {
+                    labels: scoringData.map(d => d.label),
+                    datasets: [{
+                        data: scoringData.map(d => d.value),
+                        backgroundColor: scoringData.map(d => d.color),
+                        borderWidth: 2,
+                        borderColor: '#ffffff'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'right',
+                            labels: { font: { family: 'sans-serif', size: 14 } }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return context.label + ': ' + context.parsed + ' pts';
+                                }
+                            }
+                        }
+                    },
+                    onClick: (event, elements) => {
+                        if (elements.length > 0) {
+                            const idx = elements[0].index;
+                            updateCriteriaDisplay(idx);
+                        }
+                    },
+                    onHover: (event, elements) => {
+                        event.native.target.style.cursor = elements.length ? 'pointer' : 'default';
+                    }
+                }
+            });
+        }
+
+        function updateCriteriaDisplay(index) {
+            const data = scoringData[index];
+            document.getElementById('criteria-title').innerText = data.label;
+            document.getElementById('criteria-title').style.color = data.color;
+            document.getElementById('criteria-points').innerText = `Max Points: ${data.value}`;
+            document.getElementById('criteria-desc').innerText = data.desc;
+        }
+    </script>
+</body>
+</html>
