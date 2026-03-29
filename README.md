@@ -19,5 +19,5 @@ The ASFA Website Modernization Project aims to enhance the existing digital pres
 - **Phase 3**: Testing and Launch (Q3 2026)
 -  
 
-## Current version
+## Preview version
 View the latest beta version of the site: https://gazehound-group.github.io/asfa-website-beta/index.html
