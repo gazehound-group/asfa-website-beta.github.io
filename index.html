@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>American Sighthound Field Association (ASFA)</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,10 +19,11 @@
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
 
-    <!-- Top Navbar (Perfectly Synced) -->
+    <!-- Top Navbar -->
     <header class="bg-green-800 text-white shadow-lg sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
+                <!-- Logo & Brand -->
                 <div class="flex-shrink-0 flex items-center gap-3">
                     <a href="index.html" class="flex items-center gap-3 hover:opacity-90 transition">
                         <img src="ASFALOGO.jpg" alt="ASFA Logo" class="w-12 h-12 rounded-full bg-white p-0.5 object-contain shadow-sm border border-green-600">
@@ -29,9 +31,12 @@
                     </a>
                 </div>
 
-                <nav class="hidden md:flex space-x-3 lg:space-x-5 items-center">
+                <!-- Desktop Menu -->
+                <nav class="hidden lg:flex space-x-2 xl:space-x-5 items-center">
+                    
+                    <!-- 1. Getting Started -->
                     <div class="relative group py-4">
-                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs xl:text-sm flex items-center gap-1 focus:outline-none">
                             Getting Started
                             <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </button>
@@ -40,85 +45,78 @@
                                 <a href="coursing.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Sport of Lure Coursing</a>
                                 <a href="breeds.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Eligible Breeds</a>
                                 <a href="beginguide.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Beginner's Guide</a>
-                                <a href="rulebook.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Rule Book/Policies</a>
-                                <a href="pubs.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Guides & Media</a>
+                                <a href="lci_explorer.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Lure Chasing Instinct (LCI)</a>
                             </div>
                         </div>
                     </div>
-                    
+
+                    <!-- 2. Tools & Directories -->
                     <div class="relative group py-4">
-                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
-                            Events
-                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                        </button>
-                        <div class="absolute left-0 top-full -mt-2 w-48 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
-                            <div class="py-2">
-                                <a href="schedule.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Schedule</a>
-                                <a href="ii26.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">2026 ASFA II</a>
-                                <a href="regionals.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Regionals</a>
-                                <a href="acod2026.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">ACoD 2026</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="relative group py-4">
-                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
-                            Records & Awards
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs xl:text-sm flex items-center gap-1 focus:outline-none">
+                            Tools & Directories
                             <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </button>
                         <div class="absolute left-0 top-full -mt-2 w-64 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
                             <div class="py-2 max-h-[80vh] overflow-y-auto">
+                                <!-- Section 1 -->
+                                <div class="px-4 py-2 text-[10px] font-bold text-slate-400 uppercase tracking-wider">Interactive Tools</div>
+                                <a href="schedule.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Events Calendar</a>
                                 <a href="trial_results.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Results</a>
-                                <a href="top20.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Top 20</a>
-                                <a href="titles.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">New Titles</a>
-                                <a href="records.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Hound Records</a>
-                                <a href="top20_lifetime.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Lifetime Top 20</a>
-                                <div class="h-px bg-slate-200 my-1"></div>
-                                <a href="hof.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors font-medium">Hall of Fame</a>
-                                <a href="gf.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Gary Forrester Award</a>
-                                <a href="epa.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Excellence in Performance</a>
-                                <a href="incentive_award.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Incentive Award</a>
-                                <a href="LureOperator.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Lure Operator of the Year</a>
+                                <a href="top20.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">ASFA Standings (Top 20)</a>
+                                <a href="lci_explorer.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">LCI Explorer</a>
+                                <a href="points_check.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Points Check</a>
+                                
+                                <div class="h-px bg-slate-100 my-1"></div>
+                                
+                                <!-- Section 2 -->
+                                <div class="px-4 py-2 text-[10px] font-bold text-slate-400 uppercase tracking-wider">Directories</div>
+                                <a href="clubs.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Clubs Directory</a>
+                                <a href="judges.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Judges Directory</a>
+                                <a href="officers.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Officers & Regional Directors</a>
+                                <a href="comm.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Committees</a>
                             </div>
                         </div>
                     </div>
-                    
+
+                    <!-- 3. Forms & Library -->
                     <div class="relative group py-4">
-                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
-                            Clubs & Admin
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs xl:text-sm flex items-center gap-1 focus:outline-none">
+                            Forms & Library
                             <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </button>
-                        <div class="absolute left-0 top-full -mt-2 w-56 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
-                            <div class="py-2">
-                                <a href="clubs.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Clubs</a>
-                                <a href="officers.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Officers & Directors</a>
-                                <a href="comm.htm" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Committees</a>
-                                <a href="judges.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Judges</a>
+                        <div class="absolute left-0 top-full -mt-2 w-64 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <div class="py-2 max-h-[80vh] overflow-y-auto">
+                                <!-- Section 1 -->
+                                <div class="px-4 py-2 text-[10px] font-bold text-slate-400 uppercase tracking-wider">Documents & Rules</div>
+                                <a href="rulebook.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">ASFA Rulebook</a>
+                                <a href="lci_rules.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">LCI Program Rules</a>
+                                <a href="policies.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Board Policies</a>
+                                <a href="guidelines.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Guidelines & Manuals</a>
+                                
+                                <div class="h-px bg-slate-100 my-1"></div>
+                                
+                                <!-- Section 2 -->
+                                <div class="px-4 py-2 text-[10px] font-bold text-slate-400 uppercase tracking-wider">Official Forms</div>
+                                <a href="entry_forms.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Entry Forms</a>
+                                <a href="trial_forms.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">FTS / Trial Forms</a>
+                                <a href="trial_date_request.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Date Request</a>
+                                <a href="membership.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Club Membership Forms</a>
+                                <a href="lci_registration.html" class="block px-4 py-2 text-sm text-green-700 font-bold hover:bg-green-50 hover:text-green-800 transition-colors">LCI Registration</a>
+                                
+                                <div class="h-px bg-slate-100 my-1"></div>
+                                
+                                <!-- Section 3 -->
+                                <div class="px-4 py-2 text-[10px] font-bold text-slate-400 uppercase tracking-wider">Administration</div>
+                                <a href="acod.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Meeting Minutes / ACoD</a>
                                 <a href="suspensions.html" class="block px-4 py-2 text-sm text-red-600 font-medium hover:bg-red-50 hover:text-red-800 transition-colors">Suspensions</a>
                                 <a href="quest.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Questions & Comments</a>
                             </div>
                         </div>
                     </div>
-                    
+
+                    <!-- 4. News & Media -->
                     <div class="relative group py-4">
-                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
-                            Forms
-                            <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                        </button>
-                        <div class="absolute left-0 top-full -mt-2 w-60 bg-white border border-slate-200 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
-                            <div class="py-2">
-                                <a href="entry_forms.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Entry Forms</a>
-                                <a href="trial_forms.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Forms</a>
-                                <a href="trial_date_request.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Trial Date Request</a>
-                                <div class="h-px bg-slate-200 my-1"></div>
-                                <a href="membership.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Club Membership Forms</a>
-                                <a href="clubs_renewal_form.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-green-50 hover:text-green-800 transition-colors">Online Renewal</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="relative group py-4">
-                        <button class="text-white hover:text-green-200 transition font-medium text-xs lg:text-sm flex items-center gap-1 focus:outline-none">
+                        <button class="text-white hover:text-green-200 transition font-medium text-xs xl:text-sm flex items-center gap-1 focus:outline-none">
                             News & Media
                             <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </button>
@@ -132,17 +130,19 @@
                         </div>
                     </div>
 
-                    <a href="store.html" class="text-amber-400 hover:text-amber-200 transition font-bold text-xs lg:text-sm py-4">Store</a>
+                    <a href="store.html" class="text-amber-400 hover:text-amber-200 transition font-bold text-xs xl:text-sm py-4">Store</a>
                 </nav>
 
-                <div class="flex items-center hidden sm:block">
+                <!-- Global Search -->
+                <div class="hidden sm:flex items-center">
                     <div class="relative">
                         <input type="text" placeholder="Search ASFA..." class="bg-green-900 text-white placeholder-green-300 rounded-full py-1.5 pl-4 pr-10 focus:outline-none focus:ring-2 focus:ring-green-400 text-sm w-40 lg:w-48">
                         <svg class="w-4 h-4 absolute right-3 top-2 text-green-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                     </div>
                 </div>
-                
-                <div class="md:hidden flex items-center">
+
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden flex items-center">
                     <button id="mobile-menu-btn" class="text-white focus:outline-none hover:text-green-200 transition">
                         <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                     </button>
@@ -150,102 +150,91 @@
             </div>
         </div>
 
-        <!-- MOBILE MENU BLOCKS -->
-        <div id="mobile-menu" class="hidden md:hidden bg-green-800 border-t border-green-700 shadow-inner max-h-[85vh] overflow-y-auto">
+        <!-- MOBILE MENU (Accordions) -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-green-800 border-t border-green-700 shadow-inner max-h-[85vh] overflow-y-auto">
             <div class="px-4 py-3 space-y-2">
+                
+                <!-- 1. Getting Started -->
                 <details class="group">
                     <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
                         Getting Started
                         <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
-                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
-                        <a href="coursing.htm" class="block text-sm text-green-100 hover:text-white">Sport of Lure Coursing</a>
-                        <a href="breeds.html" class="block text-sm text-green-100 hover:text-white">Eligible Breeds</a>
-                        <a href="beginguide.html" class="block text-sm text-green-100 hover:text-white">Beginner's Guide</a>
-                        <a href="rulebook.html" class="block text-sm text-green-100 hover:text-white">Rule Book/Policies</a>
-                        <a href="pubs.html" class="block text-sm text-green-100 hover:text-white">Guides & Media</a>
-                    </div>
-                </details>
-                
-                <details class="group">
-                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
-                        Events
-                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                    </summary>
-                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
-                        <a href="schedule.html" class="block text-sm text-green-100 hover:text-white">Trial Schedule</a>
-                        <a href="ii26.html" class="block text-sm text-green-100 hover:text-white">2026 ASFA II</a>
-                        <a href="regionals.html" class="block text-sm text-green-100 hover:text-white">Regionals</a>
-                        <a href="acod2026.html" class="block text-sm text-green-100 hover:text-white">ACoD 2026</a>
+                    <div class="pl-4 pb-2 space-y-2 mt-1 border-l-2 border-green-700">
+                        <a href="coursing.htm" class="block text-sm text-green-100 hover:text-white py-1">Sport of Lure Coursing</a>
+                        <a href="breeds.html" class="block text-sm text-green-100 hover:text-white py-1">Eligible Breeds</a>
+                        <a href="beginguide.html" class="block text-sm text-green-100 hover:text-white py-1">Beginner's Guide</a>
+                        <a href="lci_explorer.html" class="block text-sm text-green-100 hover:text-white py-1">Lure Chasing Instinct (LCI)</a>
                     </div>
                 </details>
 
+                <!-- 2. Tools & Directories -->
                 <details class="group">
                     <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
-                        Records & Awards
+                        Tools & Directories
                         <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
-                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
-                        <a href="trial_results.html" class="block text-sm text-green-100 hover:text-white">Trial Results</a>
-                        <a href="top20.html" class="block text-sm text-green-100 hover:text-white">Top 20</a>
-                        <a href="titles.html" class="block text-sm text-green-100 hover:text-white">New Titles</a>
-                        <a href="records.html" class="block text-sm text-green-100 hover:text-white">Hound Records</a>
-                        <a href="top20_lifetime.html" class="block text-sm text-green-100 hover:text-white">Lifetime Top 20</a>
-                        <div class="h-px bg-green-700 my-1 w-3/4"></div>
-                        <a href="hof.html" class="block text-sm text-green-100 hover:text-white font-medium">Hall of Fame</a>
-                        <a href="gf.html" class="block text-sm text-green-100 hover:text-white">Gary Forrester Award</a>
-                        <a href="epa.html" class="block text-sm text-green-100 hover:text-white">Excellence in Performance</a>
-                        <a href="incentive_award.html" class="block text-sm text-green-100 hover:text-white">Incentive Award</a>
-                        <a href="LureOperator.html" class="block text-sm text-green-100 hover:text-white">Lure Operator of the Year</a>
+                    <div class="pl-4 pb-2 space-y-1 mt-1 border-l-2 border-green-700">
+                        <div class="text-[10px] font-bold text-green-300 uppercase tracking-wider pt-2 pb-1">Interactive Tools</div>
+                        <a href="schedule.html" class="block text-sm text-green-100 hover:text-white py-1">Events Calendar</a>
+                        <a href="trial_results.html" class="block text-sm text-green-100 hover:text-white py-1">Trial Results</a>
+                        <a href="top20.html" class="block text-sm text-green-100 hover:text-white py-1">ASFA Standings (Top 20)</a>
+                        <a href="lci_explorer.html" class="block text-sm text-green-100 hover:text-white py-1">LCI Explorer</a>
+                        <a href="points_check.html" class="block text-sm text-green-100 hover:text-white py-1">Points Check</a>
+                        
+                        <div class="text-[10px] font-bold text-green-300 uppercase tracking-wider pt-3 pb-1">Directories</div>
+                        <a href="clubs.html" class="block text-sm text-green-100 hover:text-white py-1">Clubs Directory</a>
+                        <a href="judges.html" class="block text-sm text-green-100 hover:text-white py-1">Judges Directory</a>
+                        <a href="officers.htm" class="block text-sm text-green-100 hover:text-white py-1">Officers & Regional Directors</a>
+                        <a href="comm.htm" class="block text-sm text-green-100 hover:text-white py-1">Committees</a>
                     </div>
                 </details>
 
+                <!-- 3. Forms & Library -->
                 <details class="group">
                     <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
-                        Clubs & Admin
+                        Forms & Library
                         <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
-                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
-                        <a href="clubs.html" class="block text-sm text-green-100 hover:text-white">Clubs</a>
-                        <a href="officers.htm" class="block text-sm text-green-100 hover:text-white">Officers & Directors</a>
-                        <a href="comm.htm" class="block text-sm text-green-100 hover:text-white">Committees</a>
-                        <a href="judges.html" class="block text-sm text-green-100 hover:text-white">Judges</a>
-                        <a href="suspensions.html" class="block text-sm text-red-300 hover:text-red-100 font-medium">Suspensions</a>
-                        <a href="quest.html" class="block text-sm text-green-100 hover:text-white">Questions & Comments</a>
+                    <div class="pl-4 pb-2 space-y-1 mt-1 border-l-2 border-green-700">
+                        <div class="text-[10px] font-bold text-green-300 uppercase tracking-wider pt-2 pb-1">Documents & Rules</div>
+                        <a href="rulebook.html" class="block text-sm text-green-100 hover:text-white py-1">ASFA Rulebook</a>
+                        <a href="lci_rules.html" class="block text-sm text-green-100 hover:text-white py-1">LCI Program Rules</a>
+                        <a href="policies.html" class="block text-sm text-green-100 hover:text-white py-1">Board Policies</a>
+                        <a href="guidelines.html" class="block text-sm text-green-100 hover:text-white py-1">Guidelines & Manuals</a>
+
+                        <div class="text-[10px] font-bold text-green-300 uppercase tracking-wider pt-3 pb-1">Official Forms</div>
+                        <a href="entry_forms.html" class="block text-sm text-green-100 hover:text-white py-1">Trial Entry Forms</a>
+                        <a href="trial_forms.html" class="block text-sm text-green-100 hover:text-white py-1">FTS / Trial Forms</a>
+                        <a href="trial_date_request.html" class="block text-sm text-green-100 hover:text-white py-1">Trial Date Request</a>
+                        <a href="membership.html" class="block text-sm text-green-100 hover:text-white py-1">Club Membership Forms</a>
+                        <a href="lci_registration.html" class="block text-sm text-white font-bold py-1">LCI Registration</a>
+
+                        <div class="text-[10px] font-bold text-green-300 uppercase tracking-wider pt-3 pb-1">Administration</div>
+                        <a href="acod.html" class="block text-sm text-green-100 hover:text-white py-1">Meeting Minutes / ACoD</a>
+                        <a href="suspensions.html" class="block text-sm text-red-300 font-medium hover:text-red-100 py-1">Suspensions</a>
+                        <a href="quest.html" class="block text-sm text-green-100 hover:text-white py-1">Questions & Comments</a>
                     </div>
                 </details>
 
-                <details class="group">
-                    <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
-                        Forms
-                        <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                    </summary>
-                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
-                        <a href="entry_forms.html" class="block text-sm text-green-100 hover:text-white">Entry Forms</a>
-                        <a href="trial_forms.html" class="block text-sm text-green-100 hover:text-white">Trial Forms</a>
-                        <a href="trial_date_request.html" class="block text-sm text-green-100 hover:text-white">Trial Date Request</a>
-                        <div class="h-px bg-green-700 my-1 w-3/4"></div>
-                        <a href="membership.html" class="block text-sm text-green-100 hover:text-white">Club Membership Forms</a>
-                        <a href="clubs_renewal_form.html" class="block text-sm text-green-100 hover:text-white">Online Renewal</a>
-                    </div>
-                </details>
-
+                <!-- 4. News & Media -->
                 <details class="group">
                     <summary class="flex justify-between items-center font-medium text-white py-2 cursor-pointer list-none">
                         News & Media
                         <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </summary>
-                    <div class="pl-4 pb-2 space-y-3 mt-1 border-l-2 border-green-700">
-                        <a href="communique.html" class="block text-sm text-green-100 hover:text-white">ASFA Communique</a>
-                        <a href="letter.html" class="block text-sm text-green-100 hover:text-white">President's Message</a>
-                        <a href="mission.html" class="block text-sm text-green-100 hover:text-white">Mission Statement</a>
-                        <a href="album.html" class="block text-sm text-green-100 hover:text-white">Photo Album</a>
+                    <div class="pl-4 pb-2 space-y-2 mt-1 border-l-2 border-green-700">
+                        <a href="communique.html" class="block text-sm text-green-100 hover:text-white py-1">ASFA Communique</a>
+                        <a href="letter.html" class="block text-sm text-green-100 hover:text-white py-1">President's Message</a>
+                        <a href="mission.html" class="block text-sm text-green-100 hover:text-white py-1">Mission Statement</a>
+                        <a href="album.html" class="block text-sm text-green-100 hover:text-white py-1">Photo Album</a>
                     </div>
                 </details>
 
                 <a href="store.html" class="block py-2 font-bold text-amber-400 hover:text-amber-200">Store</a>
                 
-                <div class="pt-4 pb-2">
+                <!-- Mobile Search -->
+                <div class="pt-4 pb-2 sm:hidden">
                     <div class="relative">
                         <input type="text" placeholder="Search ASFA..." class="w-full bg-green-900 text-white placeholder-green-300 rounded-full py-2 pl-4 pr-10 focus:outline-none focus:ring-2 focus:ring-green-400 text-sm border border-green-700">
                         <svg class="w-4 h-4 absolute right-3 top-2.5 text-green-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
@@ -255,6 +244,7 @@
         </div>
     </header>
 
+    <!-- Hero Section -->
     <div class="relative bg-green-900 overflow-hidden border-b border-green-800 shadow-inner">
         <div class="max-w-7xl mx-auto">
             <div class="relative z-10 pb-8 bg-green-900 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32 pt-10 sm:pt-16 lg:pt-20">
@@ -263,7 +253,7 @@
                     <polygon points="50,0 100,0 50,100 0,100" />
                 </svg>
 
-                <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 relative z-20">
+                <div class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 relative z-20">
                     <div class="sm:text-center lg:text-left">
                         <h1 class="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
                             <span class="block">American Sighthound</span>
@@ -285,7 +275,7 @@
                             </div>
                         </div>
                     </div>
-                </main>
+                </div>
             </div>
         </div>
         <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 bg-green-900">
@@ -293,6 +283,7 @@
         </div>
     </div>
 
+    <!-- Content Area -->
     <main class="flex-grow bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
             
@@ -303,7 +294,7 @@
                 </p>
             </div>
 
-            <!-- Обновленная сетка: 4 карточки (2x2) -->
+            <!-- Dashboard / 4 Cards -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                 
                 <!-- Card 1: Beginner's Guide -->
@@ -378,6 +369,7 @@
         </div>
     </main>
 
+    <!-- Footer -->
     <footer class="bg-slate-900 text-slate-300 py-12 mt-auto border-t-4 border-green-700">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 border-b border-slate-800 pb-8 mb-8">
